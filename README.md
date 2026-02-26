@@ -48,7 +48,7 @@ PACLIC Web/
 
 - Scroll-spy active nav highlighting via `IntersectionObserver`
 - Animated countdown ring for submission / early-bird / conference deadlines
-- Day-tab schedule switcher (Dec 10 / 11 / 12)
+- Day-tab schedule switcher
 - FAQ accordion (expand/collapse)
 - Mobile-responsive with hamburger menu
 - Reveal-on-scroll animations
