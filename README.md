@@ -78,7 +78,7 @@ Then open [http://localhost:8080](http://localhost:8080) in your browser.
 
 ## Contact
 
-📧 [paclic40@gmail.com](mailto:paclic40@gmail.com)
+📧 [paclic2026@gmail.com](mailto:paclic2026@gmail.com)
 
 ---
 
