@@ -8,7 +8,7 @@
 
 ## Overview
 
-This is the official static website for PACLIC 40, built as a single-page application with a fixed sidebar navigation, smooth scroll-spy, and a Taiwan national flag–inspired color theme (red, blue, white, and gold).
+This is the official static website for PACLIC 40, built as a single-page application with a fixed sidebar navigation, smooth scroll-spy, and a color theme (red, blue, white, and gold).
 
 ## Project Structure
 
@@ -27,7 +27,7 @@ PACLIC Web/
 | Section | Description |
 |---|---|
 | **Home** | Hero with Taipei cityscape photo, CTA buttons, countdown timer |
-| **Program** | Pre-conference workshops + day-by-day schedule tabs (Dec 10–12) |
+| **Program** | Pre-conference workshops + day-by-day schedule tabs |
 | **Keynote Speakers** | Speaker cards (TBA placeholders) |
 | **Call for Papers** | Submission topics, formatting guidelines, important dates |
 | **Registration** | Fee table with early-bird / standard / student tiers |
