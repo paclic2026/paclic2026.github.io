@@ -1,0 +1,927 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>PACLIC 40 | Taipei, Taiwan | December 10–12, 2026</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com"/>
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
+  <link href="https://fonts.googleapis.com/css2?family=Source+Serif+4:ital,opsz,wght@0,8..60,400;0,8..60,600;0,8..60,700;1,8..60,400&family=Source+Sans+3:wght@300;400;500;600;700&display=swap" rel="stylesheet"/>
+  <link rel="stylesheet" href="css/style.css"/>
+</head>
+<body>
+
+  <button class="mobile-toggle" id="mobileToggle" aria-label="Toggle navigation">
+    <span></span><span></span><span></span>
+  </button>
+  <div class="sidebar-overlay" id="sidebarOverlay"></div>
+
+  <!-- ══════════════════════════════════════ SIDEBAR ══════════ -->
+  <aside class="sidebar" id="sidebar">
+    <div class="sidebar-inner">
+
+      <!-- Brand -->
+      <div class="sidebar-brand">
+        <div class="brand-emblem">
+          <svg class="plum-svg" viewBox="0 0 60 60" xmlns="http://www.w3.org/2000/svg">
+            <g transform="translate(30,30)">
+              <ellipse cx="0" cy="-16" rx="9" ry="12" fill="rgba(196,30,58,0.85)" transform="rotate(0)"/>
+              <ellipse cx="0" cy="-16" rx="9" ry="12" fill="rgba(196,30,58,0.85)" transform="rotate(72)"/>
+              <ellipse cx="0" cy="-16" rx="9" ry="12" fill="rgba(196,30,58,0.85)" transform="rotate(144)"/>
+              <ellipse cx="0" cy="-16" rx="9" ry="12" fill="rgba(196,30,58,0.85)" transform="rotate(216)"/>
+              <ellipse cx="0" cy="-16" rx="9" ry="12" fill="rgba(196,30,58,0.85)" transform="rotate(288)"/>
+              <circle cx="0" cy="0" r="7" fill="#C9972A"/>
+              <line x1="0" y1="0" x2="0" y2="-9" stroke="rgba(255,230,100,0.9)" stroke-width="1.2"/>
+              <line x1="0" y1="0" x2="8" y2="-5" stroke="rgba(255,230,100,0.9)" stroke-width="1.2"/>
+              <line x1="0" y1="0" x2="8" y2="5" stroke="rgba(255,230,100,0.9)" stroke-width="1.2"/>
+              <line x1="0" y1="0" x2="-8" y2="-5" stroke="rgba(255,230,100,0.9)" stroke-width="1.2"/>
+              <line x1="0" y1="0" x2="-8" y2="5" stroke="rgba(255,230,100,0.9)" stroke-width="1.2"/>
+            </g>
+          </svg>
+        </div>
+        <div class="brand-info">
+          <div class="brand-name">PACLIC 40</div>
+          <div class="brand-full">Pacific Asia Conference on<br/>Language, Information &amp;<br/>Computation</div>
+        </div>
+      </div>
+
+      <!-- Thin rule -->
+      <div class="sidebar-rule"></div>
+
+      <!-- Nav -->
+      <nav class="sidebar-nav" id="sidebarNav">
+
+        <a href="#home" class="nav-link active" data-target="home">
+          <span class="nav-icon"><svg viewBox="0 0 22 22" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"><path d="M3 10L11 3l8 7v8a1 1 0 01-1 1H14v-5H8v5H4a1 1 0 01-1-1z"/></svg></span>
+          <span class="nav-text">Home</span>
+          <span class="nav-indicator"></span>
+        </a>
+
+        <a href="#program" class="nav-link" data-target="program">
+          <span class="nav-icon"><svg viewBox="0 0 22 22" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"><rect x="3" y="3" width="16" height="16" rx="2"/><line x1="3" y1="8" x2="19" y2="8"/><line x1="8" y1="3" x2="8" y2="8"/><line x1="14" y1="3" x2="14" y2="8"/><line x1="7" y1="13" x2="15" y2="13"/><line x1="7" y1="17" x2="12" y2="17"/></svg></span>
+          <span class="nav-text">Program</span>
+          <span class="nav-indicator"></span>
+        </a>
+
+        <a href="#speakers" class="nav-link" data-target="speakers">
+          <span class="nav-icon"><svg viewBox="0 0 22 22" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"><path d="M12 1a3 3 0 000 6M12 1a3 3 0 010 6"/><path d="M16 17v1a2 2 0 01-2 2H8a2 2 0 01-2-2v-1"/><path d="M12 7v10M9 11l3-4 3 4"/><rect x="10" y="17" width="4" height="3" rx="1"/></svg></span>
+          <span class="nav-text">Keynote Speakers</span>
+          <span class="nav-indicator"></span>
+        </a>
+
+        <a href="#cfp" class="nav-link" data-target="cfp">
+          <span class="nav-icon"><svg viewBox="0 0 22 22" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"><path d="M14 2H6a2 2 0 00-2 2v16a2 2 0 002 2h10a2 2 0 002-2V8z"/><polyline points="14 2 14 8 20 8"/><line x1="16" y1="13" x2="8" y2="13"/><line x1="16" y1="17" x2="8" y2="17"/><line x1="10" y1="9" x2="8" y2="9"/></svg></span>
+          <span class="nav-text">Call for Papers</span>
+          <span class="nav-indicator"></span>
+        </a>
+
+        <a href="#registration" class="nav-link" data-target="registration">
+          <span class="nav-icon"><svg viewBox="0 0 22 22" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"><rect x="2" y="5" width="18" height="13" rx="2"/><line x1="2" y1="10" x2="20" y2="10"/><line x1="6" y1="15" x2="10" y2="15"/></svg></span>
+          <span class="nav-text">Registration</span>
+          <span class="nav-indicator"></span>
+        </a>
+
+        <a href="#venue" class="nav-link" data-target="venue">
+          <span class="nav-icon"><svg viewBox="0 0 22 22" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"><path d="M11 2C7.7 2 5 4.7 5 8c0 5.25 6 12 6 12s6-6.75 6-12c0-3.3-2.7-6-6-6z"/><circle cx="11" cy="8" r="2.5"/></svg></span>
+          <span class="nav-text">Venue &amp; Travel</span>
+          <span class="nav-indicator"></span>
+        </a>
+
+        <a href="#committee" class="nav-link" data-target="committee">
+          <span class="nav-icon"><svg viewBox="0 0 22 22" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"><circle cx="9" cy="7" r="3"/><path d="M3 20v-2a4 4 0 014-4h4a4 4 0 014 4v2"/><circle cx="17" cy="7" r="2"/><path d="M21 20v-1.5A3 3 0 0019 15"/></svg></span>
+          <span class="nav-text">Committee</span>
+          <span class="nav-indicator"></span>
+        </a>
+
+        <a href="#faq" class="nav-link" data-target="faq">
+          <span class="nav-icon"><svg viewBox="0 0 22 22" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"><circle cx="11" cy="11" r="9"/><path d="M9.1 8.5a2.2 2.2 0 014 1.1c0 1.5-2 2-2 3"/><circle cx="11" cy="16" r=".5" fill="currentColor"/></svg></span>
+          <span class="nav-text">FAQ</span>
+          <span class="nav-indicator"></span>
+        </a>
+
+        <a href="#sponsors" class="nav-link" data-target="sponsors">
+          <span class="nav-icon"><svg viewBox="0 0 22 22" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg></span>
+          <span class="nav-text">Sponsors</span>
+          <span class="nav-indicator"></span>
+        </a>
+
+      </nav>
+
+      <!-- Footer -->
+      <div class="sidebar-footer">
+        <!-- Taiwan island map decoration -->
+        <div class="taiwan-map-wrap">
+          <svg class="taiwan-map" viewBox="0 0 100 174" xmlns="http://www.w3.org/2000/svg">
+            <path d="M 73,3 C 82,0 90,8 95,18 C 93,25 92,30 92,38 C 88,52 85,62 82,70 C 78,82 74,97 70,112 C 66,122 63,129 60,135 C 55,148 50,163 43,174 C 34,162 23,150 15,140 C 8,130 6,122 8,118 C 9,110 9,100 10,90 C 13,78 16,72 16,68 C 16,62 18,55 21,48 C 26,38 34,28 48,22 C 58,17 66,10 73,3 Z"
+              fill="rgba(254,0,0,0.07)" stroke="rgba(254,0,0,0.45)" stroke-width="2.5" stroke-linejoin="round" stroke-linecap="round"/>
+            <!-- Taipei marker -->
+            <circle cx="74" cy="14" r="3.5" fill="#FE0000" stroke="white" stroke-width="1.5"/>
+            <text x="62" y="10" font-size="7" fill="rgba(254,0,0,0.75)" font-family="sans-serif" font-weight="600" text-anchor="end">Taipei</text>
+          </svg>
+        </div>
+        <div class="footer-pin">
+          <svg viewBox="0 0 16 16" fill="currentColor" width="13" height="13"><circle cx="8" cy="6.5" r="3" fill="rgba(196,30,58,0.9)"/><path d="M8 1a5.5 5.5 0 00-5.5 5.5C2.5 10.5 8 15 8 15s5.5-4.5 5.5-7.5A5.5 5.5 0 008 1z" fill="none" stroke="rgba(196,30,58,0.9)" stroke-width="1.5"/></svg>
+          <span>Taipei, Taiwan</span>
+        </div>
+        <div class="footer-dates">December 10–12, 2026</div>
+        <div class="footer-edition">40<sup>th</sup> Edition · Since 1987</div>
+        <div class="footer-email">
+          <a href="mailto:paclic40@gmail.com">paclic40@gmail.com</a>
+        </div>
+        <!-- NTU host logo -->
+        <div class="ntu-host-wrap">
+          <img class="ntu-logo-img" src="https://www.ntu.edu.tw/images/icon-logo-header.svg" alt="NTU logo" onerror="this.style.display='none'"/>
+          <div class="ntu-host-text"><strong>National Taiwan University</strong>Hosted by NTU</div>
+        </div>
+      </div>
+
+    </div>
+  </aside>
+
+  <!-- ══════════════════════════════════════ MAIN ═════════════ -->
+  <main id="main">
+
+    <!-- ══════════════════ HOME ══════════════════════════════════ -->
+    <section id="home" class="section">
+
+      <!-- HERO -->
+      <div class="hero" id="hero">
+        <div class="hero-bg">
+          <div class="stars-layer" id="starsLayer"></div>
+        </div>
+
+        <div class="hero-content container">
+          <div class="hero-eyebrow">
+            <div class="eyebrow-line"></div>
+            <span>Taipei, Taiwan &nbsp;·&nbsp; December 10–12, 2026</span>
+            <div class="eyebrow-line"></div>
+          </div>
+          <h1 class="hero-headline">
+            <span class="headline-main">PACLIC 40</span>
+            <span class="headline-sub">The 40th Pacific Asia Conference on<br/>Language, Information and Computation</span>
+          </h1>
+          <p class="hero-theme"><em>"Language, Computation, and Cultural Diversity in the Age of AI"</em></p>
+          <div class="hero-cta">
+            <a href="#cfp" class="btn btn-primary">Submit a Paper</a>
+            <a href="#registration" class="btn btn-ghost">Register Now</a>
+          </div>
+        </div>
+
+        <div class="hero-scroll-hint">
+          <span>Scroll to explore</span>
+          <div class="scroll-arrow"></div>
+        </div>
+      </div><!-- /hero -->
+
+      <!-- HOME BODY -->
+      <div class="section-body container">
+
+        <!-- Countdown -->
+        <div class="block reveal">
+          <div class="block-header centered">
+            <div class="block-tag">Don't Miss the Deadline</div>
+            <h2 class="block-title">Countdown to <span class="accent">PACLIC 40</span></h2>
+          </div>
+          <div class="cd-tabs">
+            <button class="cd-tab active" data-cd="submission">Paper Submission <small>Aug 1, 2026</small></button>
+            <button class="cd-tab" data-cd="earlybird">Early Bird Reg. <small>Nov 20, 2026</small></button>
+            <button class="cd-tab" data-cd="conference">Conference <small>Dec 10, 2026</small></button>
+          </div>
+          <div class="countdown-wrap">
+            <div class="cd-unit">
+              <div class="cd-ring">
+                <svg viewBox="0 0 120 120" xmlns="http://www.w3.org/2000/svg">
+                  <circle class="ring-track" cx="60" cy="60" r="52"/>
+                  <circle class="ring-fill ring-days" cx="60" cy="60" r="52" id="ringDays"/>
+                </svg>
+                <span class="cd-num" id="cdDays">---</span>
+              </div>
+              <span class="cd-label">Days</span>
+            </div>
+            <div class="cd-unit">
+              <div class="cd-ring">
+                <svg viewBox="0 0 120 120" xmlns="http://www.w3.org/2000/svg">
+                  <circle class="ring-track" cx="60" cy="60" r="52"/>
+                  <circle class="ring-fill ring-hours" cx="60" cy="60" r="52" id="ringHours"/>
+                </svg>
+                <span class="cd-num" id="cdHours">--</span>
+              </div>
+              <span class="cd-label">Hours</span>
+            </div>
+            <div class="cd-unit">
+              <div class="cd-ring">
+                <svg viewBox="0 0 120 120" xmlns="http://www.w3.org/2000/svg">
+                  <circle class="ring-track" cx="60" cy="60" r="52"/>
+                  <circle class="ring-fill ring-mins" cx="60" cy="60" r="52" id="ringMins"/>
+                </svg>
+                <span class="cd-num" id="cdMins">--</span>
+              </div>
+              <span class="cd-label">Minutes</span>
+            </div>
+            <div class="cd-unit">
+              <div class="cd-ring">
+                <svg viewBox="0 0 120 120" xmlns="http://www.w3.org/2000/svg">
+                  <circle class="ring-track" cx="60" cy="60" r="52"/>
+                  <circle class="ring-fill ring-secs" cx="60" cy="60" r="52" id="ringSecs"/>
+                </svg>
+                <span class="cd-num" id="cdSecs">--</span>
+              </div>
+              <span class="cd-label">Seconds</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- About — immediately after countdown -->
+        <div class="about-block card reveal">
+          <div class="about-text">
+            <h2>About PACLIC</h2>
+            <p>The Pacific Asia Conference on Language, Information and Computation (PACLIC) is a premier annual international conference that has brought together researchers in linguistics, computational linguistics, and natural language processing for four decades. Since 1987, PACLIC has served as a vital forum for advancing language science across the Asia-Pacific region and beyond.</p>
+            <p>PACLIC 40 will be hosted in <strong>Taipei, Taiwan</strong> — a vibrant intellectual and cultural hub where cutting-edge technology meets rich linguistic diversity. This milestone 40th edition invites scholars worldwide to explore the intersections of language, computation, and cultural diversity in the age of artificial intelligence.</p>
+          </div>
+        </div>
+
+        <!-- Dates + News -->
+        <div class="two-col reveal">
+          <div class="card">
+            <div class="card-head">
+              <svg viewBox="0 0 22 22" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" width="22" height="22"><rect x="3" y="3" width="16" height="16" rx="2"/><line x1="3" y1="8" x2="19" y2="8"/><line x1="8" y1="3" x2="8" y2="8"/><line x1="14" y1="3" x2="14" y2="8"/></svg>
+              <h3>Important Dates</h3>
+            </div>
+            <ul class="dates-list">
+              <li class="date-item"><div class="date-badge"><span class="db-mon">AUG</span><span class="db-day">01</span><span class="db-yr">2026</span></div><div class="date-info"><strong>Paper Submission Deadline</strong><span>Possible extension to August 15, 2026</span></div></li>
+              <li class="date-item"><div class="date-badge"><span class="db-mon">SEP</span><span class="db-day">30</span><span class="db-yr">2026</span></div><div class="date-info"><strong>Notification of Acceptance</strong></div></li>
+              <li class="date-item"><div class="date-badge"><span class="db-mon">OCT</span><span class="db-day">01</span><span class="db-yr">2026</span></div><div class="date-info"><strong>Registration Opens</strong></div></li>
+              <li class="date-item"><div class="date-badge"><span class="db-mon">OCT</span><span class="db-day">09</span><span class="db-yr">2026</span></div><div class="date-info"><strong>Camera-Ready Deadline</strong></div></li>
+              <li class="date-item"><div class="date-badge"><span class="db-mon">NOV</span><span class="db-day">20</span><span class="db-yr">2026</span></div><div class="date-info"><strong>Early Bird Registration Ends</strong></div></li>
+              <li class="date-item highlight-date"><div class="date-badge badge-conf"><span class="db-mon">DEC</span><span class="db-day">10</span><span class="db-yr">2026</span></div><div class="date-info"><strong>Conference Begins</strong><span>December 10–12, 2026 · Taipei, Taiwan</span></div></li>
+            </ul>
+          </div>
+
+          <div class="card">
+            <div class="card-head">
+              <svg viewBox="0 0 22 22" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" width="22" height="22"><path d="M18 8h1a4 4 0 010 8h-1"/><path d="M2 9h16v9a4 4 0 01-4 4H6a4 4 0 01-4-4V9z"/><line x1="6" y1="1" x2="6" y2="5"/><line x1="10" y1="1" x2="10" y2="5"/><line x1="14" y1="1" x2="14" y2="5"/></svg>
+              <h3>News &amp; Announcements</h3>
+            </div>
+            <ul class="news-list">
+              <li class="news-item"><span class="news-date">Feb 2026</span><div class="news-body"><span class="badge new">NEW</span><p>The PACLIC 40 website is now live! We are delighted to welcome the linguistics and computational linguistics communities to Taipei for the milestone 40th edition.</p></div></li>
+              <li class="news-item"><span class="news-date">Feb 2026</span><div class="news-body"><span class="badge info">INFO</span><p>Call for Papers will be officially announced soon. Topics include computational linguistics, NLP, language acquisition, and more. Submission portal details forthcoming.</p></div></li>
+              <li class="news-item"><span class="news-date">Coming Soon</span><div class="news-body"><span class="badge upcoming">SOON</span><p>Keynote speaker announcements and venue details will be posted here as they become available.</p></div></li>
+            </ul>
+          </div>
+        </div>
+
+        <!-- Contact banner -->
+        <div class="contact-banner">
+          Questions? Contact the organising team at <a href="mailto:paclic40@gmail.com">paclic40@gmail.com</a>
+        </div>
+
+      </div><!-- /section-body -->
+    </section>
+
+    <!-- ══════════════════ PROGRAM ════════════════════════════════ -->
+    <section id="program" class="section section-alt">
+      <div class="section-intro container">
+        <div class="block-tag">Conference Schedule</div>
+        <h2 class="section-title">Program &amp; Schedule</h2>
+        <p class="section-desc">The full program will be announced following notification of acceptance (September 30, 2026). The schedule below is tentative and will be updated as details are confirmed.</p>
+      </div>
+
+      <div class="section-body container">
+
+        <!-- Workshops -->
+        <div class="card reveal" style="margin-bottom:28px;">
+          <div class="card-head">
+            <svg viewBox="0 0 22 22" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" width="22" height="22"><rect x="2" y="3" width="18" height="14" rx="2"/><line x1="8" y1="21" x2="14" y2="21"/><line x1="11" y1="17" x2="11" y2="21"/></svg>
+            <h3>Pre-Conference Workshops</h3>
+          </div>
+          <p>PACLIC 40 will host satellite workshops on <strong>December 9–10, 2026</strong>. Workshop proposals and the detailed Call for Workshop Papers will be announced separately. All workshops will be held at the main conference venue.</p>
+          <div class="workshop-grid">
+            <div class="workshop-item">
+              <div class="workshop-date">Dec 9</div>
+              <div class="workshop-info"><strong>Workshop I</strong><span>Title &amp; organisers TBA · Room TBA</span></div>
+            </div>
+            <div class="workshop-item">
+              <div class="workshop-date">Dec 10 · AM</div>
+              <div class="workshop-info"><strong>Workshop II</strong><span>Title &amp; organisers TBA · Room TBA</span></div>
+            </div>
+            <div class="workshop-item">
+              <div class="workshop-date">Dec 10 · AM</div>
+              <div class="workshop-info"><strong>Workshop III</strong><span>Title &amp; organisers TBA · Room TBA</span></div>
+            </div>
+          </div>
+          <p style="margin-top:10px;font-size:.88rem;color:var(--text-mid)"><em>To propose a workshop, contact the organising team at <a href="mailto:paclic40@gmail.com" style="color:var(--tw-jade)">paclic40@gmail.com</a>.</em></p>
+        </div>
+
+        <!-- Day tabs -->
+        <div class="day-tabs reveal">
+          <button class="day-tab active" data-day="day1"><span class="tab-date">DEC 10</span><span class="tab-label">Day 1 · Thursday</span></button>
+          <button class="day-tab" data-day="day2"><span class="tab-date">DEC 11</span><span class="tab-label">Day 2 · Friday</span></button>
+          <button class="day-tab" data-day="day3"><span class="tab-date">DEC 12</span><span class="tab-label">Day 3 · Saturday</span></button>
+        </div>
+
+        <!-- Day 1 -->
+        <div class="day-panel active" id="day1">
+          <div class="schedule-note"><svg viewBox="0 0 16 16" fill="currentColor" width="16"><path d="M8 1a7 7 0 100 14A7 7 0 008 1zm0 3a.75.75 0 01.75.75v3.5a.75.75 0 01-1.5 0v-3.5A.75.75 0 018 4zm0 8a1 1 0 110-2 1 1 0 010 2z"/></svg> Tentative — final program released after September 30, 2026.</div>
+          <table class="schedule-table">
+            <thead><tr><th>Time</th><th>Event</th><th>Room</th></tr></thead>
+            <tbody>
+              <tr class="row-open"><td>09:00 – 09:30</td><td><strong>Registration &amp; Badge Collection</strong></td><td>Main Foyer</td></tr>
+              <tr class="row-plenary"><td>09:30 – 10:30</td><td><strong>Opening Ceremony &amp; Keynote Address I</strong><br/><span class="row-sub">Speaker TBA</span></td><td>Main Auditorium</td></tr>
+              <tr class="row-break"><td>10:30 – 11:00</td><td>Coffee Break &amp; Poster Setup</td><td>Lobby</td></tr>
+              <tr class="row-parallel"><td rowspan="2">11:00 – 12:30</td><td><strong>Session 1A</strong> — Topic TBA</td><td>Room A</td></tr>
+              <tr class="row-parallel"><td><strong>Session 1B</strong> — Topic TBA</td><td>Room B</td></tr>
+              <tr class="row-break"><td>12:30 – 14:00</td><td>Lunch Break</td><td>Dining Hall</td></tr>
+              <tr class="row-parallel"><td rowspan="2">14:00 – 15:30</td><td><strong>Session 2A</strong> — Topic TBA</td><td>Room A</td></tr>
+              <tr class="row-parallel"><td><strong>Session 2B</strong> — Topic TBA</td><td>Room B</td></tr>
+              <tr class="row-break"><td>15:30 – 16:00</td><td>Coffee Break</td><td>Lobby</td></tr>
+              <tr class="row-parallel"><td rowspan="2">16:00 – 17:30</td><td><strong>Session 3A</strong> — Topic TBA</td><td>Room A</td></tr>
+              <tr class="row-parallel"><td><strong>Session 3B</strong> — Topic TBA</td><td>Room B</td></tr>
+              <tr class="row-social"><td>18:30 – 20:30</td><td><strong>🍽 Welcome Dinner</strong></td><td>TBA</td></tr>
+            </tbody>
+          </table>
+        </div>
+
+        <!-- Day 2 -->
+        <div class="day-panel" id="day2">
+          <div class="schedule-note"><svg viewBox="0 0 16 16" fill="currentColor" width="16"><path d="M8 1a7 7 0 100 14A7 7 0 008 1zm0 3a.75.75 0 01.75.75v3.5a.75.75 0 01-1.5 0v-3.5A.75.75 0 018 4zm0 8a1 1 0 110-2 1 1 0 010 2z"/></svg> Tentative — final program released after September 30, 2026.</div>
+          <table class="schedule-table">
+            <thead><tr><th>Time</th><th>Event</th><th>Room</th></tr></thead>
+            <tbody>
+              <tr class="row-plenary"><td>09:00 – 10:00</td><td><strong>Keynote Address II</strong><br/><span class="row-sub">Speaker TBA</span></td><td>Main Auditorium</td></tr>
+              <tr class="row-break"><td>10:00 – 10:30</td><td>Coffee Break</td><td>Lobby</td></tr>
+              <tr class="row-parallel"><td rowspan="2">10:30 – 12:00</td><td><strong>Session 4A</strong> — Topic TBA</td><td>Room A</td></tr>
+              <tr class="row-parallel"><td><strong>Session 4B</strong> — Topic TBA</td><td>Room B</td></tr>
+              <tr class="row-break"><td>12:00 – 13:30</td><td>Lunch Break</td><td>Dining Hall</td></tr>
+              <tr class="row-parallel"><td rowspan="2">13:30 – 15:00</td><td><strong>Session 5A</strong> — Topic TBA</td><td>Room A</td></tr>
+              <tr class="row-parallel"><td><strong>Session 5B</strong> — Topic TBA</td><td>Room B</td></tr>
+              <tr class="row-break"><td>15:00 – 15:30</td><td>Coffee Break</td><td>Lobby</td></tr>
+              <tr class="row-parallel"><td rowspan="2">15:30 – 17:00</td><td><strong>Session 6A</strong> — Topic TBA</td><td>Room A</td></tr>
+              <tr class="row-parallel"><td><strong>Session 6B</strong> — Topic TBA</td><td>Room B</td></tr>
+              <tr class="row-social"><td>19:00 – 22:00</td><td><strong>🎉 Gala Dinner &amp; Banquet</strong></td><td>TBA</td></tr>
+            </tbody>
+          </table>
+        </div>
+
+        <!-- Day 3 -->
+        <div class="day-panel" id="day3">
+          <div class="schedule-note"><svg viewBox="0 0 16 16" fill="currentColor" width="16"><path d="M8 1a7 7 0 100 14A7 7 0 008 1zm0 3a.75.75 0 01.75.75v3.5a.75.75 0 01-1.5 0v-3.5A.75.75 0 018 4zm0 8a1 1 0 110-2 1 1 0 010 2z"/></svg> Tentative — final program released after September 30, 2026.</div>
+          <table class="schedule-table">
+            <thead><tr><th>Time</th><th>Event</th><th>Room</th></tr></thead>
+            <tbody>
+              <tr class="row-plenary"><td>09:00 – 10:00</td><td><strong>Keynote Address III</strong><br/><span class="row-sub">Speaker TBA</span></td><td>Main Auditorium</td></tr>
+              <tr class="row-break"><td>10:00 – 10:30</td><td>Coffee Break</td><td>Lobby</td></tr>
+              <tr class="row-parallel"><td rowspan="2">10:30 – 12:00</td><td><strong>Session 7A</strong> — Topic TBA</td><td>Room A</td></tr>
+              <tr class="row-parallel"><td><strong>Session 7B</strong> — Topic TBA</td><td>Room B</td></tr>
+              <tr class="row-break"><td>12:00 – 13:30</td><td>Lunch Break</td><td>Dining Hall</td></tr>
+              <tr class="row-parallel"><td rowspan="2">13:30 – 15:00</td><td><strong>Session 8A</strong> — Topic TBA</td><td>Room A</td></tr>
+              <tr class="row-parallel"><td><strong>Session 8B</strong> — Topic TBA</td><td>Room B</td></tr>
+              <tr class="row-plenary"><td>15:00 – 15:30</td><td><strong>Closing Ceremony &amp; Awards</strong></td><td>Main Auditorium</td></tr>
+              <tr class="row-social"><td>15:30+</td><td><strong>🏯 Optional City Tour</strong> — Taipei highlights</td><td>Meeting Point TBA</td></tr>
+            </tbody>
+          </table>
+        </div>
+
+        <!-- Speakers notice card -->
+        <div class="block reveal">
+          <div class="notice-card">
+            <p>🎤 Keynote speaker details have been moved to the dedicated <strong>Keynote Speakers</strong> page.</p>
+            <a href="#speakers" class="btn btn-outline">View Keynote Speakers →</a>
+          </div>
+        </div>
+
+        <!-- Social Events -->
+        <div class="block reveal">
+          <div class="block-header"><h2>Social Events</h2></div>
+          <div class="events-grid">
+            <div class="event-card"><div class="event-icon">🥢</div><h3>Welcome Dinner</h3><p class="event-date">Thursday, December 10 · Evening</p><p>An informal gathering to welcome all participants to Taipei — a warm start to three days of scholarly exchange.</p></div>
+            <div class="event-card"><div class="event-icon">🎊</div><h3>Gala Banquet</h3><p class="event-date">Friday, December 11 · Evening</p><p>Experience the richness of Taiwanese cuisine at the conference banquet. A celebration of PACLIC's 40th anniversary.</p></div>
+            <div class="event-card"><div class="event-icon">🏯</div><h3>City Tour</h3><p class="event-date">Saturday, December 12 · Afternoon (Optional)</p><p>A guided tour of Taipei's highlights — from night markets to historic temples and the iconic Taipei 101.</p></div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ══════════════════ KEYNOTE SPEAKERS ═══════════════════════ -->
+    <section id="speakers" class="section">
+      <div class="section-intro container">
+        <div class="block-tag">Invited Scholars</div>
+        <h2 class="section-title">Keynote Speakers</h2>
+        <p class="section-desc">Distinguished invited speakers will be announced following the paper selection process. We look forward to welcoming leading voices in linguistics and language technology to Taipei.</p>
+      </div>
+
+      <div class="section-body container">
+        <div class="speakers-grid reveal">
+
+          <!-- Speaker I -->
+          <div class="speaker-card">
+            <div class="speaker-photo-area">
+              <div class="speaker-circle">
+                <svg class="person-silhouette" viewBox="0 0 80 80" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <circle cx="40" cy="28" r="16" fill="currentColor" opacity=".35"/>
+                  <path d="M12 72c0-15.464 12.536-28 28-28s28 12.536 28 28" fill="currentColor" opacity=".25"/>
+                </svg>
+              </div>
+            </div>
+            <div class="speaker-info">
+              <h3>Keynote Speaker I</h3>
+              <p class="speaker-affil">Affiliation — To be announced</p>
+              <p class="speaker-topic">Talk title to be announced</p>
+              <p class="speaker-bio">Speaker biography will be published upon confirmation. We look forward to welcoming distinguished scholars to PACLIC 40.</p>
+              <div class="speaker-btn-wrap">
+                <button class="btn btn-disabled" disabled>Full Profile — Coming Soon</button>
+              </div>
+            </div>
+          </div>
+
+          <!-- Speaker II -->
+          <div class="speaker-card">
+            <div class="speaker-photo-area">
+              <div class="speaker-circle">
+                <svg class="person-silhouette" viewBox="0 0 80 80" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <circle cx="40" cy="28" r="16" fill="currentColor" opacity=".35"/>
+                  <path d="M12 72c0-15.464 12.536-28 28-28s28 12.536 28 28" fill="currentColor" opacity=".25"/>
+                </svg>
+              </div>
+            </div>
+            <div class="speaker-info">
+              <h3>Keynote Speaker II</h3>
+              <p class="speaker-affil">Affiliation — To be announced</p>
+              <p class="speaker-topic">Talk title to be announced</p>
+              <p class="speaker-bio">Speaker biography will be published upon confirmation. We look forward to welcoming distinguished scholars to PACLIC 40.</p>
+              <div class="speaker-btn-wrap">
+                <button class="btn btn-disabled" disabled>Full Profile — Coming Soon</button>
+              </div>
+            </div>
+          </div>
+
+          <!-- Speaker III -->
+          <div class="speaker-card">
+            <div class="speaker-photo-area">
+              <div class="speaker-circle">
+                <svg class="person-silhouette" viewBox="0 0 80 80" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <circle cx="40" cy="28" r="16" fill="currentColor" opacity=".35"/>
+                  <path d="M12 72c0-15.464 12.536-28 28-28s28 12.536 28 28" fill="currentColor" opacity=".25"/>
+                </svg>
+              </div>
+            </div>
+            <div class="speaker-info">
+              <h3>Keynote Speaker III</h3>
+              <p class="speaker-affil">Affiliation — To be announced</p>
+              <p class="speaker-topic">Talk title to be announced</p>
+              <p class="speaker-bio">Speaker biography will be published upon confirmation. We look forward to welcoming distinguished scholars to PACLIC 40.</p>
+              <div class="speaker-btn-wrap">
+                <button class="btn btn-disabled" disabled>Full Profile — Coming Soon</button>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ══════════════════ CALL FOR PAPERS ═══════════════════════ -->
+    <section id="cfp" class="section section-alt">
+      <div class="section-intro container">
+        <div class="block-tag">Submit Your Research</div>
+        <h2 class="section-title">Call for Papers</h2>
+        <p class="section-desc">PACLIC 40 invites submissions of original research papers in linguistics, computational linguistics, natural language processing, and related disciplines. We welcome both long and short paper submissions.</p>
+      </div>
+
+      <div class="section-body container">
+        <div class="two-col reveal">
+          <div class="card topics-card">
+            <div class="card-head">
+              <svg viewBox="0 0 22 22" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" width="22" height="22"><circle cx="11" cy="11" r="9"/><polyline points="11 6 11 11 14 14"/></svg>
+              <h3>Topics of Interest</h3>
+            </div>
+            <p>PACLIC 40 invites papers addressing (but not limited to) the following areas:</p>
+            <ul class="topics-list">
+              <li>Phonology, morphology, and syntax</li>
+              <li>Semantics and pragmatics</li>
+              <li>Discourse analysis and information structure</li>
+              <li>Computational linguistics and NLP</li>
+              <li>Machine translation and language technology</li>
+              <li>Large language models and AI</li>
+              <li>Language acquisition and psycholinguistics</li>
+              <li>Sociolinguistics and language variation</li>
+              <li>Corpus linguistics and lexicography</li>
+              <li>Information retrieval and text mining</li>
+              <li>Knowledge representation and reasoning</li>
+              <li>Sign language linguistics</li>
+              <li>Language documentation and endangered languages</li>
+              <li>Asian languages and linguistic typology</li>
+            </ul>
+          </div>
+
+          <div class="card guidelines-card">
+            <div class="card-head">
+              <svg viewBox="0 0 22 22" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" width="22" height="22"><path d="M14 2H6a2 2 0 00-2 2v16a2 2 0 002 2h10a2 2 0 002-2V8z"/><polyline points="14 2 14 8 20 8"/></svg>
+              <h3>Submission Guidelines</h3>
+            </div>
+            <div class="guide-item"><span class="guide-label">Paper Types</span><ul><li><strong>Long Papers:</strong> 8–10 pages (+ references)</li><li><strong>Short Papers:</strong> 4–6 pages (+ references)</li></ul></div>
+            <div class="guide-item"><span class="guide-label">Format</span><p>ACL anthology style. Templates available in Word and LaTeX format (links TBA).</p></div>
+            <div class="guide-item"><span class="guide-label">Anonymization</span><p>All submissions must be double-blind anonymous. Remove author names, affiliations, and acknowledgements.</p></div>
+            <div class="guide-item"><span class="guide-label">Language</span><p>Submissions must be in English.</p></div>
+            <div class="guide-item"><span class="guide-label">Originality</span><p>Submitted papers must describe original, unpublished work not currently under review elsewhere.</p></div>
+            <div class="guide-item"><span class="guide-label">Submission System</span><p>Submissions will be handled via <strong>EasyChair</strong> (link to be announced). Please check back before the submission deadline.</p></div>
+            <a href="#" class="btn btn-primary mt-1" onclick="return false;">Submission Portal (Coming Soon)</a>
+          </div>
+        </div>
+
+        <div class="card pub-card reveal">
+          <div class="card-head">
+            <svg viewBox="0 0 22 22" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" width="22" height="22"><path d="M4 19.5A2.5 2.5 0 016.5 17H20"/><path d="M6.5 2H20v20H6.5A2.5 2.5 0 014 19.5v-15A2.5 2.5 0 016.5 2z"/></svg>
+            <h3>Publication Information</h3>
+          </div>
+          <p>Accepted papers will be published in the <strong>Proceedings of PACLIC 40</strong> through the <strong>International Society for Language and Linguistics (ISLI)</strong>. Proceedings will be archived and made available online. Selected papers may be invited for extended publication in a special journal issue.</p>
+          <div class="pub-tags">
+            <span class="pub-tag">ISLI Proceedings</span>
+            <span class="pub-tag">Open Access</span>
+            <span class="pub-tag">Peer-Reviewed</span>
+            <span class="pub-tag">ACL Anthology</span>
+            <span class="pub-tag">Scopus Indexed</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ══════════════════ REGISTRATION ══════════════════════════ -->
+    <section id="registration" class="section">
+      <div class="section-intro container">
+        <div class="block-tag">Join Us in Taipei</div>
+        <h2 class="section-title">Registration</h2>
+        <p class="section-desc">Registration opens October 1, 2026. Early bird rates are available until November 20, 2026. Fee details will be announced closer to the registration opening.</p>
+      </div>
+
+      <div class="section-body container">
+        <div class="card reveal">
+          <div class="card-head">
+            <svg viewBox="0 0 22 22" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" width="22" height="22"><rect x="2" y="5" width="18" height="13" rx="2"/><line x1="2" y1="10" x2="20" y2="10"/></svg>
+            <h3>Registration Fees</h3>
+          </div>
+          <div class="table-scroll">
+            <table class="fee-table">
+              <thead>
+                <tr>
+                  <th>Category</th>
+                  <th class="highlight-col">Early Bird<br/><small>by Nov 20, 2026</small></th>
+                  <th>Regular<br/><small>Oct 1 – Dec 9</small></th>
+                  <th>On-site<br/><small>Dec 10–12</small></th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr><td><strong>Regular (Non-student)</strong></td><td class="highlight-col price">TBA</td><td class="price">TBA</td><td class="price">TBA</td></tr>
+                <tr><td><strong>Student</strong></td><td class="highlight-col price">TBA</td><td class="price">TBA</td><td class="price">TBA</td></tr>
+              </tbody>
+            </table>
+          </div>
+          <p class="table-note">* Registration includes access to all sessions, conference materials, coffee breaks, and the welcome dinner. Gala banquet tickets are available separately.</p>
+        </div>
+
+        <div class="two-col reveal">
+          <div class="card">
+            <div class="card-head">
+              <svg viewBox="0 0 22 22" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" width="22" height="22"><path d="M21 16V8a2 2 0 00-1-1.73l-7-4a2 2 0 00-2 0l-7 4A2 2 0 002 8v8a2 2 0 001 1.73l7 4a2 2 0 002 0l7-4A2 2 0 0021 16z"/></svg>
+              <h3>Registration Portal</h3>
+            </div>
+            <p>The registration portal will open on <strong>October 1, 2026</strong>. Payment can be made securely via credit card. A confirmation email will be sent upon successful registration.</p>
+            <a href="#" class="btn btn-primary mt-1" onclick="return false;">Register (Opens Oct 1, 2026)</a>
+          </div>
+
+          <div class="card">
+            <div class="card-head">
+              <svg viewBox="0 0 22 22" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" width="22" height="22"><polyline points="1 4 1 10 7 10"/><path d="M3.51 15a9 9 0 102.13-9.36L1 10"/></svg>
+              <h3>Refund Policy</h3>
+            </div>
+            <ul class="policy-list">
+              <li><span class="policy-pct pct-full">100%</span> refund if cancelled before <strong>October 31, 2026</strong></li>
+              <li><span class="policy-pct pct-half">50%</span> refund if cancelled before <strong>November 20, 2026</strong></li>
+              <li><span class="policy-pct pct-none">0%</span> refund after <strong>November 20, 2026</strong></li>
+            </ul>
+            <p class="policy-note">Refund requests must be submitted in writing to the organizing committee. Substitution of a registered delegate is permitted at no additional charge.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ══════════════════ VENUE & TRAVEL ════════════════════════ -->
+    <section id="venue" class="section section-alt">
+      <div class="section-intro container">
+        <div class="block-tag">Getting Here</div>
+        <h2 class="section-title">Venue &amp; Travel</h2>
+        <p class="section-desc">PACLIC 40 will be held in Taipei, Taiwan. The exact venue will be confirmed once arrangements are finalized. Taipei is well-connected internationally and offers a rich cultural experience for all visitors.</p>
+      </div>
+
+      <div class="section-body container">
+        <div class="card venue-card reveal">
+          <div class="card-head">
+            <svg viewBox="0 0 22 22" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" width="22" height="22"><path d="M11 2C7.7 2 5 4.7 5 8c0 5.25 6 12 6 12s6-6.75 6-12c0-3.3-2.7-6-6-6z"/><circle cx="11" cy="8" r="2.5"/></svg>
+            <h3>Conference Venue</h3>
+          </div>
+          <div class="venue-info">
+            <div class="venue-detail">
+              <strong>Venue:</strong> National Taiwan University (NTU) — Tentative<br/>
+              <strong>Address:</strong> No. 1, Sec. 4, Roosevelt Rd., Da'an District, Taipei City 106<br/>
+              <strong>City:</strong> Taipei, Taiwan
+            </div>
+            <div class="map-placeholder">
+              <svg viewBox="0 0 400 220" xmlns="http://www.w3.org/2000/svg" fill="none">
+                <rect width="400" height="220" fill="#e8f0f7" rx="8"/>
+                <rect x="40" y="40" width="320" height="140" rx="4" fill="#d0e4f5"/>
+                <line x1="40" y1="110" x2="360" y2="110" stroke="#b8cfe8" stroke-width="3"/>
+                <line x1="200" y1="40" x2="200" y2="180" stroke="#b8cfe8" stroke-width="3"/>
+                <line x1="40" y1="75" x2="360" y2="75" stroke="#c8dced" stroke-width="1.5"/>
+                <line x1="40" y1="145" x2="360" y2="145" stroke="#c8dced" stroke-width="1.5"/>
+                <line x1="130" y1="40" x2="130" y2="180" stroke="#c8dced" stroke-width="1.5"/>
+                <line x1="270" y1="40" x2="270" y2="180" stroke="#c8dced" stroke-width="1.5"/>
+                <circle cx="200" cy="110" r="16" fill="#C41E3A" opacity="0.9"/>
+                <text x="200" y="115" text-anchor="middle" fill="white" font-size="11" font-weight="bold" font-family="sans-serif">NTU</text>
+                <text x="200" y="205" text-anchor="middle" fill="#4a6680" font-size="11" font-family="sans-serif">Taipei, Taiwan (Map coming soon)</text>
+              </svg>
+            </div>
+          </div>
+        </div>
+
+        <div class="two-col reveal">
+          <div class="card">
+            <div class="card-head">
+              <svg viewBox="0 0 22 22" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" width="22" height="22"><path d="M3 9l9-7 9 7v11a2 2 0 01-2 2H5a2 2 0 01-2-2z"/><polyline points="9 22 9 12 13 12 13 22"/></svg>
+              <h3>Accommodation</h3>
+            </div>
+            <p>A list of recommended hotels near the venue will be provided once the venue is confirmed. Conference rates and discount codes will be arranged for blocks of rooms.</p>
+            <div class="hotel-note"><strong>Suggested Areas:</strong><ul><li>Da'an District (near NTU)</li><li>Zhongzheng District (city centre)</li><li>Zhongshan District (near MRT)</li></ul></div>
+          </div>
+          <div class="card">
+            <div class="card-head">
+              <svg viewBox="0 0 22 22" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" width="22" height="22"><rect x="1" y="3" width="20" height="14" rx="2"/><path d="M16 21l-4-4-4 4"/><path d="M1 10h20"/></svg>
+              <h3>Transportation</h3>
+            </div>
+            <div class="transport-items">
+              <div class="transport-item"><span class="transport-icon">✈️</span><div><strong>From Airport</strong><p>Taoyuan International Airport (TPE) is ~40 km from Taipei. MRT Airport Express runs directly to the city in ~35 minutes.</p></div></div>
+              <div class="transport-item"><span class="transport-icon">🚇</span><div><strong>Taipei MRT</strong><p>Nearest MRT station: <strong>Gongguan Station</strong> (Green Line, Exit 1). The MRT system is efficient, affordable, and English-friendly.</p></div></div>
+              <div class="transport-item"><span class="transport-icon">🚌</span><div><strong>City Bus</strong><p>Multiple bus routes serve the NTU area. YouBike bike-sharing is also available near campus.</p></div></div>
+            </div>
+          </div>
+        </div>
+
+        <div class="card visa-card reveal">
+          <div class="card-head">
+            <svg viewBox="0 0 22 22" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" width="22" height="22"><rect x="3" y="5" width="16" height="13" rx="2"/><line x1="3" y1="10" x2="19" y2="10"/><line x1="7" y1="15" x2="11" y2="15"/></svg>
+            <h3>Visa Information</h3>
+          </div>
+          <p>Visitors to Taiwan may be eligible for visa-free entry depending on their nationality. Citizens of many countries (including USA, EU, Japan, South Korea, Australia) can enter Taiwan visa-free for up to 90 days.</p>
+          <div class="visa-note"><strong>Invitation Letter:</strong> Registered participants who require a visa may request an official invitation letter from the organizing committee. Please contact us at <a href="mailto:paclic40@gmail.com">paclic40@gmail.com</a> after completing your registration. Invitation letters will be issued upon receipt of full registration payment.</div>
+          <p>For official visa information, consult the <strong>Bureau of Consular Affairs, Ministry of Foreign Affairs of Taiwan</strong>.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- ══════════════════ COMMITTEE ══════════════════════════════ -->
+    <section id="committee" class="section">
+      <div class="section-intro container">
+        <div class="block-tag">Organization</div>
+        <h2 class="section-title">Committee</h2>
+        <p class="section-desc">PACLIC 40 is organized by a dedicated team of scholars from Taiwan and across the Asia-Pacific region.</p>
+      </div>
+
+      <!-- NTU host badge -->
+      <div class="container" style="padding-top:0;padding-bottom:0;">
+        <div class="ntu-badge">
+          <img src="https://www.ntu.edu.tw/images/icon-logo-header.svg" alt="NTU" width="22" height="22" onerror="this.style.display='none'"/>
+          <span>Hosted by National Taiwan University</span>
+        </div>
+      </div>
+
+      <div class="section-body container">
+
+        <!-- 1. Steering Committee (moved to top) -->
+        <div class="committee-block card reveal">
+          <div class="committee-group-title">
+            <svg viewBox="0 0 22 22" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" width="20" height="20"><circle cx="11" cy="11" r="9"/><line x1="11" y1="2" x2="11" y2="6"/><line x1="11" y1="16" x2="11" y2="20"/><line x1="2" y1="11" x2="6" y2="11"/><line x1="16" y1="11" x2="20" y2="11"/></svg>
+            Steering Committee &amp; Ex Officio Members
+          </div>
+          <div class="member-cards">
+            <div class="member-card"><div class="member-avatar sc"><span>CH</span></div><div class="member-info"><strong>Chu-Ren Huang</strong><span>The Hong Kong Polytechnic University</span></div></div>
+            <div class="member-card"><div class="member-avatar sc"><span>JK</span></div><div class="member-info"><strong>Jong-Bok Kim</strong><span>Kyung Hee University</span></div></div>
+            <div class="member-card"><div class="member-avatar sc"><span>YH</span></div><div class="member-info"><strong>Yasunari Harada</strong><span>Waseda University</span></div></div>
+            <div class="member-card"><div class="member-avatar sc"><span>RR</span></div><div class="member-info"><strong>Rachel Edita O. Roxas</strong><span>University of the Philippines, Los Baños</span></div></div>
+            <div class="member-card"><div class="member-avatar sc"><span>SD</span></div><div class="member-info"><strong>Shirley N. Dita</strong><span>De La Salle University, Manila</span></div></div>
+            <div class="member-card"><div class="member-avatar sc"><span>NH</span></div><div class="member-info"><strong>Nguyen Thi Minh Huyen</strong><span>Vietnam National University, Hanoi</span></div></div>
+          </div>
+        </div>
+
+        <!-- 2. Co-Program Chairs + Vice Chair -->
+        <div class="committee-block card reveal">
+          <div class="committee-group-title">
+            <svg viewBox="0 0 22 22" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" width="20" height="20"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+            Co-Program Chairs
+          </div>
+          <div class="member-cards">
+            <div class="member-card"><div class="member-avatar chair"><span>HJ</span></div><div class="member-info"><strong>Hanjung Lee</strong><span>Sungkyunkwan University (SKKU)</span></div></div>
+            <div class="member-card"><div class="member-avatar chair"><span>YY</span></div><div class="member-info"><strong>Yu-Yun Chang</strong><span>National Chengchi University (NCCU)</span></div></div>
+          </div>
+
+          <div class="committee-group-title mt-2">
+            <svg viewBox="0 0 22 22" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" width="20" height="20"><circle cx="11" cy="11" r="9"/><polyline points="11 6 11 11 14 14"/></svg>
+            Program Vice Chair
+          </div>
+          <div class="member-cards">
+            <div class="member-card"><div class="member-avatar chair"><span>OK</span></div><div class="member-info"><strong>Okgi Kim</strong><span>Gyeongkuk National University</span><em>Facilitating communication with the ISLI publication team</em></div></div>
+          </div>
+        </div>
+
+        <!-- 3. Organization Committee -->
+        <div class="committee-block card reveal">
+          <div class="committee-group-title">
+            <svg viewBox="0 0 22 22" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" width="20" height="20"><rect x="3" y="3" width="7" height="7"/><rect x="12" y="3" width="7" height="7"/><rect x="3" y="12" width="7" height="7"/><rect x="12" y="12" width="7" height="7"/></svg>
+            Organization Committee
+          </div>
+          <div class="member-cards">
+            <div class="member-card"><div class="member-avatar"><span>JK</span></div><div class="member-info"><strong>Jong-Bok Kim</strong><em>Co-Chair</em><span>Kyung Hee University</span></div></div>
+            <div class="member-card"><div class="member-avatar"><span>CL</span></div><div class="member-info"><strong>Charlene Lee</strong><em>Co-Chair</em><span>National Taiwan University</span></div></div>
+            <div class="member-card"><div class="member-avatar"><span>SH</span></div><div class="member-info"><strong>Shu-Kai Hsieh</strong><span>National Taiwan University</span></div></div>
+          </div>
+        </div>
+
+        <!-- 4. NTU Student Organizers (bottom) -->
+        <div class="committee-block card reveal">
+          <div class="committee-group-title">
+            <svg viewBox="0 0 22 22" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" width="20" height="20"><path d="M20 21v-2a4 4 0 00-4-4H6a4 4 0 00-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M22 21v-2a4 4 0 00-3-3.87"/><path d="M16 3.13a4 4 0 010 7.75"/></svg>
+            NTU Student Organizers
+          </div>
+          <div class="member-cards">
+            <div class="member-card"><div class="member-avatar student"><span>AT</span></div><div class="member-info"><strong>Annamarie Trinh Tran</strong><span>PhD Student, Graduate Institute of Linguistics, National Taiwan University</span></div></div>
+            <div class="member-card"><div class="member-avatar student"><span>JL</span></div><div class="member-info"><strong>Jessica Thach-Thao Le</strong><span>PhD Student, Graduate Institute of Linguistics, National Taiwan University</span></div></div>
+          </div>
+        </div>
+
+        <div class="card tpc-note reveal">
+          <div class="card-head">
+            <svg viewBox="0 0 22 22" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" width="22" height="22"><path d="M17 21v-2a4 4 0 00-4-4H5a4 4 0 00-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 00-3-3.87"/><path d="M16 3.13a4 4 0 010 7.75"/></svg>
+            <h3>Technical Program Committee</h3>
+          </div>
+          <p>The Technical Program Committee (TPC) consists of leading experts in linguistics and computational linguistics who conduct the peer-review process. The full TPC list will be published prior to the submission deadline. We are grateful to all reviewers for their contributions to the quality of PACLIC 40.</p>
+          <p><em>Invitations to serve on the TPC will be sent following the Call for Papers announcement.</em></p>
+        </div>
+      </div>
+    </section>
+
+    <!-- ══════════════════ FAQ ════════════════════════════════════ -->
+    <section id="faq" class="section section-alt">
+      <div class="section-intro container">
+        <div class="block-tag">Common Questions</div>
+        <h2 class="section-title">Frequently Asked Questions</h2>
+        <p class="section-desc">Answers to common questions about submitting, attending, and presenting at PACLIC 40.</p>
+      </div>
+
+      <div class="section-body container">
+        <div class="faq-list reveal">
+
+          <div class="faq-item">
+            <button class="faq-q">
+              <span>Will the proceedings be indexed in ACL Anthology and Scopus?</span>
+              <svg class="faq-arrow" viewBox="0 0 22 22" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" width="20" height="20"><polyline points="6 9 12 15 18 9"/></svg>
+            </button>
+            <div class="faq-a"><div class="faq-a-inner">Yes. PACLIC proceedings have been listed in the ACL Anthology and indexed in Scopus since PACLIC 19 (2005).</div></div>
+          </div>
+
+          <div class="faq-item">
+            <button class="faq-q">
+              <span>Can I present my paper remotely / online?</span>
+              <svg class="faq-arrow" viewBox="0 0 22 22" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" width="20" height="20"><polyline points="6 9 12 15 18 9"/></svg>
+            </button>
+            <div class="faq-a"><div class="faq-a-inner">PACLIC 40 is a hybrid conference. December 10 (afternoon) will be fully online. December 11–12 are on-site in Taipei. At least one author per accepted paper must attend (in-person or online).</div></div>
+          </div>
+
+          <div class="faq-item">
+            <button class="faq-q">
+              <span>What is the paper length limit?</span>
+              <svg class="faq-arrow" viewBox="0 0 22 22" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" width="20" height="20"><polyline points="6 9 12 15 18 9"/></svg>
+            </button>
+            <div class="faq-a"><div class="faq-a-inner">Long papers: up to 8 pages of content plus unlimited references. Short papers: up to 4 pages plus unlimited references.</div></div>
+          </div>
+
+          <div class="faq-item">
+            <button class="faq-q">
+              <span>When will the submission portal open?</span>
+              <svg class="faq-arrow" viewBox="0 0 22 22" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" width="20" height="20"><polyline points="6 9 12 15 18 9"/></svg>
+            </button>
+            <div class="faq-a"><div class="faq-a-inner">The submission portal (EasyChair or CMT — to be confirmed) will open and be linked from the Submission Guidelines page closer to the August 1, 2026 deadline.</div></div>
+          </div>
+
+          <div class="faq-item">
+            <button class="faq-q">
+              <span>Is there a student registration discount?</span>
+              <svg class="faq-arrow" viewBox="0 0 22 22" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" width="20" height="20"><polyline points="6 9 12 15 18 9"/></svg>
+            </button>
+            <div class="faq-a"><div class="faq-a-inner">Yes. A reduced student registration fee will be available. Details will be published when registration opens on October 1, 2026.</div></div>
+          </div>
+
+          <div class="faq-item">
+            <button class="faq-q">
+              <span>How do I request an invitation letter for a visa?</span>
+              <svg class="faq-arrow" viewBox="0 0 22 22" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" width="20" height="20"><polyline points="6 9 12 15 18 9"/></svg>
+            </button>
+            <div class="faq-a"><div class="faq-a-inner">Contact the organising committee at <a href="mailto:paclic40@gmail.com">paclic40@gmail.com</a> after completing your registration. Invitation letters are issued upon receipt of full payment.</div></div>
+          </div>
+
+          <div class="faq-item">
+            <button class="faq-q">
+              <span>Will there be financial support for researchers from under-resourced institutions?</span>
+              <svg class="faq-arrow" viewBox="0 0 22 22" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" width="20" height="20"><polyline points="6 9 12 15 18 9"/></svg>
+            </button>
+            <div class="faq-a"><div class="faq-a-inner">We are exploring diversity and inclusion subsidies for early-career researchers and participants from under-resourced institutions. Details will be announced when confirmed.</div></div>
+          </div>
+
+          <div class="faq-item">
+            <button class="faq-q">
+              <span>Where can I find past PACLIC proceedings?</span>
+              <svg class="faq-arrow" viewBox="0 0 22 22" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" width="20" height="20"><polyline points="6 9 12 15 18 9"/></svg>
+            </button>
+            <div class="faq-a"><div class="faq-a-inner">All past PACLIC proceedings are available on the ACL Anthology at <a href="https://aclanthology.org" target="_blank" rel="noopener">aclanthology.org</a>.</div></div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ══════════════════ SPONSORS ══════════════════════════════ -->
+    <section id="sponsors" class="section">
+      <div class="section-intro container">
+        <div class="block-tag">Support PACLIC 40</div>
+        <h2 class="section-title">Sponsors &amp; Supporters</h2>
+        <p class="section-desc">PACLIC 40 welcomes institutional and industry sponsors. Your support helps enable student subsidies, invited speakers, and open-access proceedings.</p>
+      </div>
+
+      <div class="section-body container">
+        <div class="sponsor-enquiry reveal">
+          <svg width="40" height="40" fill="none" viewBox="0 0 24 24" stroke="currentColor" style="color:var(--tw-jade);margin-bottom:16px"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M21 7.5l-9-5.25L3 7.5m18 0l-9 5.25m9-5.25v9l-9 5.25M3 7.5l9 5.25M3 7.5v9l9 5.25m0-9v9"/></svg>
+          <h3>Interested in sponsoring PACLIC 40?</h3>
+          <p>We are currently welcoming sponsors and institutional partners. For sponsorship enquiries, please reach out to us — we would love to discuss how we can collaborate.</p>
+          <a href="mailto:paclic40@gmail.com?subject=Sponsorship%20Enquiry%20%E2%80%94%20PACLIC%2040" class="btn btn-primary">Contact Us About Sponsorship</a>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ══════════════════ SITE FOOTER ══════════════════════════ -->
+  <footer class="site-footer">
+    <div class="footer-grid container">
+
+      <!-- Left: conference info -->
+      <div class="footer-col">
+        <div class="footer-col-title">PACLIC 40</div>
+        <p>The 40th Pacific Asia Conference on Language, Information and Computation<br/>Taipei, Taiwan &nbsp;·&nbsp; December 10–12, 2026</p>
+      </div>
+
+      <!-- Centre: navigation -->
+      <div class="footer-col">
+        <div class="footer-col-title">Navigation</div>
+        <nav class="footer-nav-links">
+          <a href="#home">Home</a>
+          <a href="#program">Program</a>
+          <a href="#speakers">Keynote Speakers</a>
+          <a href="#cfp">Call for Papers</a>
+          <a href="#registration">Registration</a>
+          <a href="#venue">Venue &amp; Travel</a>
+          <a href="#committee">Committee</a>
+          <a href="#faq">FAQ</a>
+          <a href="#sponsors">Sponsors</a>
+        </nav>
+      </div>
+
+      <!-- Right: past editions -->
+      <div class="footer-col">
+        <div class="footer-col-title">Previous Editions</div>
+        <p class="footer-prev-line">
+          <a href="https://vlsp.org.vn/paclic2025/" target="_blank" rel="noopener">PACLIC 39 (Hanoi, 2025)</a>
+          &nbsp;·&nbsp;
+          <a href="https://sites.google.com/view/paclic38" target="_blank" rel="noopener">PACLIC 38 (Seoul, 2024)</a>
+          &nbsp;·&nbsp;
+          <a href="https://paclic2023.github.io/" target="_blank" rel="noopener">PACLIC 37 (Hong Kong, 2023)</a>
+        </p>
+      </div>
+
+    </div>
+    <div class="footer-bottom container">
+      <span>© 2026 PACLIC 40 Organising Committee &nbsp;·&nbsp; Graduate Institute of Linguistics, National Taiwan University</span>
+      <div class="footer-socials">
+        <a href="#" aria-label="Twitter / X">
+          <svg viewBox="0 0 22 22" fill="currentColor" width="16" height="16"><path d="M17.53 3H20.5L14.2 10.28 21.5 20h-5.9l-4.5-5.88L5.84 20H2.86l6.72-7.69L2.5 3h6.05l4.09 5.34L17.53 3zm-1 15.25h1.64L5.57 4.64H3.82l12.71 13.61z"/></svg>
+          Twitter / X
+        </a>
+        <a href="#" aria-label="GitHub">
+          <svg viewBox="0 0 22 22" fill="currentColor" width="16" height="16"><path d="M11 2C6.05 2 2 6.05 2 11c0 3.97 2.57 7.33 6.14 8.52.45.08.61-.2.61-.43v-1.5c-2.5.54-3.03-1.2-3.03-1.2-.41-1.04-1-1.32-1-1.32-.82-.56.06-.55.06-.55.9.06 1.38.93 1.38.93.8 1.37 2.1.97 2.61.74.08-.58.31-.97.57-1.19-1.99-.23-4.08-1-4.08-4.43 0-.98.35-1.78.93-2.41-.09-.23-.4-1.14.09-2.37 0 0 .76-.24 2.48.93a8.6 8.6 0 012.26-.3c.77 0 1.54.1 2.26.3 1.72-1.17 2.48-.93 2.48-.93.49 1.23.18 2.14.09 2.37.58.63.93 1.43.93 2.41 0 3.44-2.1 4.2-4.1 4.42.32.28.61.83.61 1.67v2.48c0 .24.16.52.62.43C16.43 18.33 19 14.97 19 11c0-4.95-4.05-9-8-9z"/></svg>
+          GitHub
+        </a>
+      </div>
+    </div>
+  </footer>
+
+  <a href="#home" class="back-to-top" id="backToTop" aria-label="Back to top">↑</a>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
