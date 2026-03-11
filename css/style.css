@@ -449,7 +449,9 @@ strong { font-weight: 700; }
 /* ═══════════════════════════════════════════════════════════════
    CALL FOR PAPERS
 ═══════════════════════════════════════════════════════════════ */
-.topics-list { list-style: none; display: grid; grid-template-columns: 1fr 1fr; gap: 8px; }
+.topics-categories { display: grid; grid-template-columns: 1fr 1fr; gap: 20px; }
+.topics-cat-title { font-size: .82rem; font-weight: 700; text-transform: uppercase; letter-spacing: .06em; color: var(--tw-red); margin: 0 0 10px; padding-bottom: 6px; border-bottom: 1px solid var(--border); }
+.topics-list { list-style: none; display: grid; grid-template-columns: 1fr; gap: 4px; }
 .topics-list li { font-size: .9rem; color: var(--text-mid); padding: 7px 10px 7px 28px; position: relative; border-radius: 6px; transition: background .2s; }
 .topics-list li:hover { background: var(--bg); }
 .topics-list li::before { content: ''; position: absolute; left: 10px; top: 50%; transform: translateY(-50%); width: 6px; height: 6px; background: var(--tw-red); border-radius: 50%; }
@@ -701,7 +703,7 @@ strong { font-weight: 700; }
   .about-block { grid-template-columns: 1fr; }
   .about-stats { grid-template-columns: repeat(4, 1fr); }
   .venue-info { grid-template-columns: 1fr; }
-  .topics-list { grid-template-columns: 1fr; }
+  .topics-categories { grid-template-columns: 1fr; }
   .footer-grid { grid-template-columns: 1fr; }
 }
 
