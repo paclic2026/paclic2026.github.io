@@ -140,11 +140,13 @@
     );
     els.sections.forEach(s => io.observe(s));
 
-    // Smooth scroll from sidebar links
+    // Smooth scroll from sidebar links (only for same-page anchors)
     els.navLinks.forEach(link => {
       link.addEventListener('click', e => {
+        const href = link.getAttribute('href');
+        if (!href || !href.startsWith('#')) return; // let normal navigation happen for external links
         e.preventDefault();
-        const target = document.querySelector(link.getAttribute('href'));
+        const target = document.querySelector(href);
         if (target) {
           target.scrollIntoView({ behavior: 'smooth', block: 'start' });
           closeSidebar();

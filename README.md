@@ -2,7 +2,7 @@
 
 **The 40th Pacific Asia Conference on Language, Information and Computation**
 📍 Taipei, Taiwan · 🗓 December 10–12, 2026
-🏛 Hosted by National Taiwan University
+🏛 Hosted by the Graduate Institute of Linguistics, National Taiwan University
 
 ---
 
@@ -27,7 +27,7 @@ PACLIC Web/
 | Section | Description |
 |---|---|
 | **Home** | Hero with Taipei cityscape photo, CTA buttons, countdown timer |
-| **Program** | Pre-conference workshops + day-by-day schedule tabs |
+| **Program** | Pre-conference workshops + day-by-day schedule tabs (Dec 10–12) |
 | **Keynote Speakers** | Speaker cards (TBA placeholders) |
 | **Call for Papers** | Submission topics, formatting guidelines, important dates |
 | **Registration** | Fee table with early-bird / standard / student tiers |
@@ -67,6 +67,18 @@ npx serve .
 ```
 
 Then open [http://localhost:8080](http://localhost:8080) in your browser.
+
+## Key Dates (2026)
+
+| Event | Date |
+|---|---|
+| Paper submission deadline | August 1, 2026 |
+| Pre-conference workshops | December 9–10, 2026 |
+| Main conference | December 10–12, 2026 |
+
+## Contact
+
+📧 [paclic40@gmail.com](mailto:paclic40@gmail.com)
 
 ---
 
