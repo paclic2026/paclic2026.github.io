@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Invited Speakers | PACLIC 40 — Taipei, Taiwan, December 10–12, 2026</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com"/>
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
+  <link href="https://fonts.googleapis.com/css2?family=Source+Serif+4:ital,opsz,wght@0,8..60,400;0,8..60,600;0,8..60,700;1,8..60,400&family=Source+Sans+3:wght@300;400;500;600;700&display=swap" rel="stylesheet"/>
+  <link rel="stylesheet" href="css/style.css"/>
+  <style>
+    /* ── Page typography ─────────────────────────────────────── */
+    #main .card p,
+    #main .card li { font-size: .95rem; color: var(--text-mid); line-height: 1.75; margin: 0; }
+    #main .card p + p { margin-top: 10px; }
+    /* ── Override global red accents → blue theme ─────────────── */
+    #main .card::before { background: linear-gradient(90deg, var(--navy-mid), var(--navy-light)); }
+    #main .card-head svg { color: var(--navy-mid); }
+    #main .block-tag { background: rgba(0,0,149,.08); color: var(--navy-mid); border-color: rgba(0,0,149,.2); }
+    #main .btn-outline { color: var(--navy-mid); border-color: var(--navy-mid); }
+    #main .btn-outline:hover { background: var(--navy-mid); color: #fff; }
+  </style>
+</head>
+<body>
+
+  <button class="mobile-toggle" id="mobileToggle" aria-label="Toggle navigation">
+    <span></span><span></span><span></span>
+  </button>
+  <div class="sidebar-overlay" id="sidebarOverlay"></div>
+
+  <!-- ══════════════════════════════════════ SIDEBAR ══════════ -->
+  <aside class="sidebar" id="sidebar">
+    <div class="sidebar-inner">
+
+      <div class="sidebar-brand">
+        <div class="brand-emblem">
+          <svg class="plum-svg" viewBox="0 0 60 60" xmlns="http://www.w3.org/2000/svg">
+            <g transform="translate(30,30)">
+              <ellipse cx="0" cy="-16" rx="9" ry="12" fill="rgba(196,30,58,0.85)" transform="rotate(0)"/>
+              <ellipse cx="0" cy="-16" rx="9" ry="12" fill="rgba(196,30,58,0.85)" transform="rotate(72)"/>
+              <ellipse cx="0" cy="-16" rx="9" ry="12" fill="rgba(196,30,58,0.85)" transform="rotate(144)"/>
+              <ellipse cx="0" cy="-16" rx="9" ry="12" fill="rgba(196,30,58,0.85)" transform="rotate(216)"/>
+              <ellipse cx="0" cy="-16" rx="9" ry="12" fill="rgba(196,30,58,0.85)" transform="rotate(288)"/>
+              <circle cx="0" cy="0" r="7" fill="#C9972A"/>
+              <line x1="0" y1="0" x2="0" y2="-9" stroke="rgba(255,230,100,0.9)" stroke-width="1.2"/>
+              <line x1="0" y1="0" x2="8" y2="-5" stroke="rgba(255,230,100,0.9)" stroke-width="1.2"/>
+              <line x1="0" y1="0" x2="8" y2="5" stroke="rgba(255,230,100,0.9)" stroke-width="1.2"/>
+              <line x1="0" y1="0" x2="-8" y2="-5" stroke="rgba(255,230,100,0.9)" stroke-width="1.2"/>
+              <line x1="0" y1="0" x2="-8" y2="5" stroke="rgba(255,230,100,0.9)" stroke-width="1.2"/>
+            </g>
+          </svg>
+        </div>
+        <div class="brand-info">
+          <div class="brand-name">PACLIC 40</div>
+          <div class="brand-full">Pacific Asia Conference on<br/>Language, Information &amp;<br/>Computation</div>
+        </div>
+      </div>
+
+      <div class="sidebar-rule"></div>
+
+      <nav class="sidebar-nav">
+        <a href="index.html#home" class="nav-link">
+          <span class="nav-icon"><svg viewBox="0 0 22 22" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"><path d="M3 10L11 3l8 7v8a1 1 0 01-1 1H14v-5H8v5H4a1 1 0 01-1-1z"/></svg></span>
+          <span class="nav-text">Home</span>
+        </a>
+        <a href="index.html#program" class="nav-link">
+          <span class="nav-icon"><svg viewBox="0 0 22 22" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"><rect x="3" y="3" width="16" height="16" rx="2"/><line x1="3" y1="8" x2="19" y2="8"/><line x1="8" y1="3" x2="8" y2="8"/><line x1="14" y1="3" x2="14" y2="8"/><line x1="7" y1="13" x2="15" y2="13"/><line x1="7" y1="17" x2="12" y2="17"/></svg></span>
+          <span class="nav-text">Program</span>
+        </a>
+        <a href="speakers.html" class="nav-link active">
+          <span class="nav-icon"><svg viewBox="0 0 22 22" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"><path d="M12 1a3 3 0 000 6M12 1a3 3 0 010 6"/><path d="M16 17v1a2 2 0 01-2 2H8a2 2 0 01-2-2v-1"/><path d="M12 7v10M9 11l3-4 3 4"/><rect x="10" y="17" width="4" height="3" rx="1"/></svg></span>
+          <span class="nav-text">Invited Speakers</span>
+          <span class="nav-indicator"></span>
+        </a>
+        <a href="cfp.html" class="nav-link">
+          <span class="nav-icon"><svg viewBox="0 0 22 22" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"><path d="M14 2H6a2 2 0 00-2 2v16a2 2 0 002 2h10a2 2 0 002-2V8z"/><polyline points="14 2 14 8 20 8"/><line x1="16" y1="13" x2="8" y2="13"/><line x1="16" y1="17" x2="8" y2="17"/><line x1="10" y1="9" x2="8" y2="9"/></svg></span>
+          <span class="nav-text">Call for Papers</span>
+        </a>
+        <a href="index.html#registration" class="nav-link">
+          <span class="nav-icon"><svg viewBox="0 0 22 22" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"><rect x="2" y="5" width="18" height="13" rx="2"/><line x1="2" y1="10" x2="20" y2="10"/><line x1="6" y1="15" x2="10" y2="15"/></svg></span>
+          <span class="nav-text">Registration</span>
+        </a>
+        <a href="index.html#venue" class="nav-link">
+          <span class="nav-icon"><svg viewBox="0 0 22 22" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"><path d="M11 2C7.7 2 5 4.7 5 8c0 5.25 6 12 6 12s6-6.75 6-12c0-3.3-2.7-6-6-6z"/><circle cx="11" cy="8" r="2.5"/></svg></span>
+          <span class="nav-text">Venue &amp; Travel</span>
+        </a>
+        <a href="index.html#committee" class="nav-link">
+          <span class="nav-icon"><svg viewBox="0 0 22 22" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"><circle cx="9" cy="7" r="4"/><path d="M3 21v-2a4 4 0 014-4h4a4 4 0 014 4v2"/><circle cx="17" cy="8" r="2.5"/><path d="M21 21v-1.5a2.5 2.5 0 00-2.5-2.5"/></svg></span>
+          <span class="nav-text">Committee</span>
+        </a>
+        <a href="index.html#faq" class="nav-link">
+          <span class="nav-icon"><svg viewBox="0 0 22 22" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"><circle cx="11" cy="11" r="9"/><path d="M9 8.5a2 2 0 013.5 1.3c0 1.5-2.5 2-2.5 3"/><line x1="11" y1="16" x2="11.01" y2="16"/></svg></span>
+          <span class="nav-text">FAQ</span>
+        </a>
+        <a href="index.html#sponsors" class="nav-link">
+          <span class="nav-icon"><svg viewBox="0 0 22 22" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"><path d="M12 2l2.4 7.4H22l-6.2 4.5 2.4 7.4L12 17l-6.2 4.3 2.4-7.4L2 9.4h7.6z"/></svg></span>
+          <span class="nav-text">Sponsors</span>
+        </a>
+      </nav>
+
+      <div class="sidebar-footer">
+        <div class="taiwan-map-wrap">
+          <svg class="taiwan-map" viewBox="0 0 100 174" xmlns="http://www.w3.org/2000/svg">
+            <path d="M 73,3 C 82,0 90,8 95,18 C 93,25 92,30 92,38 C 88,52 85,62 82,70 C 78,82 74,97 70,112 C 66,122 63,129 60,135 C 55,148 50,163 43,174 C 34,162 23,150 15,140 C 8,130 6,122 8,118 C 9,110 9,100 10,90 C 13,78 16,72 16,68 C 16,62 18,55 21,48 C 26,38 34,28 48,22 C 58,17 66,10 73,3 Z"
+              fill="rgba(254,0,0,0.07)" stroke="rgba(254,0,0,0.45)" stroke-width="2.5" stroke-linejoin="round" stroke-linecap="round"/>
+            <circle cx="74" cy="14" r="3.5" fill="#FE0000" stroke="white" stroke-width="1.5"/>
+            <text x="62" y="10" font-size="7" fill="rgba(254,0,0,0.75)" font-family="sans-serif" font-weight="600" text-anchor="end">Taipei</text>
+          </svg>
+        </div>
+        <div class="footer-pin">
+          <svg viewBox="0 0 16 16" fill="currentColor" width="13" height="13"><circle cx="8" cy="6.5" r="3" fill="rgba(196,30,58,0.9)"/><path d="M8 1a5.5 5.5 0 00-5.5 5.5C2.5 10.5 8 15 8 15s5.5-4.5 5.5-7.5A5.5 5.5 0 008 1z" fill="none" stroke="rgba(196,30,58,0.9)" stroke-width="1.5"/></svg>
+          <span>Taipei, Taiwan</span>
+        </div>
+        <div class="footer-dates">December 10–12, 2026</div>
+        <div class="footer-edition">40<sup>th</sup> Edition · Since 1987</div>
+        <div class="footer-email">
+          <a href="mailto:paclic2026@gmail.com">paclic2026@gmail.com</a>
+        </div>
+        <div class="ntu-host-wrap">
+          <img class="ntu-logo-img" src="https://www.ntu.edu.tw/images/icon-logo-header.svg" alt="NTU logo" onerror="this.style.display='none'"/>
+          <div class="ntu-host-text"><strong>National Taiwan University</strong>Hosted by NTU</div>
+        </div>
+      </div>
+    </div>
+  </aside>
+
+  <!-- ══════════════════════════════════ MAIN CONTENT ══════════ -->
+  <main id="main">
+
+    <!-- Hero -->
+    <div class="cfp-hero" style="text-align:center;padding:64px 40px 40px;border-bottom:2px solid var(--border);">
+      <div class="block-tag" style="display:inline-flex;margin-bottom:18px;">Invited Scholars</div>
+      <h1 style="font-family:'Source Serif 4',serif;font-size:2.6rem;font-weight:700;color:var(--text);margin-bottom:12px;">Invited Speakers</h1>
+      <p style="font-size:.95rem;color:var(--text-mid);margin:0 auto 6px;line-height:1.7;white-space:nowrap;">PACLIC 40 · The 40th Pacific Asia Conference on Language, Information and Computation</p>
+      <p style="font-size:.95rem;color:var(--text-mid);margin:0 auto 28px;line-height:1.7;">December 10–12, 2026 · Taipei, Taiwan</p>
+      <a href="index.html" class="btn btn-outline" style="display:inline-flex;align-items:center;gap:6px;">← Back to Main Site</a>
+    </div>
+
+    <!-- Profiles -->
+    <section style="padding:48px 0 64px;">
+      <div class="container" style="max-width:900px;">
+        <div class="spk-profiles">
+
+          <!-- Prof. Marie-Catherine de Marneffe -->
+          <div class="spk-profile reveal">
+            <div class="spk-profile-photo">
+              <img src="images/Invited speakers/Marie-Catherine de Marneffe.jpg" alt="Professor Marie-Catherine de Marneffe"/>
+            </div>
+            <div class="spk-profile-body">
+              <div class="spk-profile-name">Professor Marie-Catherine de Marneffe</div>
+              <div class="spk-profile-affil">UCLouvain, Belgium</div>
+              <div class="spk-profile-bio">
+                <p>Professor Marie-Catherine de Marneffe is an FNRS Research Associate at CENTAL, UCLouvain. Her research focuses on semantics, pragmatics, and computational linguistics, with particular emphasis on inference, speaker commitment, and natural language understanding, bridging linguistic theory and NLP.</p>
+                <p>She received her PhD in Linguistics from Stanford University under the supervision of Christopher D. Manning, Dan Jurafsky, and Christopher Potts. Prior to joining UCLouvain in 2022, she was Assistant and later Associate Professor in Linguistics at The Ohio State University, where she was part of the Computational Linguistics and Language Technology Lab.</p>
+                <p>Professor de Marneffe is a core contributor to major linguistic resources such as Universal Dependencies and Stanford Dependencies. Her work has been recognized with major awards and funding, including an NSF CAREER Award and a MIS FNRS grant. She has also received a Best Short Paper Award at ACL. She is actively involved in the international research community, serving as NAACL 2022 Program Chair and as a working group leader in COST Action CA21167.</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Prof. Wei Lu -->
+          <div class="spk-profile reveal">
+            <div class="spk-profile-photo">
+              <img src="images/Invited speakers/Wei Lu.png" alt="Professor Wei Lu"/>
+            </div>
+            <div class="spk-profile-body">
+              <div class="spk-profile-name">Professor Wei Lu</div>
+              <div class="spk-profile-affil">College of Computing &amp; Data Science, Nanyang Technological University, Singapore</div>
+              <div class="spk-profile-bio">
+                <p>Professor Wei Lu is Professor at the College of Computing &amp; Data Science, Nanyang Technological University. His research focuses on natural language processing (NLP), large language models (LLMs), and fundamental problems in artificial intelligence.</p>
+                <p>He currently serves as Editor-in-Chief of Computational Linguistics and as a member of the Executive Committee of the Association for Computational Linguistics (ACL). His work has been recognized with major awards, including the Best Paper Award at EMNLP 2011 and the Outstanding Paper Award at EMNLP 2023.</p>
+                <p>Prior to joining NTU, Professor Lu spent 12 years at the Singapore University of Technology and Design (SUTD), where he was Professor and Associate Head (Research). He has also held research positions at the University of Illinois at Urbana-Champaign and as a visiting scholar at MIT.</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Prof. Kathleen Rastle -->
+          <div class="spk-profile reveal">
+            <div class="spk-profile-photo">
+              <img src="images/Invited speakers/Kathy Rastle.jpg" alt="Professor Kathleen Rastle"/>
+            </div>
+            <div class="spk-profile-body">
+              <div class="spk-profile-name">Professor Kathleen Rastle</div>
+              <div class="spk-profile-affil">Royal Holloway, University of London, UK</div>
+              <div class="spk-profile-bio">
+                <p>Professor Kathleen Rastle is Professor of Cognitive Psychology at Royal Holloway, University of London. Her research focuses on the mental representations and computational processes underlying language, literacy, and learning, particularly in reading acquisition and word recognition.</p>
+                <p>Her work has been widely recognized for both theoretical contributions to psycholinguistics and its impact on educational policy and literacy instruction. She has received major funding from organizations including the ESRC, BBSRC, and the Leverhulme Trust, and was awarded the ESRC Celebrating Impact Prize for Outstanding International Impact (2020).</p>
+                <p>Professor Rastle has held key leadership roles, including President of the Experimental Psychology Society (2022–2024) and Editor-in-Chief of the Journal of Memory and Language (2019–2023). She is currently Director of the ESRC South East Doctoral Training Arc (SEDarc).</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Prof. Sanghoun Song -->
+          <div class="spk-profile reveal">
+            <div class="spk-profile-photo">
+              <img src="images/Invited speakers/Sanghoun Song.JPG" alt="Professor Sanghoun Song"/>
+            </div>
+            <div class="spk-profile-body">
+              <div class="spk-profile-name">Professor Sanghoun Song</div>
+              <div class="spk-profile-affil">Korea University, South Korea</div>
+              <div class="spk-profile-bio">
+                <p>Professor Sanghoun Song is Associate Professor in the Department of Linguistics at Korea University and Director of the Research Institute for Language and Information. His research focuses on computational syntax and semantics, combining HPSG, corpus-based methods, and deep learning, with applications in domain-specific NLP and large language model evaluation.</p>
+                <p>He received his PhD in Linguistics from the University of Washington under the supervision of Emily M. Bender, where he was awarded the Top Scholar Award and Graduate School Dissertation Fellowship. He is the author of <em>Modeling Information Structure in a Cross-Linguistic Perspective</em> (Language Science Press, 2017), which develops an HPSG/MRS-based computational model for cross-linguistic information structure.</p>
+                <p>Professor Song previously served as Associate Dean of the College of Liberal Arts and Director of the Center for Digital Humanities at Korea University. He leads the Computational Semantics Lab (SongLab), advancing research at the intersection of linguistic theory and data-driven approaches.</p>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ══════════════════ SITE FOOTER ══════════════════════════ -->
+  <footer class="site-footer">
+    <div class="footer-grid container">
+      <div class="footer-col">
+        <div class="footer-col-title">PACLIC 40</div>
+        <p>The 40th Pacific Asia Conference on Language, Information and Computation<br/>Taipei, Taiwan &nbsp;·&nbsp; December 10–12, 2026</p>
+      </div>
+      <div class="footer-col">
+        <div class="footer-col-title">Navigation</div>
+        <nav class="footer-nav-links">
+          <a href="index.html#home">Home</a>
+          <a href="index.html#program">Program</a>
+          <a href="speakers.html">Invited Speakers</a>
+          <a href="cfp.html">Call for Papers</a>
+          <a href="index.html#registration">Registration</a>
+          <a href="index.html#venue">Venue &amp; Travel</a>
+          <a href="index.html#committee">Committee</a>
+          <a href="index.html#faq">FAQ</a>
+          <a href="index.html#sponsors">Sponsors</a>
+        </nav>
+      </div>
+      <div class="footer-col">
+        <div class="footer-col-title">Previous Editions</div>
+        <p class="footer-prev-line">
+          <a href="https://vlsp.org.vn/paclic2025/" target="_blank" rel="noopener">PACLIC 39 (Hanoi, 2025)</a>
+          &nbsp;·&nbsp;
+          <a href="https://sites.google.com/view/paclic38" target="_blank" rel="noopener">PACLIC 38 (Tokyo, 2024)</a>
+          &nbsp;·&nbsp;
+          <a href="https://paclic2023.github.io/" target="_blank" rel="noopener">PACLIC 37 (Hong Kong, 2023)</a>
+        </p>
+      </div>
+    </div>
+    <div class="footer-bottom container">
+      <span>© 2026 PACLIC 40 Organising Committee &nbsp;·&nbsp; Graduate Institute of Linguistics, National Taiwan University</span>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
