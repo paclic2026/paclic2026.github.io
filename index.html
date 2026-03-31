@@ -23,19 +23,61 @@
       <!-- Brand -->
       <div class="sidebar-brand">
         <div class="brand-emblem">
-          <svg class="plum-svg" viewBox="0 0 60 60" xmlns="http://www.w3.org/2000/svg">
+          <svg class="plum-svg" viewBox="8 8 44 44" xmlns="http://www.w3.org/2000/svg">
+            <defs>
+              <linearGradient id="petalGrad" x1="0%" y1="100%" x2="0%" y2="0%">
+                <stop offset="0%" stop-color="#a82050"/>
+                <stop offset="100%" stop-color="#de6888"/>
+              </linearGradient>
+            </defs>
             <g transform="translate(30,30)">
-              <ellipse cx="0" cy="-16" rx="9" ry="12" fill="rgba(196,30,58,0.85)" transform="rotate(0)"/>
-              <ellipse cx="0" cy="-16" rx="9" ry="12" fill="rgba(196,30,58,0.85)" transform="rotate(72)"/>
-              <ellipse cx="0" cy="-16" rx="9" ry="12" fill="rgba(196,30,58,0.85)" transform="rotate(144)"/>
-              <ellipse cx="0" cy="-16" rx="9" ry="12" fill="rgba(196,30,58,0.85)" transform="rotate(216)"/>
-              <ellipse cx="0" cy="-16" rx="9" ry="12" fill="rgba(196,30,58,0.85)" transform="rotate(288)"/>
-              <circle cx="0" cy="0" r="7" fill="#C9972A"/>
-              <line x1="0" y1="0" x2="0" y2="-9" stroke="rgba(255,230,100,0.9)" stroke-width="1.2"/>
-              <line x1="0" y1="0" x2="8" y2="-5" stroke="rgba(255,230,100,0.9)" stroke-width="1.2"/>
-              <line x1="0" y1="0" x2="8" y2="5" stroke="rgba(255,230,100,0.9)" stroke-width="1.2"/>
-              <line x1="0" y1="0" x2="-8" y2="-5" stroke="rgba(255,230,100,0.9)" stroke-width="1.2"/>
-              <line x1="0" y1="0" x2="-8" y2="5" stroke="rgba(255,230,100,0.9)" stroke-width="1.2"/>
+              <!-- 5 petals -->
+              <path d="M0,-3 C-5,-5 -9,-9 -7.5,-15 C-6,-19 -2,-21 0,-19 C2,-21 6,-19 7.5,-15 C9,-9 5,-5 0,-3 Z" fill="url(#petalGrad)" stroke="#8a1438" stroke-width="0.4" transform="rotate(0)"/>
+              <path d="M0,-3 C-5,-5 -9,-9 -7.5,-15 C-6,-19 -2,-21 0,-19 C2,-21 6,-19 7.5,-15 C9,-9 5,-5 0,-3 Z" fill="url(#petalGrad)" stroke="#8a1438" stroke-width="0.4" transform="rotate(72)"/>
+              <path d="M0,-3 C-5,-5 -9,-9 -7.5,-15 C-6,-19 -2,-21 0,-19 C2,-21 6,-19 7.5,-15 C9,-9 5,-5 0,-3 Z" fill="url(#petalGrad)" stroke="#8a1438" stroke-width="0.4" transform="rotate(144)"/>
+              <path d="M0,-3 C-5,-5 -9,-9 -7.5,-15 C-6,-19 -2,-21 0,-19 C2,-21 6,-19 7.5,-15 C9,-9 5,-5 0,-3 Z" fill="url(#petalGrad)" stroke="#8a1438" stroke-width="0.4" transform="rotate(216)"/>
+              <path d="M0,-3 C-5,-5 -9,-9 -7.5,-15 C-6,-19 -2,-21 0,-19 C2,-21 6,-19 7.5,-15 C9,-9 5,-5 0,-3 Z" fill="url(#petalGrad)" stroke="#8a1438" stroke-width="0.4" transform="rotate(288)"/>
+              <!-- 5 long stamens -->
+              <g stroke="#f0c030" stroke-width="1.1" stroke-linecap="round">
+                <line x1="0" y1="0" x2="0"      y2="-12"/>
+                <line x1="0" y1="0" x2="11.41"  y2="-3.71"/>
+                <line x1="0" y1="0" x2="7.05"   y2="9.71"/>
+                <line x1="0" y1="0" x2="-7.05"  y2="9.71"/>
+                <line x1="0" y1="0" x2="-11.41" y2="-3.71"/>
+              </g>
+              <!-- 10 short stamens -->
+              <g stroke="#f0c030" stroke-width="0.8" stroke-linecap="round">
+                <line x1="0" y1="0" x2="-2.81" y2="-6.95"/>
+                <line x1="0" y1="0" x2="2.81"  y2="-6.95"/>
+                <line x1="0" y1="0" x2="5.75"  y2="-4.82"/>
+                <line x1="0" y1="0" x2="7.48"  y2="0.52"/>
+                <line x1="0" y1="0" x2="6.36"  y2="3.97"/>
+                <line x1="0" y1="0" x2="1.81"  y2="7.28"/>
+                <line x1="0" y1="0" x2="-1.81" y2="7.28"/>
+                <line x1="0" y1="0" x2="-6.36" y2="3.97"/>
+                <line x1="0" y1="0" x2="-7.48" y2="0.52"/>
+                <line x1="0" y1="0" x2="-5.75" y2="-4.82"/>
+              </g>
+              <!-- Anther dots -->
+              <g fill="#f0c030">
+                <circle cx="0"      cy="-12"   r="1.4"/>
+                <circle cx="11.41"  cy="-3.71" r="1.4"/>
+                <circle cx="7.05"   cy="9.71"  r="1.4"/>
+                <circle cx="-7.05"  cy="9.71"  r="1.4"/>
+                <circle cx="-11.41" cy="-3.71" r="1.4"/>
+                <circle cx="-2.81" cy="-6.95" r="0.9"/>
+                <circle cx="2.81"  cy="-6.95" r="0.9"/>
+                <circle cx="5.75"  cy="-4.82" r="0.9"/>
+                <circle cx="7.48"  cy="0.52"  r="0.9"/>
+                <circle cx="6.36"  cy="3.97"  r="0.9"/>
+                <circle cx="1.81"  cy="7.28"  r="0.9"/>
+                <circle cx="-1.81" cy="7.28"  r="0.9"/>
+                <circle cx="-6.36" cy="3.97"  r="0.9"/>
+                <circle cx="-7.48" cy="0.52"  r="0.9"/>
+                <circle cx="-5.75" cy="-4.82" r="0.9"/>
+              </g>
+              <!-- Gold centre -->
+              <circle cx="0" cy="0" r="3.8" fill="#c07808"/>
             </g>
           </svg>
         </div>
@@ -123,7 +165,7 @@
           <span>Taipei, Taiwan</span>
         </div>
         <div class="footer-dates">December 10–12, 2026</div>
-        <div class="footer-edition">40<sup>th</sup> Edition · Since 1987</div>
+<div class="footer-edition">40<sup>th</sup> Edition · Since 1987</div>
         <div class="footer-email">
           <a href="mailto:paclic2026@gmail.com">paclic2026@gmail.com</a>
         </div>
@@ -235,7 +277,7 @@
           <div class="about-text">
             <h2>About PACLIC</h2>
             <p>The Pacific Asia Conference on Language, Information and Computation (PACLIC) is a premier annual international conference that has brought together researchers in linguistics, computational linguistics, and natural language processing for four decades. Since 1987, PACLIC has served as a vital forum for advancing language science across the Asia-Pacific region and beyond.</p>
-            <p>PACLIC 40 will be hosted in <strong>Taipei, Taiwan</strong> — a vibrant intellectual and cultural hub where cutting-edge technology meets rich linguistic diversity. This milestone 40th edition invites scholars worldwide to explore the intersections of language, computation, and cultural diversity in the age of artificial intelligence.</p>
+            <p>PACLIC 40 will be hosted in <strong>Taipei, Taiwan</strong>, a vibrant intellectual and cultural hub where cutting-edge technology meets rich linguistic diversity. This milestone 40th edition invites scholars worldwide to explore the intersections of language, computation, and cultural diversity in the age of artificial intelligence.</p>
           </div>
         </div>
 
@@ -297,21 +339,21 @@
 
         <!-- Day 1 -->
         <div class="day-panel active" id="day1">
-          <div class="schedule-note"><svg viewBox="0 0 16 16" fill="currentColor" width="16"><path d="M8 1a7 7 0 100 14A7 7 0 008 1zm0 3a.75.75 0 01.75.75v3.5a.75.75 0 01-1.5 0v-3.5A.75.75 0 018 4zm0 8a1 1 0 110-2 1 1 0 010 2z"/></svg> Tentative — final program released after September 30, 2026.</div>
+          <div class="schedule-note"><svg viewBox="0 0 16 16" fill="currentColor" width="16"><path d="M8 1a7 7 0 100 14A7 7 0 008 1zm0 3a.75.75 0 01.75.75v3.5a.75.75 0 01-1.5 0v-3.5A.75.75 0 018 4zm0 8a1 1 0 110-2 1 1 0 010 2z"/></svg> Tentative. The final program will be released after September 30, 2026.</div>
           <table class="schedule-table">
             <thead><tr><th>Time</th><th>Event</th><th>Room</th></tr></thead>
             <tbody>
               <tr class="row-open"><td>09:00 – 09:30</td><td><strong>Registration &amp; Badge Collection</strong></td><td>Main Foyer</td></tr>
               <tr class="row-plenary"><td>09:30 – 10:30</td><td><strong>Opening Ceremony &amp; Keynote Address I</strong><br/><span class="row-sub">Speaker TBA</span></td><td>Main Auditorium</td></tr>
               <tr class="row-break"><td>10:30 – 11:00</td><td>Coffee Break &amp; Poster Setup</td><td>Lobby</td></tr>
-              <tr class="row-parallel"><td rowspan="2">11:00 – 12:30</td><td><strong>Session 1A</strong> — Topic TBA</td><td>Room A</td></tr>
-              <tr class="row-parallel"><td><strong>Session 1B</strong> — Topic TBA</td><td>Room B</td></tr>
+              <tr class="row-parallel"><td rowspan="2">11:00 – 12:30</td><td><strong>Session 1A</strong> (Topic TBA)</td><td>Room A</td></tr>
+              <tr class="row-parallel"><td><strong>Session 1B</strong> (Topic TBA)</td><td>Room B</td></tr>
               <tr class="row-break"><td>12:30 – 14:00</td><td>Lunch Break</td><td>Dining Hall</td></tr>
-              <tr class="row-parallel"><td rowspan="2">14:00 – 15:30</td><td><strong>Session 2A</strong> — Topic TBA</td><td>Room A</td></tr>
-              <tr class="row-parallel"><td><strong>Session 2B</strong> — Topic TBA</td><td>Room B</td></tr>
+              <tr class="row-parallel"><td rowspan="2">14:00 – 15:30</td><td><strong>Session 2A</strong> (Topic TBA)</td><td>Room A</td></tr>
+              <tr class="row-parallel"><td><strong>Session 2B</strong> (Topic TBA)</td><td>Room B</td></tr>
               <tr class="row-break"><td>15:30 – 16:00</td><td>Coffee Break</td><td>Lobby</td></tr>
-              <tr class="row-parallel"><td rowspan="2">16:00 – 17:30</td><td><strong>Session 3A</strong> — Topic TBA</td><td>Room A</td></tr>
-              <tr class="row-parallel"><td><strong>Session 3B</strong> — Topic TBA</td><td>Room B</td></tr>
+              <tr class="row-parallel"><td rowspan="2">16:00 – 17:30</td><td><strong>Session 3A</strong> (Topic TBA)</td><td>Room A</td></tr>
+              <tr class="row-parallel"><td><strong>Session 3B</strong> (Topic TBA)</td><td>Room B</td></tr>
               <tr class="row-social"><td>18:30 – 20:30</td><td><strong>🍽 Welcome Dinner</strong></td><td>TBA</td></tr>
             </tbody>
           </table>
@@ -319,20 +361,20 @@
 
         <!-- Day 2 -->
         <div class="day-panel" id="day2">
-          <div class="schedule-note"><svg viewBox="0 0 16 16" fill="currentColor" width="16"><path d="M8 1a7 7 0 100 14A7 7 0 008 1zm0 3a.75.75 0 01.75.75v3.5a.75.75 0 01-1.5 0v-3.5A.75.75 0 018 4zm0 8a1 1 0 110-2 1 1 0 010 2z"/></svg> Tentative — final program released after September 30, 2026.</div>
+          <div class="schedule-note"><svg viewBox="0 0 16 16" fill="currentColor" width="16"><path d="M8 1a7 7 0 100 14A7 7 0 008 1zm0 3a.75.75 0 01.75.75v3.5a.75.75 0 01-1.5 0v-3.5A.75.75 0 018 4zm0 8a1 1 0 110-2 1 1 0 010 2z"/></svg> Tentative. The final program will be released after September 30, 2026.</div>
           <table class="schedule-table">
             <thead><tr><th>Time</th><th>Event</th><th>Room</th></tr></thead>
             <tbody>
               <tr class="row-plenary"><td>09:00 – 10:00</td><td><strong>Keynote Address II</strong><br/><span class="row-sub">Speaker TBA</span></td><td>Main Auditorium</td></tr>
               <tr class="row-break"><td>10:00 – 10:30</td><td>Coffee Break</td><td>Lobby</td></tr>
-              <tr class="row-parallel"><td rowspan="2">10:30 – 12:00</td><td><strong>Session 4A</strong> — Topic TBA</td><td>Room A</td></tr>
-              <tr class="row-parallel"><td><strong>Session 4B</strong> — Topic TBA</td><td>Room B</td></tr>
+              <tr class="row-parallel"><td rowspan="2">10:30 – 12:00</td><td><strong>Session 4A</strong> (Topic TBA)</td><td>Room A</td></tr>
+              <tr class="row-parallel"><td><strong>Session 4B</strong> (Topic TBA)</td><td>Room B</td></tr>
               <tr class="row-break"><td>12:00 – 13:30</td><td>Lunch Break</td><td>Dining Hall</td></tr>
-              <tr class="row-parallel"><td rowspan="2">13:30 – 15:00</td><td><strong>Session 5A</strong> — Topic TBA</td><td>Room A</td></tr>
-              <tr class="row-parallel"><td><strong>Session 5B</strong> — Topic TBA</td><td>Room B</td></tr>
+              <tr class="row-parallel"><td rowspan="2">13:30 – 15:00</td><td><strong>Session 5A</strong> (Topic TBA)</td><td>Room A</td></tr>
+              <tr class="row-parallel"><td><strong>Session 5B</strong> (Topic TBA)</td><td>Room B</td></tr>
               <tr class="row-break"><td>15:00 – 15:30</td><td>Coffee Break</td><td>Lobby</td></tr>
-              <tr class="row-parallel"><td rowspan="2">15:30 – 17:00</td><td><strong>Session 6A</strong> — Topic TBA</td><td>Room A</td></tr>
-              <tr class="row-parallel"><td><strong>Session 6B</strong> — Topic TBA</td><td>Room B</td></tr>
+              <tr class="row-parallel"><td rowspan="2">15:30 – 17:00</td><td><strong>Session 6A</strong> (Topic TBA)</td><td>Room A</td></tr>
+              <tr class="row-parallel"><td><strong>Session 6B</strong> (Topic TBA)</td><td>Room B</td></tr>
               <tr class="row-social"><td>19:00 – 22:00</td><td><strong>🎉 Gala Dinner &amp; Banquet</strong></td><td>TBA</td></tr>
             </tbody>
           </table>
@@ -340,40 +382,23 @@
 
         <!-- Day 3 -->
         <div class="day-panel" id="day3">
-          <div class="schedule-note"><svg viewBox="0 0 16 16" fill="currentColor" width="16"><path d="M8 1a7 7 0 100 14A7 7 0 008 1zm0 3a.75.75 0 01.75.75v3.5a.75.75 0 01-1.5 0v-3.5A.75.75 0 018 4zm0 8a1 1 0 110-2 1 1 0 010 2z"/></svg> Tentative — final program released after September 30, 2026.</div>
+          <div class="schedule-note"><svg viewBox="0 0 16 16" fill="currentColor" width="16"><path d="M8 1a7 7 0 100 14A7 7 0 008 1zm0 3a.75.75 0 01.75.75v3.5a.75.75 0 01-1.5 0v-3.5A.75.75 0 018 4zm0 8a1 1 0 110-2 1 1 0 010 2z"/></svg> Tentative. The final program will be released after September 30, 2026.</div>
           <table class="schedule-table">
             <thead><tr><th>Time</th><th>Event</th><th>Room</th></tr></thead>
             <tbody>
               <tr class="row-plenary"><td>09:00 – 10:00</td><td><strong>Keynote Address III</strong><br/><span class="row-sub">Speaker TBA</span></td><td>Main Auditorium</td></tr>
               <tr class="row-break"><td>10:00 – 10:30</td><td>Coffee Break</td><td>Lobby</td></tr>
-              <tr class="row-parallel"><td rowspan="2">10:30 – 12:00</td><td><strong>Session 7A</strong> — Topic TBA</td><td>Room A</td></tr>
-              <tr class="row-parallel"><td><strong>Session 7B</strong> — Topic TBA</td><td>Room B</td></tr>
+              <tr class="row-parallel"><td rowspan="2">10:30 – 12:00</td><td><strong>Session 7A</strong> (Topic TBA)</td><td>Room A</td></tr>
+              <tr class="row-parallel"><td><strong>Session 7B</strong> (Topic TBA)</td><td>Room B</td></tr>
               <tr class="row-break"><td>12:00 – 13:30</td><td>Lunch Break</td><td>Dining Hall</td></tr>
-              <tr class="row-parallel"><td rowspan="2">13:30 – 15:00</td><td><strong>Session 8A</strong> — Topic TBA</td><td>Room A</td></tr>
-              <tr class="row-parallel"><td><strong>Session 8B</strong> — Topic TBA</td><td>Room B</td></tr>
+              <tr class="row-parallel"><td rowspan="2">13:30 – 15:00</td><td><strong>Session 8A</strong> (Topic TBA)</td><td>Room A</td></tr>
+              <tr class="row-parallel"><td><strong>Session 8B</strong> (Topic TBA)</td><td>Room B</td></tr>
               <tr class="row-plenary"><td>15:00 – 15:30</td><td><strong>Closing Ceremony &amp; Awards</strong></td><td>Main Auditorium</td></tr>
-              <tr class="row-social"><td>15:30+</td><td><strong>🏯 Optional City Tour</strong> — Taipei highlights</td><td>Meeting Point TBA</td></tr>
+              <tr class="row-social"><td>15:30+</td><td><strong>🏯 Optional City Tour</strong>: Taipei highlights</td><td>Meeting Point TBA</td></tr>
             </tbody>
           </table>
         </div>
 
-        <!-- Speakers notice card -->
-        <div class="block reveal">
-          <div class="notice-card">
-            <p>🎤 Meet our four distinguished invited speakers for PACLIC 40.</p>
-            <a href="speakers.html" class="btn btn-outline">View Invited Speakers →</a>
-          </div>
-        </div>
-
-        <!-- Social Events -->
-        <div class="block reveal">
-          <div class="block-header"><h2>Social Events</h2></div>
-          <div class="events-grid">
-            <div class="event-card"><div class="event-icon">🥢</div><h3>Welcome Dinner</h3><p class="event-date">December · Evening</p><p>An informal gathering to welcome all participants to Taipei — a warm start to three days of scholarly exchange.</p></div>
-            <div class="event-card"><div class="event-icon">🎊</div><h3>Gala Banquet</h3><p class="event-date">December · Evening</p><p>Experience the richness of Taiwanese cuisine at the conference banquet. A celebration of PACLIC's 40th anniversary.</p></div>
-            <div class="event-card"><div class="event-icon">🏯</div><h3>City Tour</h3><p class="event-date">December · Afternoon (Optional)</p><p>A guided tour of Taipei's highlights — from night markets to historic temples and the iconic Taipei 101.</p></div>
-          </div>
-        </div>
 
       </div>
     </section>
@@ -434,7 +459,7 @@
             <div class="guide-item"><span class="guide-label">Format</span><p>ACL 2026 two-column format using official ACL style files.</p></div>
             <div class="guide-item"><span class="guide-label">Review</span><p>Double-blind. Authors must not indicate names or affiliations.</p></div>
             <div class="guide-item"><span class="guide-label">Platform</span><p>CMT (submission link to be announced).</p></div>
-            <div class="guide-item"><span class="guide-label">Multiple Submissions</span><p>Double submissions allowed — must be declared at submission time.</p></div>
+            <div class="guide-item"><span class="guide-label">Multiple Submissions</span><p>Double submissions allowed; must be declared at submission time.</p></div>
           </div>
           <div style="display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:14px;margin-top:16px;">
             <div class="pub-tags" style="margin:0;">
@@ -511,6 +536,24 @@
       </div>
     </section>
 
+    <!-- ══════════════════ SOCIAL EVENTS ════════════════════════ -->
+    <section id="social" class="section section-alt">
+      <div class="section-intro container">
+        <div class="block-tag">Conference Social Programme</div>
+        <h2 class="section-title">Social Events</h2>
+        <p class="section-desc">Join us for a series of social events celebrating PACLIC's 40th anniversary and the vibrant culture of Taipei.</p>
+      </div>
+      <div class="section-body container">
+        <div class="block reveal">
+          <div class="events-grid">
+            <div class="event-card"><div class="event-icon">🥢</div><h3>Welcome Dinner</h3><p class="event-date">December · Evening</p><p>An informal gathering to welcome all participants to Taipei, marking a warm start to three days of scholarly exchange.</p></div>
+            <div class="event-card"><div class="event-icon">🎊</div><h3>Gala Banquet</h3><p class="event-date">December · Evening</p><p>Experience the richness of Taiwanese cuisine at the conference banquet. A celebration of PACLIC's 40th anniversary.</p></div>
+            <div class="event-card"><div class="event-icon">🏯</div><h3>City Tour</h3><p class="event-date">December · Afternoon (Optional)</p><p>A guided tour of Taipei's highlights, from night markets to historic temples and the iconic Taipei 101.</p></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
     <!-- ══════════════════ VENUE & TRAVEL ════════════════════════ -->
     <section id="venue" class="section section-alt">
       <div class="section-intro container">
@@ -527,24 +570,16 @@
           </div>
           <div class="venue-info">
             <div class="venue-detail">
-              <strong>Venue:</strong> National Taiwan University (NTU) — More details will be updated soon<br/>
+              <strong>Venue:</strong> National Taiwan University (NTU). More details will be updated soon<br/>
               <strong>Address:</strong> No. 1, Sec. 4, Roosevelt Rd., Da'an District, Taipei City 106<br/>
               <strong>City:</strong> Taipei, Taiwan
             </div>
             <div class="map-placeholder">
-              <svg viewBox="0 0 400 220" xmlns="http://www.w3.org/2000/svg" fill="none">
-                <rect width="400" height="220" fill="#e8f0f7" rx="8"/>
-                <rect x="40" y="40" width="320" height="140" rx="4" fill="#d0e4f5"/>
-                <line x1="40" y1="110" x2="360" y2="110" stroke="#b8cfe8" stroke-width="3"/>
-                <line x1="200" y1="40" x2="200" y2="180" stroke="#b8cfe8" stroke-width="3"/>
-                <line x1="40" y1="75" x2="360" y2="75" stroke="#c8dced" stroke-width="1.5"/>
-                <line x1="40" y1="145" x2="360" y2="145" stroke="#c8dced" stroke-width="1.5"/>
-                <line x1="130" y1="40" x2="130" y2="180" stroke="#c8dced" stroke-width="1.5"/>
-                <line x1="270" y1="40" x2="270" y2="180" stroke="#c8dced" stroke-width="1.5"/>
-                <circle cx="200" cy="110" r="16" fill="#C41E3A" opacity="0.9"/>
-                <text x="200" y="115" text-anchor="middle" fill="white" font-size="11" font-weight="bold" font-family="sans-serif">NTU</text>
-                <text x="200" y="205" text-anchor="middle" fill="#4a6680" font-size="11" font-family="sans-serif">Taipei, Taiwan (Map coming soon)</text>
-              </svg>
+              <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3615.375847979177!2d121.53823731538843!3d25.017408383982077!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3442a9681618dbbd%3A0x10069bba0f862e60!2sNational%20Taiwan%20University!5e0!3m2!1sen!2stw!4v1617000000000!5m2!1sen!2stw"
+                width="100%" height="260" style="border:0;border-radius:8px;display:block;"
+                allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" title="National Taiwan University on Google Maps">
+              </iframe>
             </div>
           </div>
         </div>
@@ -570,6 +605,7 @@
             </div>
           </div>
         </div>
+
 
         <div class="card visa-card reveal">
           <div class="card-head">
@@ -740,7 +776,7 @@
         <div class="sponsor-enquiry reveal">
           <svg width="40" height="40" fill="none" viewBox="0 0 24 24" stroke="currentColor" style="color:var(--tw-jade);margin-bottom:16px"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M21 7.5l-9-5.25L3 7.5m18 0l-9 5.25m9-5.25v9l-9 5.25M3 7.5l9 5.25M3 7.5v9l9 5.25m0-9v9"/></svg>
           <h3>Interested in sponsoring PACLIC 40?</h3>
-          <p>We are currently welcoming sponsors and institutional partners. For sponsorship enquiries, please reach out to us — we would love to discuss how we can collaborate.</p>
+          <p>We are currently welcoming sponsors and institutional partners. For sponsorship enquiries, please reach out to us. We would love to discuss how we can collaborate.</p>
           <a href="mailto:paclic2026@gmail.com?subject=Sponsorship%20Enquiry%20%E2%80%94%20PACLIC%2040" class="btn btn-primary">Contact Us About Sponsorship</a>
         </div>
       </div>
@@ -790,13 +826,13 @@
     <div class="footer-bottom container">
       <span>© 2026 PACLIC 40 Organising Committee &nbsp;·&nbsp; Graduate Institute of Linguistics, National Taiwan University</span>
       <div class="footer-socials">
-        <a href="#" aria-label="Twitter / X">
+        <a href="#" onclick="window.open('https://twitter.com/intent/tweet?text=PACLIC+40+%E2%80%94+The+40th+Pacific+Asia+Conference+on+Language%2C+Information+and+Computation.+Taipei%2C+Taiwan%2C+Dec+10%E2%80%9312+2026.&url='+encodeURIComponent(location.href),'_blank');return false;" aria-label="Share on X">
           <svg viewBox="0 0 22 22" fill="currentColor" width="16" height="16"><path d="M17.53 3H20.5L14.2 10.28 21.5 20h-5.9l-4.5-5.88L5.84 20H2.86l6.72-7.69L2.5 3h6.05l4.09 5.34L17.53 3zm-1 15.25h1.64L5.57 4.64H3.82l12.71 13.61z"/></svg>
-          Twitter / X
+          Share on X
         </a>
-        <a href="#" aria-label="GitHub">
-          <svg viewBox="0 0 22 22" fill="currentColor" width="16" height="16"><path d="M11 2C6.05 2 2 6.05 2 11c0 3.97 2.57 7.33 6.14 8.52.45.08.61-.2.61-.43v-1.5c-2.5.54-3.03-1.2-3.03-1.2-.41-1.04-1-1.32-1-1.32-.82-.56.06-.55.06-.55.9.06 1.38.93 1.38.93.8 1.37 2.1.97 2.61.74.08-.58.31-.97.57-1.19-1.99-.23-4.08-1-4.08-4.43 0-.98.35-1.78.93-2.41-.09-.23-.4-1.14.09-2.37 0 0 .76-.24 2.48.93a8.6 8.6 0 012.26-.3c.77 0 1.54.1 2.26.3 1.72-1.17 2.48-.93 2.48-.93.49 1.23.18 2.14.09 2.37.58.63.93 1.43.93 2.41 0 3.44-2.1 4.2-4.1 4.42.32.28.61.83.61 1.67v2.48c0 .24.16.52.62.43C16.43 18.33 19 14.97 19 11c0-4.95-4.05-9-8-9z"/></svg>
-          GitHub
+        <a href="#" onclick="window.open('https://www.facebook.com/sharer/sharer.php?u='+encodeURIComponent(location.href),'_blank');return false;" aria-label="Share on Facebook">
+          <svg viewBox="0 0 22 22" fill="currentColor" width="16" height="16"><path d="M18 2h-3a5 5 0 00-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 011-1h3z"/></svg>
+          Share on Facebook
         </a>
       </div>
     </div>
