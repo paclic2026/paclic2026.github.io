@@ -117,17 +117,11 @@ strong { font-weight: 700; }
   background: linear-gradient(90deg, transparent, rgba(254,0,0,.35), transparent);
 }
 .brand-emblem {
-  flex-shrink: 0; width: 72px; height: 72px;
-  background: rgba(254,0,0,.08); border-radius: 50%;
-  border: 1.5px solid rgba(254,0,0,.35);
   display: flex; align-items: center; justify-content: center;
-  animation: plum-pulse 4s ease-in-out infinite;
+  width: 100%; padding: 12px 0;
 }
-@keyframes plum-pulse {
-  0%,100% { box-shadow: 0 0 0 0 rgba(254,0,0,.0); }
-  50%      { box-shadow: 0 0 0 8px rgba(254,0,0,.15); }
-}
-.plum-svg { width: 56px; height: 56px; }
+.plum-svg { width: 180px; height: 180px; }
+.brand-info { display: none; }
 .brand-info { flex: 1; min-width: 0; }
 .brand-name {
   font-family: 'Source Serif 4', serif; font-size: 1.5rem; font-weight: 700;
@@ -211,8 +205,8 @@ strong { font-weight: 700; }
   background:
     /* warm white veil on left; opens wide to the photo on the right */
     linear-gradient(to right, rgba(255,252,248,.95) 0%, rgba(255,252,248,.75) 34%, rgba(255,252,248,.10) 60%, rgba(255,252,248,.0) 100%),
-    /* Taipei 101 under clear blue sky — Pexels free licence, photo 981153 */
-    url('https://images.pexels.com/photos/6138797/pexels-photo-6138797.jpeg?w=2560&q=98')
+    /* Taipei 101 — Pexels free licence, photo 6138797, hosted locally */
+    url('../images/taipei-hero.jpg')
     center 50% / cover no-repeat,
     /* gradient fallback */
     linear-gradient(160deg, #f5e0d5 0%, #f8ede8 100%);
@@ -632,22 +626,22 @@ strong { font-weight: 700; }
 .spk-inst { font-size: .8rem; color: var(--text-mid); line-height: 1.4; }
 
 /* ── Full speaker profile (speakers.html) ──────────────────── */
-.spk-profiles { display: flex; flex-direction: column; gap: 28px; }
+.spk-profiles { display: flex; flex-direction: column; gap: 24px; }
 .spk-profile {
-  display: grid; grid-template-columns: 200px 1fr; gap: 36px; align-items: start;
-  padding: 32px; background: var(--white); border-radius: var(--radius);
+  display: grid; grid-template-columns: 180px 1fr; gap: 24px; align-items: start;
+  padding: 28px 32px; background: var(--white); border-radius: var(--radius);
   border: 1.5px solid var(--border); box-shadow: var(--shadow-sm);
 }
 .spk-profile-photo {
-  width: 240px; height: 280px; border-radius: 12px; overflow: hidden;
+  width: 180px; height: 220px; border-radius: 12px; overflow: hidden;
   border: 3px solid rgba(201,151,42,.4); justify-self: center;
   background: linear-gradient(135deg, rgba(13,31,60,.07), rgba(201,151,42,.06));
 }
 .spk-profile-photo img { width: 100%; height: 100%; object-fit: cover; object-position: center top; }
 .spk-profile-name { font-family: 'Source Serif 4', serif; font-size: 1.25rem; font-weight: 700; color: var(--text); margin-bottom: 4px; }
-.spk-profile-affil { font-size: 1rem; font-weight: 600; color: var(--text-mid); margin: 0 0 16px; padding-bottom: 16px; border-bottom: 1px solid var(--border); }
-.spk-profile-bio p { font-size: .95rem; color: var(--text-mid); line-height: 1.75; margin: 0; }
-.spk-profile-bio p + p { margin-top: 10px; }
+.spk-profile-affil { font-size: 1rem; font-weight: 600; color: var(--text-mid); margin: 0 0 14px; padding-bottom: 14px; border-bottom: 1px solid var(--border); }
+.spk-profile-bio p { font-size: .92rem; color: var(--text-mid); line-height: 1.65; margin: 0; }
+.spk-profile-bio p + p { margin-top: 8px; }
 
 @media (max-width: 900px) {
   .speakers-teaser { grid-template-columns: 1fr 1fr; }
@@ -656,6 +650,20 @@ strong { font-weight: 700; }
   .spk-profile-affil { text-align: left; }
   .spk-profile-bio p { text-align: left; }
 }
+
+/* ═══════════════════════════════════════════════════════════════
+   SHARE BAR
+═══════════════════════════════════════════════════════════════ */
+.share-bar { background: var(--bg-alt); border-top: 1px solid var(--border); border-bottom: 1px solid var(--border); padding: 18px 0; margin-left: var(--sidebar-w); }
+.share-bar-inner { display: flex; align-items: center; gap: 20px; flex-wrap: wrap; }
+.share-label { font-size: .8rem; font-weight: 700; letter-spacing: 1.4px; text-transform: uppercase; color: var(--text-mid); white-space: nowrap; }
+.share-btns { display: flex; gap: 10px; flex-wrap: wrap; }
+.share-btn { display: inline-flex; align-items: center; gap: 7px; padding: 9px 18px; border-radius: 6px; font-size: .84rem; font-weight: 600; text-decoration: none; transition: transform .15s, box-shadow .15s, filter .15s; }
+.share-btn:hover { transform: translateY(-2px); box-shadow: 0 4px 14px rgba(0,0,0,.18); filter: brightness(1.08); }
+.share-btn svg { flex-shrink: 0; }
+.share-x  { background: #000; color: #fff; }
+.share-li { background: #0a66c2; color: #fff; }
+.share-fb { background: #1877f2; color: #fff; }
 
 /* ═══════════════════════════════════════════════════════════════
    SITE FOOTER
@@ -758,6 +766,9 @@ strong { font-weight: 700; }
   .mobile-toggle { display: flex; }
   #main { margin-left: 0; }
   .site-footer { margin-left: 0; }
+  .share-bar { margin-left: 0; }
+  .share-bar-inner { justify-content: center; }
+  .share-btns { justify-content: center; }
 
   .hero { min-height: 520px; max-height: none; height: 90vh; }
 

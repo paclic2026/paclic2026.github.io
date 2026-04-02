@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 420 420" width="150mm" height="150mm">
+  <defs>
+    <style>@import url('https://fonts.googleapis.com/css2?family=Source+Serif+4:wght@700&amp;family=Source+Sans+3:wght@600&amp;display=swap');</style>
+    <linearGradient id="pG" x1="0%" y1="100%" x2="0%" y2="0%">
+      <stop offset="0%" stop-color="#a82050"/>
+      <stop offset="100%" stop-color="#de6888"/>
+    </linearGradient>
+    <path id="topArc"  d="M 80.1,135 A 150,150 0 0,1 339.9,135"/>
+    <path id="botArc"  d="M 54.12,120 A 180,180 0 1,0 365.88,120"/>
+    <path id="nameArc" d="M 73.13,131 A 158,158 0 1,0 346.87,131"/>
+  </defs>
+
+  <!-- Outer double ring -->
+  <circle cx="210" cy="210" r="205" fill="none" stroke="#a82050" stroke-width="2.8"/>
+  <circle cx="210" cy="210" r="196" fill="none" stroke="#a82050" stroke-width="0.7"/>
+
+  <!-- PCB pad ring between inner separator rings -->
+  <line x1="344.80" y1="210.00" x2="349.20" y2="210.00" stroke="#3a4a6a" stroke-width="1.4" opacity="0.42"/>
+  <circle cx="344.80" cy="210.00" r="1.5" fill="#3a4a6a" opacity="0.38"/>
+  <line x1="341.85" y1="238.03" x2="346.16" y2="238.94" stroke="#3a4a6a" stroke-width="1.4" opacity="0.42"/>
+  <circle cx="341.85" cy="238.03" r="1.5" fill="#3a4a6a" opacity="0.38"/>
+  <line x1="333.15" y1="264.83" x2="337.17" y2="266.62" stroke="#3a4a6a" stroke-width="1.4" opacity="0.42"/>
+  <circle cx="333.15" cy="264.83" r="1.5" fill="#3a4a6a" opacity="0.38"/>
+  <line x1="319.06" y1="289.23" x2="322.62" y2="291.82" stroke="#3a4a6a" stroke-width="1.4" opacity="0.42"/>
+  <circle cx="319.06" cy="289.23" r="1.5" fill="#3a4a6a" opacity="0.38"/>
+  <line x1="300.20" y1="310.18" x2="303.14" y2="313.45" stroke="#3a4a6a" stroke-width="1.4" opacity="0.42"/>
+  <circle cx="300.20" cy="310.18" r="1.5" fill="#3a4a6a" opacity="0.38"/>
+  <line x1="277.40" y1="326.74" x2="279.60" y2="330.55" stroke="#3a4a6a" stroke-width="1.4" opacity="0.42"/>
+  <circle cx="277.40" cy="326.74" r="1.5" fill="#3a4a6a" opacity="0.38"/>
+  <line x1="251.66" y1="338.20" x2="253.02" y2="342.39" stroke="#3a4a6a" stroke-width="1.4" opacity="0.42"/>
+  <circle cx="251.66" cy="338.20" r="1.5" fill="#3a4a6a" opacity="0.38"/>
+  <line x1="224.09" y1="344.06" x2="224.55" y2="348.44" stroke="#3a4a6a" stroke-width="1.4" opacity="0.42"/>
+  <circle cx="224.09" cy="344.06" r="1.5" fill="#3a4a6a" opacity="0.38"/>
+  <line x1="195.91" y1="344.06" x2="195.45" y2="348.44" stroke="#3a4a6a" stroke-width="1.4" opacity="0.42"/>
+  <circle cx="195.91" cy="344.06" r="1.5" fill="#3a4a6a" opacity="0.38"/>
+  <line x1="168.34" y1="338.20" x2="166.98" y2="342.39" stroke="#3a4a6a" stroke-width="1.4" opacity="0.42"/>
+  <circle cx="168.34" cy="338.20" r="1.5" fill="#3a4a6a" opacity="0.38"/>
+  <line x1="142.60" y1="326.74" x2="140.40" y2="330.55" stroke="#3a4a6a" stroke-width="1.4" opacity="0.42"/>
+  <circle cx="142.60" cy="326.74" r="1.5" fill="#3a4a6a" opacity="0.38"/>
+  <line x1="119.80" y1="310.18" x2="116.86" y2="313.45" stroke="#3a4a6a" stroke-width="1.4" opacity="0.42"/>
+  <circle cx="119.80" cy="310.18" r="1.5" fill="#3a4a6a" opacity="0.38"/>
+  <line x1="100.94" y1="289.23" x2="97.38" y2="291.82" stroke="#3a4a6a" stroke-width="1.4" opacity="0.42"/>
+  <circle cx="100.94" cy="289.23" r="1.5" fill="#3a4a6a" opacity="0.38"/>
+  <line x1="86.85" y1="264.83" x2="82.83" y2="266.62" stroke="#3a4a6a" stroke-width="1.4" opacity="0.42"/>
+  <circle cx="86.85" cy="264.83" r="1.5" fill="#3a4a6a" opacity="0.38"/>
+  <line x1="78.15" y1="238.03" x2="73.84" y2="238.94" stroke="#3a4a6a" stroke-width="1.4" opacity="0.42"/>
+  <circle cx="78.15" cy="238.03" r="1.5" fill="#3a4a6a" opacity="0.38"/>
+  <line x1="75.20" y1="210.00" x2="70.80" y2="210.00" stroke="#3a4a6a" stroke-width="1.4" opacity="0.42"/>
+  <circle cx="75.20" cy="210.00" r="1.5" fill="#3a4a6a" opacity="0.38"/>
+  <line x1="78.15" y1="181.97" x2="73.84" y2="181.06" stroke="#3a4a6a" stroke-width="1.4" opacity="0.42"/>
+  <circle cx="78.15" cy="181.97" r="1.5" fill="#3a4a6a" opacity="0.38"/>
+  <line x1="86.85" y1="155.17" x2="82.83" y2="153.38" stroke="#3a4a6a" stroke-width="1.4" opacity="0.42"/>
+  <circle cx="86.85" cy="155.17" r="1.5" fill="#3a4a6a" opacity="0.38"/>
+  <line x1="100.94" y1="130.77" x2="97.38" y2="128.18" stroke="#3a4a6a" stroke-width="1.4" opacity="0.42"/>
+  <circle cx="100.94" cy="130.77" r="1.5" fill="#3a4a6a" opacity="0.38"/>
+  <line x1="119.80" y1="109.82" x2="116.86" y2="106.55" stroke="#3a4a6a" stroke-width="1.4" opacity="0.42"/>
+  <circle cx="119.80" cy="109.82" r="1.5" fill="#3a4a6a" opacity="0.38"/>
+  <line x1="142.60" y1="93.26" x2="140.40" y2="89.45" stroke="#3a4a6a" stroke-width="1.4" opacity="0.42"/>
+  <circle cx="142.60" cy="93.26" r="1.5" fill="#3a4a6a" opacity="0.38"/>
+  <line x1="168.34" y1="81.80" x2="166.98" y2="77.61" stroke="#3a4a6a" stroke-width="1.4" opacity="0.42"/>
+  <circle cx="168.34" cy="81.80" r="1.5" fill="#3a4a6a" opacity="0.38"/>
+  <line x1="195.91" y1="75.94" x2="195.45" y2="71.56" stroke="#3a4a6a" stroke-width="1.4" opacity="0.42"/>
+  <circle cx="195.91" cy="75.94" r="1.5" fill="#3a4a6a" opacity="0.38"/>
+  <line x1="224.09" y1="75.94" x2="224.55" y2="71.56" stroke="#3a4a6a" stroke-width="1.4" opacity="0.42"/>
+  <circle cx="224.09" cy="75.94" r="1.5" fill="#3a4a6a" opacity="0.38"/>
+  <line x1="251.66" y1="81.80" x2="253.02" y2="77.61" stroke="#3a4a6a" stroke-width="1.4" opacity="0.42"/>
+  <circle cx="251.66" cy="81.80" r="1.5" fill="#3a4a6a" opacity="0.38"/>
+  <line x1="277.40" y1="93.26" x2="279.60" y2="89.45" stroke="#3a4a6a" stroke-width="1.4" opacity="0.42"/>
+  <circle cx="277.40" cy="93.26" r="1.5" fill="#3a4a6a" opacity="0.38"/>
+  <line x1="300.20" y1="109.82" x2="303.14" y2="106.55" stroke="#3a4a6a" stroke-width="1.4" opacity="0.42"/>
+  <circle cx="300.20" cy="109.82" r="1.5" fill="#3a4a6a" opacity="0.38"/>
+  <line x1="319.06" y1="130.77" x2="322.62" y2="128.18" stroke="#3a4a6a" stroke-width="1.4" opacity="0.42"/>
+  <circle cx="319.06" cy="130.77" r="1.5" fill="#3a4a6a" opacity="0.38"/>
+  <line x1="333.15" y1="155.17" x2="337.17" y2="153.38" stroke="#3a4a6a" stroke-width="1.4" opacity="0.42"/>
+  <circle cx="333.15" cy="155.17" r="1.5" fill="#3a4a6a" opacity="0.38"/>
+  <line x1="341.85" y1="181.97" x2="346.16" y2="181.06" stroke="#3a4a6a" stroke-width="1.4" opacity="0.42"/>
+  <circle cx="341.85" cy="181.97" r="1.5" fill="#3a4a6a" opacity="0.38"/>
+
+  <!-- Inner separator ring -->
+  <circle cx="210" cy="210" r="140" fill="none" stroke="#a82050" stroke-width="1.3"/>
+  <circle cx="210" cy="210" r="134" fill="none" stroke="#a82050" stroke-width="0.5"/>
+
+  <!-- Arc texts -->
+  <text font-family="'Source Serif 4', Georgia, serif" font-weight="700" font-size="40" fill="#D4A017" letter-spacing="8">
+    <textPath href="#topArc" startOffset="50%" text-anchor="middle">PACLIC 40</textPath>
+  </text>
+  <text font-family="'Source Sans 3', 'Helvetica Neue', Arial, sans-serif" font-weight="600" font-size="11.5" fill="#1b2a42" letter-spacing="2.0">
+    <textPath href="#botArc" startOffset="50%" text-anchor="middle">NATIONAL TAIWAN UNIVERSITY · DECEMBER 10–12, 2026</textPath>
+  </text>
+  <text font-family="'Source Sans 3', 'Helvetica Neue', Arial, sans-serif" font-weight="600" font-size="14.5" fill="#003DA5" letter-spacing="1.2">
+    <textPath href="#nameArc" startOffset="50%" text-anchor="middle">PACIFIC ASIA CONFERENCE ON LANGUAGE, INFORMATION AND COMPUTATION</textPath>
+  </text>
+
+  <!-- Plum blossom -->
+  <g transform="translate(210,210)">
+    <path d="M0,-12 C-20,-20 -36,-36 -30,-60 C-24,-76 -8,-84 0,-76 C8,-84 24,-76 30,-60 C36,-36 20,-20 0,-12 Z" fill="url(#pG)" stroke="#8a1438" stroke-width="1.5" transform="rotate(0)"/>
+    <path d="M0,-12 C-20,-20 -36,-36 -30,-60 C-24,-76 -8,-84 0,-76 C8,-84 24,-76 30,-60 C36,-36 20,-20 0,-12 Z" fill="url(#pG)" stroke="#8a1438" stroke-width="1.5" transform="rotate(72)"/>
+    <path d="M0,-12 C-20,-20 -36,-36 -30,-60 C-24,-76 -8,-84 0,-76 C8,-84 24,-76 30,-60 C36,-36 20,-20 0,-12 Z" fill="url(#pG)" stroke="#8a1438" stroke-width="1.5" transform="rotate(144)"/>
+    <path d="M0,-12 C-20,-20 -36,-36 -30,-60 C-24,-76 -8,-84 0,-76 C8,-84 24,-76 30,-60 C36,-36 20,-20 0,-12 Z" fill="url(#pG)" stroke="#8a1438" stroke-width="1.5" transform="rotate(216)"/>
+    <path d="M0,-12 C-20,-20 -36,-36 -30,-60 C-24,-76 -8,-84 0,-76 C8,-84 24,-76 30,-60 C36,-36 20,-20 0,-12 Z" fill="url(#pG)" stroke="#8a1438" stroke-width="1.5" transform="rotate(288)"/>
+    <!-- Long stamens -->
+    <g stroke="#f0c030" stroke-width="1.5" stroke-linecap="round" fill="none">
+      <path d="M 0,0 Q -10.00,-24.00   0,-48"/>
+      <path d="M 0,0 Q  19.76,-16.92  45.64,-14.84"/>
+      <path d="M 0,0 Q  22.20, 13.52  28.20, 38.84"/>
+      <path d="M 0,0 Q  -6.04, 25.28 -28.20, 38.84"/>
+      <path d="M 0,0 Q -25.92,  2.12 -45.64,-14.84"/>
+    </g>
+    <!-- Short stamens -->
+    <g stroke="#f0c030" stroke-width="1.1" stroke-linecap="round" fill="none">
+      <path d="M 0,0 Q -11.20,-11.68 -11.24,-27.80"/>
+      <path d="M 0,0 Q   0.08,-16.16  11.24,-27.80"/>
+      <path d="M 0,0 Q   7.64,-14.24  23.00,-19.28"/>
+      <path d="M 0,0 Q  15.40, -4.96  29.92,  2.08"/>
+      <path d="M 0,0 Q  15.92,  2.88  25.44, 15.88"/>
+      <path d="M 0,0 Q   9.48, 13.12   7.24, 29.12"/>
+      <path d="M 0,0 Q   2.20, 16.00  -7.24, 29.12"/>
+      <path d="M 0,0 Q  -9.52, 13.04 -25.44, 15.88"/>
+      <path d="M 0,0 Q -14.52,  7.04 -29.92,  2.08"/>
+      <path d="M 0,0 Q -15.32, -5.04 -23.00,-19.28"/>
+    </g>
+    <!-- Long anther beads -->
+    <g fill="#f0c030">
+      <circle cx="  0"    cy="-48"    r="5.2"/>
+      <circle cx=" 45.64" cy="-14.84" r="5.2"/>
+      <circle cx=" 28.20" cy=" 38.84" r="5.2"/>
+      <circle cx="-28.20" cy=" 38.84" r="5.2"/>
+      <circle cx="-45.64" cy="-14.84" r="5.2"/>
+    </g>
+    <!-- Short anther beads -->
+    <g fill="#f0c030">
+      <circle cx="-11.24" cy="-27.80" r="3.3"/>
+      <circle cx=" 11.24" cy="-27.80" r="3.3"/>
+      <circle cx=" 23.00" cy="-19.28" r="3.3"/>
+      <circle cx=" 29.92" cy="  2.08" r="3.3"/>
+      <circle cx=" 25.44" cy=" 15.88" r="3.3"/>
+      <circle cx="  7.24" cy=" 29.12" r="3.3"/>
+      <circle cx=" -7.24" cy=" 29.12" r="3.3"/>
+      <circle cx="-25.44" cy=" 15.88" r="3.3"/>
+      <circle cx="-29.92" cy="  2.08" r="3.3"/>
+      <circle cx="-23.00" cy="-19.28" r="3.3"/>
+    </g>
+    <!-- Gold centre disc -->
+    <circle cx="0" cy="0" r="15" fill="#c07808"/>
+  </g>
+</svg>
