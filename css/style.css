@@ -448,6 +448,9 @@ strong { font-weight: 700; }
 .speaker-bio { font-size: .84rem; color: var(--text-mid); line-height: 1.65; margin: 8px 0 0; padding-top: 10px; border-top: 1px solid var(--border); }
 .speaker-btn-wrap { margin-top: auto; padding-top: 14px; }
 
+/* ── Submission at a Glance grid ────────────────────────────── */
+.glance-grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 0; }
+
 /* ── Social Events ──────────────────────────────────────────── */
 .events-grid { display: grid; grid-template-columns: repeat(3, minmax(240px, 320px)); gap: 24px; justify-content: center; }
 .event-card { background: var(--white); border-radius: var(--radius); box-shadow: var(--shadow-sm); padding: 28px 24px; border-bottom: 3px solid var(--tw-red); transition: transform .3s var(--ease); text-align: center; }
@@ -812,6 +815,8 @@ strong { font-weight: 700; }
   .day-tabs { gap: 8px; }
   .day-tab { min-width: 100px; padding: 10px 14px; }
   .footer-grid { gap: 28px; }
+  .glance-grid { grid-template-columns: 1fr 1fr; }
+  .events-grid { grid-template-columns: 1fr; }
 }
 
 @media (max-width: 480px) {
@@ -821,4 +826,5 @@ strong { font-weight: 700; }
   .hero-theme { font-size: .88rem; }
   .member-card { max-width: 100%; }
   .about-stats { grid-template-columns: 1fr 1fr; }
+  .glance-grid { grid-template-columns: 1fr; }
 }
