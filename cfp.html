@@ -42,7 +42,7 @@
     .cfp-dates-table tr.highlight-row td:first-child { font-weight: 700; }
     .cfp-dates-table tr.highlight-row td:last-child { color: var(--tw-red); }
     .cfp-aoe { font-size: .83rem; color: var(--text-light); font-style: italic; margin-top: 8px; }
-    .cfp-aoe a { color: var(--navy-mid); font-weight: 700; text-decoration: underline; }
+    .cfp-aoe a { color: var(--link); font-weight: 700; text-decoration: underline; }
 
     /* ── Double-blind bullet list ──────────────────────────────── */
     .cfp-policy-list { list-style: none; padding: 0; margin: 12px 0 0; display: flex; flex-direction: column; gap: 8px; }
@@ -55,7 +55,7 @@
     .cfp-policy-block h4 { font-size: .78rem; font-weight: 700; text-transform: uppercase; letter-spacing: .07em; color: var(--navy-mid); margin-bottom: 10px; font-family: 'Source Sans 3', sans-serif; }
     .cfp-policy-block p { font-size: .93rem; color: var(--text-mid); line-height: 1.7; margin: 0; }
     .cfp-policy-block p + p { margin-top: 10px; }
-    .cfp-policy-block a { color: var(--navy-mid); text-decoration: underline; text-underline-offset: 2px; }
+    .cfp-policy-block a { color: var(--link); text-decoration: underline; text-underline-offset: 2px; }
     .cfp-policy-block strong { color: var(--text); }
 
     /* ── Hybrid format grid ────────────────────────────────────── */
@@ -70,7 +70,7 @@
 
     /* ── Contact card ──────────────────────────────────────────── */
     .contact-card { text-align: center; }
-    .contact-card .contact-email { font-size: 1.1rem; font-weight: 600; color: var(--navy-mid); margin: 10px 0; display: inline-block; }
+    .contact-card .contact-email { font-size: 1.1rem; font-weight: 600; color: var(--link); margin: 10px 0; display: inline-block; text-decoration: underline; }
     .contact-card .contact-email:hover { text-decoration: underline; }
 
     /* ── Override global red accents → blue theme ─────────────── */
@@ -136,7 +136,7 @@
           <span class="nav-icon"><svg viewBox="0 0 22 22" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"><rect x="2" y="5" width="18" height="13" rx="2"/><line x1="2" y1="10" x2="20" y2="10"/><line x1="6" y1="15" x2="10" y2="15"/></svg></span>
           <span class="nav-text">Registration</span>
         </a>
-        <a href="index.html#venue" class="nav-link">
+        <a href="venue.html" class="nav-link">
           <span class="nav-icon"><svg viewBox="0 0 22 22" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"><path d="M11 2C7.7 2 5 4.7 5 8c0 5.25 6 12 6 12s6-6.75 6-12c0-3.3-2.7-6-6-6z"/><circle cx="11" cy="8" r="2.5"/></svg></span>
           <span class="nav-text">Venue &amp; Travel</span>
         </a>
@@ -174,7 +174,7 @@
         </div>
         <div class="ntu-host-wrap">
           <img class="ntu-logo-img" src="https://www.ntu.edu.tw/images/icon-logo-header.svg" alt="NTU logo" onerror="this.style.display='none'"/>
-          <div class="ntu-host-text"><strong>National Taiwan University</strong>Hosted by NTU</div>
+          <div class="ntu-host-text"><strong>Hosted by</strong>National Taiwan University (NTU)</div>
         </div>
       </div>
     </div>
@@ -190,7 +190,7 @@
         <h1 class="section-title">Call for Papers</h1>
         <p class="section-desc">PACLIC 40 · The 40th Pacific Asia Conference on Language, Information and Computation<br/>December 10–12, 2026 &nbsp;·&nbsp; Taipei, Taiwan</p>
         <div style="margin-top:24px;">
-          <a href="#" class="btn btn-disabled" style="margin-right:12px;">Submit a Paper (Link TBA)</a>
+          <a href="https://cmt3.research.microsoft.com/PACLIC2026" target="_blank" rel="noopener" class="btn btn-primary" style="margin-right:12px;">Submit a Paper</a>
           <a href="index.html" class="btn btn-outline">← Back to Main Site</a>
         </div>
         <p style="margin-top:20px;">* The Microsoft CMT service was used for managing the peer-reviewing process for this conference. This service was provided for free by Microsoft and they bore all expenses, including costs for Azure cloud services as well as for software development and support.</p>
@@ -455,12 +455,12 @@
           Share on X
         </a>
         <a class="share-btn share-li" href="#"
-           onclick="window.open('https://www.linkedin.com/sharing/share-offsite/?url='+encodeURIComponent(location.href),'_blank');return false;" aria-label="Share on LinkedIn">
+           onclick="window.open('https://www.linkedin.com/shareArticle?mini=true&url='+encodeURIComponent(location.href)+'&title=PACLIC+40+%E2%80%94+Taipei%2C+Taiwan%2C+December+10%E2%80%9312+2026','_blank');return false;" aria-label="Share on LinkedIn">
           <svg viewBox="0 0 22 22" fill="currentColor" width="17" height="17"><path d="M16 8a6 6 0 016 6v7h-4v-7a2 2 0 00-2-2 2 2 0 00-2 2v7h-4v-7a6 6 0 016-6zM2 9h4v12H2z"/><circle cx="4" cy="4" r="2"/></svg>
           LinkedIn
         </a>
         <a class="share-btn share-fb" href="#"
-           onclick="window.open('https://www.facebook.com/dialog/share?href='+encodeURIComponent(location.href)+'&display=popup,'_blank');return false;" aria-label="Share on Facebook">
+           onclick="window.open('https://www.facebook.com/sharer/sharer.php?u='+encodeURIComponent(location.href),'_blank');return false;" aria-label="Share on Facebook">
           <svg viewBox="0 0 22 22" fill="currentColor" width="17" height="17"><path d="M18 2h-3a5 5 0 00-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 011-1h3z"/></svg>
           Facebook
         </a>
@@ -483,7 +483,7 @@
           <a href="speakers.html">Invited Speakers</a>
           <a href="cfp.html">Call for Papers</a>
           <a href="index.html#registration">Registration</a>
-          <a href="index.html#venue">Venue &amp; Travel</a>
+          <a href="venue.html">Venue &amp; Travel</a>
           <a href="index.html#committee">Committee</a>
           <a href="index.html#faq">FAQ</a>
           <a href="index.html#sponsors">Sponsors</a>

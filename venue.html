@@ -1,0 +1,663 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Venue &amp; Attendee Resources | PACLIC 40 — Taipei, Taiwan, December 10–12, 2026</title>
+  <meta name="description" content="Venue, travel, accommodation, and attendee resources for PACLIC 40 in Taipei, Taiwan, December 10–12, 2026."/>
+  <meta property="og:type"        content="website"/>
+  <meta property="og:url"         content="https://paclic2026.github.io/venue.html"/>
+  <meta property="og:title"       content="Venue &amp; Attendee Resources | PACLIC 40"/>
+  <meta property="og:description" content="Venue, travel, accommodation, and attendee resources for PACLIC 40 in Taipei, Taiwan, December 10–12, 2026."/>
+  <meta property="og:image"       content="https://paclic2026.github.io/images/taipei-hero.jpg"/>
+  <meta name="twitter:card"        content="summary_large_image"/>
+  <meta name="twitter:title"       content="Venue &amp; Attendee Resources | PACLIC 40"/>
+  <meta name="twitter:description" content="Venue, travel, accommodation, and attendee resources for PACLIC 40 in Taipei, Taiwan, December 10–12, 2026."/>
+  <meta name="twitter:image"       content="https://paclic2026.github.io/images/taipei-hero.jpg"/>
+  <link rel="preconnect" href="https://fonts.googleapis.com"/>
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
+  <link href="https://fonts.googleapis.com/css2?family=Source+Serif+4:ital,opsz,wght@0,8..60,400;0,8..60,600;0,8..60,700;1,8..60,400&family=Source+Sans+3:wght@300;400;500;600;700&display=swap" rel="stylesheet"/>
+  <link rel="stylesheet" href="css/style.css"/>
+  <style>
+    #main .card p,
+    #main .card li { font-size: .95rem; color: var(--text-mid); line-height: 1.75; margin: 0; }
+    #main .card p + p { margin-top: 10px; }
+    #main .card p strong { color: var(--text); }
+
+    /* Transport steps */
+    .transport-steps { display: flex; flex-direction: column; gap: 0; margin-top: 4px; }
+    .transport-step { display: flex; gap: 16px; padding: 16px 0; border-bottom: 1px solid var(--border); }
+    .transport-step:last-child { border-bottom: none; }
+    .step-icon { font-size: 1.6rem; flex-shrink: 0; width: 40px; text-align: center; margin-top: 2px; }
+    .step-body > strong { display: block; font-size: .95rem; color: var(--text); margin-bottom: 4px; }
+    .step-body p strong { display: inline; font-size: inherit; color: inherit; margin: 0; }
+    .step-body p { font-size: .9rem; color: var(--text-mid); margin: 0; line-height: 1.65; }
+    .step-body .step-meta { display: inline-flex; gap: 10px; margin-top: 6px; flex-wrap: wrap; }
+    .step-meta span { font-size: .78rem; font-weight: 600; padding: 2px 10px; border-radius: 20px; background: rgba(0,0,149,.08); color: var(--navy-mid); border: 1px solid rgba(0,0,149,.15); }
+
+    /* Info grid */
+    .info-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 20px; margin-top: 4px; }
+    .info-block { padding: 18px; background: #EEF2FA; border-radius: 10px; border-left: 3px solid var(--navy-mid); }
+    .info-block h4 { font-size: .78rem; font-weight: 700; text-transform: uppercase; letter-spacing: .07em; color: var(--navy-mid); margin-bottom: 8px; font-family: 'Source Sans 3', sans-serif; }
+    .info-block p, .info-block li { font-size: .92rem; color: var(--text-mid); line-height: 1.7; margin: 0; }
+    .info-block ul { list-style: none; padding: 0; display: flex; flex-direction: column; gap: 4px; }
+    .info-block ul li::before { content: '→ '; color: var(--navy-mid); font-weight: 700; }
+
+    /* Hotel cards */
+    .hotel-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); gap: 16px; margin-top: 8px; }
+    .hotel-card { padding: 18px 20px; background: var(--bg); border-radius: 10px; border: 1.5px solid var(--border); }
+    .hotel-card h4 { font-size: .95rem; font-weight: 700; color: var(--text); margin-bottom: 4px; }
+    .hotel-card .hotel-dist { font-size: .8rem; color: var(--navy-mid); font-weight: 600; margin-bottom: 6px; }
+    .hotel-card p { font-size: .88rem; color: var(--text-mid); margin: 0; line-height: 1.6; }
+    .hotel-price { display: inline-block; margin-top: 8px; font-size: .8rem; font-weight: 700; color: var(--tw-gold); }
+
+    /* Attraction grid */
+    .attraction-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 16px; margin-top: 8px; }
+    .attraction-item { padding: 16px 18px; background: var(--bg); border-radius: 10px; border: 1.5px solid var(--border); }
+    .attraction-item .attr-icon { font-size: 1.6rem; margin-bottom: 8px; display: block; }
+    .attraction-item h4 { font-size: .92rem; font-weight: 700; color: var(--text); margin-bottom: 4px; }
+    .attraction-item p { font-size: .86rem; color: var(--text-mid); margin: 0; line-height: 1.6; }
+
+    /* App tips */
+    .app-list { display: flex; flex-direction: column; gap: 12px; margin-top: 4px; }
+    .app-item { display: flex; gap: 14px; align-items: flex-start; padding: 14px 16px; background: var(--bg); border-radius: 8px; border: 1px solid var(--border); }
+    .app-item .app-icon { font-size: 1.4rem; flex-shrink: 0; }
+    .app-item strong { display: block; font-size: .92rem; color: var(--text); margin-bottom: 3px; }
+    .app-item p { font-size: .88rem; color: var(--text-mid); margin: 0; line-height: 1.6; }
+
+    /* Section anchors in page nav */
+    .venue-layout { max-width: 1100px; margin: 0 auto; padding: 0 40px; display: grid; grid-template-columns: minmax(0, 1fr) 168px; gap: 36px; }
+    .venue-cards { display: flex; flex-direction: column; gap: 28px; }
+    .venue-sidenav { position: sticky; top: 24px; align-self: start; height: fit-content; }
+    .sidenav-label { font-size: .7rem; font-weight: 700; letter-spacing: 1.2px; text-transform: uppercase; color: var(--text-mid); margin-bottom: 10px; }
+    .venue-sidenav nav { display: flex; flex-direction: column; gap: 6px; }
+    .venue-sidenav nav a { display: block; font-size: .82rem; font-weight: 600; padding: 8px 14px; border-radius: 8px; background: var(--navy); color: #fff; text-decoration: none; transition: background .2s, transform .12s; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+    .venue-sidenav nav a:hover { background: var(--tw-gold); color: #1a1200; transform: translateX(3px); }
+
+    .visa-note { background: rgba(201,151,42,.08); border-left: 3px solid var(--tw-gold); padding: 14px 18px; border-radius: 6px; margin-top: 14px; font-size: .9rem; color: var(--text-mid); line-height: 1.7; }
+    .visa-note a { color: var(--link); font-weight: 600; text-decoration: underline; }
+
+    @media (max-width: 700px) {
+      .info-grid { grid-template-columns: 1fr; }
+    }
+  </style>
+</head>
+<body>
+
+  <button class="mobile-toggle" id="mobileToggle" aria-label="Toggle navigation">
+    <span></span><span></span><span></span>
+  </button>
+  <div class="sidebar-overlay" id="sidebarOverlay"></div>
+
+  <!-- ══════════════════════════════════════ SIDEBAR ══════════ -->
+  <aside class="sidebar" id="sidebar">
+    <div class="sidebar-inner">
+
+      <div class="sidebar-brand">
+        <div class="brand-emblem">
+          <img src="images/logo-seal.svg" class="plum-svg" alt="PACLIC 40 Seal"/>
+        </div>
+        <div class="brand-info">
+          <div class="brand-name">PACLIC 40</div>
+          <div class="brand-full">Pacific Asia Conference on<br/>Language, Information &amp;<br/>Computation</div>
+        </div>
+      </div>
+
+      <div class="sidebar-rule"></div>
+
+      <nav class="sidebar-nav">
+        <a href="index.html#home" class="nav-link">
+          <span class="nav-icon"><svg viewBox="0 0 22 22" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"><path d="M3 10L11 3l8 7v8a1 1 0 01-1 1H14v-5H8v5H4a1 1 0 01-1-1z"/></svg></span>
+          <span class="nav-text">Home</span>
+        </a>
+        <a href="index.html#program" class="nav-link">
+          <span class="nav-icon"><svg viewBox="0 0 22 22" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"><rect x="3" y="3" width="16" height="16" rx="2"/><line x1="3" y1="8" x2="19" y2="8"/><line x1="8" y1="3" x2="8" y2="8"/><line x1="14" y1="3" x2="14" y2="8"/><line x1="7" y1="13" x2="15" y2="13"/><line x1="7" y1="17" x2="12" y2="17"/></svg></span>
+          <span class="nav-text">Program</span>
+        </a>
+        <a href="speakers.html" class="nav-link">
+          <span class="nav-icon"><svg viewBox="0 0 22 22" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"><path d="M12 1a3 3 0 000 6M12 1a3 3 0 010 6"/><path d="M16 17v1a2 2 0 01-2 2H8a2 2 0 01-2-2v-1"/><path d="M12 7v10M9 11l3-4 3 4"/><rect x="10" y="17" width="4" height="3" rx="1"/></svg></span>
+          <span class="nav-text">Invited Speakers</span>
+        </a>
+        <a href="cfp.html" class="nav-link">
+          <span class="nav-icon"><svg viewBox="0 0 22 22" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"><path d="M14 2H6a2 2 0 00-2 2v16a2 2 0 002 2h10a2 2 0 002-2V8z"/><polyline points="14 2 14 8 20 8"/><line x1="16" y1="13" x2="8" y2="13"/><line x1="16" y1="17" x2="8" y2="17"/><line x1="10" y1="9" x2="8" y2="9"/></svg></span>
+          <span class="nav-text">Call for Papers</span>
+        </a>
+        <a href="index.html#registration" class="nav-link">
+          <span class="nav-icon"><svg viewBox="0 0 22 22" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"><rect x="2" y="5" width="18" height="13" rx="2"/><line x1="2" y1="10" x2="20" y2="10"/><line x1="6" y1="15" x2="10" y2="15"/></svg></span>
+          <span class="nav-text">Registration</span>
+        </a>
+        <a href="venue.html" class="nav-link active">
+          <span class="nav-icon"><svg viewBox="0 0 22 22" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"><path d="M11 2C7.7 2 5 4.7 5 8c0 5.25 6 12 6 12s6-6.75 6-12c0-3.3-2.7-6-6-6z"/><circle cx="11" cy="8" r="2.5"/></svg></span>
+          <span class="nav-text">Venue &amp; Travel</span>
+          <span class="nav-indicator"></span>
+        </a>
+        <a href="index.html#committee" class="nav-link">
+          <span class="nav-icon"><svg viewBox="0 0 22 22" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"><circle cx="9" cy="7" r="4"/><path d="M3 21v-2a4 4 0 014-4h4a4 4 0 014 4v2"/><circle cx="17" cy="8" r="2.5"/><path d="M21 21v-1.5a2.5 2.5 0 00-2.5-2.5"/></svg></span>
+          <span class="nav-text">Committee</span>
+        </a>
+        <a href="index.html#faq" class="nav-link">
+          <span class="nav-icon"><svg viewBox="0 0 22 22" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"><circle cx="11" cy="11" r="9"/><path d="M9 8.5a2 2 0 013.5 1.3c0 1.5-2.5 2-2.5 3"/><line x1="11" y1="16" x2="11.01" y2="16"/></svg></span>
+          <span class="nav-text">FAQ</span>
+        </a>
+        <a href="index.html#sponsors" class="nav-link">
+          <span class="nav-icon"><svg viewBox="0 0 22 22" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"><path d="M12 2l2.4 7.4H22l-6.2 4.5 2.4 7.4L12 17l-6.2 4.3 2.4-7.4L2 9.4h7.6z"/></svg></span>
+          <span class="nav-text">Sponsors</span>
+        </a>
+      </nav>
+
+      <div class="sidebar-footer">
+        <div class="taiwan-map-wrap">
+          <svg class="taiwan-map" viewBox="0 0 100 174" xmlns="http://www.w3.org/2000/svg">
+            <path d="M 73,3 C 82,0 90,8 95,18 C 93,25 92,30 92,38 C 88,52 85,62 82,70 C 78,82 74,97 70,112 C 66,122 63,129 60,135 C 55,148 50,163 43,174 C 34,162 23,150 15,140 C 8,130 6,122 8,118 C 9,110 9,100 10,90 C 13,78 16,72 16,68 C 16,62 18,55 21,48 C 26,38 34,28 48,22 C 58,17 66,10 73,3 Z"
+              fill="rgba(254,0,0,0.07)" stroke="rgba(254,0,0,0.45)" stroke-width="2.5" stroke-linejoin="round" stroke-linecap="round"/>
+            <circle cx="74" cy="14" r="3.5" fill="#FE0000" stroke="white" stroke-width="1.5"/>
+            <text x="62" y="10" font-size="7" fill="rgba(254,0,0,0.75)" font-family="sans-serif" font-weight="600" text-anchor="end">Taipei</text>
+          </svg>
+        </div>
+        <div class="footer-pin">
+          <svg viewBox="0 0 16 16" fill="currentColor" width="13" height="13"><circle cx="8" cy="6.5" r="3" fill="rgba(196,30,58,0.9)"/><path d="M8 1a5.5 5.5 0 00-5.5 5.5C2.5 10.5 8 15 8 15s5.5-4.5 5.5-7.5A5.5 5.5 0 008 1z" fill="none" stroke="rgba(196,30,58,0.9)" stroke-width="1.5"/></svg>
+          <span>Taipei, Taiwan</span>
+        </div>
+        <div class="footer-dates">December 10–12, 2026</div>
+        <div class="footer-edition">40<sup>th</sup> Edition · Since 1987</div>
+        <div class="footer-email">
+          <a href="mailto:paclic2026@gmail.com">paclic2026@gmail.com</a>
+        </div>
+        <div class="ntu-host-wrap">
+          <img class="ntu-logo-img" src="https://www.ntu.edu.tw/images/icon-logo-header.svg" alt="NTU logo" onerror="this.style.display='none'"/>
+          <div class="ntu-host-text"><strong>Hosted by</strong>National Taiwan University (NTU)</div>
+        </div>
+      </div>
+    </div>
+  </aside>
+
+  <!-- ══════════════════════════════════ MAIN CONTENT ══════════ -->
+  <main id="main">
+
+    <!-- Page header -->
+    <section style="padding: 56px 0 0;">
+      <div class="container" style="max-width:960px;">
+        <div class="block-tag">Attendee Resources</div>
+        <h1 style="font-size:clamp(1.8rem,3.5vw,2.6rem);font-weight:700;color:var(--navy-deep);margin:10px 0 14px;">Venue &amp; Travel Guide</h1>
+        <p style="font-size:1rem;color:var(--text-mid);line-height:1.75;max-width:720px;">Everything you need to plan your trip to PACLIC 40 in Taipei, Taiwan — from getting here to getting around, accommodation, visa information, and local highlights.</p>
+
+      </div>
+    </section>
+
+    <section style="padding: 32px 0 64px;">
+      <div class="venue-layout">
+        <div class="venue-cards">
+
+        <!-- VENUE -->
+        <div class="card reveal" id="venue">
+          <div class="card-head">
+            <svg viewBox="0 0 22 22" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" width="22" height="22"><path d="M11 2C7.7 2 5 4.7 5 8c0 5.25 6 12 6 12s6-6.75 6-12c0-3.3-2.7-6-6-6z"/><circle cx="11" cy="8" r="2.5"/></svg>
+            <h2 style="font-size:1.1rem;font-weight:700;">Conference Venue</h2>
+          </div>
+          <div class="venue-info">
+            <div class="venue-detail">
+              <strong>Host Institution:</strong> National Taiwan University (NTU)<br/>
+              <strong>Address:</strong> No. 1, Sec. 4, Roosevelt Rd., Da'an District, Taipei City 106<br/>
+              <strong>Specific building/room:</strong> To be announced<br/>
+              <strong>Website:</strong> <a href="https://www.ntu.edu.tw/english/" target="_blank" rel="noopener" style="color:var(--link);text-decoration:underline;font-weight:600;">www.ntu.edu.tw</a>
+            </div>
+            <div class="map-placeholder" style="position:relative;">
+              <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3615.375847979177!2d121.53823731538843!3d25.017408383982077!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3442a9681618dbbd%3A0x10069bba0f862e60!2sNational%20Taiwan%20University!5e0!3m2!1sen!2stw!4v1617000000000!5m2!1sen!2stw"
+                width="100%" height="280" style="border:0;border-radius:8px;display:block;"
+                allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" title="National Taiwan University on Google Maps">
+              </iframe>
+              <a href="https://www.google.com.tw/maps/place/National+Taiwan+University/@25.0173405,121.5397518,17z/data=!3m1!4b1!4m6!3m5!1s0x3442a989fe322ea9:0x21750404ee1d7f66!8m2!3d25.0173405!4d121.5397518!16zL20vMDFjc3Fn?entry=ttu&g_ep=EgoyMDI2MDQwOC4wIKXMDSoASAFQAw%3D%3D"
+                target="_blank" rel="noopener"
+                title="Open National Taiwan University in Google Maps"
+                style="position:absolute;inset:0;border-radius:8px;cursor:pointer;"></a>
+            </div>
+          </div>
+        </div>
+
+        <!-- VISA -->
+        <div class="card reveal" id="visa">
+          <div class="card-head">
+            <svg viewBox="0 0 22 22" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" width="22" height="22"><rect x="3" y="5" width="16" height="13" rx="2"/><line x1="3" y1="10" x2="19" y2="10"/><line x1="7" y1="15" x2="11" y2="15"/></svg>
+            <h2 style="font-size:1.1rem;font-weight:700;">Visa &amp; Entry Information</h2>
+          </div>
+          <p>Taiwan offers visa-free or visa-on-arrival entry to citizens of many countries. Please check your eligibility with the <a href="https://www.boca.gov.tw/mp-2.html" target="_blank" rel="noopener" style="color:var(--link);text-decoration:underline;font-weight:600;">Bureau of Consular Affairs, Ministry of Foreign Affairs of Taiwan</a>.</p>
+
+          <div class="info-grid" style="margin-top:16px;">
+            <div class="info-block">
+              <h4>Visa-Free Entry (14–90 days)</h4>
+              <ul>
+                <li>USA, Canada, UK, EU/Schengen</li>
+                <li>Australia, New Zealand</li>
+                <li>Japan, South Korea</li>
+                <li>And 60+ other countries</li>
+              </ul>
+            </div>
+            <div class="info-block">
+              <h4>Visa Required</h4>
+              <ul>
+                <li>Apply at a Taiwan representative office in your country</li>
+                <li>Processing time: ~5–10 business days</li>
+                <li>Check: <a href="https://www.boca.gov.tw/mp-2.html" target="_blank" rel="noopener">boca.gov.tw</a></li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="visa-note" style="margin-top:16px;">
+            <strong>📋 Passport Validity:</strong> Your passport must have at least <strong>6 months of validity remaining</strong> from your date of entry into Taiwan.
+          </div>
+
+          <div class="visa-note" style="margin-top:12px;background:rgba(255,200,0,.08);border-left-color:var(--tw-gold);">
+            <strong>⚡ Pro-tip: NIA Online Arrival Card</strong><br/>
+            Save time at immigration! Instead of filling out a paper form on the plane, complete the <a href="https://www.immigration.gov.tw/5475/5478/141465/141808/" target="_blank" rel="noopener" style="color:var(--link);text-decoration:underline;font-weight:600;">NIA Online Arrival Card</a> before you land.
+          </div>
+
+          <div class="visa-note" style="margin-top:12px;">
+            <strong>Invitation Letter:</strong> Registered participants who require a visa support letter may request one from the organising committee. Please contact <a href="mailto:paclic2026@gmail.com">paclic2026@gmail.com</a> after completing your registration. Letters will be issued upon receipt of full payment.
+          </div>
+        </div>
+
+        <!-- FROM THE AIRPORT -->
+        <div class="card reveal" id="airport">
+          <div class="card-head">
+            <svg viewBox="0 0 22 22" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" width="22" height="22"><path d="M21 16v-2a4 4 0 00-4-4H5a4 4 0 00-4 4v2"/><path d="M12 12V3M8 7l4-4 4 4"/><line x1="3" y1="20" x2="19" y2="20"/></svg>
+            <h2 style="font-size:1.1rem;font-weight:700;">Getting to Taipei — From the Airport</h2>
+          </div>
+          <p style="margin-bottom:20px;">Most international flights arrive at <strong>Taoyuan International Airport (TPE)</strong>, located ~40 km west of Taipei. The airport has two terminals (T1 and T2) connected by a free shuttle.</p>
+
+          <div class="transport-steps">
+
+            <!-- MRT -->
+            <div class="transport-step">
+              <div class="step-icon">🚄</div>
+              <div class="step-body">
+                <strong>Airport MRT (Taoyuan Airport Express) — Recommended</strong>
+                <div class="step-meta" style="margin:6px 0 10px;">
+                  <span>~35–39 min</span><span>NT$160 (~USD 5)</span><span>~6:00 AM – 11:00 PM, every 15 min</span>
+                </div>
+                <p style="font-size:.9rem;color:var(--text-mid);margin-bottom:6px;"><strong style="color:var(--navy);">Step 1:</strong> Take the Express MRT from T1 or T2 to <strong>Taipei Main Station (A1)</strong>.</p>
+                <p style="font-size:.9rem;color:var(--text-mid);margin-bottom:4px;"><strong style="color:var(--navy);">Step 2:</strong> Transfer to the Green Line (2 options):</p>
+                <ul style="margin:0 0 6px 20px;display:flex;flex-direction:column;gap:4px;font-size:.9rem;color:var(--text-mid);">
+                  <li><strong>Shortcut (recommended):</strong> Follow signs to <strong>Beimen Station (G13)</strong> via underground walkway (~7 min walk) — puts you directly on the Green Line.</li>
+                  <li><strong>Alternative:</strong> Take the Red Line 2 stops to <strong>CKS Memorial Hall</strong>, then transfer to the Green Line (towards Xindian).</li>
+                </ul>
+                <p style="font-size:.9rem;color:var(--text-mid);"><strong style="color:var(--navy);">Step 3:</strong> Green Line to <strong>Gongguan Station (Exit 3)</strong>, ~15 min from Beimen. NTU is a 3–5 min walk.</p>
+              </div>
+            </div>
+
+            <!-- Bus -->
+            <div class="transport-step">
+              <div class="step-icon">🚌</div>
+              <div class="step-body">
+                <strong>Airport Bus — 2 options</strong>
+                <div style="display:flex;flex-direction:column;gap:10px;margin-top:10px;">
+                  <div style="border-left:3px solid var(--border);padding-left:12px;">
+                    <p style="font-weight:700;color:var(--navy);margin-bottom:4px;">Option A — Route 1819</p>
+                    <p style="font-size:.9rem;color:var(--text-mid);margin-bottom:6px;">Runs to <strong>Taipei Main Station</strong> (not directly to NTU). Requires an MRT or taxi transfer onward to Gongguan.</p>
+                    <div class="step-meta"><span>~70–90 min</span><span>NT$160 (~USD 5)</span><span>~4:40 AM – 11:00 PM</span></div>
+                  </div>
+                  <div style="border-left:3px solid var(--border);padding-left:12px;">
+                    <p style="font-weight:700;color:var(--navy);margin-bottom:4px;">Option B — Route 1960 (with transfer)</p>
+                    <p style="font-size:.9rem;color:var(--text-mid);margin-bottom:6px;">Take Bus 1960 towards Taipei City Hall → alight at <strong>Yuandong International Hotel (Shangri-La)</strong> → walk 2 min to Fengchu Park → catch city Bus 913 → alight at <strong>NTU Cancer Center (Jilong Rd.)</strong>, southern edge of campus.</p>
+                    <div class="step-meta"><span>~75–90 min total</span><span>NT$160 (airport) + NT$15 (city bus)</span></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Taxi/Uber -->
+            <div class="transport-step">
+              <div class="step-icon">🚕</div>
+              <div class="step-body">
+                <strong>Taxi / Uber</strong>
+                <div class="step-meta" style="margin:6px 0 8px;">
+                  <span>~40–50 min</span><span>NT$1,100–1,500 (~USD 35–48)</span><span>Available 24/7</span>
+                </div>
+                <p style="font-size:.9rem;color:var(--text-mid);">Pickup points: Columns 15/17/20/23 (T1) or 24/26/29 (T2). Faster than bus/MRT when traffic is light. NT$20 late-night surcharge applies 11 PM – 6 AM.</p>
+              </div>
+            </div>
+
+            <!-- Songshan -->
+            <div class="transport-step">
+              <div class="step-icon">✈️</div>
+              <div class="step-body">
+                <strong>From Songshan Airport (TSA)</strong>
+                <div class="step-meta" style="margin:6px 0 8px;">
+                  <span>~25–30 min (incl. transfer)</span><span>NT$30</span>
+                </div>
+                <p style="font-size:.9rem;color:var(--text-mid);">Take the <strong>Brown Line</strong> to Nanjing Fuxing, transfer to the <strong>Green Line</strong>, and alight at <strong>Gongguan Station</strong>.</p>
+              </div>
+            </div>
+
+          </div>
+        </div>
+
+        <!-- ACCOMMODATION -->
+        <div class="card reveal" id="accommodation">
+          <div class="card-head">
+            <svg viewBox="0 0 22 22" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" width="22" height="22"><path d="M3 9l9-7 9 7v11a2 2 0 01-2 2H5a2 2 0 01-2-2z"/><polyline points="9 22 9 12 13 12 13 22"/></svg>
+            <h2 style="font-size:1.1rem;font-weight:700;">Accommodation</h2>
+          </div>
+          <p style="margin-bottom:20px;">Hotel options will be listed here once the venue and arrangements are finalised. In the meantime, we recommend booking accommodation in the following areas, which offer convenient access to NTU:</p>
+
+          <div class="info-grid" style="margin-bottom:20px;">
+            <div class="info-block">
+              <h4>📍 Da'an District</h4>
+              <p>Walking distance to NTU. Quiet residential area with good dining options and easy MRT access.</p>
+            </div>
+            <div class="info-block">
+              <h4>🚇 Gongguan Area</h4>
+              <p>Directly adjacent to NTU (Gongguan Station, Green Line). Lively student district with affordable options.</p>
+            </div>
+            <div class="info-block">
+              <h4>🏙️ Zhongzheng District</h4>
+              <p>Taipei city centre. Well-connected by MRT, close to major landmarks and business hotels.</p>
+            </div>
+            <div class="info-block">
+              <h4>🛤️ Zhongshan District</h4>
+              <p>North of the city centre, good transport links. Wide range of hotels at various price points.</p>
+            </div>
+          </div>
+
+        </div>
+
+        <!-- GETTING AROUND -->
+        <div class="card reveal" id="getting-around">
+          <div class="card-head">
+            <svg viewBox="0 0 22 22" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" width="22" height="22"><rect x="1" y="3" width="20" height="14" rx="2"/><path d="M16 21l-4-4-4 4"/><path d="M1 10h20"/></svg>
+            <h2 style="font-size:1.1rem;font-weight:700;">Getting Around Taipei</h2>
+          </div>
+
+          <div class="transport-steps">
+            <div class="transport-step">
+              <div class="step-icon">🚇</div>
+              <div class="step-body">
+                <strong>Taipei MRT (Metro)</strong>
+                <p>Taipei's MRT is clean, safe, punctual, and fully English-signposted. The nearest station to NTU is <strong>Gongguan Station</strong> (Green Line, Exit 3), a 5-minute walk to campus.</p>
+                <div class="step-meta"><span>NT$20–65 per trip (~USD 0.65–2)</span><span>6:00 AM – midnight</span></div>
+              </div>
+            </div>
+            <div class="transport-step">
+              <div class="step-icon">💳</div>
+              <div class="step-body">
+                <strong>EasyCard (悠遊卡) — Highly Recommended</strong>
+                <p>A rechargeable IC card for MRT, buses, YouBike, and many convenience stores. Get one at any MRT station for NT$100.</p>
+                <div class="step-meta"><span>Available at all MRT stations</span><span>Top up at station machines or 7-Eleven</span></div>
+              </div>
+            </div>
+            <div class="transport-step">
+              <div class="step-icon">🚲</div>
+              <div class="step-body">
+                <strong>YouBike (公共自行車)</strong>
+                <p>Taipei's public bike-sharing system with stations all around NTU and Gongguan. First 30 minutes free.</p>
+                <p style="margin-top:6px;font-size:.85rem;color:var(--text-mid);"><strong>From Jan 2026:</strong> All users must enroll in mandatory <strong>Public Bicycle Injury Insurance</strong> before renting — free to do in the YouBike 2.0 app. No local SIM? Use <strong>Single Rental</strong> in the app with a credit card (Apple Pay/Google Pay) and email verification.</p>
+                <div class="step-meta"><span>NT$10 per 30 min after free period</span><span>YouBike 2.0 app</span></div>
+              </div>
+            </div>
+            <div class="transport-step">
+              <div class="step-icon">🚕</div>
+              <div class="step-body">
+                <strong>Taxi &amp; Ride-Hailing</strong>
+                <p>Taxis are metered and generally honest. Download the <strong>Uber app</strong> before your trip — Uber and taxi both work well in Taipei. <strong>Line Taxi</strong> is also popular locally.</p>
+                <div class="step-meta"><span>Starts at NT$85</span><span>NT$20 extra for night rides (11 PM – 6 AM)</span></div>
+                <p style="margin-top:8px;font-size:.85rem;color:var(--text-mid);"><strong>Tip:</strong> Most drivers don't speak English — have your destination ready in Chinese characters on your phone.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- FOOD & DRINK -->
+        <div class="card reveal" id="food">
+          <div class="card-head">
+            <svg viewBox="0 0 22 22" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" width="22" height="22"><path d="M18 8h1a4 4 0 010 8h-1"/><path d="M2 8h16v9a4 4 0 01-4 4H6a4 4 0 01-4-4V8z"/><line x1="6" y1="1" x2="6" y2="4"/><line x1="10" y1="1" x2="10" y2="4"/><line x1="14" y1="1" x2="14" y2="4"/></svg>
+            <h2 style="font-size:1.1rem;font-weight:700;">Food &amp; Drink</h2>
+          </div>
+          <p style="margin-bottom:16px;">Taiwan is a food paradise. Taipei in particular offers an extraordinary range — from Michelin-starred restaurants to legendary street food stalls. The Gongguan and Da'an areas around NTU are especially rich in affordable and delicious options.</p>
+
+          <div class="info-grid">
+            <div class="info-block">
+              <h4>Near NTU (Gongguan Area)</h4>
+              <ul>
+                <li>Gongguan Night Market (公館夜市) — 5 min walk</li>
+                <li>Shida Night Market (師大夜市) — 10 min walk</li>
+                <li>Roosevelt Road restaurants &amp; cafés</li>
+                <li>NTU campus cafeteria (affordable)</li>
+              </ul>
+            </div>
+            <div class="info-block">
+              <h4>Must-Try Taiwanese Foods</h4>
+              <ul>
+                <li>Beef noodle soup (牛肉麵)</li>
+                <li>Scallion pancake (蔥抓餅)</li>
+                <li>Oyster omelette (蚵仔煎)</li>
+                <li>Bubble tea (珍珠奶茶) — invented in Taiwan!</li>
+                <li>Xiao Long Bao (小籠包 — Soup Dumplings)</li>
+                <li>Stinky tofu (臭豆腐)</li>
+              </ul>
+            </div>
+          </div>
+          <div class="visa-note" style="margin-top:16px;background:rgba(0,120,60,.05);border-left-color:#2a7a4b;">
+            <strong>🌱 Vegan &amp; Vegetarian</strong><br/>
+            Taipei is very vegan-friendly. Look for the character <strong>素 (Sù)</strong> or the Buddhist swastika <strong>(卍)</strong> on signs — these indicate vegetarian/vegan establishments. For high-end vegan dining, Da'an District has become a global hub for fusion vegan cafes, including <strong>Plants</strong>, <strong>Ooh Cha Cha</strong>, and <strong>Loving Hut</strong>.
+          </div>
+        </div>
+
+        <!-- ABOUT TAIPEI -->
+        <div class="card reveal" id="taipei">
+          <div class="card-head">
+            <svg viewBox="0 0 22 22" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" width="22" height="22"><circle cx="11" cy="11" r="9"/><line x1="2" y1="11" x2="20" y2="11"/><path d="M11 2a15.3 15.3 0 014 11 15.3 15.3 0 01-4 11 15.3 15.3 0 01-4-11 15.3 15.3 0 014-11z"/></svg>
+            <h2 style="font-size:1.1rem;font-weight:700;">Taipei Highlights</h2>
+          </div>
+          <p style="margin-bottom:16px;">Taipei is a dynamic, cosmopolitan capital that seamlessly blends modernity with deep cultural heritage. Known for its world-class food, safe streets, efficient public transport, and welcoming locals, Taipei consistently ranks among Asia's most liveable and visitor-friendly cities.</p>
+
+          <div class="attraction-grid">
+            <div class="attraction-item">
+              <span class="attr-icon">🏙️</span>
+              <h4>Taipei 101</h4>
+              <p>The iconic 508-metre skyscraper, once the world's tallest. Observation deck on floor 89 offers panoramic city views.</p>
+            </div>
+            <div class="attraction-item">
+              <span class="attr-icon">🏛️</span>
+              <h4>National Palace Museum</h4>
+              <p>One of the world's greatest museums of Chinese art and artefacts. Over 700,000 items spanning 8,000 years of history.</p>
+            </div>
+            <div class="attraction-item">
+              <span class="attr-icon">🪔</span>
+              <h4>Longshan Temple</h4>
+              <p>A spectacular 18th-century temple in Wanhua district, one of Taipei's most important spiritual and cultural landmarks.</p>
+            </div>
+            <div class="attraction-item">
+              <span class="attr-icon">🌿</span>
+              <h4>Daan Forest Park</h4>
+              <p>Taipei's "Central Park", a peaceful urban forest just minutes from NTU, perfect for morning walks.</p>
+            </div>
+            <div class="attraction-item">
+              <span class="attr-icon">🛍️</span>
+              <h4>Ximending</h4>
+              <p>Taipei's vibrant pedestrian shopping and entertainment district, buzzing day and night with food, fashion, and street art.</p>
+            </div>
+            <div class="attraction-item">
+              <span class="attr-icon">⛰️</span>
+              <h4>Elephant Mountain (象山)</h4>
+              <p>A popular 30-minute hike with stunning views of Taipei 101 and the city skyline, especially beautiful at sunset.</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- USEFUL TIPS -->
+        <div class="card reveal" id="tips">
+          <div class="card-head">
+            <svg viewBox="0 0 22 22" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" width="22" height="22"><circle cx="11" cy="11" r="9"/><line x1="11" y1="8" x2="11" y2="11"/><line x1="11" y1="14" x2="11.01" y2="14"/></svg>
+            <h2 style="font-size:1.1rem;font-weight:700;">Useful Apps &amp; Tips</h2>
+          </div>
+
+          <div class="app-list">
+            <div class="app-item">
+              <div class="app-icon">🗺️</div>
+              <div>
+                <strong>Google Maps</strong>
+                <p>Works excellently in Taiwan with transit directions for MRT and bus. Download offline maps for Da'an/Taipei before arrival.</p>
+              </div>
+            </div>
+            <div class="app-item">
+              <div class="app-icon">🚖</div>
+              <div>
+                <strong>Uber / Line Taxi</strong>
+                <p>Both apps work in Taipei. Line Taxi is popular locally. Uber is available across the city. In-app payment avoids cash hassle.</p>
+              </div>
+            </div>
+            <div class="app-item">
+              <div class="app-icon">🚲</div>
+              <div>
+                <strong>YouBike 2.0 App</strong>
+                <p>Required to enroll in mandatory injury insurance (free) before renting. No local SIM? Use Single Rental with credit card + email.</p>
+              </div>
+            </div>
+            <div class="app-item">
+              <div class="app-icon">💬</div>
+              <div>
+                <strong>Google Translate (camera mode)</strong>
+                <p>Camera translation is extremely helpful for menus and signs. Taiwan uses Traditional Chinese characters.</p>
+              </div>
+            </div>
+            <div class="app-item">
+              <div class="app-icon">💰</div>
+              <div>
+                <strong>Currency: New Taiwan Dollar (NT$)</strong>
+                <p>1 USD ≈ NT$31–32. ATMs are widely available (7-Eleven, banks). Credit cards accepted at most hotels and restaurants; cash preferred at night markets.</p>
+              </div>
+            </div>
+            <div class="app-item">
+              <div class="app-icon">🌡️</div>
+              <div>
+                <strong>Weather in December</strong>
+                <p>Taipei in December is mild: 14–22°C (57–72°F). Expect some rain — bring a light jacket and a compact umbrella. Days can be warm and sunny. <a href="https://www.accuweather.com/en/tw/taipei-city/315078/december-weather/315078" target="_blank" rel="noopener" style="color:var(--link);text-decoration:underline;font-weight:600;">Check forecast on AccuWeather →</a></p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Contact -->
+        <div class="card reveal" style="text-align:center;">
+          <p style="font-size:.95rem;color:var(--text-mid);">Questions about travel or accommodation? Contact the organising team at <a href="mailto:paclic2026@gmail.com" style="color:var(--link);text-decoration:underline;font-weight:600;">paclic2026@gmail.com</a></p>
+          <div style="margin-top:16px;">
+            <a href="index.html" class="btn btn-outline">← Back to Main Site</a>
+          </div>
+        </div>
+
+        </div><!-- /venue-cards -->
+
+        <aside class="venue-sidenav">
+          <p class="sidenav-label">Jump to</p>
+          <nav>
+            <a href="#venue">📍 Venue</a>
+            <a href="#visa">🪪 Visa &amp; Entry</a>
+            <a href="#airport">✈️ From the Airport</a>
+            <a href="#accommodation">🏨 Accommodation</a>
+            <a href="#getting-around">🚇 Getting Around</a>
+            <a href="#food">🍜 Food &amp; Drink</a>
+            <a href="#taipei">🏙️ Taipei Highlights</a>
+            <a href="#tips">📱 Useful Tips</a>
+          </nav>
+        </aside>
+
+      </div><!-- /venue-layout -->
+    </section>
+
+  </main>
+
+  <!-- SHARE BAR -->
+  <div class="share-bar">
+    <div class="share-bar-inner container">
+      <span class="share-label">Spread the word</span>
+      <div class="share-btns">
+        <a class="share-btn share-x" href="#"
+           onclick="window.open('https://twitter.com/intent/tweet?text=PACLIC+40+%E2%80%94+The+40th+Pacific+Asia+Conference+on+Language%2C+Information+and+Computation.+Taipei%2C+Taiwan%2C+Dec+10%E2%80%9312+2026.&url='+encodeURIComponent(location.href),'_blank');return false;" aria-label="Share on X">
+          <svg viewBox="0 0 22 22" fill="currentColor" width="17" height="17"><path d="M17.53 3H20.5L14.2 10.28 21.5 20h-5.9l-4.5-5.88L5.84 20H2.86l6.72-7.69L2.5 3h6.05l4.09 5.34L17.53 3zm-1 15.25h1.64L5.57 4.64H3.82l12.71 13.61z"/></svg>
+          Share on X
+        </a>
+        <a class="share-btn share-li" href="#"
+           onclick="window.open('https://www.linkedin.com/shareArticle?mini=true&url='+encodeURIComponent(location.href)+'&title=PACLIC+40+%E2%80%94+Taipei%2C+Taiwan%2C+December+10%E2%80%9312+2026','_blank');return false;" aria-label="Share on LinkedIn">
+          <svg viewBox="0 0 22 22" fill="currentColor" width="17" height="17"><path d="M16 8a6 6 0 016 6v7h-4v-7a2 2 0 00-2-2 2 2 0 00-2 2v7h-4v-7a6 6 0 016-6zM2 9h4v12H2z"/><circle cx="4" cy="4" r="2"/></svg>
+          LinkedIn
+        </a>
+        <a class="share-btn share-fb" href="#"
+           onclick="window.open('https://www.facebook.com/sharer/sharer.php?u='+encodeURIComponent(location.href),'_blank');return false;" aria-label="Share on Facebook">
+          <svg viewBox="0 0 22 22" fill="currentColor" width="17" height="17"><path d="M18 2h-3a5 5 0 00-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 011-1h3z"/></svg>
+          Facebook
+        </a>
+      </div>
+    </div>
+  </div>
+
+  <!-- SITE FOOTER -->
+  <footer class="site-footer">
+    <div class="footer-grid container">
+      <div class="footer-col">
+        <div class="footer-col-title">PACLIC 40</div>
+        <p>The 40th Pacific Asia Conference on Language, Information and Computation<br/>Taipei, Taiwan &nbsp;·&nbsp; December 10–12, 2026</p>
+      </div>
+      <div class="footer-col">
+        <div class="footer-col-title">Navigation</div>
+        <nav class="footer-nav-links">
+          <a href="index.html#home">Home</a>
+          <a href="index.html#program">Program</a>
+          <a href="speakers.html">Invited Speakers</a>
+          <a href="cfp.html">Call for Papers</a>
+          <a href="index.html#registration">Registration</a>
+          <a href="venue.html">Venue &amp; Travel</a>
+          <a href="index.html#committee">Committee</a>
+          <a href="index.html#faq">FAQ</a>
+          <a href="index.html#sponsors">Sponsors</a>
+        </nav>
+      </div>
+      <div class="footer-col">
+        <div class="footer-col-title">Previous Editions</div>
+        <p class="footer-prev-line">
+          <a href="https://vlsp.org.vn/paclic2025/" target="_blank" rel="noopener">PACLIC 39 (Hanoi, 2025)</a>
+          &nbsp;·&nbsp;
+          <a href="https://sites.google.com/view/paclic38" target="_blank" rel="noopener">PACLIC 38 (Tokyo, 2024)</a>
+          &nbsp;·&nbsp;
+          <a href="https://paclic2023.github.io/" target="_blank" rel="noopener">PACLIC 37 (Hong Kong, 2023)</a>
+        </p>
+      </div>
+    </div>
+    <div class="footer-bottom container">
+      <span>© 2026 PACLIC 40 Organising Committee &nbsp;·&nbsp; Graduate Institute of Linguistics, National Taiwan University</span>
+    </div>
+  </footer>
+
+  <a href="#" class="back-to-top" id="backToTop" aria-label="Back to top">
+    <svg viewBox="0 0 22 22" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" width="18" height="18"><polyline points="18 15 11 8 4 15"/></svg>
+  </a>
+
+  <script>
+    (function () {
+      'use strict';
+      const sidebar = document.getElementById('sidebar');
+      const overlay = document.getElementById('sidebarOverlay');
+      const toggle  = document.getElementById('mobileToggle');
+      const backTop = document.getElementById('backToTop');
+
+      function openSidebar()  { sidebar.classList.add('open'); overlay.classList.add('open'); toggle.classList.add('open'); document.body.style.overflow = 'hidden'; }
+      function closeSidebar() { sidebar.classList.remove('open'); overlay.classList.remove('open'); toggle.classList.remove('open'); document.body.style.overflow = ''; }
+
+      toggle.addEventListener('click', () => sidebar.classList.contains('open') ? closeSidebar() : openSidebar());
+      overlay.addEventListener('click', closeSidebar);
+      window.addEventListener('resize', () => { if (window.innerWidth > 768) closeSidebar(); });
+
+      const io = new IntersectionObserver(entries => {
+        entries.forEach(e => { if (e.isIntersecting) { e.target.classList.add('visible'); io.unobserve(e.target); } });
+      }, { threshold: 0.08, rootMargin: '0px 0px -40px 0px' });
+      document.querySelectorAll('.reveal').forEach((el, i) => { el.style.transitionDelay = `${(i % 4) * 80}ms`; io.observe(el); });
+      setTimeout(() => { document.querySelectorAll('.reveal').forEach(el => { if (el.getBoundingClientRect().top < window.innerHeight) el.classList.add('visible'); }); }, 200);
+
+      if (backTop) {
+        window.addEventListener('scroll', () => backTop.classList.toggle('visible', window.scrollY > 400), { passive: true });
+        backTop.addEventListener('click', e => { e.preventDefault(); window.scrollTo({ top: 0, behavior: 'smooth' }); });
+      }
+    })();
+  </script>
+
+</body>
+</html>

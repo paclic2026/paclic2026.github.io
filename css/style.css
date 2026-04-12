@@ -11,6 +11,7 @@
   --navy-light:    #1A4E7A;
   --tw-red:        #FE0000;   /* Taiwan flag red */
   --tw-red-light:  #FF3333;
+  --link:          #1a56db;   /* consistent inline link blue */
   --tw-gold:       #D4920A;   /* warmer vibrant gold */
   --tw-gold-light: #F5C030;
   --tw-gold-pale:  #FEF7E0;
@@ -22,7 +23,7 @@
   --bg-alt:        #FDF8F5;   /* warm cream — Taiwan warmth */
   --white:         #FFFFFF;
   --text:          #0E1C2E;
-  --text-mid:      #4A5568;
+  --text-mid:      #2D3748;
   --text-light:    #8090A0;
   --border:        #E8DDD5;   /* warm neutral border */
   --shadow-sm:     0 2px 10px rgba(0,0,0,.07);
@@ -200,16 +201,17 @@ strong { font-weight: 700; }
   position: relative; height: 100vh; min-height: 620px; max-height: 900px;
   display: flex; align-items: center; overflow: hidden; background: #F5EAE0;
 }
-.hero-bg {
+.hero-bg { position: absolute; inset: 0; }
+.hero-slides { position: absolute; inset: 0; }
+.hero-slide {
   position: absolute; inset: 0;
-  background:
-    /* warm white veil on left; opens wide to the photo on the right */
-    linear-gradient(to right, rgba(255,252,248,.95) 0%, rgba(255,252,248,.75) 34%, rgba(255,252,248,.10) 60%, rgba(255,252,248,.0) 100%),
-    /* Taipei 101 — Pexels free licence, photo 6138797, hosted locally */
-    url('../images/taipei-hero.jpg')
-    center 50% / cover no-repeat,
-    /* gradient fallback */
-    linear-gradient(160deg, #f5e0d5 0%, #f8ede8 100%);
+  background-size: cover; background-position: center 50%;
+  opacity: 0; transition: opacity 1.4s ease-in-out;
+}
+.hero-slide.active { opacity: 1; }
+.hero-overlay {
+  position: absolute; inset: 0;
+  background: linear-gradient(to right, rgba(255,252,248,.95) 0%, rgba(255,252,248,.75) 34%, rgba(255,252,248,.10) 60%, rgba(255,252,248,.0) 100%);
 }
 .stars-layer { position: absolute; inset: 0; pointer-events: none; display: none; /* hidden for daytime photo */ }
 .star { position: absolute; background: white; border-radius: 50%; animation: twinkle var(--dur, 3s) ease-in-out var(--del, 0s) infinite; opacity: var(--op, .7); }
@@ -259,7 +261,7 @@ strong { font-weight: 700; }
 .section-intro { padding: 72px 40px 0; text-align: center; }
 .block-tag { display: inline-block; background: rgba(254,0,0,.10); color: var(--tw-jade); border: 1px solid rgba(254,0,0,.28); border-radius: 20px; padding: 4px 14px; font-size: .77rem; font-weight: 600; letter-spacing: 1.5px; text-transform: uppercase; margin-bottom: 14px; }
 .section-title { font-size: clamp(1.85rem, 3.5vw, 2.5rem); font-weight: 700; color: var(--text); margin-bottom: 14px; }
-.section-desc { font-size: .98rem; color: var(--text-mid); max-width: 650px; margin: 0 auto; line-height: 1.75; }
+.section-desc { font-size: .98rem; color: var(--text-mid); max-width: 960px; margin: 0 auto; line-height: 1.75; }
 .section-body { padding: 52px 40px 80px; }
 
 /* ── Blocks ─────────────────────────────────────────────────── */
@@ -272,9 +274,28 @@ strong { font-weight: 700; }
 .block-title { font-size: clamp(1.6rem, 2.5vw, 2.1rem); font-weight: 700; color: var(--text); margin-top: 6px; }
 .accent { color: var(--tw-red); }
 
+/* ── Content inline links (consistent blue + underline) ────── */
+.card a:not(.btn):not([class]),
+.info-block a,
+.visa-note a,
+.step-body a,
+.venue-detail a,
+.app-list a,
+.app-item a {
+  color: var(--link);
+  text-decoration: underline;
+}
+.card a:not(.btn):not([class]):hover,
+.info-block a:hover,
+.visa-note a:hover,
+.step-body a:hover,
+.venue-detail a:hover,
+.app-list a:hover,
+.app-item a:hover { color: #0d3f9e; }
+
 /* ── Cards ──────────────────────────────────────────────────── */
 .card { background: var(--white); border-radius: var(--radius); box-shadow: var(--shadow); padding: 28px 32px; position: relative; overflow: hidden; }
-.card::before { content: ''; position: absolute; top: 0; left: 0; right: 0; height: 3px; background: linear-gradient(90deg, var(--tw-red), var(--tw-gold)); }
+.card::before { content: ''; position: absolute; top: 0; left: 0; right: 0; height: 3px; background: linear-gradient(90deg, var(--navy), var(--tw-gold)); }
 .card-head { display: flex; align-items: center; gap: 10px; margin-bottom: 18px; padding-bottom: 14px; border-bottom: 1px solid var(--border); }
 .card-head h3 { font-size: 1.08rem; font-weight: 600; font-family: 'Source Sans 3', sans-serif; }
 .card-head svg { color: var(--tw-gold); flex-shrink: 0; }
@@ -358,8 +379,8 @@ strong { font-weight: 700; }
   color: var(--text-mid);
   margin-top: 36px;
 }
-.contact-banner a { color: var(--tw-red); font-weight: 600; }
-.contact-banner a:hover { text-decoration: underline; }
+.contact-banner a { color: var(--link); font-weight: 600; text-decoration: underline; }
+.contact-banner a:hover { color: #0d3f9e; }
 
 /* ═══════════════════════════════════════════════════════════════
    PROGRAM — DAY TABS
@@ -428,11 +449,12 @@ strong { font-weight: 700; }
 .speaker-btn-wrap { margin-top: auto; padding-top: 14px; }
 
 /* ── Social Events ──────────────────────────────────────────── */
-.events-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); gap: 24px; }
-.event-card { background: var(--white); border-radius: var(--radius); box-shadow: var(--shadow-sm); padding: 28px 24px; border-bottom: 3px solid var(--tw-red); transition: transform .3s var(--ease); }
+.events-grid { display: grid; grid-template-columns: repeat(3, minmax(240px, 320px)); gap: 24px; justify-content: center; }
+.event-card { background: var(--white); border-radius: var(--radius); box-shadow: var(--shadow-sm); padding: 28px 24px; border-bottom: 3px solid var(--tw-red); transition: transform .3s var(--ease); text-align: center; }
 .event-card:hover { transform: translateY(-3px); }
-.event-icon { font-size: 2.2rem; margin-bottom: 12px; }
+.event-icon { font-size: 2.2rem; margin-bottom: 12px; display: block; }
 .event-card h3 { font-size: 1.05rem; margin-bottom: 6px; }
+.event-card p { text-align: center; }
 .event-date { font-size: .8rem; color: var(--tw-gold); font-weight: 600; margin-bottom: 8px; }
 .event-card p { font-size: .9rem; color: var(--text-mid); margin: 0; }
 
@@ -490,6 +512,10 @@ strong { font-weight: 700; }
 .venue-detail { font-size: .92rem; color: var(--text-mid); line-height: 1.85; }
 .map-placeholder { border-radius: 10px; overflow: hidden; border: 1.5px solid var(--border); }
 .map-placeholder svg { width: 100%; height: auto; display: block; }
+.venue-teaser { display: flex; flex-direction: column; gap: 16px; }
+.venue-teaser-item { display: flex; gap: 14px; align-items: flex-start; font-size: .95rem; color: var(--text-mid); }
+.venue-teaser-icon { font-size: 1.3rem; flex-shrink: 0; margin-top: 1px; }
+.venue-teaser-item strong { color: var(--text-dark); }
 .hotel-note ul { list-style: disc; padding-left: 18px; margin-top: 8px; }
 .hotel-note li { font-size: .9rem; color: var(--text-mid); margin-bottom: 4px; }
 .transport-items { display: flex; flex-direction: column; gap: 16px; }
@@ -573,8 +599,8 @@ strong { font-weight: 700; }
 .faq-a { max-height: 0; overflow: hidden; transition: max-height .38s ease; }
 .faq-item.open .faq-a { max-height: 400px; }
 .faq-a-inner { padding: 14px 24px 20px; font-size: .91rem; color: var(--text-mid); line-height: 1.75; border-top: 1px solid var(--border); }
-.faq-a-inner a { color: var(--tw-red); font-weight: 500; }
-.faq-a-inner a:hover { text-decoration: underline; }
+.faq-a-inner a { color: var(--link); font-weight: 500; text-decoration: underline; }
+.faq-a-inner a:hover { color: #0d3f9e; }
 
 /* ═══════════════════════════════════════════════════════════════
    SPONSORS
