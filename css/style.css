@@ -676,7 +676,7 @@ strong { font-weight: 700; }
   .speakers-teaser { grid-template-columns: 1fr 1fr; }
   .spk-profile { grid-template-columns: 1fr; text-align: center; }
   .spk-profile-photo { justify-self: center; }
-  .spk-profile-affil { text-align: left; }
+  .spk-profile-affil { text-align: center; }
   .spk-profile-bio p { text-align: left; }
 }
 
@@ -817,6 +817,13 @@ strong { font-weight: 700; }
   .footer-grid { gap: 28px; }
   .glance-grid { grid-template-columns: 1fr 1fr; }
   .events-grid { grid-template-columns: 1fr; }
+  /* Speaker card: center info on mobile */
+  .speaker-info { text-align: center; align-items: center; }
+  /* Footer nav: spread horizontally on mobile */
+  .footer-nav-links { flex-direction: row; flex-wrap: wrap; gap: 6px 16px; }
+  /* Venue sidenav: float to top on mobile */
+  .venue-sidenav { order: -1; }
+  .venue-cards { order: 1; }
 }
 
 @media (max-width: 480px) {
