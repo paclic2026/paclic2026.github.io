@@ -821,9 +821,8 @@ strong { font-weight: 700; }
   .speaker-info { text-align: center; align-items: center; }
   /* Footer nav: spread horizontally on mobile */
   .footer-nav-links { flex-direction: row; flex-wrap: wrap; gap: 6px 16px; }
-  /* Venue sidenav: float to top on mobile */
-  .venue-sidenav { order: -1; }
-  .venue-cards { order: 1; }
+  /* Venue sidenav: hidden on mobile (use floating dot instead) */
+  .venue-sidenav { display: none; }
 }
 
 @media (max-width: 480px) {
