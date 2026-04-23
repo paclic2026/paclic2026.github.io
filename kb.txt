@@ -1,0 +1,133 @@
+PACLIC 40 - The 40th Pacific Asia Conference on Language, Information and Computation
+Theme: Language, Computation, and Cultural Diversity in the Age of AI
+Dates: December 10-12, 2026 (Thursday to Saturday, 3 full days)
+Venue: National Taiwan University, Taipei, Taiwan (specific building TBA)
+Website: https://paclic2026.github.io
+Contact: paclic2026@gmail.com
+
+--- SECTION: ABOUT PACLIC | source: https://paclic2026.github.io ---
+PACLIC (Pacific Asia Conference on Language, Information and Computation) is one of the longest-running academic conferences in the Asia-Pacific region dedicated to language science and language technology. It has been held annually since 1987, making PACLIC 40 in 2026 nearly four decades of continuous scholarship.
+
+REPUTATION & STANDING:
+- Scopus-indexed since PACLIC 19 (2005) — meets international peer-review and citation standards
+- Listed in the ACL Anthology — the authoritative open archive for computational linguistics research
+- Google Scholar h5-index: 13; h5-median: 18–19 (reflects citation impact of recent papers)
+- Brings together researchers from linguistics, computational linguistics, and NLP across Asia, the Pacific, and beyond
+- Papers undergo rigorous double-blind peer review
+- Proceedings published in open-access digital format, freely available worldwide
+- Past editions hosted by universities across Asia-Pacific (Japan, Korea, China, Philippines, Vietnam, Hong Kong, Singapore, etc.)
+
+WHY ATTEND / SUBMIT:
+- Ideal venue for work at the intersection of formal linguistics and computational/NLP approaches
+- Strong community of Asia-Pacific researchers; excellent for networking in the region
+- Open-access proceedings ensure your work is freely citable worldwide
+- Both oral and poster presentations are considered equal in quality — format is based on the nature of the work
+- PACLIC 40 is hosted by National Taiwan University (NTU), ranked among Asia's top research universities
+
+--- SECTION: IMPORTANT DATES | source: https://paclic2026.github.io/cfp.html ---
+All deadlines are at 11:59 PM UTC−12h. Always include this link when mentioning any deadline: https://www.timeanddate.com/time/zone/timezone/utc-12
+- Paper Submission Deadline: August 1, 2026
+- Notification of Acceptance: September 30, 2026
+- Camera-Ready Papers Due: October 9, 2026
+- Early Registration Deadline: November 20, 2026
+- Conference: December 10-12, 2026
+
+--- SECTION: CALL FOR PAPERS & SUBMISSION | source: https://paclic2026.github.io/cfp.html ---
+- Max 8 pages of content (excluding references and appendices)
+- Must follow ACL 2026 two-column format
+- ACL style files: https://github.com/acl-org/acl-style-files
+- Double-blind review (no author names or affiliations in submission)
+- Papers must be substantial, original, completed, unpublished work
+- Submission platform: Microsoft CMT — https://cmt3.research.microsoft.com/PACLIC2026
+- Each author may submit only ONE paper as primary author
+- Double submissions with other venues allowed if declared at submission time
+- All work must follow the ACL Code of Ethics
+Topics include: linguistics (phonology, syntax, semantics, pragmatics, discourse, psycholinguistics, sociolinguistics, language acquisition, typology, corpus linguistics) and computational/NLP (machine translation, dialogue systems, information retrieval, sentiment analysis, language resources, NLP applications, digital humanities, AI and cognitive modeling)
+
+--- SECTION: KEYNOTE SPEAKERS | source: https://paclic2026.github.io/speakers.html ---
+PACLIC 40 features 4 keynote speakers:
+1. Professor Marie-Catherine de Marneffe (UCLouvain, Belgium) - expertise: semantics, pragmatics, Universal Dependencies
+2. Professor Wei Lu (Nanyang Technological University, Singapore) - expertise: NLP, LLMs; Editor-in-Chief of Computational Linguistics journal
+3. Professor Kathleen Rastle (Royal Holloway, University of London, UK) - expertise: reading, literacy, psycholinguistics
+4. Professor Sanghoun Song (Korea University, South Korea) - expertise: computational syntax/semantics, HPSG
+
+--- SECTION: ORGANIZING COMMITTEE | source: https://paclic2026.github.io ---
+General Chair: Chia-Lin Lee, Graduate Institute of Linguistics, National Taiwan University
+Program Co-Chairs:
+- Hanjung Lee, Sungkyunkwan University, South Korea
+- Yu-Yun Chang, National Chengchi University, Taiwan
+Program Vice Chair: Okgi Kim, Kyungpook National University, South Korea
+Organizing Committee Co-Chair: Jong-Bok Kim, Kyung Hee University, South Korea
+Organizing Committee Member: Shu-Kai Hsieh, National Taiwan University
+Steering Committee: Chu-Ren Huang (Hong Kong Polytechnic University), Jong-Bok Kim (Kyung Hee University), Yasunari Harada (Waseda University), Rachel Edita O. Roxas (University of the Philippines), Shirley N. Dita (De La Salle University), Nguyen Thi Minh Huyen (Vietnam National University)
+Student Organizing Committee: Tran Cao Bang Trinh, Le Thi Thach Thao (both PhD students, Graduate Institute of Linguistics, National Taiwan University)
+
+--- SECTION: CONFERENCE PROGRAM | source: https://paclic2026.github.io ---
+The program is currently being updated and finalized.
+For the latest program updates, please visit https://paclic2026.github.io or contact paclic2026@gmail.com
+
+--- SECTION: REGISTRATION | source: https://paclic2026.github.io ---
+- Registration details are being finalized
+- Early Registration Deadline: November 20, 2026
+- At least one author per accepted paper must register by early registration deadline and attend in person
+
+--- SECTION: PUBLICATION | source: https://paclic2026.github.io ---
+- Proceedings published in open-access digital format
+- Indexed in Scopus (since PACLIC 19, 2005) and listed in ACL Anthology
+- Google Scholar metrics: h5-index of 13, h5-median of 18-19
+- Papers presented orally or as posters (decision based on nature, not quality)
+
+--- SECTION: VENUE & TRAVEL | source: https://paclic2026.github.io/venue.html ---
+CONFERENCE VENUE:
+Host: National Taiwan University (NTU)
+Address: No. 1, Sec. 4, Roosevelt Rd., Da'an District, Taipei City 106
+Website: https://www.ntu.edu.tw/english/
+Google Maps: https://www.google.com.tw/maps/place/National+Taiwan+University/@25.0173405,121.5397518,17z/data=!3m1!4b1!4m6!3m5!1s0x3442a989fe322ea9:0x21750404ee1d7f66!8m2!3d25.0173405!4d121.5397518!16zL20vMDFjc3Fn?entry=ttu&g_ep=EgoyMDI2MDQwOC4wIKXMDSoASAFQAw%3D%3D
+Specific building/room: To be announced
+
+VISA & ENTRY:
+- Taiwan offers visa-free (14–90 days) entry to citizens of USA, Canada, UK, EU/Schengen, Australia, New Zealand, Japan, South Korea, and 60+ other countries
+- Visa required for other countries: apply at a Taiwan representative office, processing ~5–10 business days. Check: https://www.boca.gov.tw/mp-2.html
+- Passport must have at least 6 months validity from entry date
+- Complete NIA Online Arrival Card before landing to save time at immigration
+- Invitation/visa support letter: contact paclic2026@gmail.com after completing registration
+
+GETTING TO TAIPEI FROM TAOYUAN AIRPORT (TPE):
+Option 1 - Airport MRT (recommended): ~35–39 min, NT$160 (~USD 5), runs 6AM–11PM every 15 min. Take Express MRT to Taipei Main Station → transfer to Green Line → Gongguan Station (Exit 3), 3–5 min walk to NTU
+Option 2 - Airport Bus 1819: ~70–90 min, NT$160, to Taipei Main Station then MRT/taxi to NTU
+Option 3 - Taxi/Uber: ~40–50 min, NT$1,100–1,500 (~USD 35–48), available 24/7. Pickup at Columns 15/17/20/23 (T1) or 24/26/29 (T2)
+From Songshan Airport (TSA): ~25–30 min, NT$30. Brown Line → Nanjing Fuxing → Green Line → Gongguan Station
+
+GETTING AROUND TAIPEI:
+- Taipei MRT: clean, safe, fully English-signposted. Nearest station: Gongguan Station (Green Line, Exit 3), 5-min walk to NTU. NT$20–65/trip, runs 6AM–midnight
+- EasyCard (悠遊卡): rechargeable card for MRT, buses, YouBike, convenience stores. Get at any MRT station for NT$100
+- YouBike: public bike-sharing, stations around NTU. First 30 min free, NT$10/30 min after. Requires YouBike 2.0 app enrollment
+- Taxi/Uber/Line Taxi: metered taxis available on street. Starts NT$85, NT$20 surcharge 11PM–6AM. Have destination in Chinese characters ready
+
+ACCOMMODATION (recommended areas):
+- Da'an District: walking distance to NTU, quiet with good dining and MRT access
+- Gongguan Area: directly adjacent to NTU, lively student district with affordable options
+- Zhongzheng District: Taipei city centre, well-connected by MRT
+- Zhongshan District: north of city centre, wide range of hotels at various price points
+Hotel options will be listed on the website once finalised.
+
+FOOD & DRINK:
+Near NTU: Gongguan Night Market (5 min walk), Shida Night Market (10 min walk), Roosevelt Road restaurants, NTU campus cafeteria
+Must-try Taiwanese foods: beef noodle soup, scallion pancake, oyster omelette, bubble tea (invented in Taiwan), Xiao Long Bao, stinky tofu
+Vegan/vegetarian: look for 素 (Sù) character or Buddhist swastika (卍) on signs
+
+TAIPEI HIGHLIGHTS:
+- Taipei 101: iconic 508m skyscraper, observation deck on floor 89
+- National Palace Museum: world-class museum with 700,000+ items spanning 8,000 years
+- Longshan Temple: 18th-century temple, important cultural landmark
+- Daan Forest Park: peaceful urban forest minutes from NTU
+- Ximending: vibrant pedestrian shopping and entertainment district
+- Elephant Mountain (象山): 30-min hike with panoramic city views
+
+USEFUL TIPS:
+- Currency: New Taiwan Dollar (NT$). 1 USD ≈ NT$31–32. ATMs widely available at 7-Eleven and banks
+- Weather in December: 14–22°C (57–72°F), occasional rain. Bring light jacket and umbrella
+- Weather forecast: https://www.accuweather.com/en/tw/taipei-city/315078/weather-forecast/315078
+December weather: https://www.accuweather.com/en/tw/taipei-city/315078/december-weather/315078
+- Google Maps works well in Taiwan for MRT and bus directions
+- Google Translate camera mode is helpful for menus and signs (Taiwan uses Traditional Chinese)
