@@ -73,7 +73,7 @@ Then open [http://localhost:8080](http://localhost:8080) in your browser.
 | Event | Date |
 |---|---|
 | Paper submission deadline | August 1, 2026 |
-| Pre-conference workshops | December 9–10, 2026 |
+| Pre-conference workshops | December 9–10, 2026  |
 | Main conference | December 10–12, 2026 |
 
 ## Contact
