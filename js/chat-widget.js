@@ -145,6 +145,28 @@ const SHEETS_URL  = 'https://script.google.com/macros/s/AKfycbwaif5hB6X_uO8tivaV
         bottom: 20px;
         right: 16px;
       }
+      /* On mobile, hide floating button when chat is open */
+      #pw-chat-btn.pw-open-btn {
+        display: none;
+      }
+      /* Mobile close button inside panel */
+      #pw-mobile-close {
+        display: flex;
+        position: absolute;
+        top: 12px;
+        right: 12px;
+        z-index: 601;
+        width: 36px;
+        height: 36px;
+        border-radius: 50%;
+        border: none;
+        background: rgba(0,0,0,.15);
+        color: #fff;
+        font-size: 18px;
+        align-items: center;
+        justify-content: center;
+        cursor: pointer;
+      }
     }
   `;
   document.head.appendChild(style);
@@ -170,6 +192,13 @@ const SHEETS_URL  = 'https://script.google.com/macros/s/AKfycbwaif5hB6X_uO8tivaV
   panel.setAttribute('role', 'dialog');
   panel.setAttribute('aria-label', 'PACLIC 40 AI Assistant');
 
+  const mobileClose = document.createElement('button');
+  mobileClose.id = 'pw-mobile-close';
+  mobileClose.setAttribute('aria-label', 'Close chat');
+  mobileClose.innerHTML = '✕';
+  mobileClose.style.display = 'none'; // hidden on desktop
+  panel.appendChild(mobileClose);
+
   document.body.appendChild(panel);
   document.body.appendChild(btn);
 
@@ -177,9 +206,15 @@ const SHEETS_URL  = 'https://script.google.com/macros/s/AKfycbwaif5hB6X_uO8tivaV
   let isOpen = false;
   let iframeLoaded = false;
 
+  const isMobile = () => window.innerWidth <= 600;
+
   function openChat() {
     if (!iframeLoaded) {
-      panel.innerHTML = `<iframe src="${CHATBOT_URL}?embed=1" title="PACLIC 40 AI Assistant" allow="autoplay"></iframe>`;
+      const iframe = document.createElement('iframe');
+      iframe.src = `${CHATBOT_URL}?embed=1`;
+      iframe.title = 'PACLIC 40 AI Assistant';
+      iframe.allow = 'autoplay';
+      panel.appendChild(iframe);
       iframeLoaded = true;
     }
     isOpen = true;
@@ -187,6 +222,7 @@ const SHEETS_URL  = 'https://script.google.com/macros/s/AKfycbwaif5hB6X_uO8tivaV
     btn.classList.add('pw-open-btn');
     btn.setAttribute('aria-label', 'Close AI Assistant');
     btn.innerHTML = `<span class="pw-icon">${ICON_CLOSE}</span><span class="pw-label">Close</span>`;
+    mobileClose.style.display = isMobile() ? 'flex' : 'none';
   }
 
   function closeChat() {
@@ -195,7 +231,10 @@ const SHEETS_URL  = 'https://script.google.com/macros/s/AKfycbwaif5hB6X_uO8tivaV
     btn.classList.remove('pw-open-btn');
     btn.setAttribute('aria-label', 'Open PACLIC 40 AI Assistant');
     btn.innerHTML = `<span class="pw-icon">${ICON_AI}</span><span class="pw-label">Ask AI</span>`;
+    mobileClose.style.display = 'none';
   }
+
+  mobileClose.addEventListener('click', closeChat);
 
   btn.addEventListener('click', () => isOpen ? closeChat() : openChat());
 
