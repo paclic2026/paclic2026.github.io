@@ -153,19 +153,23 @@ const SHEETS_URL  = 'https://script.google.com/macros/s/AKfycbwaif5hB6X_uO8tivaV
       #pw-mobile-close {
         display: flex;
         position: absolute;
-        top: 12px;
-        right: 12px;
+        top: 10px;
+        right: 10px;
         z-index: 601;
-        width: 36px;
         height: 36px;
-        border-radius: 50%;
+        padding: 0 14px 0 10px;
+        gap: 6px;
+        border-radius: 18px;
         border: none;
-        background: rgba(0,0,0,.15);
+        background: rgba(0,0,0,.25);
         color: #fff;
-        font-size: 18px;
+        font-size: 13px;
+        font-weight: 700;
+        font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
         align-items: center;
         justify-content: center;
         cursor: pointer;
+        letter-spacing: 0.01em;
       }
     }
   `;
@@ -195,7 +199,7 @@ const SHEETS_URL  = 'https://script.google.com/macros/s/AKfycbwaif5hB6X_uO8tivaV
   const mobileClose = document.createElement('button');
   mobileClose.id = 'pw-mobile-close';
   mobileClose.setAttribute('aria-label', 'Close chat');
-  mobileClose.innerHTML = '✕';
+  mobileClose.innerHTML = '✕ Close';
   mobileClose.style.display = 'none'; // hidden on desktop
   panel.appendChild(mobileClose);
 
@@ -222,7 +226,11 @@ const SHEETS_URL  = 'https://script.google.com/macros/s/AKfycbwaif5hB6X_uO8tivaV
     btn.classList.add('pw-open-btn');
     btn.setAttribute('aria-label', 'Close AI Assistant');
     btn.innerHTML = `<span class="pw-icon">${ICON_CLOSE}</span><span class="pw-label">Close</span>`;
-    mobileClose.style.display = isMobile() ? 'flex' : 'none';
+    if (isMobile()) {
+      mobileClose.style.display = 'flex';
+      const navToggle = document.getElementById('mobileToggle');
+      if (navToggle) navToggle.style.visibility = 'hidden';
+    }
   }
 
   function closeChat() {
@@ -232,6 +240,8 @@ const SHEETS_URL  = 'https://script.google.com/macros/s/AKfycbwaif5hB6X_uO8tivaV
     btn.setAttribute('aria-label', 'Open PACLIC 40 AI Assistant');
     btn.innerHTML = `<span class="pw-icon">${ICON_AI}</span><span class="pw-label">Ask AI</span>`;
     mobileClose.style.display = 'none';
+    const navToggle = document.getElementById('mobileToggle');
+    if (navToggle) navToggle.style.visibility = 'visible';
   }
 
   mobileClose.addEventListener('click', closeChat);

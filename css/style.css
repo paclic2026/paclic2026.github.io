@@ -715,9 +715,12 @@ strong { font-weight: 700; }
 /* ═══════════════════════════════════════════════════════════════
    BACK TO TOP
 ═══════════════════════════════════════════════════════════════ */
-.back-to-top { position: fixed; bottom: 30px; left: 50%; transform: translateX(-50%) translateY(20px); z-index: 500; width: 44px; height: 44px; background: var(--navy-deep); color: rgba(255,255,255,.85); border-radius: 50%; display: flex; align-items: center; justify-content: center; font-size: 1rem; box-shadow: var(--shadow); border: 1.5px solid rgba(201,151,42,.25); opacity: 0; transition: all .3s var(--ease); pointer-events: none; }
+.back-to-top { position: fixed; bottom: 30px; left: calc(50% + var(--sidebar-w) / 2); transform: translateX(-50%) translateY(20px); z-index: 500; width: 44px; height: 44px; background: var(--navy-deep); color: rgba(255,255,255,.85); border-radius: 50%; display: flex; align-items: center; justify-content: center; font-size: 1rem; box-shadow: var(--shadow); border: 1.5px solid rgba(201,151,42,.25); opacity: 0; transition: all .3s var(--ease); pointer-events: none; }
 .back-to-top.visible { opacity: 1; transform: translateX(-50%) translateY(0); pointer-events: auto; }
 .back-to-top:hover { background: var(--tw-red); border-color: var(--tw-red); transform: translateX(-50%) translateY(-3px); }
+@media (max-width: 900px) {
+  .back-to-top { left: 50%; }
+}
 
 /* ═══════════════════════════════════════════════════════════════
    SCROLL REVEAL
