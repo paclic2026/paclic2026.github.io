@@ -116,7 +116,6 @@ const SHEETS_URL  = 'https://script.google.com/macros/s/AKfycbwaif5hB6X_uO8tivaV
       transform: scale(.93) translateY(20px);
       transform-origin: bottom right;
       transition: transform .28s cubic-bezier(.22,.68,0,1.15), opacity .22s ease;
-      will-change: transform, opacity;
     }
     #pw-chat-panel.pw-open {
       opacity: 1;
@@ -146,9 +145,8 @@ const SHEETS_URL  = 'https://script.google.com/macros/s/AKfycbwaif5hB6X_uO8tivaV
         max-width: 100%;
         border-radius: 0;
         transform-origin: bottom center;
-        /* Simpler fade-only transition on mobile — no scale/translate repaint */
+        /* Simpler fade-only transition on mobile */
         transition: opacity .2s ease;
-        transform: none !important;
       }
       #pw-chat-btn {
         bottom: 20px;

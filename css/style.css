@@ -829,6 +829,17 @@ strong { font-weight: 700; }
 }
 
 @media (max-width: 480px) {
+  /* Replace side-white gradient with dark center overlay for readability */
+  .hero-overlay {
+    background: linear-gradient(to bottom,
+      rgba(0,0,0,.55) 0%,
+      rgba(0,0,0,.45) 60%,
+      rgba(0,0,0,.2) 100%);
+  }
+  /* Make all hero text white for contrast against dark overlay */
+  .hero-headline .headline-main { color: #fff; }
+  .headline-sub { color: rgba(255,255,255,.9); }
+  .hero-theme { color: rgba(255,255,255,.85); }
   .hero-eyebrow { display: flex; justify-content: center; }
   .hero-eyebrow .eyebrow-line { display: none; }
   .hero-eyebrow span { font-size: .72rem; letter-spacing: 1.5px; }
@@ -836,8 +847,8 @@ strong { font-weight: 700; }
   .hero-headline .headline-main { font-size: 2.1rem; }
   .headline-sub { font-size: .9rem; }
   .hero-theme { font-size: .88rem; max-width: 100%; }
-  .hero-cta { justify-content: center; }
-  .hero-cta .btn { width: 80%; }
+  .hero-cta { align-items: center; }
+  .hero-cta .btn { width: 70%; font-size: .9rem; padding: 12px 20px; }
   .member-card { max-width: 100%; }
   .about-stats { grid-template-columns: 1fr 1fr; }
   .glance-grid { grid-template-columns: 1fr; }
