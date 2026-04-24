@@ -234,7 +234,15 @@ const SHEETS_URL  = 'https://script.google.com/macros/s/AKfycbwaif5hB6X_uO8tivaV
     panel.appendChild(iframe);
   }
 
-  if (!isMobile()) createIframe(); // desktop only preload
+  // Desktop/tablet: preload iframe only when browser is idle (not competing with page load)
+  if (!isMobile()) {
+    const schedulePreload = () => createIframe();
+    if ('requestIdleCallback' in window) {
+      requestIdleCallback(schedulePreload, { timeout: 5000 });
+    } else {
+      setTimeout(schedulePreload, 3000); // fallback: wait 3s after page load
+    }
+  }
 
   function openChat() {
     if (!iframe) createIframe(); // mobile: load on first open

@@ -843,6 +843,17 @@ strong { font-weight: 700; }
   .venue-sidenav { display: none; }
 }
 
+/* ── Respect reduced-motion preference (older/slower devices) ── */
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after {
+    animation-duration: .01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: .01ms !important;
+  }
+  .hero-slide { transition: none !important; }
+  .reveal { opacity: 1 !important; transform: none !important; }
+}
+
 @media (max-width: 480px) {
   /* Replace side-white gradient with dark center overlay for readability */
   .hero-overlay {
