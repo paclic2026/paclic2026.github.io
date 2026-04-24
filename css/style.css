@@ -829,10 +829,15 @@ strong { font-weight: 700; }
 }
 
 @media (max-width: 480px) {
-  .hero-eyebrow { display: none; }
+  .hero-eyebrow { display: flex; justify-content: center; }
+  .hero-eyebrow .eyebrow-line { display: none; }
+  .hero-eyebrow span { font-size: .72rem; letter-spacing: 1.5px; }
+  .hero-content { text-align: center; }
   .hero-headline .headline-main { font-size: 2.1rem; }
   .headline-sub { font-size: .9rem; }
-  .hero-theme { font-size: .88rem; }
+  .hero-theme { font-size: .88rem; max-width: 100%; }
+  .hero-cta { justify-content: center; }
+  .hero-cta .btn { width: 80%; }
   .member-card { max-width: 100%; }
   .about-stats { grid-template-columns: 1fr 1fr; }
   .glance-grid { grid-template-columns: 1fr; }

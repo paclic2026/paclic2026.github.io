@@ -14,11 +14,20 @@ This is the official static website for PACLIC 40, built as a single-page applic
 
 ```
 PACLIC Web/
-├── index.html        # Main HTML — all sections in one file
+├── index.html              # Home page
+├── cfp.html                # Call for Papers
+├── speakers.html           # Keynote Speakers
+├── venue.html              # Venue & Travel
 ├── css/
-│   └── style.css     # Full stylesheet with CSS custom properties
+│   └── style.css           # Full stylesheet with CSS custom properties
 ├── js/
-│   └── main.js       # Scroll-spy, countdown timers, mobile nav, tabs
+│   ├── main.js             # Scroll-spy, countdown timers, mobile nav, tabs
+│   └── chat-widget.js      # Floating AI assistant chat widget
+├── images/                 # Photos and graphics
+├── kb.txt                  # AI chatbot knowledge base (fetched at runtime)
+├── system-prompt.txt       # AI chatbot system instruction (fetched at runtime)
+├── PACLIC_40_Call_for_Papers.pdf
+├── PACLIC2026_Poster.pdf
 └── README.md
 ```
 
@@ -73,12 +82,27 @@ Then open [http://localhost:8080](http://localhost:8080) in your browser.
 | Event | Date |
 |---|---|
 | Paper submission deadline | August 1, 2026 |
-| Pre-conference workshops | December 9–10, 2026  |
+| Pre-conference workshops | December 9–10, 2026 |
 | Main conference | December 10–12, 2026 |
 
 ## Contact
 
 📧 [paclic40@gmail.com](mailto:paclic40@gmail.com)
+
+---
+
+## Image Credits
+
+All photos are used under their respective free-use licences.
+
+| # | Description | Photographer | Source |
+|---|---|---|---|
+| 1 | Taipei City at sunset | Timo Volz (May 21, 2021) | [Unsplash](https://unsplash.com/photos/high-rise-building-during-sunset-9-JFZIORoRw) — Unsplash License |
+| 2 | National Taiwan University (NTU) | Unknown (Jan 21, 2023) | [Unsplash](https://unsplash.com/photos/a-group-of-people-walking-down-a-street-next-to-palm-trees-I1fH1nAt5GY) — Unsplash License |
+| 3 | White oriental memorial archway in sunny day, Taipei | Yuan Hang Chen | [Pexels](https://www.pexels.com/photo/white-oriental-memorial-archway-in-sunny-day-4095421/) — Pexels License |
+| 4 | Raohe Night Market, Taipei, Taiwan | Vernon Raineil Cenzon (Mar 19, 2019) | [Unsplash](https://unsplash.com/photos/group-of-people-on-china-town-6rEPAbrXNaY) — Unsplash License |
+| 5 | Jiufen Taiwan teahouse / Chinese architecture | Ricky LK (Mar 1, 2023) | [Unsplash](https://unsplash.com/photos/a-row-of-buildings-with-red-lanterns-hanging-from-them-Cj72lAv4nMw) — Unsplash License |
+| 6 | Aerial view of illuminated skyscrapers in Taipei, Taiwan | Jimmy Liao | [Pexels](https://www.pexels.com/photo/aerial-view-illuminated-skyscrapers-in-taipei-taiwan-16705995/) — Pexels License |
 
 ---
 

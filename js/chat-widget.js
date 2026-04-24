@@ -116,6 +116,7 @@ const SHEETS_URL  = 'https://script.google.com/macros/s/AKfycbwaif5hB6X_uO8tivaV
       transform: scale(.93) translateY(20px);
       transform-origin: bottom right;
       transition: transform .28s cubic-bezier(.22,.68,0,1.15), opacity .22s ease;
+      will-change: transform, opacity;
     }
     #pw-chat-panel.pw-open {
       opacity: 1;
@@ -127,6 +128,11 @@ const SHEETS_URL  = 'https://script.google.com/macros/s/AKfycbwaif5hB6X_uO8tivaV
       height: 100%;
       border: none;
       display: block;
+      opacity: 0;
+      transition: opacity .3s ease;
+    }
+    #pw-chat-panel iframe.pw-ready {
+      opacity: 1;
     }
 
     /* ── Mobile: full-screen ── */
@@ -208,19 +214,18 @@ const SHEETS_URL  = 'https://script.google.com/macros/s/AKfycbwaif5hB6X_uO8tivaV
 
   /* ── Logic ───────────────────────────────────────────────────────── */
   let isOpen = false;
-  let iframeLoaded = false;
 
   const isMobile = () => window.innerWidth <= 600;
 
+  // Preload iframe in the background so first open is instant
+  const iframe = document.createElement('iframe');
+  iframe.src = `${CHATBOT_URL}?embed=1`;
+  iframe.title = 'PACLIC 40 AI Assistant';
+  iframe.allow = 'autoplay';
+  iframe.addEventListener('load', () => iframe.classList.add('pw-ready'));
+  panel.appendChild(iframe);
+
   function openChat() {
-    if (!iframeLoaded) {
-      const iframe = document.createElement('iframe');
-      iframe.src = `${CHATBOT_URL}?embed=1`;
-      iframe.title = 'PACLIC 40 AI Assistant';
-      iframe.allow = 'autoplay';
-      panel.appendChild(iframe);
-      iframeLoaded = true;
-    }
     isOpen = true;
     panel.classList.add('pw-open');
     btn.classList.add('pw-open-btn');
