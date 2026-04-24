@@ -145,8 +145,7 @@ const SHEETS_URL  = 'https://script.google.com/macros/s/AKfycbwaif5hB6X_uO8tivaV
         max-width: 100%;
         border-radius: 0;
         transform-origin: bottom center;
-        /* Simpler fade-only transition on mobile */
-        transition: opacity .2s ease;
+        transition: transform .28s cubic-bezier(.22,.68,0,1.15), opacity .22s ease;
       }
       #pw-chat-btn {
         bottom: 20px;
@@ -246,7 +245,6 @@ const SHEETS_URL  = 'https://script.google.com/macros/s/AKfycbwaif5hB6X_uO8tivaV
     btn.innerHTML = `<span class="pw-icon">${ICON_CLOSE}</span><span class="pw-label">Close</span>`;
     if (isMobile()) {
       mobileClose.style.display = 'flex';
-      document.body.style.overflow = 'hidden'; // prevent bg repaint
       const navToggle = document.getElementById('mobileToggle');
       if (navToggle) navToggle.style.visibility = 'hidden';
     }
@@ -259,7 +257,6 @@ const SHEETS_URL  = 'https://script.google.com/macros/s/AKfycbwaif5hB6X_uO8tivaV
     btn.setAttribute('aria-label', 'Open PACLIC 40 AI Assistant');
     btn.innerHTML = `<span class="pw-icon">${ICON_AI}</span><span class="pw-label">Ask AI</span>`;
     mobileClose.style.display = 'none';
-    document.body.style.overflow = ''; // restore scroll
     const navToggle = document.getElementById('mobileToggle');
     if (navToggle) navToggle.style.visibility = 'visible';
   }
