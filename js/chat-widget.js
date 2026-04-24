@@ -146,6 +146,9 @@ const SHEETS_URL  = 'https://script.google.com/macros/s/AKfycbwaif5hB6X_uO8tivaV
         max-width: 100%;
         border-radius: 0;
         transform-origin: bottom center;
+        /* Simpler fade-only transition on mobile — no scale/translate repaint */
+        transition: opacity .2s ease;
+        transform: none !important;
       }
       #pw-chat-btn {
         bottom: 20px;
@@ -217,15 +220,27 @@ const SHEETS_URL  = 'https://script.google.com/macros/s/AKfycbwaif5hB6X_uO8tivaV
 
   const isMobile = () => window.innerWidth <= 600;
 
-  // Preload iframe in the background so first open is instant
-  const iframe = document.createElement('iframe');
-  iframe.src = `${CHATBOT_URL}?embed=1`;
-  iframe.title = 'PACLIC 40 AI Assistant';
-  iframe.allow = 'autoplay';
-  iframe.addEventListener('load', () => iframe.classList.add('pw-ready'));
-  panel.appendChild(iframe);
+  // Desktop: preload iframe immediately so first open is instant
+  // Mobile: load lazily to avoid memory pressure causing freeze
+  let iframe = null;
+  let iframeReady = false;
+
+  function createIframe() {
+    iframe = document.createElement('iframe');
+    iframe.src = `${CHATBOT_URL}?embed=1`;
+    iframe.title = 'PACLIC 40 AI Assistant';
+    iframe.allow = 'autoplay';
+    iframe.addEventListener('load', () => {
+      iframeReady = true;
+      iframe.classList.add('pw-ready');
+    });
+    panel.appendChild(iframe);
+  }
+
+  if (!isMobile()) createIframe(); // desktop only preload
 
   function openChat() {
+    if (!iframe) createIframe(); // mobile: load on first open
     isOpen = true;
     panel.classList.add('pw-open');
     btn.classList.add('pw-open-btn');
@@ -233,6 +248,7 @@ const SHEETS_URL  = 'https://script.google.com/macros/s/AKfycbwaif5hB6X_uO8tivaV
     btn.innerHTML = `<span class="pw-icon">${ICON_CLOSE}</span><span class="pw-label">Close</span>`;
     if (isMobile()) {
       mobileClose.style.display = 'flex';
+      document.body.style.overflow = 'hidden'; // prevent bg repaint
       const navToggle = document.getElementById('mobileToggle');
       if (navToggle) navToggle.style.visibility = 'hidden';
     }
@@ -245,6 +261,7 @@ const SHEETS_URL  = 'https://script.google.com/macros/s/AKfycbwaif5hB6X_uO8tivaV
     btn.setAttribute('aria-label', 'Open PACLIC 40 AI Assistant');
     btn.innerHTML = `<span class="pw-icon">${ICON_AI}</span><span class="pw-label">Ask AI</span>`;
     mobileClose.style.display = 'none';
+    document.body.style.overflow = ''; // restore scroll
     const navToggle = document.getElementById('mobileToggle');
     if (navToggle) navToggle.style.visibility = 'visible';
   }
