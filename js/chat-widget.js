@@ -249,7 +249,8 @@ const SHEETS_URL  = 'https://script.google.com/macros/s/AKfycbwaif5hB6X_uO8tivaV
     if (!iframe) {
       createIframe(); // mobile: load on first open
     } else if (!iframeReady) {
-      // Tablet: restore src after blank reset
+      // Tablet: restore src + show iframe after blank/hide reset
+      iframe.style.display = 'block';
       iframe.src = `${CHATBOT_URL}?embed=1`;
     }
     isOpen = true;
@@ -282,11 +283,11 @@ const SHEETS_URL  = 'https://script.google.com/macros/s/AKfycbwaif5hB6X_uO8tivaV
           iframe = null;
           iframeReady = false;
         } else {
-          // Tablet (iPad): blank the src to unload chatbot JS, keep iframe element
-          // so reopening is faster than a full destroy/recreate
+          // Tablet (iPad): blank src + hide from render tree to free GPU layer
           iframe.classList.remove('pw-ready');
           iframeReady = false;
           iframe.src = 'about:blank';
+          iframe.style.display = 'none';
         }
       }, 300);
     }
