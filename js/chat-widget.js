@@ -216,6 +216,7 @@ const SHEETS_URL  = 'https://script.google.com/macros/s/AKfycbwaif5hB6X_uO8tivaV
   let isOpen = false;
 
   const isMobile = () => window.innerWidth <= 600;
+  const isTabletOrMobile = () => window.innerWidth <= 1024;
 
   // Desktop: preload iframe immediately so first open is instant
   // Mobile: load lazily to avoid memory pressure causing freeze
@@ -267,6 +268,14 @@ const SHEETS_URL  = 'https://script.google.com/macros/s/AKfycbwaif5hB6X_uO8tivaV
     mobileClose.style.display = 'none';
     const navToggle = document.getElementById('mobileToggle');
     if (navToggle) navToggle.style.visibility = 'visible';
+    // Mobile/tablet: destroy iframe on close to free memory and prevent page lag
+    if (isTabletOrMobile() && iframe) {
+      setTimeout(() => {
+        iframe.remove();
+        iframe = null;
+        iframeReady = false;
+      }, 300); // wait for close animation to finish
+    }
   }
 
   mobileClose.addEventListener('click', closeChat);
