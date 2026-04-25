@@ -246,7 +246,12 @@ const SHEETS_URL  = 'https://script.google.com/macros/s/AKfycbwaif5hB6X_uO8tivaV
   }
 
   function openChat() {
-    if (!iframe) createIframe(); // mobile: load on first open
+    if (!iframe) {
+      createIframe(); // mobile: load on first open
+    } else if (!iframeReady) {
+      // Tablet: restore src after blank reset
+      iframe.src = `${CHATBOT_URL}?embed=1`;
+    }
     isOpen = true;
     panel.classList.add('pw-open');
     btn.classList.add('pw-open-btn');
@@ -268,13 +273,22 @@ const SHEETS_URL  = 'https://script.google.com/macros/s/AKfycbwaif5hB6X_uO8tivaV
     mobileClose.style.display = 'none';
     const navToggle = document.getElementById('mobileToggle');
     if (navToggle) navToggle.style.visibility = 'visible';
-    // Mobile/tablet: destroy iframe on close to free memory and prevent page lag
+    // Free memory on close to prevent page lag after chat
     if (isTabletOrMobile() && iframe) {
       setTimeout(() => {
-        iframe.remove();
-        iframe = null;
-        iframeReady = false;
-      }, 300); // wait for close animation to finish
+        if (isMobile()) {
+          // Phone: fully destroy iframe — fast enough to reload
+          iframe.remove();
+          iframe = null;
+          iframeReady = false;
+        } else {
+          // Tablet (iPad): blank the src to unload chatbot JS, keep iframe element
+          // so reopening is faster than a full destroy/recreate
+          iframe.classList.remove('pw-ready');
+          iframeReady = false;
+          iframe.src = 'about:blank';
+        }
+      }, 300);
     }
   }
 
