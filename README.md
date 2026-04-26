@@ -87,7 +87,7 @@ Then open [http://localhost:8080](http://localhost:8080) in your browser.
 
 ## Contact
 
-📧 [paclic40@gmail.com](mailto:paclic40@gmail.com)
+📧 [paclic2026@gmail.com](mailto:paclic2026@gmail.com)
 
 ---
 
@@ -98,7 +98,7 @@ All photos are used under their respective free-use licences.
 | # | Description | Photographer | Source |
 |---|---|---|---|
 | 1 | Taipei City at sunset | Timo Volz (May 21, 2021) | [Unsplash](https://unsplash.com/photos/high-rise-building-during-sunset-9-JFZIORoRw) — Unsplash License |
-| 2 | National Taiwan University (NTU) | Unknown (Jan 21, 2023) | [Unsplash](https://unsplash.com/photos/a-group-of-people-walking-down-a-street-next-to-palm-trees-I1fH1nAt5GY) — Unsplash License |
+| 2 | National Taiwan University (NTU) | Yu Chen Lin 育辰 (Jan 21, 2023) | [Unsplash](https://unsplash.com/photos/a-group-of-people-walking-down-a-street-next-to-palm-trees-I1fH1nAt5GY) — Unsplash License |
 | 3 | White oriental memorial archway in sunny day, Taipei | Yuan Hang Chen | [Pexels](https://www.pexels.com/photo/white-oriental-memorial-archway-in-sunny-day-4095421/) — Pexels License |
 | 4 | Raohe Night Market, Taipei, Taiwan | Vernon Raineil Cenzon (Mar 19, 2019) | [Unsplash](https://unsplash.com/photos/group-of-people-on-china-town-6rEPAbrXNaY) — Unsplash License |
 | 5 | Jiufen Taiwan teahouse / Chinese architecture | Ricky LK (Mar 1, 2023) | [Unsplash](https://unsplash.com/photos/a-row-of-buildings-with-red-lanterns-hanging-from-them-Cj72lAv4nMw) — Unsplash License |
