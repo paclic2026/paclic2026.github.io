@@ -108,10 +108,10 @@ All photos are used under their respective free-use licences.
 
 ## Technical Development
 
-Website and AI chatbot integration designed and implemented by **Jessica Thach-Thao Le** (PhD Student, Graduate Institute of Linguistics, National Taiwan University).
+Website development and AI chatbot integration by **Jessica Thach-Thao Le**, Graduate Student, Graduate Institute of Linguistics, National Taiwan University.
 
 For technical issues with the website, please open a GitHub issue or contact [jessie.thachthao@gmail.com](mailto:jessie.thachthao@gmail.com).
-For conference-related inquiries, please contact [paclic2026@gmail.com](mailto:paclic2026@gmail.com).
+For conference-related inquiries (program, submissions, registration), please contact [paclic2026@gmail.com](mailto:paclic2026@gmail.com).
 
 ---
 
