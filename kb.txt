@@ -35,7 +35,8 @@ All deadlines are at 11:59 PM UTC−12h. Always include this link when mentionin
 --- SECTION: CALL FOR PAPERS & SUBMISSION | source: https://paclic2026.github.io/cfp.html ---
 - Max 8 pages of content (excluding references and appendices)
 - Must follow ACL 2026 two-column format
-- ACL style files: https://github.com/acl-org/acl-style-files
+- Submissions must use the LaTeX template only — Word/DOCX format is NOT accepted
+- ACL LaTeX style files: https://github.com/acl-org/acl-style-files
 - Double-blind review (no author names or affiliations in submission)
 - Papers must be substantial, original, completed, unpublished work
 - Submission platform: Microsoft CMT — https://cmt3.research.microsoft.com/PACLIC2026
