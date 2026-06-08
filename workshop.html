@@ -1,0 +1,443 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>JWLLP 36 | PACLIC 40 — Taipei, Taiwan, December 2026</title>
+  <meta name="description" content="The 36th Joint Workshop on Linguistics and Language Processing (JWLLP 36), co-located with PACLIC 40. Bridging Minds and Machines: Linguistics, Cognition and Large Language Models. Taipei, December 12, 2026."/>
+  <meta property="og:type"        content="website"/>
+  <meta property="og:url"         content="https://paclic2026.github.io/workshop.html"/>
+  <meta property="og:title"       content="JWLLP 36 | PACLIC 40 — Taipei, Taiwan, December 2026"/>
+  <meta property="og:description" content="The 36th Joint Workshop on Linguistics and Language Processing (JWLLP 36), co-located with PACLIC 40. Bridging Minds and Machines: Linguistics, Cognition and Large Language Models."/>
+  <meta property="og:image"       content="https://paclic2026.github.io/images/taipei-hero.jpg"/>
+  <meta name="twitter:card"        content="summary_large_image"/>
+  <meta name="twitter:title"       content="JWLLP 36 | PACLIC 40 — Taipei, Taiwan, December 2026"/>
+  <meta name="twitter:description" content="The 36th Joint Workshop on Linguistics and Language Processing (JWLLP 36), co-located with PACLIC 40."/>
+  <meta name="twitter:image"       content="https://paclic2026.github.io/images/taipei-hero.jpg"/>
+  <link rel="preconnect" href="https://fonts.googleapis.com"/>
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
+  <link href="https://fonts.googleapis.com/css2?family=Source+Serif+4:ital,opsz,wght@0,8..60,400;0,8..60,600;0,8..60,700;1,8..60,400&family=Source+Sans+3:wght@300;400;500;600;700&display=swap" rel="stylesheet"/>
+  <link rel="stylesheet" href="css/style.css"/>
+  <style>
+    /* ── Workshop page typography — consistent with main site ──── */
+    #main .card p,
+    #main .card li { font-size: .95rem; color: var(--text-mid); line-height: 1.75; margin: 0; }
+    #main .card p + p { margin-top: 10px; }
+    #main .card p strong { color: var(--text); }
+    .cfp-fine { font-size: .82rem !important; color: var(--text-light) !important; font-style: italic; }
+    .cfp-intro { font-size: .95rem; color: var(--text-mid); line-height: 1.75; margin-bottom: 32px !important; }
+
+    /* ── Important Dates table ─────────────────────────────────── */
+    .cfp-dates-table { width: 100%; border-collapse: collapse; margin: 18px 0 8px; }
+    .cfp-dates-table thead th { text-align: left; padding: 10px 14px; font-size: .72rem; font-weight: 700; text-transform: uppercase; letter-spacing: 1px; color: var(--text-light); border-bottom: 2px solid var(--border); }
+    .cfp-dates-table tbody td { padding: 13px 14px; border-bottom: 1px solid var(--border); vertical-align: middle; font-size: .95rem; }
+    .cfp-dates-table tbody tr:last-child td { border-bottom: none; }
+    .cfp-dates-table tbody tr:hover td { background: rgba(26,78,122,.05); }
+    .cfp-dates-table td:first-child { color: var(--text); font-weight: 500; }
+    .cfp-dates-table td:last-child { color: var(--navy-light); font-weight: 700; white-space: nowrap; }
+    .cfp-dates-table tr.highlight-row td { background: rgba(26,78,122,.07); }
+    .cfp-dates-table tr.highlight-row td:first-child { font-weight: 700; }
+    .cfp-dates-table tr.highlight-row td:last-child { color: var(--navy); }
+    .cfp-aoe { font-size: .83rem; color: var(--text-light); font-style: italic; margin-top: 8px; }
+    .cfp-aoe a { color: var(--link); font-weight: 700; text-decoration: underline; }
+
+    /* ── Topic track lists ─────────────────────────────────────── */
+    .wk-track-title { font-family: 'Source Sans 3', sans-serif; font-size: 1rem; font-weight: 700; color: var(--navy-light); margin-bottom: 12px; display: flex; align-items: center; gap: 9px; }
+    .wk-track-title svg { width: 19px; height: 19px; flex-shrink: 0; }
+    .wk-track-list { list-style: none; padding: 0; margin: 0 0 8px; display: flex; flex-direction: column; gap: 9px; }
+    .wk-track-list li { font-size: .94rem; color: var(--text-mid); line-height: 1.6; padding-left: 22px; position: relative; }
+    .wk-track-list li::before { content: ''; position: absolute; left: 4px; top: 9px; width: 6px; height: 6px; background: var(--navy-light); border-radius: 50%; }
+
+    /* ── Submission guideline items ────────────────────────────── */
+    #main .guide-label { color: var(--navy-light); }
+
+    /* ── Organizer cards ───────────────────────────────────────── */
+    .wk-org-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 18px; margin-top: 4px; }
+    .wk-org-block { padding: 20px; background: #EAF1F8; border-radius: 10px; border-left: 3px solid var(--navy-light); }
+    .wk-org-block .wk-org-name { font-size: 1.02rem; font-weight: 700; color: var(--text); margin-bottom: 4px; }
+    .wk-org-block .wk-org-affil { font-size: .9rem; color: var(--text-mid); margin-bottom: 8px; }
+    .wk-org-block a { color: var(--link); text-decoration: underline; text-underline-offset: 2px; font-size: .9rem; word-break: break-all; }
+
+    /* ── Links ─────────────────────────────────────────────────── */
+    .cfp-link { color: #1a5dc8; text-decoration: underline; text-underline-offset: 2px; font-weight: 600; }
+    .cfp-link:hover { color: #1044a0; }
+
+    /* ── Contact card ──────────────────────────────────────────── */
+    .contact-card { text-align: center; }
+    .contact-card .contact-email { font-size: 1.1rem; font-weight: 600; color: var(--link); margin: 10px 0; display: inline-block; text-decoration: underline; }
+
+    /* ── Override global red accents → blue theme ─────────────── */
+    #main .card::before { background: linear-gradient(90deg, var(--navy-light), #2e74ad); }
+    #main .card-head svg { color: var(--navy-light); }
+    #main .block-tag { background: rgba(26,78,122,.10); color: var(--navy-light); border-color: rgba(26,78,122,.28); }
+    #main .pub-tag { background: rgba(26,78,122,.10); color: var(--navy-light); border-color: rgba(26,78,122,.28); }
+    #main .btn-primary { background: var(--navy-light); border-color: var(--navy-light); }
+    #main .btn-primary:hover { background: var(--navy-mid); border-color: var(--navy-mid); }
+    #main .btn-outline { color: var(--navy-light); border-color: var(--navy-light); }
+    #main .btn-outline:hover { background: var(--navy-light); color: #fff; }
+
+    /* ── Context banner — states this is NOT the main conference ── */
+    .wk-context-bar { background: #EAF1F8; border-bottom: 1px solid #cdddee; }
+    .wk-context-inner { display: flex; align-items: flex-start; gap: 12px; padding: 13px 0; font-size: .88rem; color: var(--navy-mid); line-height: 1.55; }
+    .wk-context-inner svg { flex-shrink: 0; color: var(--navy-light); margin-top: 1px; }
+    .wk-context-inner a { color: var(--link); font-weight: 700; text-decoration: underline; text-underline-offset: 2px; white-space: nowrap; }
+
+    /* ── Understated hero (subordinate to the main conference) ──── */
+    .wk-hero { background: var(--bg-alt); color: var(--text); padding: 54px 40px 42px; text-align: center; border-bottom: 1px solid var(--border); }
+    .wk-hero .wk-eyebrow { display: inline-block; font-size: .7rem; font-weight: 700; letter-spacing: 1.6px; text-transform: uppercase; color: var(--navy-light); background: rgba(26,78,122,.08); border: 1px solid rgba(26,78,122,.26); border-radius: 20px; padding: 5px 16px; margin-bottom: 18px; }
+    .wk-hero h1 { color: var(--text); font-size: 2.5rem; line-height: 1.12; margin: 0 auto; }
+    .wk-hero .wk-fullname { color: var(--text); font-weight: 600; font-size: 1.08rem; line-height: 1.4; margin: 12px auto 0; max-width: 600px; }
+    .wk-hero .wk-theme { color: var(--text-mid); font-style: italic; margin: 12px auto 0; font-size: 1rem; max-width: 640px; }
+    .wk-hero .wk-meta { color: var(--text-mid); margin-top: 14px; font-size: .94rem; }
+    .wk-hero .wk-cta { margin-top: 26px; display: flex; gap: 12px; justify-content: center; flex-wrap: wrap; }
+
+    /* ── Single-column flowing sections (vs CFP card grid) ──────── */
+    .wk-section { max-width: 760px; margin: 0 auto; padding: 44px 0; border-bottom: 1px solid var(--border); }
+    .wk-section:last-child { border-bottom: none; }
+    .wk-section-head { display: flex; align-items: center; gap: 11px; margin-bottom: 16px; }
+    .wk-section-head svg { color: var(--navy-light); flex-shrink: 0; }
+    .wk-section-head h2 { font-size: 1.4rem; color: var(--navy); margin: 0; }
+    .wk-section > p { font-size: .96rem; color: var(--text-mid); line-height: 1.75; margin: 0; }
+    .wk-section > p + p { margin-top: 12px; }
+
+    /* ── Topic tracks ──────────────────────────────────────────── */
+    .wk-tracks { display: grid; grid-template-columns: 1fr 1fr; gap: 32px; margin-top: 18px; }
+
+    @media (max-width: 760px) {
+      .wk-org-grid { grid-template-columns: 1fr; }
+      .wk-tracks { grid-template-columns: 1fr; gap: 24px; }
+      .wk-hero h1 { font-size: 1.55rem; }
+    }
+  </style>
+</head>
+<body>
+
+  <button class="mobile-toggle" id="mobileToggle" aria-label="Toggle navigation">
+    <span></span><span></span><span></span>
+  </button>
+  <div class="sidebar-overlay" id="sidebarOverlay"></div>
+
+  <!-- ══════════════════════════════════════ SIDEBAR ══════════ -->
+  <aside class="sidebar" id="sidebar">
+    <div class="sidebar-inner">
+
+      <div class="sidebar-brand">
+        <div class="brand-emblem">
+          <img src="images/logo-seal.svg" class="plum-svg" alt="PACLIC 40 Seal"/>
+        </div>
+        <div class="brand-info">
+          <div class="brand-name">PACLIC 40</div>
+          <div class="brand-full">Pacific Asia Conference on<br/>Language, Information &amp;<br/>Computation</div>
+        </div>
+      </div>
+
+      <div class="sidebar-rule"></div>
+
+      <nav class="sidebar-nav">
+        <a href="index.html#home" class="nav-link">
+          <span class="nav-icon"><svg viewBox="0 0 22 22" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"><path d="M3 10L11 3l8 7v8a1 1 0 01-1 1H14v-5H8v5H4a1 1 0 01-1-1z"/></svg></span>
+          <span class="nav-text">Home</span>
+        </a>
+        <a href="index.html#program" class="nav-link">
+          <span class="nav-icon"><svg viewBox="0 0 22 22" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"><rect x="3" y="3" width="16" height="16" rx="2"/><line x1="3" y1="8" x2="19" y2="8"/><line x1="8" y1="3" x2="8" y2="8"/><line x1="14" y1="3" x2="14" y2="8"/><line x1="7" y1="13" x2="15" y2="13"/><line x1="7" y1="17" x2="12" y2="17"/></svg></span>
+          <span class="nav-text">Program</span>
+        </a>
+        <a href="speakers.html" class="nav-link">
+          <span class="nav-icon"><svg viewBox="0 0 22 22" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"><path d="M12 1a3 3 0 000 6M12 1a3 3 0 010 6"/><path d="M16 17v1a2 2 0 01-2 2H8a2 2 0 01-2-2v-1"/><path d="M12 7v10M9 11l3-4 3 4"/><rect x="10" y="17" width="4" height="3" rx="1"/></svg></span>
+          <span class="nav-text">Invited Speakers</span>
+        </a>
+        <a href="cfp.html" class="nav-link">
+          <span class="nav-icon"><svg viewBox="0 0 22 22" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"><path d="M14 2H6a2 2 0 00-2 2v16a2 2 0 002 2h10a2 2 0 002-2V8z"/><polyline points="14 2 14 8 20 8"/><line x1="16" y1="13" x2="8" y2="13"/><line x1="16" y1="17" x2="8" y2="17"/><line x1="10" y1="9" x2="8" y2="9"/></svg></span>
+          <span class="nav-text">Call for Papers</span>
+        </a>
+        <a href="workshop.html" class="nav-link active">
+          <span class="nav-icon"><svg viewBox="0 0 22 22" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"><rect x="2" y="3" width="18" height="13" rx="2"/><line x1="7" y1="20" x2="15" y2="20"/><line x1="11" y1="16" x2="11" y2="20"/></svg></span>
+          <span class="nav-text">Workshop</span>
+          <span class="nav-indicator"></span>
+        </a>
+        <a href="index.html#registration" class="nav-link">
+          <span class="nav-icon"><svg viewBox="0 0 22 22" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"><rect x="2" y="5" width="18" height="13" rx="2"/><line x1="2" y1="10" x2="20" y2="10"/><line x1="6" y1="15" x2="10" y2="15"/></svg></span>
+          <span class="nav-text">Registration</span>
+        </a>
+        <a href="venue.html" class="nav-link">
+          <span class="nav-icon"><svg viewBox="0 0 22 22" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"><path d="M11 2C7.7 2 5 4.7 5 8c0 5.25 6 12 6 12s6-6.75 6-12c0-3.3-2.7-6-6-6z"/><circle cx="11" cy="8" r="2.5"/></svg></span>
+          <span class="nav-text">Venue &amp; Travel</span>
+        </a>
+        <a href="index.html#committee" class="nav-link">
+          <span class="nav-icon"><svg viewBox="0 0 22 22" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"><circle cx="9" cy="7" r="4"/><path d="M3 21v-2a4 4 0 014-4h4a4 4 0 014 4v2"/><circle cx="17" cy="8" r="2.5"/><path d="M21 21v-1.5a2.5 2.5 0 00-2.5-2.5"/></svg></span>
+          <span class="nav-text">Committee</span>
+        </a>
+        <a href="index.html#faq" class="nav-link">
+          <span class="nav-icon"><svg viewBox="0 0 22 22" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"><circle cx="11" cy="11" r="9"/><path d="M9 8.5a2 2 0 013.5 1.3c0 1.5-2.5 2-2.5 3"/><line x1="11" y1="16" x2="11.01" y2="16"/></svg></span>
+          <span class="nav-text">FAQ</span>
+        </a>
+      </nav>
+
+      <div class="sidebar-footer">
+        <div class="taiwan-map-wrap">
+          <svg class="taiwan-map" viewBox="0 0 100 174" xmlns="http://www.w3.org/2000/svg">
+            <path d="M 73,3 C 82,0 90,8 95,18 C 93,25 92,30 92,38 C 88,52 85,62 82,70 C 78,82 74,97 70,112 C 66,122 63,129 60,135 C 55,148 50,163 43,174 C 34,162 23,150 15,140 C 8,130 6,122 8,118 C 9,110 9,100 10,90 C 13,78 16,72 16,68 C 16,62 18,55 21,48 C 26,38 34,28 48,22 C 58,17 66,10 73,3 Z"
+              fill="rgba(254,0,0,0.07)" stroke="rgba(254,0,0,0.45)" stroke-width="2.5" stroke-linejoin="round" stroke-linecap="round"/>
+            <circle cx="74" cy="14" r="3.5" fill="#FE0000" stroke="white" stroke-width="1.5"/>
+            <text x="62" y="10" font-size="7" fill="rgba(254,0,0,0.75)" font-family="sans-serif" font-weight="600" text-anchor="end">Taipei</text>
+          </svg>
+        </div>
+        <div class="footer-pin">
+          <svg viewBox="0 0 16 16" fill="currentColor" width="13" height="13"><circle cx="8" cy="6.5" r="3" fill="rgba(196,30,58,0.9)"/><path d="M8 1a5.5 5.5 0 00-5.5 5.5C2.5 10.5 8 15 8 15s5.5-4.5 5.5-7.5A5.5 5.5 0 008 1z" fill="none" stroke="rgba(196,30,58,0.9)" stroke-width="1.5"/></svg>
+          <span>Taipei, Taiwan</span>
+        </div>
+        <div class="footer-dates">December 10–12, 2026</div>
+        <div class="footer-edition">40<sup>th</sup> Edition · Since 1987</div>
+        <div class="footer-email">
+          <a href="mailto:paclic2026@gmail.com">paclic2026@gmail.com</a>
+        </div>
+        <div class="ntu-host-wrap">
+          <img class="ntu-logo-img" src="https://www.ntu.edu.tw/images/icon-logo-header.svg" alt="NTU logo" onerror="this.style.display='none'"/>
+          <div class="ntu-host-text"><strong>Hosted by</strong>National Taiwan University (NTU)</div>
+        </div>
+      </div>
+    </div>
+  </aside>
+
+  <!-- ══════════════════════════════════ MAIN CONTENT ══════════ -->
+  <main id="main">
+
+    <!-- ── CONTEXT BANNER — distinguishes from the main conference ── -->
+    <div class="wk-context-bar">
+      <div class="container">
+        <div class="wk-context-inner">
+          <svg viewBox="0 0 22 22" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" width="20" height="20"><circle cx="11" cy="11" r="9"/><line x1="11" y1="10" x2="11" y2="15"/><line x1="11" y1="7" x2="11.01" y2="7"/></svg>
+          <span>This page is for the <strong>JWLLP 36 workshop</strong> — a co-located event with its own abstract submission, <strong>separate from the main PACLIC 40 conference</strong>. Looking for the conference paper submission? <a href="cfp.html">Go to the PACLIC 40 Call for Papers →</a></span>
+        </div>
+      </div>
+    </div>
+
+    <!-- ── NAVY HERO BAND ───────────────────────────────────── -->
+    <div class="wk-hero">
+      <span class="wk-eyebrow">Co-located Workshop with PACLIC 40</span>
+      <h1>JWLLP 36</h1>
+      <p class="wk-fullname">The 36th Joint Workshop on Linguistics and Language Processing</p>
+      <p class="wk-theme"><strong style="font-style:normal;color:var(--navy-light);">Theme:</strong> Bridging Minds and Machines: Linguistics, Cognition and Large Language Models</p>
+      <p class="wk-meta">December 12, 2026 &nbsp;·&nbsp; National Taiwan University, Taipei</p>
+      <div class="wk-cta">
+        <a href="https://docs.google.com/forms/d/1iZKj-MbIgMaMZNasNVn5iH1VDEHk_CJcSjLi-MQFRII/viewform" target="_blank" rel="noopener" class="btn btn-primary">Submit an Abstract</a>
+        <a href="CFP%20JWLLP%2036.pdf" target="_blank" rel="noopener" class="btn btn-outline">⬇ Call for Papers (PDF)</a>
+      </div>
+    </div>
+
+    <!-- ── FLOWING SINGLE-COLUMN SECTIONS ───────────────────── -->
+    <div class="container">
+
+      <!-- About -->
+      <section class="wk-section reveal">
+        <div class="wk-section-head">
+          <svg viewBox="0 0 22 22" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" width="24" height="24"><circle cx="11" cy="11" r="9"/><line x1="11" y1="7" x2="11" y2="11"/><line x1="11" y1="15" x2="11.01" y2="15"/></svg>
+          <h2>About the Workshop</h2>
+        </div>
+        <p>The 36th Joint Workshop on Linguistics and Language Processing (JWLLP 36) will be co-located with the 40th Pacific Asia Conference on Language, Information and Computation (PACLIC 2026) at National Taiwan University in Taipei (December 10–12, 2026).</p>
+        <p>We welcome submissions that bridge <strong>cognitive science, theoretical and computational linguistics, and large language model research</strong>.</p>
+      </section>
+
+      <!-- Important Dates -->
+      <section class="wk-section reveal">
+        <div class="wk-section-head">
+          <svg viewBox="0 0 22 22" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" width="24" height="24"><rect x="3" y="4" width="16" height="16" rx="2"/><line x1="3" y1="9" x2="19" y2="9"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="14" y1="2" x2="14" y2="6"/></svg>
+          <h2>Important Dates</h2>
+        </div>
+        <table class="cfp-dates-table">
+          <thead>
+            <tr><th>Event</th><th>Date</th></tr>
+          </thead>
+          <tbody>
+            <tr class="highlight-row"><td>Abstract submission deadline</td><td>August 30, 2026</td></tr>
+            <tr><td>Notification of acceptance</td><td>September 25, 2026</td></tr>
+            <tr><td>Workshop date</td><td>December 12, 2026</td></tr>
+          </tbody>
+        </table>
+        <p class="cfp-aoe">All deadlines are 11:59 PM <a href="https://www.timeanddate.com/time/zone/timezone/utc-12" target="_blank" rel="noopener">UTC −12h</a> ('anywhere on Earth')</p>
+      </section>
+
+      <!-- Topics -->
+      <section class="wk-section reveal">
+        <div class="wk-section-head">
+          <svg viewBox="0 0 22 22" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" width="24" height="24"><circle cx="11" cy="11" r="9"/><polyline points="11 6 11 11 14 14"/></svg>
+          <h2>Topics of Interest</h2>
+        </div>
+        <p>Contributions may address, but are not limited to, the following areas:</p>
+        <div class="wk-tracks">
+
+          <div>
+            <div class="wk-track-title">
+              <svg viewBox="0 0 22 22" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"><path d="M11 2a7 7 0 00-4 12.7V17a1 1 0 001 1h6a1 1 0 001-1v-2.3A7 7 0 0011 2z"/><line x1="9" y1="21" x2="13" y2="21"/></svg>
+              Cognitive Modelling of Language
+            </div>
+            <ul class="wk-track-list">
+              <li>Neural models that incorporate insights from psycholinguistics and cognitive neuroscience</li>
+              <li>Psychologically plausible models of language comprehension, production, and acquisition</li>
+              <li>Computational models of lexical and semantic development, including phonology, morphology, and meaning composition</li>
+              <li>Models of discourse, dialogue, and pragmatic inference grounded in human cognitive processes</li>
+              <li>First and second language acquisition, bilingual language processing, and language disorders (e.g., aphasia, dyslexia, dysgraphia)</li>
+              <li>Cognitively motivated evaluation frameworks for NLP systems</li>
+              <li>Resources and datasets for modeling language processing in diverse languages</li>
+            </ul>
+          </div>
+
+          <div>
+            <div class="wk-track-title">
+              <svg viewBox="0 0 22 22" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"><rect x="4" y="4" width="14" height="14" rx="2"/><line x1="9" y1="9" x2="13" y2="9"/><line x1="9" y1="13" x2="13" y2="13"/><line x1="1" y1="8" x2="4" y2="8"/><line x1="1" y1="14" x2="4" y2="14"/><line x1="18" y1="8" x2="21" y2="8"/><line x1="18" y1="14" x2="21" y2="14"/></svg>
+              LLM-Driven Linguistic Research
+            </div>
+            <ul class="wk-track-list">
+              <li>Linguistically grounded evaluation and interpretability of large language models</li>
+              <li>LLM-assisted corpus exploration, data annotation, and resource creation</li>
+              <li>LLM-based approaches to syntax, semantics, pragmatics, and discourse</li>
+              <li>Metaphor processing (detection, interpretation, and generation) using LLMs and cognitive models</li>
+              <li>Ethical, social, and methodological reflections on the use of LLMs in linguistic inquiry</li>
+            </ul>
+          </div>
+
+        </div>
+      </section>
+
+      <!-- Workshop Submissions -->
+      <section class="wk-section reveal">
+        <div class="wk-section-head">
+          <svg viewBox="0 0 22 22" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" width="24" height="24"><path d="M14 2H6a2 2 0 00-2 2v16a2 2 0 002 2h10a2 2 0 002-2V8z"/><polyline points="14 2 14 8 20 8"/><line x1="16" y1="13" x2="8" y2="13"/><line x1="16" y1="17" x2="8" y2="17"/></svg>
+          <h2>Workshop Submissions</h2>
+        </div>
+        <p>JWLLP 36 accepts direct submissions via <a href="https://docs.google.com/forms/d/1iZKj-MbIgMaMZNasNVn5iH1VDEHk_CJcSjLi-MQFRII/viewform" target="_blank" rel="noopener" class="cfp-link">Google Forms</a>.</p>
+
+        <h3 style="font-family:'Source Sans 3',sans-serif;font-size:1.05rem;font-weight:700;color:var(--navy);margin:24px 0 12px;">Submission Types</h3>
+        <p>We invite submissions of <strong>extended abstracts</strong> (maximum 500 words) presenting research relevant to the workshop scope. Abstracts may report on completed work, work in progress, or novel methodological and theoretical proposals, or even work that has already been published in other NLP- or cognitive science-related venues (there are no archival proceedings).</p>
+        <p>Accepted abstracts will be presented as <strong>oral presentations or posters</strong> during the workshop. Authors will be notified of the presentation format upon acceptance. All submissions will undergo peer review by at least two members of the program committee. At least one author of each accepted abstract must register for and physically attend the workshop to present their work.</p>
+      </section>
+
+      <!-- Organizers -->
+      <section class="wk-section reveal">
+        <div class="wk-section-head">
+          <svg viewBox="0 0 22 22" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" width="24" height="24"><path d="M17 21v-2a4 4 0 00-4-4H5a4 4 0 00-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 00-3-3.87M16 3.13a4 4 0 010 7.75"/></svg>
+          <h2>Workshop Organizers</h2>
+        </div>
+        <div class="wk-org-grid">
+          <div class="wk-org-block">
+            <div class="wk-org-name">Shaonan Wang</div>
+            <div class="wk-org-affil">The Hong Kong Polytechnic University</div>
+            <a href="mailto:shaonan.wang@polyu.edu.hk">shaonan.wang@polyu.edu.hk</a>
+          </div>
+          <div class="wk-org-block">
+            <div class="wk-org-name">Winnie Zeng</div>
+            <div class="wk-org-affil">The Hong Kong Polytechnic University</div>
+            <a href="mailto:winnie.zeng@connect.polyu.hk">winnie.zeng@connect.polyu.hk</a>
+          </div>
+        </div>
+      </section>
+
+      <!-- Back to main site -->
+      <section class="wk-section reveal" style="text-align:center;">
+        <a href="index.html" class="btn btn-outline">← Back to Main Site</a>
+      </section>
+
+    </div>
+
+  </main>
+
+  <!-- ══════════════════ SHARE BAR ════════════════════════════ -->
+  <div class="share-bar">
+    <div class="share-bar-inner container">
+      <span class="share-label">Spread the word</span>
+      <div class="share-btns">
+        <a class="share-btn share-x" href="#"
+           onclick="window.open('https://twitter.com/intent/tweet?text=JWLLP+36+%E2%80%94+Joint+Workshop+on+Linguistics+and+Language+Processing%2C+co-located+with+PACLIC+40.+Taipei%2C+Dec+12+2026.&url='+encodeURIComponent(location.href),'_blank');return false;" aria-label="Share on X">
+          <svg viewBox="0 0 22 22" fill="currentColor" width="17" height="17"><path d="M17.53 3H20.5L14.2 10.28 21.5 20h-5.9l-4.5-5.88L5.84 20H2.86l6.72-7.69L2.5 3h6.05l4.09 5.34L17.53 3zm-1 15.25h1.64L5.57 4.64H3.82l12.71 13.61z"/></svg>
+          Share on X
+        </a>
+        <a class="share-btn share-li" href="#"
+           onclick="window.open('https://www.linkedin.com/shareArticle?mini=true&url='+encodeURIComponent(location.href)+'&title=JWLLP+36+%E2%80%94+co-located+with+PACLIC+40%2C+Taipei%2C+December+2026','_blank');return false;" aria-label="Share on LinkedIn">
+          <svg viewBox="0 0 22 22" fill="currentColor" width="17" height="17"><path d="M16 8a6 6 0 016 6v7h-4v-7a2 2 0 00-2-2 2 2 0 00-2 2v7h-4v-7a6 6 0 016-6zM2 9h4v12H2z"/><circle cx="4" cy="4" r="2"/></svg>
+          LinkedIn
+        </a>
+        <a class="share-btn share-fb" href="#"
+           onclick="window.open('https://www.facebook.com/sharer/sharer.php?u='+encodeURIComponent(location.href),'_blank');return false;" aria-label="Share on Facebook">
+          <svg viewBox="0 0 22 22" fill="currentColor" width="17" height="17"><path d="M18 2h-3a5 5 0 00-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 011-1h3z"/></svg>
+          Facebook
+        </a>
+      </div>
+    </div>
+  </div>
+
+  <!-- ══════════════════ SITE FOOTER ══════════════════════════ -->
+  <footer class="site-footer">
+    <div class="footer-grid container">
+      <div class="footer-col">
+        <div class="footer-col-title">PACLIC 40</div>
+        <p>The 40th Pacific Asia Conference on Language, Information and Computation<br/>Taipei, Taiwan &nbsp;·&nbsp; December 10–12, 2026</p>
+      </div>
+      <div class="footer-col">
+        <div class="footer-col-title">Navigation</div>
+        <nav class="footer-nav-links">
+          <a href="index.html#home">Home</a>
+          <a href="index.html#program">Program</a>
+          <a href="speakers.html">Invited Speakers</a>
+          <a href="cfp.html">Call for Papers</a>
+          <a href="workshop.html">Workshop</a>
+          <a href="index.html#registration">Registration</a>
+          <a href="venue.html">Venue &amp; Travel</a>
+          <a href="index.html#committee">Committee</a>
+          <a href="index.html#faq">FAQ</a>
+        </nav>
+      </div>
+      <div class="footer-col">
+        <div class="footer-col-title">Previous Editions</div>
+        <p class="footer-prev-line">
+          <a href="https://vlsp.org.vn/paclic2025/" target="_blank" rel="noopener">PACLIC 39 (Hanoi, 2025)</a>
+          &nbsp;·&nbsp;
+          <a href="https://sites.google.com/view/paclic38" target="_blank" rel="noopener">PACLIC 38 (Tokyo, 2024)</a>
+          &nbsp;·&nbsp;
+          <a href="https://paclic2023.github.io/" target="_blank" rel="noopener">PACLIC 37 (Hong Kong, 2023)</a>
+        </p>
+      </div>
+    </div>
+    <div class="footer-bottom container">
+      <span>© 2026 PACLIC 40 Organising Committee &nbsp;·&nbsp; Graduate Institute of Linguistics, National Taiwan University</span>
+      </div>
+  </footer>
+
+  <!-- Back to top -->
+  <a href="#" class="back-to-top" id="backToTop" aria-label="Back to top">
+    <svg viewBox="0 0 22 22" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" width="18" height="18"><polyline points="18 15 11 8 4 15"/></svg>
+  </a>
+
+  <script>
+    (function () {
+      'use strict';
+      const sidebar = document.getElementById('sidebar');
+      const overlay = document.getElementById('sidebarOverlay');
+      const toggle  = document.getElementById('mobileToggle');
+      const backTop = document.getElementById('backToTop');
+
+      function openSidebar()  { sidebar.classList.add('open'); overlay.classList.add('open'); toggle.classList.add('open'); document.body.style.overflow = 'hidden'; }
+      function closeSidebar() { sidebar.classList.remove('open'); overlay.classList.remove('open'); toggle.classList.remove('open'); document.body.style.overflow = ''; }
+
+      toggle.addEventListener('click', () => sidebar.classList.contains('open') ? closeSidebar() : openSidebar());
+      overlay.addEventListener('click', closeSidebar);
+      window.addEventListener('resize', () => { if (window.innerWidth > 768) closeSidebar(); });
+
+      // Scroll reveals
+      const io = new IntersectionObserver(entries => {
+        entries.forEach(e => { if (e.isIntersecting) { e.target.classList.add('visible'); io.unobserve(e.target); } });
+      }, { threshold: 0.08, rootMargin: '0px 0px -40px 0px' });
+      document.querySelectorAll('.reveal').forEach((el, i) => { el.style.transitionDelay = `${(i % 4) * 80}ms`; io.observe(el); });
+      setTimeout(() => { document.querySelectorAll('.reveal').forEach(el => { if (el.getBoundingClientRect().top < window.innerHeight) el.classList.add('visible'); }); }, 200);
+
+      // Back to top
+      if (backTop) {
+        window.addEventListener('scroll', () => backTop.classList.toggle('visible', window.scrollY > 400), { passive: true });
+        backTop.addEventListener('click', e => { e.preventDefault(); window.scrollTo({ top: 0, behavior: 'smooth' }); });
+      }
+    })();
+  </script>
+  <script src="js/chat-widget.js"></script>
+  <script data-goatcounter="https://paclic40.goatcounter.com/count" async src="//gc.zgo.at/count.js"></script>
+
+</body>
+</html>

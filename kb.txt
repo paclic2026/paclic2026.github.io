@@ -45,6 +45,33 @@ All deadlines are at 11:59 PM UTC−12h. Always include this link when mentionin
 - All work must follow the ACL Code of Ethics
 Topics include: linguistics (phonology, syntax, semantics, pragmatics, discourse, psycholinguistics, sociolinguistics, language acquisition, typology, corpus linguistics) and computational/NLP (machine translation, dialogue systems, information retrieval, sentiment analysis, language resources, NLP applications, digital humanities, AI and cognitive modeling)
 
+--- SECTION: CO-LOCATED WORKSHOP — JWLLP 36 | source: https://paclic2026.github.io/workshop.html ---
+JWLLP 36 — The 36th Joint Workshop on Linguistics and Language Processing
+Theme: "Bridging Minds and Machines: Linguistics, Cognition and Large Language Models"
+- Co-located with PACLIC 40 at National Taiwan University, Taipei
+- Workshop date: December 12, 2026 (the last day of PACLIC)
+- Scope: submissions that bridge cognitive science, theoretical and computational linguistics, and large language model (LLM) research
+- Two main topic tracks:
+  1. Cognitive Modelling of Language (e.g. psychologically plausible models of comprehension/production/acquisition; cognitive neuroscience-informed neural models; language acquisition, bilingual processing, and language disorders; cognitively motivated NLP evaluation)
+  2. LLM-Driven Linguistic Research (e.g. linguistically grounded LLM evaluation and interpretability; LLM-assisted corpus exploration and annotation; LLM approaches to syntax/semantics/pragmatics/discourse; metaphor processing; ethical and methodological reflections on LLMs in linguistics)
+IMPORTANT DATES (JWLLP 36):
+- Abstract submission deadline: August 30, 2026
+- Notification of acceptance: September 25, 2026
+- Workshop date: December 12, 2026
+- All deadlines are 11:59 PM UTC-12h ('anywhere on Earth')
+SUBMISSION:
+- Extended abstracts, maximum 500 words
+- May report completed work, work in progress, novel proposals, or work already published elsewhere
+- There are no archival proceedings
+- Submitted via Google Forms: https://docs.google.com/forms/d/1iZKj-MbIgMaMZNasNVn5iH1VDEHk_CJcSjLi-MQFRII/viewform
+- Peer-reviewed by at least two program committee members
+- Accepted abstracts presented as oral presentations or posters (format decided upon acceptance)
+- At least one author of each accepted abstract must register for and physically attend the workshop
+WORKSHOP ORGANIZERS:
+- Shaonan Wang, The Hong Kong Polytechnic University (shaonan.wang@polyu.edu.hk)
+- Winnie Zeng, The Hong Kong Polytechnic University (winnie.zeng@connect.polyu.hk)
+For JWLLP 36 workshop questions, contact the workshop organizers above. JWLLP 36 has its own submission process, separate from the main PACLIC 40 paper submission.
+
 --- SECTION: KEYNOTE SPEAKERS | source: https://paclic2026.github.io/speakers.html ---
 PACLIC 40 features 4 keynote speakers:
 1. Professor Marie-Catherine de Marneffe (UCLouvain, Belgium) - expertise: semantics, pragmatics, Universal Dependencies
