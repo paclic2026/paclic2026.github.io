@@ -406,10 +406,11 @@ strong { font-weight: 700; }
 .schedule-table tbody tr:last-child td { border-bottom: none; }
 .schedule-table tbody tr:hover td { background: rgba(0,0,0,.02); }
 .schedule-table td strong { color: var(--text); font-weight: 600; }
-.row-sub { font-size: .81rem; color: var(--text-light); display: block; margin-top: 2px; }
+.row-sub { font-size: .88rem; color: var(--text-mid); display: block; margin-top: 3px; }
+.kw-speaker { display: block; font-size: 1rem; font-weight: 700; color: var(--text); margin-top: 5px; }
 .row-plenary td  { background: rgba(27,58,107,.04); }
 .row-plenary td:first-child { border-left: 3px solid var(--tw-sky); }
-.row-break td    { background: rgba(0,0,0,.025); color: var(--text-light) !important; font-style: italic; }
+.row-break td    { background: rgba(0,0,0,.025); color: var(--text-mid) !important; font-style: italic; }
 .row-parallel td:first-child { border-left: 3px solid var(--tw-gold); }
 .row-social td   { background: rgba(254,0,0,.04); }
 .row-social td:first-child { border-left: 3px solid var(--tw-red); }
