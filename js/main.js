@@ -8,7 +8,7 @@
 
   /* ── Countdown targets ─────────────────────────────────────── */
   const DEADLINES = {
-    submission: new Date('2026-08-01T23:59:00'),
+    submission: new Date('2026-08-15T23:59:00'),
     earlybird:  new Date('2026-11-20T23:59:00'),
     conference: new Date('2026-12-10T09:00:00'),
   };
