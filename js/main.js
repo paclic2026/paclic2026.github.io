@@ -8,9 +8,9 @@
 
   /* ── Countdown targets ─────────────────────────────────────── */
   const DEADLINES = {
-    submission: new Date('2026-08-15T23:59:00'),
-    earlybird:  new Date('2026-11-20T23:59:00'),
-    conference: new Date('2026-12-10T09:00:00'),
+    submission: new Date('2026-08-15T23:59:00-12:00'), // 11:59 PM UTC−12h (Anywhere on Earth)
+    earlybird:  new Date('2026-11-20T23:59:00-12:00'), // 11:59 PM UTC−12h (Anywhere on Earth)
+    conference: new Date('2026-12-10T09:00:00+08:00'), // 9 AM Taipei time (UTC+8)
   };
 
   let activeCd = 'submission';
