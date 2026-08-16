@@ -13,7 +13,7 @@
     conference: new Date('2026-12-10T09:00:00+08:00'), // 9 AM Taipei time (UTC+8)
   };
 
-  let activeCd = 'submission';
+  let activeCd = 'earlybird';
   let cdTimer  = null;
   const CIRC   = 2 * Math.PI * 52; // stroke-dasharray for r=52
 
