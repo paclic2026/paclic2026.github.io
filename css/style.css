@@ -311,6 +311,8 @@ strong { font-weight: 700; }
 .cd-tab small { font-size: .71rem; font-weight: 400; opacity: .8; }
 .cd-tab:hover { border-color: var(--tw-red); color: var(--tw-red); }
 .cd-tab.active { background: var(--tw-red); border-color: var(--tw-red); color: #fff; }
+.cd-tab:disabled { opacity: .55; color: var(--text-light); border-color: var(--border); background: var(--bg-alt); cursor: not-allowed; pointer-events: none; }
+.cd-tab:disabled small { text-decoration: line-through; }
 .countdown-wrap { display: flex; justify-content: center; gap: 28px; flex-wrap: wrap; }
 .cd-unit { display: flex; flex-direction: column; align-items: center; gap: 8px; }
 .cd-ring { position: relative; width: 115px; height: 115px; }
