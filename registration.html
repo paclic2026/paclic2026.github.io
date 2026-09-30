@@ -41,6 +41,13 @@
     .reg-date .what { font-size: .88rem; font-weight: 600; color: var(--text); margin-top: 4px; }
     .reg-date .tz { font-size: .8rem; color: var(--text-mid); margin-top: 2px; }
 
+    /* ── Hero buttons: spaced side by side, stacked evenly on phones ── */
+    .reg-hero-btns { display: flex; flex-wrap: wrap; justify-content: center; gap: 14px; }
+    @media (max-width: 600px) {
+      .reg-hero-btns { flex-direction: column; align-items: center; gap: 14px; }
+      .reg-hero-btns .btn { width: 240px; justify-content: center; text-align: center; margin: 0; }
+    }
+
     /* ── Call-to-action ────────────────────────────────────────── */
     .reg-cta { text-align: center; }
     .reg-cta .btn { font-size: 1rem; padding: 14px 34px; }
@@ -150,8 +157,10 @@
       <h1 style="font-family:'Source Serif 4',serif;font-size:2.6rem;font-weight:700;color:var(--text);margin-bottom:12px;">Registration</h1>
       <p style="font-size:.95rem;color:var(--text-mid);margin:0 auto 6px;line-height:1.7;">PACLIC 40 · The 40th Pacific Asia Conference on Language, Information and Computation</p>
       <p style="font-size:.95rem;color:var(--text-mid);margin:0 auto 28px;line-height:1.7;">December 10–12, 2026 · Taipei, Taiwan</p>
-      <a href="https://registration.linguistics.ntu.edu.tw" target="_blank" rel="noopener" class="btn btn-primary" style="margin-right:12px;">Register Now</a>
-      <a href="index.html" class="btn btn-outline">← Back to Main Site</a>
+      <div class="reg-hero-btns">
+        <a href="https://registration.linguistics.ntu.edu.tw" target="_blank" rel="noopener" class="btn btn-primary">Register Now</a>
+        <a href="index.html" class="btn btn-outline">← Back to Main Site</a>
+      </div>
     </div>
 
     <section style="padding:48px 0 64px;">
