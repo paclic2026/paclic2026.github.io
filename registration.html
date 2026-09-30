@@ -3,16 +3,16 @@
 <head>
   <meta charset="UTF-8"/>
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Invited Speakers | PACLIC 40 — Taipei, Taiwan, December 10–12, 2026</title>
-  <meta name="description" content="Meet the invited speakers at PACLIC 40 — the 40th Pacific Asia Conference on Language, Information and Computation. Taipei, Taiwan, December 10–12, 2026."/>
+  <title>Registration | PACLIC 40 — Taipei, Taiwan, December 10–12, 2026</title>
+  <meta name="description" content="Register for PACLIC 40 — the 40th Pacific Asia Conference on Language, Information and Computation. Taipei, Taiwan, December 10–12, 2026."/>
   <meta property="og:type"        content="website"/>
-  <meta property="og:url"         content="https://paclic2026.github.io/speakers.html"/>
-  <meta property="og:title"       content="Invited Speakers | PACLIC 40 — Taipei, Taiwan, December 10–12, 2026"/>
-  <meta property="og:description" content="Meet the invited speakers at PACLIC 40 — the 40th Pacific Asia Conference on Language, Information and Computation. Taipei, Taiwan, December 10–12, 2026."/>
+  <meta property="og:url"         content="https://paclic2026.github.io/registration.html"/>
+  <meta property="og:title"       content="Registration | PACLIC 40 — Taipei, Taiwan, December 10–12, 2026"/>
+  <meta property="og:description" content="Register for PACLIC 40 — the 40th Pacific Asia Conference on Language, Information and Computation. Taipei, Taiwan, December 10–12, 2026."/>
   <meta property="og:image"       content="https://paclic2026.github.io/images/taipei-hero.jpg"/>
   <meta name="twitter:card"        content="summary_large_image"/>
-  <meta name="twitter:title"       content="Invited Speakers | PACLIC 40 — Taipei, Taiwan, December 10–12, 2026"/>
-  <meta name="twitter:description" content="Meet the invited speakers at PACLIC 40 — the 40th Pacific Asia Conference on Language, Information and Computation. Taipei, Taiwan, December 10–12, 2026."/>
+  <meta name="twitter:title"       content="Registration | PACLIC 40 — Taipei, Taiwan, December 10–12, 2026"/>
+  <meta name="twitter:description" content="Register for PACLIC 40 — the 40th Pacific Asia Conference on Language, Information and Computation. Taipei, Taiwan, December 10–12, 2026."/>
   <meta name="twitter:image"       content="https://paclic2026.github.io/images/taipei-hero.jpg"/>
   <link rel="preconnect" href="https://fonts.googleapis.com"/>
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
@@ -23,12 +23,33 @@
     #main .card p,
     #main .card li { font-size: .95rem; color: var(--text-mid); line-height: 1.75; margin: 0; }
     #main .card p + p { margin-top: 10px; }
-    /* ── Override global red accents → blue theme ─────────────── */
-    #main .card::before { background: linear-gradient(90deg, var(--navy-mid), var(--navy-light)); }
-    #main .card-head svg { color: var(--navy-mid); }
-    #main .block-tag { background: rgba(0,0,149,.08); color: var(--navy-mid); border-color: rgba(0,0,149,.2); }
-    #main .btn-outline { color: var(--navy-mid); border-color: var(--navy-mid); }
-    #main .btn-outline:hover { background: var(--navy-mid); color: #fff; }
+    #main .card p strong { color: var(--text); }
+    /* ── Fee table: two-line price cells (USD + NTD) ───────────── */
+    .fee-table td .ntd { display: block; font-family: 'Source Sans 3', sans-serif; font-size: .8rem; font-weight: 500; color: var(--text-mid); margin-top: 2px; }
+    .fee-table td .sub { display: block; font-size: .82rem; font-weight: 400; color: var(--text-mid); margin-top: 2px; }
+    .fee-table td.flat { color: var(--text); }
+    .fee-table th:not(:first-child) { width: 28%; white-space: nowrap; }
+    /* Early Bird column in gold instead of red */
+    .fee-table th.highlight-col { background: var(--tw-gold); }
+    .fee-table td.highlight-col { background: var(--tw-gold-pale); }
+    .fee-table .highlight-col.price { color: #A86F00; }
+
+    /* ── Deadlines ─────────────────────────────────────────────── */
+    .reg-dates { display: grid; grid-template-columns: repeat(3, 1fr); gap: 14px; }
+    .reg-date { padding: 18px; border-radius: 10px; background: var(--bg-alt); border-top: 3px solid var(--tw-gold); }
+    .reg-date .when { font-family: 'Source Serif 4', serif; font-size: 1.25rem; font-weight: 700; color: var(--text); }
+    .reg-date .what { font-size: .88rem; font-weight: 600; color: var(--text); margin-top: 4px; }
+    .reg-date .tz { font-size: .8rem; color: var(--text-mid); margin-top: 2px; }
+
+    /* ── Call-to-action ────────────────────────────────────────── */
+    .reg-cta { text-align: center; }
+    .reg-cta .btn { font-size: 1rem; padding: 14px 34px; }
+    .reg-more { font-size: .9rem; color: var(--text-mid); margin-top: 16px !important; }
+
+    @media (max-width: 700px) {
+      .reg-dates { grid-template-columns: 1fr; }
+      .fee-table th, .fee-table td { padding: 11px 10px; }
+    }
   </style>
 </head>
 <body>
@@ -63,10 +84,9 @@
           <span class="nav-icon"><svg viewBox="0 0 22 22" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"><rect x="3" y="3" width="16" height="16" rx="2"/><line x1="3" y1="8" x2="19" y2="8"/><line x1="8" y1="3" x2="8" y2="8"/><line x1="14" y1="3" x2="14" y2="8"/><line x1="7" y1="13" x2="15" y2="13"/><line x1="7" y1="17" x2="12" y2="17"/></svg></span>
           <span class="nav-text">Program</span>
         </a>
-        <a href="speakers.html" class="nav-link active">
+        <a href="speakers.html" class="nav-link">
           <span class="nav-icon"><svg viewBox="0 0 22 22" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"><path d="M12 1a3 3 0 000 6M12 1a3 3 0 010 6"/><path d="M16 17v1a2 2 0 01-2 2H8a2 2 0 01-2-2v-1"/><path d="M12 7v10M9 11l3-4 3 4"/><rect x="10" y="17" width="4" height="3" rx="1"/></svg></span>
           <span class="nav-text">Invited Speakers</span>
-          <span class="nav-indicator"></span>
         </a>
         <a href="cfp.html" class="nav-link">
           <span class="nav-icon"><svg viewBox="0 0 22 22" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"><path d="M14 2H6a2 2 0 00-2 2v16a2 2 0 002 2h10a2 2 0 002-2V8z"/><polyline points="14 2 14 8 20 8"/><line x1="16" y1="13" x2="8" y2="13"/><line x1="16" y1="17" x2="8" y2="17"/><line x1="10" y1="9" x2="8" y2="9"/></svg></span>
@@ -76,9 +96,10 @@
           <span class="nav-icon"><svg viewBox="0 0 22 22" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"><rect x="2" y="3" width="18" height="13" rx="2"/><line x1="7" y1="20" x2="15" y2="20"/><line x1="11" y1="16" x2="11" y2="20"/></svg></span>
           <span class="nav-text">Workshop</span>
         </a>
-        <a href="registration.html" class="nav-link">
+        <a href="registration.html" class="nav-link active">
           <span class="nav-icon"><svg viewBox="0 0 22 22" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"><rect x="2" y="5" width="18" height="13" rx="2"/><line x1="2" y1="10" x2="20" y2="10"/><line x1="6" y1="15" x2="10" y2="15"/></svg></span>
           <span class="nav-text">Registration</span>
+          <span class="nav-indicator"></span>
         </a>
         <a href="venue.html" class="nav-link">
           <span class="nav-icon"><svg viewBox="0 0 22 22" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"><path d="M11 2C7.7 2 5 4.7 5 8c0 5.25 6 12 6 12s6-6.75 6-12c0-3.3-2.7-6-6-6z"/><circle cx="11" cy="8" r="2.5"/></svg></span>
@@ -125,83 +146,68 @@
 
     <!-- Hero -->
     <div class="cfp-hero" style="text-align:center;padding:64px 40px 40px;border-bottom:2px solid var(--border);">
-      <div class="block-tag" style="display:inline-flex;margin-bottom:18px;">Invited Scholars</div>
-      <h1 style="font-family:'Source Serif 4',serif;font-size:2.6rem;font-weight:700;color:var(--text);margin-bottom:12px;">Invited Speakers</h1>
-      <p style="font-size:.95rem;color:var(--text-mid);margin:0 auto 6px;line-height:1.7;white-space:nowrap;">PACLIC 40 · The 40th Pacific Asia Conference on Language, Information and Computation</p>
+      <div class="block-tag" style="display:inline-flex;margin-bottom:18px;">Join Us in Taipei</div>
+      <h1 style="font-family:'Source Serif 4',serif;font-size:2.6rem;font-weight:700;color:var(--text);margin-bottom:12px;">Registration</h1>
+      <p style="font-size:.95rem;color:var(--text-mid);margin:0 auto 6px;line-height:1.7;">PACLIC 40 · The 40th Pacific Asia Conference on Language, Information and Computation</p>
       <p style="font-size:.95rem;color:var(--text-mid);margin:0 auto 28px;line-height:1.7;">December 10–12, 2026 · Taipei, Taiwan</p>
-      <a href="index.html" class="btn btn-outline" style="display:inline-flex;align-items:center;gap:6px;">← Back to Main Site</a>
+      <a href="https://registration.linguistics.ntu.edu.tw" target="_blank" rel="noopener" class="btn btn-primary" style="margin-right:12px;">Register Now</a>
+      <a href="index.html" class="btn btn-outline">← Back to Main Site</a>
     </div>
 
-    <!-- Profiles -->
     <section style="padding:48px 0 64px;">
       <div class="container" style="max-width:900px;">
-        <div class="spk-profiles">
 
-          <!-- Prof. Marie-Catherine de Marneffe -->
-          <div class="spk-profile reveal">
-            <div class="spk-profile-photo">
-              <img src="images/Invited speakers/Marie-Catherine de Marneffe.jpg" alt="Professor Marie-Catherine de Marneffe"/>
-            </div>
-            <div class="spk-profile-body">
-              <div class="spk-profile-name">Marie-Catherine de Marneffe, PhD</div>
-              <div class="spk-profile-affil">UCLouvain, Belgium</div>
-              <div class="spk-profile-bio">
-                <p>Marie-Catherine de Marneffe is an FNRS Research Associate at CENTAL, UCLouvain. Her research focuses on semantics, pragmatics, and computational linguistics, with particular emphasis on inference, speaker commitment, and natural language understanding, bridging linguistic theory and NLP.</p>
-                <p>She received her PhD in Linguistics from Stanford University under the supervision of Christopher D. Manning, Dan Jurafsky, and Christopher Potts. Prior to joining UCLouvain in 2022, she was Assistant and later Associate Professor in Linguistics at The Ohio State University, where she was part of the Computational Linguistics and Language Technology Lab.</p>
-                <p>Marie-Catherine de Marneffe is a core contributor to major linguistic resources such as Universal Dependencies and Stanford Dependencies. Her work has been recognized with major awards and funding, including an NSF CAREER Award and an FNRS MIS grant. She has also received a Best Short Paper Award at ACL. She is actively involved in the international research community, serving as NAACL 2022 Program Chair and as a working group leader in COST Action CA21167.</p>
-              </div>
-            </div>
+        <!-- Deadlines -->
+        <div class="card reveal">
+          <div class="card-head">
+            <svg viewBox="0 0 22 22" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" width="22" height="22"><rect x="3" y="4" width="16" height="16" rx="2"/><line x1="3" y1="9" x2="19" y2="9"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="14" y1="2" x2="14" y2="6"/></svg>
+            <h3>Registration Deadlines</h3>
           </div>
-
-          <!-- Prof. Wei Lu -->
-          <div class="spk-profile reveal">
-            <div class="spk-profile-photo">
-              <img src="images/Invited speakers/Wei Lu.png" alt="Professor Wei Lu"/>
-            </div>
-            <div class="spk-profile-body">
-              <div class="spk-profile-name">Wei Lu, PhD</div>
-              <div class="spk-profile-affil">College of Computing &amp; Data Science, Nanyang Technological University, Singapore</div>
-              <div class="spk-profile-bio">
-                <p>Wei Lu is a Professor at the College of Computing &amp; Data Science, Nanyang Technological University. His research focuses on natural language processing (NLP), large language models (LLMs), and fundamental problems in artificial intelligence.</p>
-                <p>He currently serves as Editor-in-Chief of Computational Linguistics and as a member of the Executive Committee of the Association for Computational Linguistics (ACL). His work has been recognized with major awards, including the Best Paper Award at EMNLP 2011 and the Outstanding Paper Award at EMNLP 2023.</p>
-                <p>Prior to joining NTU, he spent 12 years at the Singapore University of Technology and Design (SUTD), where he was Professor and Associate Head (Research). He has also held research positions at the University of Illinois at Urbana-Champaign and as a visiting scholar at MIT.</p>
-              </div>
-            </div>
+          <div class="reg-dates">
+            <div class="reg-date"><div class="when">October 1, 2026</div><div class="what">Registration opens</div></div>
+            <div class="reg-date"><div class="when">November 20, 2026</div><div class="what">Early bird ends</div><div class="tz">11:59 PM (UTC+8)</div></div>
+            <div class="reg-date"><div class="when">December 9, 2026</div><div class="what">Regular registration closes</div><div class="tz">11:59 PM (UTC+8)</div></div>
           </div>
-
-          <!-- Prof. Kathleen Rastle -->
-          <div class="spk-profile reveal">
-            <div class="spk-profile-photo">
-              <img src="images/Invited speakers/Kathy Rastle.jpg" alt="Professor Kathleen Rastle"/>
-            </div>
-            <div class="spk-profile-body">
-              <div class="spk-profile-name">Kathleen Rastle, PhD</div>
-              <div class="spk-profile-affil">Royal Holloway, University of London, UK</div>
-              <div class="spk-profile-bio">
-                <p>Kathleen Rastle is a Professor of Cognitive Psychology at Royal Holloway, University of London. Her research focuses on the mental representations and computational processes underlying language, literacy, and learning, particularly in reading acquisition and word recognition.</p>
-                <p>Her work has been widely recognized for both theoretical contributions to psycholinguistics and its impact on educational policy and literacy instruction. She has received major funding from organizations including the ESRC, BBSRC, and the Leverhulme Trust, and was awarded the ESRC Celebrating Impact Prize for Outstanding International Impact (2020).</p>
-                <p>She has held key leadership roles, including President of the Experimental Psychology Society (2022–2024) and Editor-in-Chief of the Journal of Memory and Language (2019–2023). She is currently Director of the ESRC South East Doctoral Training Arc (SEDarc).</p>
-              </div>
-            </div>
-          </div>
-
-          <!-- Prof. Sanghoun Song -->
-          <div class="spk-profile reveal">
-            <div class="spk-profile-photo">
-              <img src="images/Invited speakers/Sanghoun Song.JPG" alt="Professor Sanghoun Song"/>
-            </div>
-            <div class="spk-profile-body">
-              <div class="spk-profile-name">Sanghoun Song, PhD</div>
-              <div class="spk-profile-affil">Korea University, South Korea</div>
-              <div class="spk-profile-bio">
-                <p>Sanghoun Song is a Professor in the Department of Linguistics at Korea University and Director of the Research Institute for Language and Information. His research focuses on computational syntax and semantics, combining HPSG, corpus-based methods, and deep learning, with applications in domain-specific NLP and large language model evaluation.</p>
-                <p>He received his PhD in Linguistics from the University of Washington under the supervision of Emily M. Bender, where he was awarded the Top Scholar Award and Graduate School Dissertation Fellowship. He is the author of <em>Modeling Information Structure in a Cross-Linguistic Perspective</em> (Language Science Press, 2017), which develops an HPSG/MRS-based computational model for cross-linguistic information structure.</p>
-                <p>He previously served as Associate Dean of the College of Liberal Arts and Director of the Center for Digital Humanities at Korea University. He leads the Computational Semantics Lab (SongLab), advancing research at the intersection of linguistic theory and data-driven approaches.</p>
-              </div>
-            </div>
-          </div>
-
         </div>
+
+        <!-- Fees -->
+        <div class="card reveal">
+          <div class="card-head">
+            <svg viewBox="0 0 22 22" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" width="22" height="22"><rect x="2" y="5" width="18" height="13" rx="2"/><line x1="2" y1="10" x2="20" y2="10"/><line x1="6" y1="15" x2="10" y2="15"/></svg>
+            <h3>Registration Fees</h3>
+          </div>
+          <div class="table-scroll">
+            <table class="fee-table">
+              <thead>
+                <tr>
+                  <th>Category</th>
+                  <th class="highlight-col">Early Bird<br/><small>by Nov 20, 2026</small></th>
+                  <th>Regular<br/><small>After Nov 20, 2026</small></th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr><td><strong>Regular (Non-student)</strong></td><td class="highlight-col price">US$260<span class="ntd">NT$8,320</span></td><td class="price">US$340<span class="ntd">NT$10,880</span></td></tr>
+                <tr><td><strong>Student</strong></td><td class="highlight-col price">US$190<span class="ntd">NT$6,080</span></td><td class="price">US$240<span class="ntd">NT$7,680</span></td></tr>
+                <tr><td><strong>JWLLP Workshop Only</strong><span class="sub">Workshop only, without access to other PACLIC 40 sessions</span></td><td colspan="2" class="price flat">US$110<span class="ntd">NT$3,520</span></td></tr>
+                <tr><td><strong>Additional banquet guest</strong><span class="sub">Up to two per participant</span></td><td colspan="2" class="price flat">US$50<span class="ntd">NT$1,600</span></td></tr>
+              </tbody>
+            </table>
+          </div>
+          <p style="margin-top:18px;">Early Bird rates apply when payment is completed by <strong>November 20, 2026, 11:59 PM (UTC+8)</strong>. Registering before then without paying does not keep the Early Bird rate.</p>
+          <p class="cfp-fine" style="font-size:.85rem;color:var(--text-mid);">Payment is processed in NTD at a fixed rate of 1 USD = 32 NTD. Overseas card statements may differ slightly due to bank conversion.</p>
+          <p style="margin-top:18px;"><strong>At least one author of each accepted paper must register and attend the conference.</strong></p>
+        </div>
+
+        <!-- CTA -->
+        <div class="card reveal reg-cta">
+          <div class="card-head" style="justify-content:center;">
+            <svg viewBox="0 0 22 22" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" width="22" height="22"><path d="M21 16V8a2 2 0 00-1-1.73l-7-4a2 2 0 00-2 0l-7 4A2 2 0 001 8v8a2 2 0 001 1.73l7 4a2 2 0 002 0l7-4A2 2 0 0021 16z"/></svg>
+            <h3>Register on the Registration Site</h3>
+          </div>
+          <a href="https://registration.linguistics.ntu.edu.tw" target="_blank" rel="noopener" class="btn btn-primary">Go to Registration →</a>
+          <p class="reg-more">Full details on what is included, the banquet and guest policy, dietary options, student verification, payment methods and more are available on the registration site.</p>
+        </div>
+
       </div>
     </section>
 

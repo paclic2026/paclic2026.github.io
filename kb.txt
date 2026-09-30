@@ -25,11 +25,11 @@ WHY ATTEND / SUBMIT:
 - PACLIC 40 is hosted by National Taiwan University (NTU), ranked among Asia's top research universities
 
 --- SECTION: IMPORTANT DATES | source: https://paclic2026.github.io/cfp.html ---
-All deadlines are at 11:59 PM UTC−12h. Always include this link when mentioning any deadline: https://www.timeanddate.com/time/zone/timezone/utc-12
+TIME ZONES: Only the paper submission deadline is 11:59 PM UTC−12h ('anywhere on Earth'); include this link when mentioning it: https://www.timeanddate.com/time/zone/timezone/utc-12. All other PACLIC 40 deadlines (notification, camera-ready, registration) follow Taipei time (UTC+8).
 - Paper Submission Deadline: August 15, 2026 (extended from the original August 1, 2026)
 - Notification of Acceptance: October 8, 2026 (moved from September 30 due to the high number of submissions)
 - Camera-Ready Papers Due: October 17, 2026 (moved from October 9)
-- Early Registration Deadline: November 20, 2026
+- Early Registration Deadline: November 20, 2026, 11:59 PM (Taipei time, UTC+8)
 - Conference: December 10-12, 2026
 
 --- SECTION: CALL FOR PAPERS & SUBMISSION | source: https://paclic2026.github.io/cfp.html ---
@@ -94,10 +94,60 @@ Student Organizing Committee: Tran Cao Bang Trinh, Le Thi Thach Thao (both PhD s
 The program is currently being updated and finalized.
 For the latest program updates, please visit https://paclic2026.github.io or contact paclic2026@gmail.com
 
---- SECTION: REGISTRATION | source: https://paclic2026.github.io ---
-- Registration details are being finalized
-- Early Registration Deadline: November 20, 2026
-- At least one author per accepted paper must register by early registration deadline and attend in person
+--- SECTION: REGISTRATION | source: https://registration.linguistics.ntu.edu.tw (official registration system; summary at https://paclic2026.github.io/registration.html) ---
+IMPORTANT FOR ANSWERS: Registration rules, fees and policies below are copied from the official registration system but MAY CHANGE. When answering registration questions, give the information below, then always add that the official registration system (https://registration.linguistics.ntu.edu.tw) is the authoritative source and users should check it for the latest details. For anything not covered here (e.g. special cases, invoices, payment problems, exceptions), do not guess: direct users to the registration system and its email contact button, or paclic2026@gmail.com.
+
+GROUP / MULTIPLE-PAPER / SPECIAL CASES:
+- For questions about groups, several participants, several papers, one author covering multiple papers, or any individual situation: do NOT calculate totals and do NOT interpret the rules. Say that for accurate information on their specific case they should contact the organizers via the email button in the registration system or at paclic2026@gmail.com.
+
+GENERAL:
+- All conference participants are required to pay the registration fee.
+- For each presentation, at least one author must register for the conference and attend.
+- Registration system: https://registration.linguistics.ntu.edu.tw (sign in with a Google account)
+
+DEADLINES (Taipei time, UTC+8):
+- Registration opens: October 1, 2026
+- Early bird ends: November 20, 2026, 11:59 PM (UTC+8)
+- Regular registration closes: December 9, 2026, 11:59 PM (UTC+8)
+
+FEES (USD / NTD):
+- Regular (Early Bird, by Nov 20, 2026): US$260 / NT$8,320
+- Regular: US$340 / NT$10,880
+- Student (Early Bird, by Nov 20, 2026): US$190 / NT$6,080
+- Student: US$240 / NT$7,680
+- JWLLP Workshop Only: US$110 / NT$3,520
+- Additional banquet guest: US$50 / NT$1,600 (up to two per participant)
+
+EARLY BIRD RULE:
+- Early Bird rates apply when PAYMENT is completed by November 20, 2026, 11:59 PM (UTC+8). Registering before then without paying does not keep the Early Bird rate.
+
+PAYMENT & CURRENCY:
+- Payment is processed in New Taiwan Dollars (NTD). USD amounts are converted at a fixed rate of 1 USD = 32 NTD.
+- Overseas cards are converted by the cardholder's own bank, so the amount on a card statement may differ slightly.
+
+STUDENT RATE:
+- Participants registering at the student rate must upload proof of student status (student ID or enrolment certificate) after submitting the registration form.
+- Student status may also be verified on site at the registration desk.
+
+WHAT THE FEE INCLUDES:
+PACLIC 40 Regular and Student registration fees include:
+- Access to all PACLIC 40 sessions and poster viewings
+- All conference materials
+- Lunches and coffee breaks on all three conference days
+- One seat at the conference banquet on 10 December, 17:30–20:00
+- Participants attending the banquet may bring up to two additional guests at US$50 (NT$1,600) per guest
+JWLLP Workshop Only registration includes:
+- Access to all JWLLP sessions and poster viewings
+- Afternoon coffee break on the final day of the conference
+- Access to the PACLIC 40 Closing Ceremony
+- No access to other PACLIC 40 sessions or the conference banquet
+Registration fees do NOT include accommodation or airport transfers.
+
+CANCELLATION POLICY:
+- Registration fees are non-refundable in the event of cancellation or non-attendance.
+
+CONTACT FOR REGISTRATION ISSUES:
+- Use the email button in the registration system; the team will reply as soon as possible. General enquiries: paclic2026@gmail.com
 
 --- SECTION: PUBLICATION | source: https://paclic2026.github.io ---
 - Proceedings published in open-access digital format
