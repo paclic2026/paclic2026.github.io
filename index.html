@@ -272,14 +272,14 @@
             </ul>
           </div>
 
-          <div class="card">
+          <div class="card news-card">
             <div class="card-head">
               <svg viewBox="0 0 22 22" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" width="22" height="22"><path d="M18 8h1a4 4 0 010 8h-1"/><path d="M2 9h16v9a4 4 0 01-4 4H6a4 4 0 01-4-4V9z"/><line x1="6" y1="1" x2="6" y2="5"/><line x1="10" y1="1" x2="10" y2="5"/><line x1="14" y1="1" x2="14" y2="5"/></svg>
               <h3>News &amp; Announcements</h3>
             </div>
             <!-- Newest first. The first 3 items are shown; older ones appear via "Show older news". -->
             <ul class="news-list" id="newsList">
-              <li class="news-item"><span class="news-date">Coming Soon</span><div class="news-body"><span class="badge upcoming">SOON</span><p>Venue details will be posted here as they become available.</p></div></li>
+              <li class="news-item"><span class="news-date">Coming Soon</span><div class="news-body"><span class="badge upcoming">SOON</span><p>The full programme and venue details will be posted here as they become available.</p></div></li>
               <li class="news-item"><span class="news-date">Oct 2026</span><div class="news-body"><span class="badge new">NEW</span><p><strong>Notifications of acceptance have been sent!</strong> Please check your email, including your spam folder. Camera-ready papers are due <strong>October 17, 2026</strong>.</p></div></li>
               <li class="news-item"><span class="news-date">Oct 2026</span><div class="news-body"><p><strong>Registration is now open!</strong> Early bird rates are available until <strong>November 20, 2026</strong>, and regular registration closes <strong>December 9, 2026</strong> (11:59 PM, UTC+8). See fees and details on the <a href="registration.html" style="color:var(--link);text-decoration:underline;font-weight:600;">Registration</a> page.</p></div></li>
               <li class="news-item"><span class="news-date">Sep 2026</span><div class="news-body"><p><strong>Updated dates:</strong> Due to the high number of submissions, the notification of acceptance has been moved to <strong>October 8, 2026</strong> and the camera-ready deadline to <strong>October 17, 2026</strong>. This will ensure every paper receives a careful and thorough evaluation. We appreciate your patience.</p></div></li>
@@ -780,8 +780,8 @@
       btn.addEventListener('click', function(){
         var expand = btn.getAttribute('aria-expanded') !== 'true';
         // Keep the box the same height: older news scrolls inside it
-        if (expand) { list.style.maxHeight = list.offsetHeight + 'px'; list.classList.add('scrolling'); }
-        else { list.classList.remove('scrolling'); list.style.maxHeight = ''; list.scrollTop = 0; }
+        if (expand) { list.style.height = list.offsetHeight + 'px'; list.style.maxHeight = list.offsetHeight + 'px'; list.classList.add('scrolling'); }
+        else { list.classList.remove('scrolling'); list.style.maxHeight = ''; list.style.height = ''; list.scrollTop = 0; }
         older.forEach(function(li){ li.hidden = !expand; });
         btn.setAttribute('aria-expanded', expand);
         btn.textContent = expand ? 'Show less' : label;
