@@ -41,6 +41,7 @@ TIME ZONES: Only the paper submission deadline is 11:59 PM UTC−12h ('anywhere 
 - Papers must be substantial, original, completed, unpublished work
 - Submission platform: Microsoft CMT — https://cmt3.research.microsoft.com/PACLIC2026
 - Each author may submit only ONE paper as primary author
+- The primary contact author of each submission is notified of the final decision and other important information by email, and is responsible for sharing it with co-authors
 - Double submissions with other venues allowed if declared at submission time
 - All work must follow the ACL Code of Ethics
 Topics include: linguistics (phonology, syntax, semantics, pragmatics, discourse, psycholinguistics, sociolinguistics, language acquisition, typology, corpus linguistics) and computational/NLP (machine translation, dialogue systems, information retrieval, sentiment analysis, language resources, NLP applications, digital humanities, AI and cognitive modeling)
