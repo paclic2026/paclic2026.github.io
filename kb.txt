@@ -164,11 +164,12 @@ Google Maps: https://www.google.com.tw/maps/place/National+Taiwan+University/@25
 Specific building/room: To be announced
 
 VISA & ENTRY:
-- Taiwan offers visa-free (14–90 days) entry to citizens of USA, Canada, UK, EU/Schengen, Australia, New Zealand, Japan, South Korea, and 60+ other countries
-- Visa required for other countries: apply at a Taiwan representative office, processing ~5–10 business days. Check: https://www.boca.gov.tw/mp-2.html
+- CAUTION: All visa and entry information here is for reference only and is NOT official. Requirements can change and depend on nationality and circumstances. Always tell users to confirm with the Bureau of Consular Affairs (BOCA, https://www.boca.gov.tw/mp-2.html) and the Taiwan representative office in their own country. Never state that a specific person is or is not eligible for visa-free entry.
+- Taiwan offers visa-free (14–90 days) entry to citizens of some countries, for example USA, Canada, UK, EU/Schengen, Australia, New Zealand, Japan, South Korea. For the full official list of eligible nations, see BOCA: https://www.boca.gov.tw/cp-149-4486-7785a-2.html
+- Visa required for other countries: contact and apply at the Taiwan representative office in your own country to learn more about the procedures (processing times vary, so apply early). Check BOCA: https://www.boca.gov.tw/mp-2.html
 - Passport must have at least 6 months validity from entry date
 - Complete NIA Online Arrival Card before landing to save time at immigration
-- Invitation/visa support letter: contact paclic2026@gmail.com after completing registration
+- Invitation/visa support letter: letters are issued ONLY to authors of accepted papers, via the request form on https://paclic2026.github.io/invitation.html. This applies to the main PACLIC 40 conference only; participants of the JWLLP 36 workshop must contact the JWLLP organizers directly (Shaonan Wang, shaonan.wang@polyu.edu.hk; Winnie Zeng, winnie.zeng@connect.polyu.hk). The author's paper ID, email and name are checked against the accepted-papers list and the organizing team emails the letter as a PDF; this takes about 2-3 days, so allow time before visa appointments. For any other special request about the letter, contact paclic2026@gmail.com. The letter confirms acceptance and invites the author to attend. Visa applications and related procedures are the applicant's own responsibility; requirements vary by country and the organizers cannot advise on individual cases. The conference provides no financial support.
 
 GETTING TO TAIPEI FROM TAOYUAN AIRPORT (TPE):
 Option 1 - Airport MRT (recommended): ~35–39 min, NT$160 (~USD 5), runs 6AM–11PM every 15 min. Take Express MRT to Taipei Main Station → transfer to Green Line → Gongguan Station (Exit 3), 3–5 min walk to NTU

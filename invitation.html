@@ -3,16 +3,16 @@
 <head>
   <meta charset="UTF-8"/>
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Registration | PACLIC 40 — Taipei, Taiwan, December 10–12, 2026</title>
-  <meta name="description" content="Register for PACLIC 40 — the 40th Pacific Asia Conference on Language, Information and Computation. Taipei, Taiwan, December 10–12, 2026."/>
+  <title>Letter of Invitation | PACLIC 40 — Taipei, Taiwan, December 10–12, 2026</title>
+  <meta name="description" content="Request a letter of invitation for PACLIC 40 — the 40th Pacific Asia Conference on Language, Information and Computation. Taipei, Taiwan, December 10–12, 2026."/>
   <meta property="og:type"        content="website"/>
-  <meta property="og:url"         content="https://paclic2026.github.io/registration.html"/>
-  <meta property="og:title"       content="Registration | PACLIC 40 — Taipei, Taiwan, December 10–12, 2026"/>
-  <meta property="og:description" content="Register for PACLIC 40 — the 40th Pacific Asia Conference on Language, Information and Computation. Taipei, Taiwan, December 10–12, 2026."/>
+  <meta property="og:url"         content="https://paclic2026.github.io/invitation.html"/>
+  <meta property="og:title"       content="Letter of Invitation | PACLIC 40 — Taipei, Taiwan, December 10–12, 2026"/>
+  <meta property="og:description" content="Request a letter of invitation for PACLIC 40 — the 40th Pacific Asia Conference on Language, Information and Computation. Taipei, Taiwan, December 10–12, 2026."/>
   <meta property="og:image"       content="https://paclic2026.github.io/images/taipei-hero.jpg"/>
   <meta name="twitter:card"        content="summary_large_image"/>
-  <meta name="twitter:title"       content="Registration | PACLIC 40 — Taipei, Taiwan, December 10–12, 2026"/>
-  <meta name="twitter:description" content="Register for PACLIC 40 — the 40th Pacific Asia Conference on Language, Information and Computation. Taipei, Taiwan, December 10–12, 2026."/>
+  <meta name="twitter:title"       content="Letter of Invitation | PACLIC 40 — Taipei, Taiwan, December 10–12, 2026"/>
+  <meta name="twitter:description" content="Request a letter of invitation for PACLIC 40 — the 40th Pacific Asia Conference on Language, Information and Computation. Taipei, Taiwan, December 10–12, 2026."/>
   <meta name="twitter:image"       content="https://paclic2026.github.io/images/taipei-hero.jpg"/>
   <link rel="preconnect" href="https://fonts.googleapis.com"/>
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
@@ -24,39 +24,46 @@
     #main .card li { font-size: .95rem; color: var(--text-mid); line-height: 1.75; margin: 0; }
     #main .card p + p { margin-top: 10px; }
     #main .card p strong { color: var(--text); }
-    /* ── Fee table: two-line price cells (USD + NTD) ───────────── */
-    .fee-table td .ntd { display: block; font-family: 'Source Sans 3', sans-serif; font-size: .8rem; font-weight: 500; color: var(--text-mid); margin-top: 2px; }
-    .fee-table td .sub { display: block; font-size: .82rem; font-weight: 400; color: var(--text-mid); margin-top: 2px; }
-    .fee-table td.flat { color: var(--text); }
-    .fee-table th:not(:first-child) { width: 28%; white-space: nowrap; }
-    /* Early Bird column in gold instead of red */
-    .fee-table th.highlight-col { background: var(--tw-gold); }
-    .fee-table td.highlight-col { background: var(--tw-gold-pale); }
-    .fee-table .highlight-col.price { color: #A86F00; }
+    #main .card ul { list-style: none; padding: 0; margin: 0; display: flex; flex-direction: column; gap: 9px; }
+    #main .card li { padding-left: 22px; position: relative; }
+    #main .card li::before { content: ''; position: absolute; left: 4px; top: 10px; width: 6px; height: 6px; background: var(--tw-gold); border-radius: 50%; }
+    #main .card a:not(.btn) { color: var(--link); text-decoration: underline; font-weight: 600; }
 
-    /* ── Deadlines ─────────────────────────────────────────────── */
-    .reg-dates { display: grid; grid-template-columns: repeat(3, 1fr); gap: 14px; }
-    .reg-date { padding: 18px; border-radius: 10px; background: var(--bg-alt); border-top: 3px solid var(--tw-gold); }
-    .reg-date .when { font-family: 'Source Serif 4', serif; font-size: 1.25rem; font-weight: 700; color: var(--text); }
-    .reg-date .what { font-size: .88rem; font-weight: 600; color: var(--text); margin-top: 4px; }
-    .reg-date .tz { font-size: .8rem; color: var(--text-mid); margin-top: 2px; }
-
-    /* ── Hero buttons: spaced side by side, stacked evenly on phones ── */
+    /* ── Hero buttons ──────────────────────────────────────────── */
     .reg-hero-btns { display: flex; flex-wrap: wrap; justify-content: center; gap: 14px; }
     @media (max-width: 600px) {
-      .reg-hero-btns { flex-direction: column; align-items: center; gap: 14px; }
+      .reg-hero-btns { flex-direction: column; align-items: center; }
       .reg-hero-btns .btn { width: 240px; justify-content: center; text-align: center; margin: 0; }
     }
+
+    /* ── Key facts ─────────────────────────────────────────────── */
+    .inv-facts { display: grid; grid-template-columns: repeat(3, 1fr); gap: 14px; margin-bottom: 4px; }
+    .inv-fact { padding: 18px; border-radius: 10px; background: var(--bg-alt); border-top: 3px solid var(--tw-gold); }
+    .inv-fact .big { font-family: 'Source Serif 4', serif; font-size: 1.2rem; font-weight: 700; color: var(--text); }
+    .inv-fact .small { font-size: .88rem; font-weight: 600; color: var(--text); margin-top: 4px; }
+    @media (max-width: 700px) { .inv-facts { grid-template-columns: 1fr; } }
+
+    /* ── Request form ──────────────────────────────────────────── */
+    .inv-form { display: flex; flex-direction: column; gap: 18px; }
+    .inv-field label { display: block; font-size: .9rem; font-weight: 600; color: var(--text); margin-bottom: 6px; }
+    .inv-field .req { color: var(--tw-red); }
+    .inv-field input, .inv-field textarea { width: 100%; padding: 11px 14px; font: inherit; font-size: .95rem; color: var(--text); background: #fff; border: 1.5px solid var(--border); border-radius: 8px; transition: border-color .2s; }
+    .inv-field textarea { resize: vertical; }
+    .inv-field input:focus, .inv-field textarea:focus { outline: none; border-color: var(--tw-gold); box-shadow: 0 0 0 3px rgba(212,146,10,.15); }
+    .inv-field.invalid input, .inv-field.invalid textarea { border-color: var(--tw-red); }
+    .inv-field small { display: block; font-size: .82rem; color: var(--text-mid); margin-top: 5px; }
+    .inv-trap { position: absolute; left: -9999px; width: 1px; height: 1px; overflow: hidden; }
+    .inv-privacy { font-size: .85rem !important; color: var(--text-mid) !important; }
+    .inv-status { padding: 12px 16px; border-radius: 8px; font-size: .92rem; background: #FFF0F0; color: #9b1c1c; border: 1px solid #f3c2c2; }
+    .inv-form .btn { align-self: flex-start; font-size: 1rem; padding: 13px 32px; border: none; }
+    .inv-form .btn[disabled] { opacity: .6; cursor: wait; }
+    .inv-done { padding: 22px; border-radius: 10px; background: var(--tw-gold-pale); border-left: 4px solid var(--tw-gold); }
+    .inv-done h4 { font-size: 1.1rem; color: var(--text); margin-bottom: 8px; }
 
     /* ── Call-to-action ────────────────────────────────────────── */
     .reg-cta { text-align: center; }
     .reg-cta .btn { font-size: 1rem; padding: 14px 34px; }
     .reg-more { font-size: .9rem; color: var(--text-mid); margin-top: 16px !important; }
-
-    @media (max-width: 700px) {
-      .reg-dates { grid-template-columns: 1fr; }
-      .fee-table th, .fee-table td { padding: 11px 10px; }
-    }
   </style>
 </head>
 <body>
@@ -103,14 +110,14 @@
           <span class="nav-icon"><svg viewBox="0 0 22 22" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"><rect x="2" y="3" width="18" height="13" rx="2"/><line x1="7" y1="20" x2="15" y2="20"/><line x1="11" y1="16" x2="11" y2="20"/></svg></span>
           <span class="nav-text">Workshop</span>
         </a>
-        <a href="registration.html" class="nav-link active">
+        <a href="registration.html" class="nav-link">
           <span class="nav-icon"><svg viewBox="0 0 22 22" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"><rect x="2" y="5" width="18" height="13" rx="2"/><line x1="2" y1="10" x2="20" y2="10"/><line x1="6" y1="15" x2="10" y2="15"/></svg></span>
           <span class="nav-text">Registration</span>
-          <span class="nav-indicator"></span>
         </a>
-        <a href="invitation.html" class="nav-link">
+        <a href="invitation.html" class="nav-link active">
           <span class="nav-icon"><svg viewBox="0 0 22 22" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"><path d="M4 4h14c1.1 0 2 .9 2 2v10c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="20 6 11 12 2 6"/></svg></span>
           <span class="nav-text">Letter of Invitation</span>
+          <span class="nav-indicator"></span>
         </a>
         <a href="venue.html" class="nav-link">
           <span class="nav-icon"><svg viewBox="0 0 22 22" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"><path d="M11 2C7.7 2 5 4.7 5 8c0 5.25 6 12 6 12s6-6.75 6-12c0-3.3-2.7-6-6-6z"/><circle cx="11" cy="8" r="2.5"/></svg></span>
@@ -157,77 +164,79 @@
 
     <!-- Hero -->
     <div class="cfp-hero" style="text-align:center;padding:64px 40px 40px;border-bottom:2px solid var(--border);">
-      <div class="block-tag" style="display:inline-flex;margin-bottom:18px;">Join Us in Taipei</div>
-      <h1 style="font-family:'Source Serif 4',serif;font-size:2.6rem;font-weight:700;color:var(--text);margin-bottom:12px;">Registration</h1>
+      <div class="block-tag" style="display:inline-flex;margin-bottom:18px;">Visa Support</div>
+      <h1 style="font-family:'Source Serif 4',serif;font-size:2.6rem;font-weight:700;color:var(--text);margin-bottom:12px;">Letter of Invitation</h1>
       <p style="font-size:.95rem;color:var(--text-mid);margin:0 auto 6px;line-height:1.7;">PACLIC 40 · The 40th Pacific Asia Conference on Language, Information and Computation</p>
       <p style="font-size:.95rem;color:var(--text-mid);margin:0 auto 28px;line-height:1.7;">December 10–12, 2026 · Taipei, Taiwan</p>
       <div class="reg-hero-btns">
-        <a href="https://registration.linguistics.ntu.edu.tw" target="_blank" rel="noopener" class="btn btn-primary">Register Now</a>
-        <a href="index.html" class="btn btn-outline">← Back to Main Site</a>
+        <a href="#request" class="btn btn-primary">Request a Letter</a>
+        <a href="registration.html" class="btn btn-outline">← Back to Registration</a>
       </div>
     </div>
 
     <section style="padding:48px 0 64px;">
       <div class="container" style="max-width:900px;">
 
-        <!-- Deadlines -->
+        <!-- Before you request -->
         <div class="card reveal">
           <div class="card-head">
-            <svg viewBox="0 0 22 22" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" width="22" height="22"><rect x="3" y="4" width="16" height="16" rx="2"/><line x1="3" y1="9" x2="19" y2="9"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="14" y1="2" x2="14" y2="6"/></svg>
-            <h3>Registration Deadlines</h3>
+            <svg viewBox="0 0 22 22" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" width="22" height="22"><circle cx="11" cy="11" r="9"/><line x1="11" y1="7" x2="11" y2="11"/><line x1="11" y1="15" x2="11.01" y2="15"/></svg>
+            <h3>Before You Request</h3>
           </div>
-          <div class="reg-dates">
-            <div class="reg-date"><div class="when">October 1, 2026</div><div class="what">Registration opens</div></div>
-            <div class="reg-date"><div class="when">November 20, 2026</div><div class="what">Early bird ends</div><div class="tz">11:59 PM (UTC+8)</div></div>
-            <div class="reg-date"><div class="when">December 9, 2026</div><div class="what">Regular registration closes</div><div class="tz">11:59 PM (UTC+8)</div></div>
-          </div>
+          <ul>
+            <li>Letters of invitation are issued only to <strong>authors of accepted papers</strong>.</li>
+            <li>This page is for the <strong>main PACLIC 40 conference only</strong>. If you are attending the JWLLP 36 workshop, please contact the <a href="workshop.html">JWLLP organizers</a> directly.</li>
+            <li>Have your <strong>paper ID</strong> and the <strong>email address used for your submission</strong> ready. They are used to verify your request.</li>
+            <li>Your details are checked against our records and our team <strong>emails your letter to you as a PDF</strong>. This takes about 2-3 days, so please allow time before your visa appointment. The letter confirms acceptance of your paper and invites you to attend.</li>
+            <li><strong>Visa applications are your own responsibility.</strong> Requirements vary by country, and the organizers cannot advise on individual cases. The conference does <strong>not</strong> provide financial support.</li>
+          </ul>
+          <p style="margin-top:14px;">For further information about the venue, visa and entry requirements, please visit the <a href="venue.html">Venue &amp; Travel</a> page.</p>
         </div>
 
-        <!-- Fees -->
-        <div class="card reveal">
-          <div class="card-head">
-            <svg viewBox="0 0 22 22" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" width="22" height="22"><rect x="2" y="5" width="18" height="13" rx="2"/><line x1="2" y1="10" x2="20" y2="10"/><line x1="6" y1="15" x2="10" y2="15"/></svg>
-            <h3>Registration Fees</h3>
-          </div>
-          <div class="table-scroll">
-            <table class="fee-table">
-              <thead>
-                <tr>
-                  <th>Category</th>
-                  <th class="highlight-col">Early Bird<br/><small>by Nov 20, 2026</small></th>
-                  <th>Regular<br/><small>After Nov 20, 2026</small></th>
-                </tr>
-              </thead>
-              <tbody>
-                <tr><td><strong>Regular (Non-student)</strong></td><td class="highlight-col price">US$260<span class="ntd">NT$8,320</span></td><td class="price">US$340<span class="ntd">NT$10,880</span></td></tr>
-                <tr><td><strong>Student</strong></td><td class="highlight-col price">US$190<span class="ntd">NT$6,080</span></td><td class="price">US$240<span class="ntd">NT$7,680</span></td></tr>
-                <tr><td><strong>JWLLP Workshop Only</strong></td><td colspan="2" class="price flat">US$110<span class="ntd">NT$3,520</span></td></tr>
-                <tr><td><strong>Additional banquet guest</strong><span class="sub">Up to two per participant</span></td><td colspan="2" class="price flat">US$50<span class="ntd">NT$1,600</span></td></tr>
-              </tbody>
-            </table>
-          </div>
-          <p style="margin-top:18px;">Early Bird rates apply when payment is completed by <strong>November 20, 2026, 11:59 PM (UTC+8)</strong>. Registering before then without paying does not keep the Early Bird rate.</p>
-          <p class="cfp-fine" style="font-size:.85rem;color:var(--text-mid);">Payment is processed in NTD at a fixed rate of 1 USD = 32 NTD. Overseas card statements may differ slightly due to bank conversion.</p>
-          <p style="margin-top:18px;"><strong>At least one author of each accepted paper must register and attend the conference.</strong></p>
-        </div>
-
-        <!-- Visa letter -->
-        <div class="card reveal">
+        <!-- Request form -->
+        <div class="card reveal" id="request">
           <div class="card-head">
             <svg viewBox="0 0 22 22" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" width="22" height="22"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22 6 11 13 2 6"/></svg>
-            <h3>Need a Visa Letter?</h3>
+            <h3>Request Your Letter</h3>
           </div>
-          <p>Authors of accepted papers can request a letter of invitation. See the <a href="invitation.html" style="color:var(--link);text-decoration:underline;font-weight:600;">Letter of Invitation</a> page for details and the request form.</p>
-        </div>
 
-        <!-- CTA -->
-        <div class="card reveal reg-cta">
-          <div class="card-head" style="justify-content:center;">
-            <svg viewBox="0 0 22 22" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" width="22" height="22"><path d="M21 16V8a2 2 0 00-1-1.73l-7-4a2 2 0 00-2 0l-7 4A2 2 0 001 8v8a2 2 0 001 1.73l7 4a2 2 0 002 0l7-4A2 2 0 0021 16z"/></svg>
-            <h3>Register on the Registration Site</h3>
+          <form id="invForm" class="inv-form" novalidate>
+            <div class="inv-field">
+              <label for="f-name">Full name exactly as in your passport <span class="req">*</span></label>
+              <input id="f-name" name="name" type="text" maxlength="200" required autocomplete="name"/>
+            </div>
+            <div class="inv-field">
+              <label for="f-email">Email address used for your paper submission <span class="req">*</span></label>
+              <input id="f-email" name="email" type="email" maxlength="200" required autocomplete="email"/>
+              <small>Used to verify your request against the list of accepted papers.</small>
+            </div>
+            <div class="inv-field">
+              <label for="f-paperid">Paper ID <span class="req">*</span></label>
+              <input id="f-paperid" name="paperId" type="text" inputmode="numeric" maxlength="100" required placeholder="e.g. 12 or 12, 45"/>
+              <small>Numbers only. If you have more than one paper, separate the IDs with commas.</small>
+            </div>
+            <div class="inv-field">
+              <label for="f-title">Paper title <span class="req">*</span></label>
+              <textarea id="f-title" name="paperTitle" rows="2" maxlength="500" required></textarea>
+            </div>
+            <div class="inv-field">
+              <label for="f-affil">Affiliation as it should appear on the letter <span class="req">*</span></label>
+              <input id="f-affil" name="affiliation" type="text" maxlength="300" required autocomplete="organization"/>
+            </div>
+
+            <!-- Anti-spam trap: people never see this field -->
+            <div class="inv-trap" aria-hidden="true"><label>Website <input type="text" name="website" tabindex="-1" autocomplete="off"/></label></div>
+
+            <div id="invStatus" class="inv-status" role="status" aria-live="polite" hidden></div>
+            <button type="submit" id="invSubmit" class="btn btn-primary">Submit Request</button>
+          </form>
+
+          <div id="invDone" class="inv-done" hidden>
+            <h4>Thank you. Your request has been received.</h4>
+            <p>Our team will check your request and email your letter to you within 2-3 days. Please check your spam folder, and do not send a reminder before then.</p>
           </div>
-          <a href="https://registration.linguistics.ntu.edu.tw" target="_blank" rel="noopener" class="btn btn-primary">Go to Registration →</a>
-          <p class="reg-more">Full details on what is included, the banquet and guest policy, dietary options, student verification, payment methods and more are available on the registration site.</p>
+
+          <p class="reg-more" style="text-align:center;">If you have any other special requests for your letter, please contact us at <a href="mailto:paclic2026@gmail.com">paclic2026@gmail.com</a>.</p>
         </div>
 
       </div>
@@ -298,6 +307,68 @@
   </footer>
 
   <script src="js/main.js"></script>
+  <script>
+    // Letter-of-invitation request: sent to a private Google Sheet. Nothing is stored in this page's code.
+    // INVITATION_ENDPOINT = the Web app URL from invitation-request-handler.gs (paste it between the quotes).
+    var INVITATION_ENDPOINT = 'https://script.google.com/macros/s/AKfycbw6UmCIptXf4n4ZVsHqkOWBqjLtjace2hEVfpmPUwzoC1N71lNpsFpQxVeMjxqy00jqcw/exec';
+
+    (function () {
+      var form = document.getElementById('invForm');
+      var btn = document.getElementById('invSubmit');
+      var status = document.getElementById('invStatus');
+      var done = document.getElementById('invDone');
+
+      function showError(msg) { status.textContent = msg; status.hidden = false; }
+
+      form.addEventListener('submit', function (ev) {
+        ev.preventDefault();
+        status.hidden = true;
+
+        // Check required fields and email format
+        var bad = null, badMsg = 'Please complete the highlighted fields.';
+        form.querySelectorAll('.inv-field').forEach(function (f) {
+          var input = f.querySelector('input, textarea');
+          var v = input.value.trim();
+          var empty = input.required && !v;
+          var wrongEmail = input.type === 'email' && v && !/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(v);
+          var wrongId = input.name === 'paperId' && v && !/^\d+(\s*,\s*\d+)*$/.test(v);
+          f.classList.toggle('invalid', empty || wrongEmail || wrongId);
+          if ((empty || wrongEmail || wrongId) && !bad) {
+            bad = input;
+            if (wrongId) badMsg = 'Paper ID must be numbers only. If you have more than one paper, separate the IDs with commas.';
+          }
+        });
+        if (bad) { showError(badMsg); bad.focus(); return; }
+
+        if (!INVITATION_ENDPOINT) {
+          showError('The request form is not open yet. Please email paclic2026@gmail.com to request your letter.');
+          return;
+        }
+
+        var fd = new FormData(form);
+        var payload = {};
+        fd.forEach(function (v, k) { payload[k] = String(v).trim(); });
+        payload.paperId = payload.paperId.split(',').map(function (x) { return x.trim(); }).join(', ');
+
+        btn.disabled = true;
+        btn.textContent = 'Sending…';
+        fetch(INVITATION_ENDPOINT, {
+          method: 'POST',
+          mode: 'no-cors',
+          headers: { 'Content-Type': 'text/plain' },
+          body: JSON.stringify(payload)
+        }).then(function () {
+          form.hidden = true;
+          done.hidden = false;
+          done.scrollIntoView({ behavior: 'smooth', block: 'center' });
+        }).catch(function () {
+          btn.disabled = false;
+          btn.textContent = 'Submit Request';
+          showError('Sorry, your request could not be sent. Please check your connection and try again, or email paclic2026@gmail.com.');
+        });
+      });
+    })();
+  </script>
   <script src="js/chat-widget.js"></script>
   <script data-goatcounter="https://paclic40.goatcounter.com/count" async src="//gc.zgo.at/count.js"></script>
 </body>

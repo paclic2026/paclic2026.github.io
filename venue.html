@@ -74,7 +74,7 @@
     .venue-sidenav nav a { display: block; font-size: .82rem; font-weight: 600; padding: 8px 14px; border-radius: 8px; background: var(--navy); color: #fff; text-decoration: none; transition: background .2s, transform .12s; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
     .venue-sidenav nav a:hover { background: var(--tw-gold); color: #1a1200; transform: translateX(3px); }
 
-    .visa-note { background: rgba(201,151,42,.08); border-left: 3px solid var(--tw-gold); padding: 14px 18px; border-radius: 6px; margin-top: 14px; font-size: .9rem; color: var(--text-mid); line-height: 1.7; }
+    .visa-note { background: rgba(201,151,42,.08); border: none; padding: 14px 18px; border-radius: 6px; margin-top: 14px; font-size: .9rem; color: var(--text-mid); line-height: 1.7; }
     .visa-note a { color: var(--link); font-weight: 600; text-decoration: underline; }
 
     @media (max-width: 700px) {
@@ -175,6 +175,10 @@
           <span class="nav-icon"><svg viewBox="0 0 22 22" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"><rect x="2" y="5" width="18" height="13" rx="2"/><line x1="2" y1="10" x2="20" y2="10"/><line x1="6" y1="15" x2="10" y2="15"/></svg></span>
           <span class="nav-text">Registration</span>
         </a>
+        <a href="invitation.html" class="nav-link">
+          <span class="nav-icon"><svg viewBox="0 0 22 22" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"><path d="M4 4h14c1.1 0 2 .9 2 2v10c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="20 6 11 12 2 6"/></svg></span>
+          <span class="nav-text">Letter of Invitation</span>
+        </a>
         <a href="venue.html" class="nav-link active">
           <span class="nav-icon"><svg viewBox="0 0 22 22" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"><path d="M11 2C7.7 2 5 4.7 5 8c0 5.25 6 12 6 12s6-6.75 6-12c0-3.3-2.7-6-6-6z"/><circle cx="11" cy="8" r="2.5"/></svg></span>
           <span class="nav-text">Venue &amp; Travel</span>
@@ -268,6 +272,10 @@
           </div>
           <p>Taiwan offers visa-free or visa-on-arrival entry to citizens of many countries. Please check your eligibility with the <a href="https://www.boca.gov.tw/mp-2.html" target="_blank" rel="noopener" style="color:var(--link);text-decoration:underline;font-weight:600;">Bureau of Consular Affairs, Ministry of Foreign Affairs of Taiwan</a>.</p>
 
+          <div class="visa-note" style="margin-top:14px;background:rgba(254,0,0,.05);border-left-color:var(--tw-red);">
+            <strong>Please note:</strong> The visa and entry information on this page is <strong>for reference only</strong> and is not official. Requirements can change and depend on your nationality and circumstances. For accurate and up-to-date information, please check with the <a href="https://www.boca.gov.tw/mp-2.html" target="_blank" rel="noopener">Bureau of Consular Affairs (BOCA)</a> and the Taiwan representative office in your country.
+          </div>
+
           <div class="info-grid" style="margin-top:16px;">
             <div class="info-block">
               <h4>Visa-Free Entry (14–90 days)</h4>
@@ -275,30 +283,22 @@
                 <li>USA, Canada, UK, EU/Schengen</li>
                 <li>Australia, New Zealand</li>
                 <li>Japan, South Korea</li>
-                <li>And 60+ other countries</li>
+                <li>See the <a href="https://www.boca.gov.tw/cp-149-4486-7785a-2.html" target="_blank" rel="noopener">full official list</a> for all eligible nations</li>
               </ul>
             </div>
             <div class="info-block">
               <h4>Visa Required</h4>
               <ul>
-                <li>Apply at a Taiwan representative office in your country</li>
-                <li>Processing time: ~5–10 business days</li>
-                <li>Check: <a href="https://www.boca.gov.tw/mp-2.html" target="_blank" rel="noopener">boca.gov.tw</a></li>
+                <li>Contact and apply at the Taiwan representative office in your country to learn more about the procedures</li>
+                <li>Check BOCA: <a href="https://www.boca.gov.tw/mp-2.html" target="_blank" rel="noopener">boca.gov.tw</a></li>
               </ul>
             </div>
           </div>
 
           <div class="visa-note" style="margin-top:16px;">
-            <strong>Passport Validity:</strong> Your passport must have at least <strong>6 months of validity remaining</strong> from your date of entry into Taiwan.
-          </div>
-
-          <div class="visa-note" style="margin-top:12px;background:rgba(255,200,0,.08);border-left-color:var(--tw-gold);">
-            <strong>Pro-tip: NIA Online Arrival Card</strong><br/>
-            Save time at immigration! Instead of filling out a paper form on the plane, complete the <a href="https://www.immigration.gov.tw/5475/5478/141465/141808/" target="_blank" rel="noopener" style="color:var(--link);text-decoration:underline;font-weight:600;">NIA Online Arrival Card</a> before you land.
-          </div>
-
-          <div class="visa-note" style="margin-top:12px;">
-            <strong>Invitation Letter:</strong> Registered participants who require a visa support letter may request one from the organising committee. Please contact <a href="mailto:paclic2026@gmail.com">paclic2026@gmail.com</a> after completing your registration. Letters will be issued upon receipt of full payment.
+            <p style="margin:0;"><strong>Passport Validity:</strong> Your passport must have at least <strong>6 months of validity remaining</strong> from your date of entry into Taiwan.</p>
+            <p style="margin:10px 0 0;"><strong>NIA Online Arrival Card:</strong> Save time at immigration! Instead of filling out a paper form on the plane, complete the <a href="https://www.immigration.gov.tw/5475/5478/141465/141808/" target="_blank" rel="noopener">NIA Online Arrival Card</a> before you land.</p>
+            <p style="margin:10px 0 0;"><strong>Invitation Letter:</strong> Authors of accepted papers can request a letter of invitation through the <a href="invitation.html">Letter of Invitation</a> page.</p>
           </div>
         </div>
 
@@ -635,6 +635,7 @@
           <a href="cfp.html">Call for Papers</a>
           <a href="workshop.html">Workshop</a>
           <a href="registration.html">Registration</a>
+          <a href="invitation.html">Letter of Invitation</a>
           <a href="venue.html">Venue &amp; Travel</a>
           <a href="index.html#committee">Committee</a>
           <a href="index.html#faq">FAQ</a>

@@ -28,7 +28,7 @@ ANSWERING APPROACH — read carefully:
    (e.g. "Can I attend without presenting?", "Will my paper be publicly available?",
    "Is the review process fair?", "Can I get a visa invitation letter?"):
    → Infer from what IS in the knowledge base (e.g. open-access proceedings, double-blind review,
-     invitation letters available on request, at least one author must register and attend).
+     invitation letters for authors of accepted papers via the request form, at least one author must register and attend).
    → State clearly when you are inferring vs. quoting directly.
 
 4. COMPARISON with other conferences (e.g. "How does PACLIC compare to ACL / EMNLP / COLING?"):
