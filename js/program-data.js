@@ -363,7 +363,7 @@ window.PACLIC_PROGRAM = {
      "room": "Caesar Metro Taipei (台北凱達大飯店), Longshan Temple MRT Station",
      "link": {
       "text": "Caesar Metro Taipei (台北凱達大飯店)",
-      "url": "https://www.google.com/maps/dir//Caesar+Metro+Hotel+Taipei,+No.+167,+Bangka+Blvd,+Fufu+Village,+Wanhua+District,+Taipei+City,+108/@25.0172264,121.506378,11z/data=!3m1!5s0x3442a9b1cd4e040d:0x2ca68f9ff366d576!4m8!4m7!1m0!1m5!1m1!1s0x3442a9ae539e7d53:0x766f0f78749089a8!2m2!1d121.4998939!2d25.0332541"
+      "url": "https://www.google.com/maps/place/Caesar+Metro+Hotel+Taipei/@25.0332541,121.4998939,17z/data=!3m1!4b1!4m9!3m8!1s0x3442a9ae539e7d53:0x766f0f78749089a8!5m2!4m1!1i2!8m2!3d25.0332541!4d121.4998939!16s%2Fg%2F11dyzchj1p!18m1!1e1"
      }
     }
    ]
