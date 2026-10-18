@@ -1,0 +1,326 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Program | PACLIC 40 — Taipei, Taiwan, December 10–12, 2026</title>
+  <meta name="description" content="Program of PACLIC 40 — the 40th Pacific Asia Conference on Language, Information and Computation. Taipei, Taiwan, December 10–12, 2026."/>
+  <meta property="og:type"        content="website"/>
+  <meta property="og:url"         content="https://paclic2026.github.io/program.html"/>
+  <meta property="og:title"       content="Program | PACLIC 40 — Taipei, Taiwan, December 10–12, 2026"/>
+  <meta property="og:description" content="Program of PACLIC 40 — the 40th Pacific Asia Conference on Language, Information and Computation. Taipei, Taiwan, December 10–12, 2026."/>
+  <meta property="og:image"       content="https://paclic2026.github.io/images/taipei-hero.jpg"/>
+  <meta name="twitter:card"        content="summary_large_image"/>
+  <meta name="twitter:title"       content="Program | PACLIC 40 — Taipei, Taiwan, December 10–12, 2026"/>
+  <meta name="twitter:description" content="Program of PACLIC 40 — the 40th Pacific Asia Conference on Language, Information and Computation. Taipei, Taiwan, December 10–12, 2026."/>
+  <meta name="twitter:image"       content="https://paclic2026.github.io/images/taipei-hero.jpg"/>
+  <link rel="preconnect" href="https://fonts.googleapis.com"/>
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
+  <link href="https://fonts.googleapis.com/css2?family=Source+Serif+4:ital,opsz,wght@0,8..60,400;0,8..60,600;0,8..60,700;1,8..60,400&family=Source+Sans+3:wght@300;400;500;600;700&display=swap" rel="stylesheet"/>
+  <link rel="stylesheet" href="css/style.css"/>
+  <style>
+    /* ── Program page ───────────────────────────────────────────── */
+    .pg-wrap { max-width: 1040px; margin: 0 auto; }
+    .pg-note { font-size: .85rem; color: var(--text-mid); text-align: center; margin-top: 14px; }
+
+    /* toolbar: search + filters */
+    .pg-bar { position: sticky; top: 0; z-index: 30; background: rgba(255,255,255,.96); backdrop-filter: blur(6px); padding: 14px 0 12px; border-bottom: 1px solid var(--border); margin-bottom: 22px; }
+    .pg-search { position: relative; }
+    .pg-search svg { position: absolute; left: 15px; top: 50%; transform: translateY(-50%); color: var(--text-light); pointer-events: none; }
+    .pg-search input { width: 100%; padding: 14px 44px 14px 46px; font: inherit; font-size: 1rem; color: var(--text); background: #fff; border: 1.5px solid var(--border); border-radius: 12px; transition: border-color .2s, box-shadow .2s; }
+    .pg-search input:focus { outline: none; border-color: var(--tw-gold); box-shadow: 0 0 0 3px rgba(212,146,10,.15); }
+    .pg-clear { position: absolute; right: 8px; top: 50%; transform: translateY(-50%); width: 32px; height: 32px; border-radius: 50%; font-size: 1.3rem; line-height: 1; color: var(--text-mid); }
+    .pg-clear:hover { background: var(--bg-alt); }
+    .pg-row { display: flex; flex-wrap: wrap; gap: 8px; align-items: center; margin-top: 10px; }
+    .pg-chip { padding: 6px 14px; border-radius: 18px; border: 1.5px solid var(--border); font-size: .84rem; font-weight: 600; color: var(--text-mid); background: #fff; transition: all .2s; }
+    .pg-chip:hover { border-color: var(--tw-gold); }
+    .pg-chip.on { background: var(--navy-deep); border-color: var(--navy-deep); color: #fff; }
+    .pg-select { padding: 6px 30px 6px 14px; border-radius: 18px; border: 1.5px solid var(--border); font: inherit; font-size: .84rem; font-weight: 600; color: var(--text-mid); background: #fff; max-width: 100%; min-width: 0; cursor: pointer; }
+    .pg-select:focus { outline: none; border-color: var(--tw-gold); box-shadow: 0 0 0 3px rgba(212,146,10,.15); }
+    .pg-select.on { background: var(--navy-deep); border-color: var(--navy-deep); color: #fff; }
+    .pg-spacer { flex: 1; }
+    .pg-tool { padding: 6px 14px; border-radius: 18px; border: 1.5px solid var(--border); font-size: .84rem; font-weight: 600; color: var(--navy-light); background: #fff; display: inline-flex; align-items: center; gap: 6px; }
+    .pg-tool[hidden] { display: none; }
+    .pg-tool:hover { background: var(--navy-light); border-color: var(--navy-light); color: #fff; }
+    .pg-tool .cnt { background: var(--tw-gold); color: #fff; border-radius: 10px; padding: 0 7px; font-size: .75rem; }
+    .pg-status { font-size: .9rem; color: var(--text-mid); margin: 0 0 16px; }
+
+    /* day tabs */
+    .pg-days { display: flex; gap: 12px; margin-bottom: 22px; flex-wrap: wrap; }
+    .pg-day { flex: 1; min-width: 150px; display: flex; flex-direction: column; align-items: center; gap: 3px; padding: 12px 20px; border-radius: 10px; border: 1.5px solid var(--border); color: var(--text-mid); background: #fff; transition: all .25s var(--ease); }
+    .pg-day:hover { border-color: var(--tw-red); color: var(--tw-red); }
+    .pg-day .d1 { font-family: 'Source Serif 4', serif; font-weight: 700; font-size: 1.1rem; }
+    .pg-day .d2 { font-size: .82rem; opacity: .85; }
+    .pg-day:disabled { opacity: .4; cursor: not-allowed; border-style: dashed; }
+    .pg-day:disabled:hover { border-color: var(--border); color: var(--text-mid); }
+    .pg-day.active { background: var(--navy-deep); border-color: var(--navy-deep); color: #fff; }
+    .pg-day.today:not(.active) { border-color: var(--tw-gold); }
+
+    /* timeline slots */
+    .pg-slot { padding: 14px 0 4px; }
+    .pg-time { display: flex; align-items: center; gap: 14px; font-family: 'Source Serif 4', serif; font-weight: 700; color: var(--navy-deep); font-size: 1.02rem; line-height: 1.3; padding: 0 0 8px; white-space: nowrap; }
+    .pg-time::after { content: ''; flex: 1; height: 1px; background: var(--border); }
+    .pg-card { background: #fff; border: 1px solid var(--border); border-radius: 12px; padding: 14px 18px; box-shadow: var(--shadow-sm); }
+    .pg-card h3 { font-size: 1.02rem; color: var(--text); margin: 0; }
+    .pg-meta { font-size: .86rem; color: var(--text-mid); margin-top: 3px; }
+    .k-break .pg-card, .k-event .pg-card { background: var(--bg-alt); box-shadow: none; padding: 10px 18px; }
+    .k-break h3, .k-event h3 { font-size: .95rem; font-weight: 600; color: var(--text-mid); }
+    .pg-link { color: var(--link); text-decoration: underline; text-underline-offset: 3px; font-weight: 700; }
+    .pg-link:hover { color: #1044a0; }
+    .pg-speaker { font-size: 1.05rem; font-weight: 700; color: var(--text); margin-top: 6px; }
+    .pg-speaker a { color: inherit; }
+    .pg-speaker a:hover { text-decoration: underline; }
+    .pg-tag { display: inline-block; font-size: .7rem; font-weight: 700; letter-spacing: .6px; text-transform: uppercase; padding: 2px 9px; border-radius: 10px; margin-right: 8px; vertical-align: 2px; background: rgba(0,0,149,.08); color: var(--navy-deep); }
+    .pg-now { box-shadow: 0 0 0 2px var(--tw-red), var(--shadow-sm); }
+    .pg-now-badge { display: inline-block; background: var(--tw-red); color: #fff; font-size: .7rem; font-weight: 700; padding: 2px 9px; border-radius: 10px; margin-left: 8px; letter-spacing: .5px; }
+
+    /* parallel sessions */
+    .pg-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 14px; }
+    .pg-grid[data-n="2"], .pg-grid[data-n="4"] { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+    .pg-grid[data-n="3"] { grid-template-columns: repeat(3, minmax(0, 1fr)); }
+    #pgOut { container-type: inline-size; }
+    @container (max-width: 860px) { .pg-grid[data-n="3"], .pg-grid[data-n="4"] { grid-template-columns: 1fr; } }
+    @container (max-width: 560px) { .pg-grid[data-n="2"] { grid-template-columns: 1fr; } }
+    .pg-sess { background: #fff; border: 1px solid var(--border); border-radius: 12px; padding: 14px 16px; box-shadow: var(--shadow-sm); }
+    .pg-sess-head { border-bottom: 1px solid var(--border); padding-bottom: 10px; margin-bottom: 4px; }
+    .pg-sess-top { display: flex; justify-content: space-between; align-items: center; gap: 8px; }
+    .pg-room { display: inline-block; font-size: .72rem; font-weight: 700; letter-spacing: .5px; text-transform: uppercase; color: var(--navy-deep); background: rgba(0,0,149,.07); padding: 2px 9px; border-radius: 10px; }
+    .pg-sess h4 { font-size: 1.02rem; margin: 8px 0 0; color: var(--text); line-height: 1.35; }
+
+    /* paper rows */
+    .pg-papers { list-style: none; margin: 0; padding: 0; }
+    .pg-paper { position: relative; padding: 12px 34px 12px 0; border-bottom: 1px solid #f0e9e2; }
+    .pg-paper:last-child { border-bottom: none; }
+    .pg-pid { display: inline-block; font-size: .72rem; font-weight: 700; color: #fff; background: var(--navy-light); border-radius: 6px; padding: 1px 7px; margin-right: 6px; vertical-align: 1px; }
+    .pg-ptitle { font-weight: 600; color: var(--text); line-height: 1.45; font-size: .9rem; }
+    .pg-pauth { font-size: .84rem; color: var(--text-mid); margin-top: 3px; }
+    .pg-board { font-size: .72rem; font-weight: 700; color: #8a5d00; background: rgba(212,146,10,.14); border-radius: 6px; padding: 1px 7px; margin-right: 6px; }
+    .pg-star { position: absolute; right: 0; top: 8px; width: 30px; height: 30px; border-radius: 50%; color: #c9bdb0; font-size: 1.15rem; line-height: 1; }
+    .pg-star:hover { background: var(--bg-alt); color: var(--tw-gold); }
+    .pg-star.on { color: var(--tw-gold); }
+    .pg-hit { animation: pgflash 2.4s ease-out; }
+    @keyframes pgflash { 0%,35% { background: rgba(212,146,10,.28); } 100% { background: transparent; } }
+    mark { background: rgba(255,214,10,.45); color: inherit; padding: 0 1px; border-radius: 2px; }
+    .pg-toggle { margin-top: 10px; font-size: .88rem; font-weight: 600; color: var(--navy-light); text-decoration: underline; }
+    .pg-part { padding: 8px 0; border-top: 1px dashed var(--border); }
+    .pg-part:first-of-type { border-top: none; }
+    .pg-part h5 { font-size: .92rem; margin: 0; color: var(--text); }
+    .pg-part h5 small { color: var(--text-light); font-weight: 600; margin-right: 8px; font-size: .82rem; }
+
+    /* search results */
+    .pg-result { background: #fff; border: 1px solid var(--border); border-radius: 12px; padding: 14px 40px 14px 18px; margin-bottom: 12px; position: relative; box-shadow: var(--shadow-sm); }
+    .pg-where { font-size: .84rem; color: var(--text-mid); margin-top: 6px; }
+    .pg-go { margin-top: 8px; font-size: .84rem; font-weight: 700; color: var(--navy-light); text-decoration: underline; }
+    .pg-empty { text-align: center; padding: 40px 10px; color: var(--text-mid); }
+
+    @media (max-width: 700px) {
+      .pg-day { min-width: 100px; padding: 10px 12px; }
+    }
+  </style>
+</head>
+<body>
+
+  <button class="mobile-toggle" id="mobileToggle" aria-label="Toggle navigation">
+    <span></span><span></span><span></span>
+  </button>
+  <div class="sidebar-overlay" id="sidebarOverlay"></div>
+
+  <!-- ══════════════════════════════════════ SIDEBAR ══════════ -->
+  <aside class="sidebar" id="sidebar">
+    <div class="sidebar-inner">
+
+      <div class="sidebar-brand">
+        <div class="brand-emblem">
+          <img src="images/logo-seal.svg" class="plum-svg" alt="PACLIC 40 Seal"/>
+        </div>
+        <div class="brand-info">
+          <div class="brand-name">PACLIC 40</div>
+          <div class="brand-full">Pacific Asia Conference on<br/>Language, Information &amp;<br/>Computation</div>
+        </div>
+      </div>
+
+      <div class="sidebar-rule"></div>
+
+      <nav class="sidebar-nav">
+        <a href="index.html#home" class="nav-link">
+          <span class="nav-icon"><svg viewBox="0 0 22 22" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"><path d="M3 10L11 3l8 7v8a1 1 0 01-1 1H14v-5H8v5H4a1 1 0 01-1-1z"/></svg></span>
+          <span class="nav-text">Home</span>
+        </a>
+        <a href="program.html" class="nav-link active">
+          <span class="nav-icon"><svg viewBox="0 0 22 22" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"><rect x="3" y="3" width="16" height="16" rx="2"/><line x1="3" y1="8" x2="19" y2="8"/><line x1="8" y1="3" x2="8" y2="8"/><line x1="14" y1="3" x2="14" y2="8"/><line x1="7" y1="13" x2="15" y2="13"/><line x1="7" y1="17" x2="12" y2="17"/></svg></span>
+          <span class="nav-text">Program</span>
+          <span class="nav-indicator"></span>
+        </a>
+        <a href="speakers.html" class="nav-link">
+          <span class="nav-icon"><svg viewBox="0 0 22 22" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"><path d="M12 1a3 3 0 000 6M12 1a3 3 0 010 6"/><path d="M16 17v1a2 2 0 01-2 2H8a2 2 0 01-2-2v-1"/><path d="M12 7v10M9 11l3-4 3 4"/><rect x="10" y="17" width="4" height="3" rx="1"/></svg></span>
+          <span class="nav-text">Invited Speakers</span>
+        </a>
+        <a href="cfp.html" class="nav-link">
+          <span class="nav-icon"><svg viewBox="0 0 22 22" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"><path d="M14 2H6a2 2 0 00-2 2v16a2 2 0 002 2h10a2 2 0 002-2V8z"/><polyline points="14 2 14 8 20 8"/><line x1="16" y1="13" x2="8" y2="13"/><line x1="16" y1="17" x2="8" y2="17"/><line x1="10" y1="9" x2="8" y2="9"/></svg></span>
+          <span class="nav-text">Call for Papers</span>
+        </a>
+        <a href="workshop.html" class="nav-link">
+          <span class="nav-icon"><svg viewBox="0 0 22 22" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"><rect x="2" y="3" width="18" height="13" rx="2"/><line x1="7" y1="20" x2="15" y2="20"/><line x1="11" y1="16" x2="11" y2="20"/></svg></span>
+          <span class="nav-text">Workshop</span>
+        </a>
+        <a href="registration.html" class="nav-link">
+          <span class="nav-icon"><svg viewBox="0 0 22 22" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"><rect x="2" y="5" width="18" height="13" rx="2"/><line x1="2" y1="10" x2="20" y2="10"/><line x1="6" y1="15" x2="10" y2="15"/></svg></span>
+          <span class="nav-text">Registration</span>
+        </a>
+        <a href="invitation.html" class="nav-link">
+          <span class="nav-icon"><svg viewBox="0 0 22 22" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"><path d="M4 4h14c1.1 0 2 .9 2 2v10c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="20 6 11 12 2 6"/></svg></span>
+          <span class="nav-text">Letter of Invitation</span>
+        </a>
+        <a href="venue.html" class="nav-link">
+          <span class="nav-icon"><svg viewBox="0 0 22 22" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"><path d="M11 2C7.7 2 5 4.7 5 8c0 5.25 6 12 6 12s6-6.75 6-12c0-3.3-2.7-6-6-6z"/><circle cx="11" cy="8" r="2.5"/></svg></span>
+          <span class="nav-text">Venue &amp; Travel</span>
+        </a>
+        <a href="index.html#committee" class="nav-link">
+          <span class="nav-icon"><svg viewBox="0 0 22 22" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"><circle cx="9" cy="7" r="4"/><path d="M3 21v-2a4 4 0 014-4h4a4 4 0 014 4v2"/><circle cx="17" cy="8" r="2.5"/><path d="M21 21v-1.5a2.5 2.5 0 00-2.5-2.5"/></svg></span>
+          <span class="nav-text">Committee</span>
+        </a>
+        <a href="index.html#faq" class="nav-link">
+          <span class="nav-icon"><svg viewBox="0 0 22 22" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"><circle cx="11" cy="11" r="9"/><path d="M9 8.5a2 2 0 013.5 1.3c0 1.5-2.5 2-2.5 3"/><line x1="11" y1="16" x2="11.01" y2="16"/></svg></span>
+          <span class="nav-text">FAQ</span>
+        </a>
+      </nav>
+
+      <div class="sidebar-footer">
+        <div class="taiwan-map-wrap">
+          <svg class="taiwan-map" viewBox="0 0 100 174" xmlns="http://www.w3.org/2000/svg">
+            <path d="M 73,3 C 82,0 90,8 95,18 C 93,25 92,30 92,38 C 88,52 85,62 82,70 C 78,82 74,97 70,112 C 66,122 63,129 60,135 C 55,148 50,163 43,174 C 34,162 23,150 15,140 C 8,130 6,122 8,118 C 9,110 9,100 10,90 C 13,78 16,72 16,68 C 16,62 18,55 21,48 C 26,38 34,28 48,22 C 58,17 66,10 73,3 Z"
+              fill="rgba(254,0,0,0.07)" stroke="rgba(254,0,0,0.45)" stroke-width="2.5" stroke-linejoin="round" stroke-linecap="round"/>
+            <circle cx="74" cy="14" r="3.5" fill="#FE0000" stroke="white" stroke-width="1.5"/>
+            <text x="62" y="10" font-size="7" fill="rgba(254,0,0,0.75)" font-family="sans-serif" font-weight="600" text-anchor="end">Taipei</text>
+          </svg>
+        </div>
+        <div class="footer-pin">
+          <svg viewBox="0 0 16 16" fill="currentColor" width="13" height="13"><circle cx="8" cy="6.5" r="3" fill="rgba(196,30,58,0.9)"/><path d="M8 1a5.5 5.5 0 00-5.5 5.5C2.5 10.5 8 15 8 15s5.5-4.5 5.5-7.5A5.5 5.5 0 008 1z" fill="none" stroke="rgba(196,30,58,0.9)" stroke-width="1.5"/></svg>
+          <span>Taipei, Taiwan</span>
+        </div>
+        <div class="footer-dates">December 10–12, 2026</div>
+        <div class="footer-edition">40<sup>th</sup> Edition · Since 1987</div>
+        <div class="footer-email">
+          <a href="mailto:paclic2026@gmail.com">paclic2026@gmail.com</a>
+        </div>
+        <div class="ntu-host-wrap">
+          <img class="ntu-logo-img" src="https://www.ntu.edu.tw/images/icon-logo-header.svg" alt="NTU logo" onerror="this.style.display='none'"/>
+          <div class="ntu-host-text"><strong>Hosted by</strong>National Taiwan University (NTU)</div>
+        </div>
+      </div>
+    </div>
+  </aside>
+
+  <!-- ══════════════════════════════════ MAIN CONTENT ══════════ -->
+  <main id="main">
+
+    <div class="cfp-hero" style="text-align:center;padding:64px 40px 34px;border-bottom:2px solid var(--border);">
+      <div class="block-tag" style="display:inline-flex;margin-bottom:18px;">Conference Schedule</div>
+      <h1 style="font-family:'Source Serif 4',serif;font-size:2.6rem;font-weight:700;color:var(--text);margin-bottom:12px;">Program</h1>
+      <p style="font-size:.95rem;color:var(--text-mid);margin:0 auto 6px;line-height:1.7;">PACLIC 40 · The 40th Pacific Asia Conference on Language, Information and Computation</p>
+      <p style="font-size:.95rem;color:var(--text-mid);margin:0 auto 4px;line-height:1.7;">December 10–12, 2026 · National Taiwan University, Taipei, Taiwan</p>
+      <p class="pg-note" id="pgNote">All times are Taipei time (UTC+8).</p>
+    </div>
+
+    <section style="padding:0 0 64px;">
+      <div class="container pg-wrap">
+
+        <div class="pg-bar">
+          <div class="pg-search">
+            <svg viewBox="0 0 22 22" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><circle cx="10" cy="10" r="6.5"/><line x1="15" y1="15" x2="19.5" y2="19.5"/></svg>
+            <label for="pgQ" class="sr-only" style="position:absolute;left:-9999px;">Search the program</label>
+            <input id="pgQ" type="search" autocomplete="off" placeholder="Find your paper: search by author, title or paper ID" aria-label="Search by author, title or paper ID"/>
+            <button type="button" id="pgClear" class="pg-clear" aria-label="Clear search" hidden>&times;</button>
+          </div>
+          <div class="pg-row" id="pgFilters" role="group" aria-label="Filter by type">
+            <button type="button" class="pg-chip on" data-type="all">All</button>
+            <button type="button" class="pg-chip" data-type="oral">Oral</button>
+            <button type="button" class="pg-chip" data-type="poster">Poster</button>
+            <button type="button" class="pg-chip" data-type="jwllp">JWLLP 36</button>
+            <label for="pgTopic" style="position:absolute;left:-9999px;">Filter by topic</label>
+            <select id="pgTopic" class="pg-select" aria-label="Filter by topic"><option value="">All topics</option></select>
+            <button type="button" class="pg-tool" id="pgReset" hidden>Clear filters</button>
+            <span class="pg-spacer"></span>
+            <button type="button" class="pg-tool" id="pgMine">&#9733; My schedule <span class="cnt" id="pgMineCnt" hidden>0</span></button>
+          </div>
+        </div>
+
+        <noscript><p class="pg-empty">Please enable JavaScript to view the program.</p></noscript>
+        <div id="pgDays" class="pg-days" role="tablist" aria-label="Conference days"></div>
+        <p id="pgStatus" class="pg-status" aria-live="polite" hidden></p>
+        <div id="pgOut"></div>
+
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ══════════════════ SHARE BAR ════════════════════════════ -->
+  <div class="share-bar">
+    <div class="share-bar-inner container">
+      <span class="share-label">Spread the word</span>
+      <div class="share-btns">
+        <a class="share-btn share-x" href="#"
+           onclick="window.open('https://twitter.com/intent/tweet?text=PACLIC+40+%E2%80%94+The+40th+Pacific+Asia+Conference+on+Language%2C+Information+and+Computation.+Taipei%2C+Taiwan%2C+Dec+10%E2%80%9312+2026.&url='+encodeURIComponent(location.href),'_blank');return false;" aria-label="Share on X">
+          <svg viewBox="0 0 22 22" fill="currentColor" width="17" height="17"><path d="M17.53 3H20.5L14.2 10.28 21.5 20h-5.9l-4.5-5.88L5.84 20H2.86l6.72-7.69L2.5 3h6.05l4.09 5.34L17.53 3zm-1 15.25h1.64L5.57 4.64H3.82l12.71 13.61z"/></svg>
+          Share on X
+        </a>
+        <a class="share-btn share-li" href="#"
+           onclick="window.open('https://www.linkedin.com/shareArticle?mini=true&url='+encodeURIComponent(location.href)+'&title=PACLIC+40+%E2%80%94+Taipei%2C+Taiwan%2C+December+10%E2%80%9312+2026','_blank');return false;" aria-label="Share on LinkedIn">
+          <svg viewBox="0 0 22 22" fill="currentColor" width="17" height="17"><path d="M16 8a6 6 0 016 6v7h-4v-7a2 2 0 00-2-2 2 2 0 00-2 2v7h-4v-7a6 6 0 016-6zM2 9h4v12H2z"/><circle cx="4" cy="4" r="2"/></svg>
+          LinkedIn
+        </a>
+        <a class="share-btn share-fb" href="#"
+           onclick="window.open('https://www.facebook.com/sharer/sharer.php?u='+encodeURIComponent(location.href),'_blank');return false;" aria-label="Share on Facebook">
+          <svg viewBox="0 0 22 22" fill="currentColor" width="17" height="17"><path d="M18 2h-3a5 5 0 00-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 011-1h3z"/></svg>
+          Facebook
+        </a>
+      </div>
+    </div>
+  </div>
+
+  <!-- ══════════════════ SITE FOOTER ══════════════════════════ -->
+  <footer class="site-footer">
+    <div class="footer-grid container">
+      <div class="footer-col">
+        <div class="footer-col-title">PACLIC 40</div>
+        <p>The 40th Pacific Asia Conference on Language, Information and Computation<br/>Taipei, Taiwan &nbsp;·&nbsp; December 10–12, 2026</p>
+      </div>
+      <div class="footer-col">
+        <div class="footer-col-title">Navigation</div>
+        <nav class="footer-nav-links">
+          <a href="index.html#home">Home</a>
+          <a href="program.html">Program</a>
+          <a href="speakers.html">Invited Speakers</a>
+          <a href="cfp.html">Call for Papers</a>
+          <a href="workshop.html">Workshop</a>
+          <a href="registration.html">Registration</a>
+          <a href="invitation.html">Letter of Invitation</a>
+          <a href="venue.html">Venue &amp; Travel</a>
+          <a href="index.html#committee">Committee</a>
+          <a href="index.html#faq">FAQ</a>
+        </nav>
+      </div>
+      <div class="footer-col">
+        <div class="footer-col-title">Previous Editions</div>
+        <p class="footer-prev-line">
+          <a href="https://vlsp.org.vn/paclic2025/" target="_blank" rel="noopener">PACLIC 39 (Hanoi, 2025)</a>
+          &nbsp;·&nbsp;
+          <a href="https://sites.google.com/view/paclic38" target="_blank" rel="noopener">PACLIC 38 (Tokyo, 2024)</a>
+          &nbsp;·&nbsp;
+          <a href="https://paclic2023.github.io/" target="_blank" rel="noopener">PACLIC 37 (Hong Kong, 2023)</a>
+        </p>
+      </div>
+    </div>
+    <div class="footer-bottom container">
+      <span>© 2026 PACLIC 40 Organising Committee &nbsp;·&nbsp; Graduate Institute of Linguistics, National Taiwan University</span>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+  <script src="js/program-data.js"></script>
+  <script src="js/program.js"></script>
+  <script src="js/chat-widget.js"></script>
+  <script data-goatcounter="https://paclic40.goatcounter.com/count" async src="//gc.zgo.at/count.js"></script>
+</body>
+</html>

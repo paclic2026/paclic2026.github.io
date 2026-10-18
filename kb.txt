@@ -91,9 +91,47 @@ Organizing Committee Member: Shu-Kai Hsieh, National Taiwan University
 Steering Committee: Chu-Ren Huang (Hong Kong Polytechnic University), Jong-Bok Kim (Kyung Hee University), Yasunari Harada (Waseda University), Rachel Edita O. Roxas (University of the Philippines), Shirley N. Dita (De La Salle University), Nguyen Thi Minh Huyen (Vietnam National University)
 Student Organizing Committee: Tran Cao Bang Trinh, Le Thi Thach Thao (both PhD students, Graduate Institute of Linguistics, National Taiwan University)
 
---- SECTION: CONFERENCE PROGRAM | source: https://paclic2026.github.io ---
-The program is currently being updated and finalized.
-For the latest program updates, please visit https://paclic2026.github.io or contact paclic2026@gmail.com
+--- SECTION: CONFERENCE PROGRAM | source: https://paclic2026.github.io/program.html ---
+The full program is at https://paclic2026.github.io/program.html. All times are Taipei time (UTC+8). The program page shows the date it was last updated; any changes are announced on the website.
+FINDING A PAPER: if a "PROGRAM LOOKUP" block appears in your instructions, use it to answer (title, authors, day, time, room); otherwise do NOT guess when or where a specific paper is presented. Tell users to open the program page and use the search box (by author name, title or paper ID), or give them a direct link of the form https://paclic2026.github.io/program.html?q=PAPERID (for example https://paclic2026.github.io/program.html?q=36) or ?q=Surname. If they cannot find their paper, they should contact paclic2026@gmail.com.
+KEYNOTES (talk topics will be announced soon): Wei Lu (Nanyang Technological University, Singapore), Day 1 09:00-10:00. Marie-Catherine de Marneffe (UCLouvain, Belgium), Day 2 09:00-10:00. Kathleen Rastle (Royal Holloway, University of London, UK), Day 2 14:00-15:00. Sanghoun Song (Korea University, South Korea), Day 3 09:00-10:00. All keynotes are in the Main Auditorium; bios are on the Invited Speakers page.
+Overview (139 papers: 79 oral presentations and 60 posters, plus the JWLLP 36 workshop):
+Day 1 - Thursday December 10, 2026:
+- 08:00-08:45 Registration & Badge Collection (Main Foyer)
+- 08:45-09:00 PACLIC 40 Opening Ceremony (Main Auditorium)
+- 09:00-10:00 Keynote: Wei Lu (Main Auditorium; talk topic to be announced soon)
+- 10:00-10:30 Coffee Break (Lobby / B2 Registration Desk)
+- 10:30-12:10 Parallel sessions: Natural Language Processing (Main Auditorium); Morphosyntax & Language Documentation (Conference Room 1); Cognitive Modeling & Psycholinguistics (B113-2)
+- 12:10-13:00 Lunch Break & Poster Setup (B113-2 (Conference Room 2) · B114 (Conference Room 1))
+- 13:00-13:50 Poster Session 1: Linguistics, Cognition & Multilingual Studies (Main Corridor (大走廊), 20 posters)
+- 14:00-15:40 Parallel sessions: Psycholinguistics & Phonetics (Main Auditorium); Semantics & Lexical Processing (Conference Room 1); Sociolinguistics & Discourse (B113-2)
+- 15:40-16:30 Coffee Break & Mingle (Lobby / B2 Registration Desk)
+- 17:30-20:00 Welcome Dinner (Conference Banquet) at Caesar Metro Taipei (台北凱達大飯店), near Longshan Temple MRT Station (map: https://www.google.com/maps/dir//Caesar+Metro+Hotel+Taipei,+No.+167,+Bangka+Blvd,+Fufu+Village,+Wanhua+District,+Taipei+City,+108/@25.0172264,121.506378,11z/data=!3m1!5s0x3442a9b1cd4e040d:0x2ca68f9ff366d576!4m8!4m7!1m0!1m5!1m1!1s0x3442a9ae539e7d53:0x766f0f78749089a8!2m2!1d121.4998939!2d25.0332541). This is the conference banquet; there is no separate gala dinner.
+Day 2 - Friday December 11, 2026:
+- 08:15-09:00 Registration
+- 09:00-10:00 Keynote: Marie-Catherine de Marneffe (Main Auditorium; talk topic to be announced soon)
+- 10:00-10:30 Coffee Break & Poster Setup (Lobby / B2 Registration Desk)
+- 10:30-12:10 Parallel sessions: Pragmatics & Discourse Analysis (Main Auditorium); Corpus & Historical Linguistics (Conference Room 1); Theoretical Syntax & Typology (B113-2)
+- 12:10-13:00 Lunch Break & Poster Setup (B113-2 (Conference Room 2) · B114 (Conference Room 1))
+- 13:00-13:50 Poster Session 2: Language Resources, Translation & Applications (Main Corridor (大走廊), 20 posters)
+- 14:00-15:00 Keynote: Kathleen Rastle (Main Auditorium; talk topic to be announced soon)
+- 15:10-16:25 Parallel sessions: Language Resources & Social Computing (Main Auditorium); Dialectology & Regional Varieties (Conference Room 1); Second Language Acquisition (B113-2)
+- 16:25-16:40 Coffee Break (Lobby / B2 Registration Desk)
+- 16:40-17:55 Parallel sessions: Educational Linguistics & Technology (Main Auditorium); Corpus Linguistics & Lexicography (Conference Room 1)
+Day 3 - Saturday December 12, 2026:
+- 08:15-09:00 Registration
+- 09:00-10:00 Keynote: Sanghoun Song (Main Auditorium; talk topic to be announced soon)
+- 10:00-10:20 Coffee Break & Poster Setup (Lobby / B2 Registration Desk)
+- 10:20-12:10 Parallel sessions: Special Session (Main Auditorium, details to be announced); Multilingual NLP & Evaluation (Conference Room 1); Vision-Language & Multimodal Models (B113-2); LLM Reasoning & Evaluation (Anthropology Classroom (人類系教室))
+- 12:10-13:00 Lunch Break & Poster Setup (B113-2 (Conference Room 2) · B114 (Conference Room 1))
+- 13:00-13:50 Poster Session 3: Dialogue Systems, Sentiment & Machine Learning (Main Corridor (大走廊), 20 posters)
+- 13:30-15:15 JWLLP 36 Workshop (Anthropology Classroom (人類系教室), runs in parallel with PACLIC 40 sessions)
+- 14:00-15:15 Parallel sessions: Machine Translation (Main Auditorium); Sentiment Analysis & Social Media (Conference Room 1); LLM Safety & Alignment (B113-2)
+- 15:15-15:30 Coffee Break (Lobby / B2 Registration Desk)
+- 15:30-16:45 Parallel sessions: Misinformation & AI Content Detection (Main Auditorium); Representation Learning & Language Models (Conference Room 1); Information Retrieval & Applied NLP (B113-2)
+- 15:30-16:25 JWLLP 36 Workshop: Poster Session (Anthropology Classroom (人類系教室), runs in parallel with PACLIC 40 sessions)
+- 16:50-17:20 PACLIC 40 Closing Ceremony (Main Auditorium)
+On the program page, visitors can also filter papers by session topic using the Topic dropdown. Poster sessions are held in the Main Corridor. Oral sessions are in the Main Auditorium, Conference Room 1 and B113-2 (and the Anthropology Classroom on Day 3). Papers in the program have been confirmed; withdrawn papers are not listed.
 
 --- SECTION: REGISTRATION | source: https://registration.linguistics.ntu.edu.tw (official registration system; summary at https://paclic2026.github.io/registration.html) ---
 IMPORTANT FOR ANSWERS: Registration rules, fees and policies below are copied from the official registration system but MAY CHANGE. When answering registration questions, give the information below, then always add that the official registration system (https://registration.linguistics.ntu.edu.tw) is the authoritative source and users should check it for the latest details. For anything not covered here (e.g. special cases, invoices, payment problems, exceptions), do not guess: direct users to the registration system and its email contact button, or paclic2026@gmail.com.
