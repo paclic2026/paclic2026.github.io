@@ -1,5 +1,5 @@
 window.PACLIC_PROGRAM = {
- "updated": "October 17, 2026",
+ "updated": "October 18, 2026",
  "days": [
   {
    "id": 1,
@@ -84,7 +84,7 @@ window.PACLIC_PROGRAM = {
         {
          "id": "78",
          "title": "The Consonant System of Maguindanaon Taw sa Laya: A Descriptive Phonetic Analysis",
-         "authors": "Bainera Dalgan, Bai Donna Aliman, Glyn Magbanua, Saima Sansaluna, Baisoraya Parcon, Almira Menson"
+         "authors": "Bai Donna S. Aliman, Saima S. Maulana, Glyn G. Magbanua, Bainera K. Dalgan, Almira B. Menson, Baisoraya S. Parcon"
         },
         {
          "id": "99",
@@ -476,7 +476,7 @@ window.PACLIC_PROGRAM = {
         {
          "id": "211",
          "title": "Learning Negative Concord Without Negative Concord: A Filtered-Corpus Study Using GPT-2",
-         "authors": "Sunwoo Yun"
+         "authors": "Chelsea Sunwoo Yun"
         },
         {
          "id": "281",
