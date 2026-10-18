@@ -464,7 +464,7 @@ strong { font-weight: 700; }
 .glance-grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 0; }
 
 /* ── Social Events ──────────────────────────────────────────── */
-.events-grid { display: grid; grid-template-columns: repeat(3, minmax(240px, 320px)); gap: 24px; justify-content: center; }
+.events-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(240px, 340px)); gap: 24px; justify-content: center; }
 .event-card { background: var(--white); border-radius: var(--radius); box-shadow: var(--shadow-sm); padding: 28px 24px; border-bottom: 3px solid var(--tw-red); transition: transform .3s var(--ease); text-align: center; }
 .event-card:hover { transform: translateY(-3px); }
 .event-icon { font-size: 2.2rem; margin-bottom: 12px; display: block; }
