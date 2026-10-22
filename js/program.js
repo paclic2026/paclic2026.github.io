@@ -65,9 +65,9 @@
       (s.sessions || []).forEach(function (se) {
         se.papers.forEach(function (p) {
           papers.push({ id: p.id, title: p.title, authors: p.authors, type: 'oral', day: d.id, slot: si, start: s.start, end: s.end,
-            room: se.room, session: SHOW_SESSION_CODES ? 'Session ' + se.code + ': ' + se.title : se.title, code: se.code, topic: 'S:' + se.code });
+            room: se.room, session: SHOW_SESSION_CODES ? 'Session ' + se.code + ': ' + se.title : se.title, code: se.code, topic: 'S:' + se.title });
         });
-        if (se.papers.length) topics.push({ key: 'S:' + se.code, label: se.title, group: d.label + ' \u00b7 Oral sessions' });
+        if (se.papers.length) topics.push({ key: 'S:' + se.title, label: se.title, group: d.label + ' \u00b7 Oral sessions' });
       });
       (s.posters || []).forEach(function (p) {
         papers.push({ id: p.id, title: p.title, authors: p.authors, type: 'poster', day: d.id, slot: si, start: s.start, end: s.end,

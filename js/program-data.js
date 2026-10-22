@@ -1,5 +1,5 @@
 window.PACLIC_PROGRAM = {
- "updated": "October 18, 2026",
+ "updated": "October 22, 2026",
  "days": [
   {
    "id": 1,
@@ -79,7 +79,7 @@ window.PACLIC_PROGRAM = {
         {
          "id": "25",
          "title": "The Absolutive Case in Tёduray Bato-Bato, President Roxas, Cotabato: A Morphosyntactic Analysis of Nominals and Pronominals",
-         "authors": "Jerson Catoto"
+         "authors": "Jerson Catoto, James Frollan Villanueva, Fairodze Alabat, Joveth Jay Montaña, Geoffrey Marfa"
         },
         {
          "id": "78",
@@ -106,7 +106,7 @@ window.PACLIC_PROGRAM = {
         {
          "id": "96",
          "title": "From Monosyllabification to Morpheme Stacking: Morphological Productivity and Lexical Encoding in Korean Online Neologisms",
-         "authors": "Ji-Myoung Choi, Hye-Won Choi"
+         "authors": "Hye-Won Choi, Hailee Yoon, Julie Seunghye Ryu, Ji-Myoung Choi"
         },
         {
          "id": "102",
@@ -132,7 +132,7 @@ window.PACLIC_PROGRAM = {
      "start": "12:10",
      "end": "13:00",
      "title": "Lunch Break & Poster Setup",
-     "room": "B113-2 (Conference Room 2) · B114 (Conference Room 1)"
+     "room": ""
     },
     {
      "kind": "posters",
@@ -260,7 +260,7 @@ window.PACLIC_PROGRAM = {
        "board": "P1-20",
        "id": "306",
        "title": "Language Choice as Social Signal: Code-Switching Preferences in Large Language Models",
-       "authors": "Yin Jou Huang"
+       "authors": "Yin Jou Huang, Ariana Inzunza Landeros"
       }
      ]
     },
@@ -299,23 +299,28 @@ window.PACLIC_PROGRAM = {
       },
       {
        "code": "2A",
-       "title": "Semantics & Lexical Processing",
+       "title": "Multilingual NLP & Evaluation",
        "room": "Conference Room 1",
        "papers": [
         {
-         "id": "103",
-         "title": "Embodied Source Structure in a 184-Entry Chinese Color-Derived Lexicon: Convergence between Corpus Semantics and Public Visual Prototypes",
-         "authors": "Yufeng WU, Meichun Liu"
+         "id": "100",
+         "title": "Where Language-Specific Artifacts Go Missing: CJK Gaps across Papers, Datasets, and Models",
+         "authors": "Dasol Choi, DongGeon Lee, Dokyoon Yoon, Youngsook Song"
         },
         {
-         "id": "238",
-         "title": "Conceptualizing hotels as living entities: A comparative analysis of LIVING ORGANISM metaphors in luxury and economy hotel websites in Hong Kong",
-         "authors": "Joanna Chen, Kathleen Ahrens"
+         "id": "130",
+         "title": "Quantifying the Code-Switching Penalty: A Stratified Benchmark of Toxicity Detection Across Pure English, Pure Tagalog, and Taglish",
+         "authors": "Rafael Subo Yap, Darryl Johnson Ty"
         },
         {
-         "id": "287",
-         "title": "Do Cantonese-Adapted Language Models Better Predict Cantonese Reading? A Cross-Model Eye-Tracking Evaluation",
-         "authors": "Ziqi Zhang, Emmanuele Chersoni, Mohammad Momenian"
+         "id": "136",
+         "title": "myFineNER: A Fine-Grained Burmese NER Benchmark with Transformer Models and Multilingual LLM Evaluation",
+         "authors": "Hein Min Thu, Phoo Phoo Thit, Pyae Bhone Moe, Aye Hninn Khine"
+        },
+        {
+         "id": "276",
+         "title": "JFANToM: A Manually Created Theory-of-Mind Benchmark for Japanese Dialogue",
+         "authors": "Ayumi Harada, Haruhisa Iseno, Shinnosuke Takamichi, Tetsuji Ogawa, Ryuichiro Higashinaka"
         }
        ]
       },
@@ -492,7 +497,7 @@ window.PACLIC_PROGRAM = {
      "start": "12:10",
      "end": "13:00",
      "title": "Lunch Break & Poster Setup",
-     "room": "B113-2 (Conference Room 2) · B114 (Conference Room 1)"
+     "room": ""
     },
     {
      "kind": "posters",
@@ -704,6 +709,23 @@ window.PACLIC_PROGRAM = {
          "authors": "Shogo Murakami, Seiji Sugiyama, Tomoyuki Kajiwara, Yuki Arase"
         }
        ]
+      },
+      {
+       "code": "8A",
+       "title": "Representation Learning & Language Models",
+       "room": "B114",
+       "papers": [
+        {
+         "id": "142",
+         "title": "Robustness and Interpretability of Hybrid Quantum NLP Models",
+         "authors": "Saad Ahmed, Jay Lunia"
+        },
+        {
+         "id": "223",
+         "title": "Structured and Natural Language Data in Continued Pre-Training: Towards Understanding Knowledge Representation and Accessibility in Language Models",
+         "authors": "Hia Yamaguchi"
+        }
+       ]
       }
      ]
     },
@@ -763,6 +785,28 @@ window.PACLIC_PROGRAM = {
          "authors": "Bernard Barruga"
         }
        ]
+      },
+      {
+       "code": "5B",
+       "title": "Semantics & Lexical Processing",
+       "room": "B113-2",
+       "papers": [
+        {
+         "id": "103",
+         "title": "Embodied Source Structure in a 184-Entry Chinese Color-Derived Lexicon: Convergence between Corpus Semantics and Public Visual Prototypes",
+         "authors": "Yufeng WU, Meichun Liu"
+        },
+        {
+         "id": "238",
+         "title": "Conceptualizing hotels as living entities: A comparative analysis of LIVING ORGANISM metaphors in luxury and economy hotel websites in Hong Kong",
+         "authors": "Joanna Chen, Kathleen Ahrens"
+        },
+        {
+         "id": "287",
+         "title": "Do Cantonese-Adapted Language Models Better Predict Cantonese Reading? A Cross-Model Eye-Tracking Evaluation",
+         "authors": "Ziqi Zhang, Emmanuele Chersoni, Mohammad Momenian"
+        }
+       ]
       }
      ]
     }
@@ -813,28 +857,28 @@ window.PACLIC_PROGRAM = {
       },
       {
        "code": "6A",
-       "title": "Multilingual NLP & Evaluation",
+       "title": "LLM Reasoning & Evaluation",
        "room": "Conference Room 1",
        "papers": [
         {
-         "id": "100",
-         "title": "Where Language-Specific Artifacts Go Missing: CJK Gaps across Papers, Datasets, and Models",
-         "authors": "Dasol Choi, DongGeon Lee, Dokyoon Yoon, Youngsook Song"
+         "id": "73",
+         "title": "Trusted Less, Chosen More: A Trust - Preference Inversion in Human vs. LLM Mental-Health Support",
+         "authors": "Jinal Purohit, Barnali Chetia, Gitraj Suhas Chaudhari"
         },
         {
-         "id": "130",
-         "title": "Quantifying the Code-Switching Penalty: A Stratified Benchmark of Toxicity Detection Across Pure English, Pure Tagalog, and Taglish",
-         "authors": "Rafael Subo Yap, Darryl Johnson Ty"
+         "id": "81",
+         "title": "CARAM: Cost-Adaptive Risk-Aware Monitoring for Ordinal Clinical Reasoning",
+         "authors": "Wei Qin"
         },
         {
-         "id": "136",
-         "title": "myFineNER: A Fine-Grained Burmese NER Benchmark with Transformer Models and Multilingual LLM Evaluation",
-         "authors": "Hein Min Thu, Phoo Phoo Thit, Pyae Bhone Moe, Aye Hninn Khine"
+         "id": "169",
+         "title": "NFIB: A Benchmark for Evaluating the Ability of LLMs to Interpret Negation Focus",
+         "authors": "Kentaro Kojima, Yoshihide Kato, Shigeki Matsubara"
         },
         {
-         "id": "276",
-         "title": "JFANToM: A Manually Created Theory-of-Mind Benchmark for Japanese Dialogue",
-         "authors": "Ayumi Harada, Haruhisa Iseno, Shinnosuke Takamichi, Tetsuji Ogawa, Ryuichiro Higashinaka"
+         "id": "247",
+         "title": "Do LLM Personality Scores Survive the Choice of Inventory? A 50-Variant Audit",
+         "authors": "Jan Argasiński, Karol Przystalski"
         }
        ]
       },
@@ -864,33 +908,6 @@ window.PACLIC_PROGRAM = {
          "authors": "Haruka Tsuchida, Sakura Nemoto, Yuka Miyata, Kimio Kuramitsu"
         }
        ]
-      },
-      {
-       "code": "6C",
-       "title": "LLM Reasoning & Evaluation",
-       "room": "Anthropology Classroom (人類系教室)",
-       "papers": [
-        {
-         "id": "73",
-         "title": "Trusted Less, Chosen More: A Trust - Preference Inversion in Human vs. LLM Mental-Health Support",
-         "authors": "Jinal Purohit, Barnali Chetia, Gitraj Suhas Chaudhari"
-        },
-        {
-         "id": "81",
-         "title": "CARAM: Cost-Adaptive Risk-Aware Monitoring for Ordinal Clinical Reasoning",
-         "authors": "Wei Qin"
-        },
-        {
-         "id": "169",
-         "title": "NFIB: A Benchmark for Evaluating the Ability of LLMs to Interpret Negation Focus",
-         "authors": "Kentaro Kojima, Yoshihide Kato, Shigeki Matsubara"
-        },
-        {
-         "id": "247",
-         "title": "Do LLM Personality Scores Survive the Choice of Inventory? A 50-Variant Audit",
-         "authors": "Jan Argasiński, Karol Przystalski"
-        }
-       ]
       }
      ]
     },
@@ -899,7 +916,7 @@ window.PACLIC_PROGRAM = {
      "start": "12:10",
      "end": "13:00",
      "title": "Lunch Break & Poster Setup",
-     "room": "B113-2 (Conference Room 2) · B114 (Conference Room 1)"
+     "room": ""
     },
     {
      "kind": "posters",
@@ -1036,7 +1053,7 @@ window.PACLIC_PROGRAM = {
      "start": "13:30",
      "end": "15:15",
      "title": "JWLLP 36 Workshop",
-     "room": "Anthropology Classroom (人類系教室)",
+     "room": "Main Auditorium",
      "parallel": true,
      "parts": [
       {
@@ -1081,9 +1098,9 @@ window.PACLIC_PROGRAM = {
      "title": "Parallel Sessions",
      "sessions": [
       {
-       "code": "7M",
+       "code": "7A",
        "title": "Machine Translation",
-       "room": "Main Auditorium",
+       "room": "Conference Room 1",
        "papers": [
         {
          "id": "117",
@@ -1099,28 +1116,6 @@ window.PACLIC_PROGRAM = {
          "id": "260",
          "title": "Evaluating Effects of LLMs in English Subtitling of Japanese Lectures",
          "authors": "Nobuyori Nishimura, Naoki Muto, Futo Kajita, Kazufumi Uchida, Daichi Yamamoto, Takehito Utsuro, Chee Siang Leow, Ryota Nishimura, Hiromitsu Nishizaki"
-        }
-       ]
-      },
-      {
-       "code": "7A",
-       "title": "Sentiment Analysis & Social Media",
-       "room": "Conference Room 1",
-       "papers": [
-        {
-         "id": "143",
-         "title": "Written Posts vs. Reels: Creator-Independent Neural Modeling of Register Variation in Philippine Environmental Social Media",
-         "authors": "Jared Jan Abayan, Philip Rentillo, Neil Oliver Velasco, Edwin Sybingco, Argel Bandala"
-        },
-        {
-         "id": "264",
-         "title": "HiDScope: A Hierarchical Dependency Scope Framework for Multimodal Aspect-Based Sentiment Analysis",
-         "authors": "Shaoxiong Wu, Qizheng Qian, Meng Yang, Keze Wang"
-        },
-        {
-         "id": "269",
-         "title": "CAST: Contrastive Alignment of Series and Text for Commodity Price Forecasting",
-         "authors": "Seonghyun Lee, Heewon Jung, Doohee Chung, Charmgil Hong"
         }
        ]
       },
@@ -1174,7 +1169,7 @@ window.PACLIC_PROGRAM = {
         {
          "id": "52",
          "title": "Fake News Detection in Indic Context: using Retrieval-Augmented Generation and Contrastive Learning Frameworks",
-         "authors": "Parth Bramhecha"
+         "authors": "Parth Bramhecha, Smit Deshmukh, Sairaj Bodhale, Adwait Borate, Punam Shinde, Raviraj Joshi"
         },
         {
          "id": "203",
@@ -1185,18 +1180,23 @@ window.PACLIC_PROGRAM = {
       },
       {
        "code": "8A",
-       "title": "Representation Learning & Language Models",
+       "title": "Sentiment Analysis & Social Media",
        "room": "Conference Room 1",
        "papers": [
         {
-         "id": "142",
-         "title": "Robustness and Interpretability of Hybrid Quantum NLP Models",
-         "authors": "Saad Ahmed, Jay Lunia"
+         "id": "143",
+         "title": "Written Posts vs. Reels: Creator-Independent Neural Modeling of Register Variation in Philippine Environmental Social Media",
+         "authors": "Jared Jan Abayan, Philip Rentillo, Neil Oliver Velasco, Edwin Sybingco, Argel Bandala"
         },
         {
-         "id": "223",
-         "title": "Structured and Natural Language Data in Continued Pre-Training: Towards Understanding Knowledge Representation and Accessibility in Language Models",
-         "authors": "Hia Yamaguchi"
+         "id": "264",
+         "title": "HiDScope: A Hierarchical Dependency Scope Framework for Multimodal Aspect-Based Sentiment Analysis",
+         "authors": "Shaoxiong Wu, Qizheng Qian, Meng Yang, Keze Wang"
+        },
+        {
+         "id": "269",
+         "title": "CAST: Contrastive Alignment of Series and Text for Commodity Price Forecasting",
+         "authors": "Seonghyun Lee, Heewon Jung, Doohee Chung, Charmgil Hong"
         }
        ]
       },
@@ -1229,7 +1229,7 @@ window.PACLIC_PROGRAM = {
      "start": "15:30",
      "end": "16:25",
      "title": "JWLLP 36 Workshop: Poster Session",
-     "room": "Anthropology Classroom (人類系教室)",
+     "room": "Main Corridor (大走廊)",
      "parallel": true,
      "parts": [
       {
