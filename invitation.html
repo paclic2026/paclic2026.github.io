@@ -51,6 +51,8 @@
     .inv-field textarea { resize: vertical; }
     .inv-field input:focus, .inv-field textarea:focus { outline: none; border-color: var(--tw-gold); box-shadow: 0 0 0 3px rgba(212,146,10,.15); }
     .inv-field.invalid input, .inv-field.invalid textarea { border-color: var(--tw-red); }
+    .inv-err { display: none; font-size: .84rem; font-weight: 600; color: #9b1c1c; margin-top: 5px; }
+    .inv-field.invalid .inv-err { display: block; }
     .inv-field small { display: block; font-size: .82rem; color: var(--text-mid); margin-top: 5px; }
     .inv-trap { position: absolute; left: -9999px; width: 1px; height: 1px; overflow: hidden; }
     .inv-privacy { font-size: .85rem !important; color: var(--text-mid) !important; }
@@ -212,7 +214,7 @@
             </div>
             <div class="inv-field">
               <label for="f-paperid">Paper ID <span class="req">*</span></label>
-              <input id="f-paperid" name="paperId" type="text" inputmode="numeric" maxlength="100" required placeholder="e.g. 12 or 12, 45"/>
+              <input id="f-paperid" name="paperId" type="text" maxlength="100" required placeholder="e.g. 12 or 12, 45"/>
               <small>Numbers only. If you have more than one paper, separate the IDs with commas.</small>
             </div>
             <div class="inv-field">
@@ -225,7 +227,7 @@
             </div>
 
             <!-- Anti-spam trap: people never see this field -->
-            <div class="inv-trap" aria-hidden="true"><label>Website <input type="text" name="website" tabindex="-1" autocomplete="off"/></label></div>
+            <div class="inv-trap" aria-hidden="true"><label>Leave this blank <input type="text" name="hp_leave_blank" tabindex="-1" autocomplete="off"/></label></div>
 
             <div id="invStatus" class="inv-status" role="status" aria-live="polite" hidden></div>
             <button type="submit" id="invSubmit" class="btn btn-primary">Submit Request</button>
@@ -318,6 +320,8 @@
       var status = document.getElementById('invStatus');
       var done = document.getElementById('invDone');
 
+      form.addEventListener('input', function (e) { var f = e.target.closest('.inv-field'); if (f) f.classList.remove('invalid'); });
+
       function showError(msg) { status.textContent = msg; status.hidden = false; }
 
       form.addEventListener('submit', function (ev) {
@@ -333,12 +337,20 @@
           var wrongEmail = input.type === 'email' && v && !/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(v);
           var wrongId = input.name === 'paperId' && v && !/^\d+(\s*,\s*\d+)*$/.test(v);
           f.classList.toggle('invalid', empty || wrongEmail || wrongId);
+          var err = f.querySelector('.inv-err');
+          if (!err) { err = document.createElement('div'); err.className = 'inv-err'; err.setAttribute('role', 'alert'); f.appendChild(err); }
+          err.textContent = empty ? 'This field is required.' : wrongEmail ? 'Please enter a valid email address.' : wrongId ? 'Numbers only. Separate several paper IDs with commas, e.g. 12, 45.' : '';
           if ((empty || wrongEmail || wrongId) && !bad) {
             bad = input;
             if (wrongId) badMsg = 'Paper ID must be numbers only. If you have more than one paper, separate the IDs with commas.';
           }
         });
-        if (bad) { showError(badMsg); bad.focus(); return; }
+        if (bad) {
+          showError(badMsg);
+          bad.focus({ preventScroll: true });
+          bad.closest('.inv-field').scrollIntoView({ behavior: 'smooth', block: 'center' });   // show the problem field (the message at the bottom may be off-screen on a phone)
+          return;
+        }
 
         if (!INVITATION_ENDPOINT) {
           showError('The request form is not open yet. Please email paclic2026@gmail.com to request your letter.');
@@ -348,6 +360,7 @@
         var fd = new FormData(form);
         var payload = {};
         fd.forEach(function (v, k) { payload[k] = String(v).trim(); });
+        payload.website = payload.hp_leave_blank || ''; delete payload.hp_leave_blank;   // spam trap, same key the sheet script checks
         payload.paperId = payload.paperId.split(',').map(function (x) { return x.trim(); }).join(', ');
 
         btn.disabled = true;
