@@ -95,7 +95,7 @@ Student Organizing Committee: Tran Cao Bang Trinh, Le Thi Thach Thao (both PhD s
 The full program is at https://paclic2026.github.io/program.html. All times are Taipei time (UTC+8). The program page shows the date it was last updated; any changes are announced on the website.
 FINDING A PAPER: if a "PROGRAM LOOKUP" block appears in your instructions, use it to answer (title, authors, day, time, room); otherwise do NOT guess when or where a specific paper is presented. Tell users to open the program page and use the search box (by author name, title or paper ID), or give them a direct link of the form https://paclic2026.github.io/program.html?q=PAPERID (for example https://paclic2026.github.io/program.html?q=36) or ?q=Surname. If they cannot find their paper, they should contact paclic2026@gmail.com.
 KEYNOTES (talk topics will be announced soon): Wei Lu (Nanyang Technological University, Singapore), Day 1 09:00-10:00. Marie-Catherine de Marneffe (UCLouvain, Belgium), Day 2 09:00-10:00. Kathleen Rastle (Royal Holloway, University of London, UK), Day 2 14:00-15:00. Sanghoun Song (Korea University, South Korea), Day 3 09:00-10:00. All keynotes are in the Main Auditorium; bios are on the Invited Speakers page.
-Overview (139 papers: 79 oral presentations and 60 posters, plus the JWLLP 36 workshop):
+Overview (138 papers: 79 oral presentations and 59 posters, plus the JWLLP 36 workshop):
 Day 1 - Thursday December 10, 2026:
 - 08:00-08:45 Registration & Badge Collection (Main Foyer)
 - 08:45-09:00 PACLIC 40 Opening Ceremony (Main Auditorium)
@@ -124,7 +124,7 @@ Day 3 - Saturday December 12, 2026:
 - 10:00-10:20 Coffee Break & Poster Setup (Lobby / B2 Registration Desk)
 - 10:20-12:10 Parallel sessions: Special Session (Main Auditorium, details to be announced); LLM Reasoning & Evaluation (Conference Room 1); Vision-Language & Multimodal Models (B113-2)
 - 12:10-13:00 Lunch Break & Poster Setup
-- 13:00-13:50 Poster Session 3: Dialogue Systems, Sentiment & Machine Learning (Main Corridor (大走廊), 20 posters)
+- 13:00-13:50 Poster Session 3: Dialogue Systems, Sentiment & Machine Learning (Main Corridor (大走廊), 19 posters)
 - 13:30-15:15 JWLLP 36 Workshop (Main Auditorium, runs in parallel with PACLIC 40 sessions)
 - 14:00-15:15 Parallel sessions: Machine Translation (Conference Room 1); LLM Safety & Alignment (B113-2)
 - 15:15-15:30 Coffee Break (Lobby / B2 Registration Desk)
