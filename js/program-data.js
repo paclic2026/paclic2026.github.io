@@ -1039,12 +1039,6 @@ window.PACLIC_PROGRAM = {
        "id": "267",
        "title": "Supporting Counselor Takeover in Text-Based Counseling with Hybrid Dialogue Summaries",
        "authors": "Shuya Uchiyama, Michimasa Inaba"
-      },
-      {
-       "board": "P3-20",
-       "id": "286",
-       "title": "Clinical Context Disclosure and Vision-Language Model Performance on Veterinary Ultrasound Annotation Extraction",
-       "authors": "Orawan Watchanupaporn"
       }
      ]
     },
