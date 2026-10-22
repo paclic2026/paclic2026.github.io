@@ -51,11 +51,6 @@
     .pg-day:hover { border-color: var(--tw-red); color: var(--tw-red); }
     .pg-day .d1 { font-family: 'Source Serif 4', serif; font-weight: 700; font-size: 1.1rem; }
     .pg-day .d2 { font-size: .82rem; opacity: .85; }
-    .pg-paused { text-align: center; max-width: 640px; margin: 56px auto 24px; padding: 40px 28px; background: #fff; border: 1px solid var(--border); border-radius: 14px; box-shadow: var(--shadow-sm); }
-    .pg-paused-icon { font-size: 2rem; margin-bottom: 10px; }
-    .pg-paused h2 { font-family: 'Source Serif 4', serif; font-size: 1.5rem; color: var(--text); margin: 0 0 12px; }
-    .pg-paused p { color: var(--text-mid); line-height: 1.7; margin: 0 0 8px; }
-    .pg-paused-sub { font-size: .88rem; }
     .pg-day:disabled { opacity: .4; cursor: not-allowed; border-style: dashed; }
     .pg-day:disabled:hover { border-color: var(--border); color: var(--text-mid); }
     .pg-day.active { background: var(--navy-deep); border-color: var(--navy-deep); color: #fff; }
@@ -224,22 +219,13 @@
       <h1 style="font-family:'Source Serif 4',serif;font-size:2.6rem;font-weight:700;color:var(--text);margin-bottom:12px;">Program</h1>
       <p style="font-size:.95rem;color:var(--text-mid);margin:0 auto 6px;line-height:1.7;">PACLIC 40 · The 40th Pacific Asia Conference on Language, Information and Computation</p>
       <p style="font-size:.95rem;color:var(--text-mid);margin:0 auto 4px;line-height:1.7;">December 10–12, 2026 · National Taiwan University, Taipei, Taiwan</p>
-      <p class="pg-note" id="pgNote" hidden>All times are Taipei time (UTC+8).</p>
+      <p class="pg-note" id="pgNote">All times are Taipei time (UTC+8).</p>
     </div>
 
     <section style="padding:0 0 64px;">
       <div class="container pg-wrap">
 
-        <!-- ══ PROGRAM PAUSED (temporary) ══
-             To bring the program back: delete this notice block, remove the hidden attribute from <div id="pgLive">,
-             remove hidden from #pgNote above, and un-comment the two <script> lines at the bottom of the page. -->
-        <div class="pg-paused" role="status">
-          <h2>The program is being updated</h2>
-          <p>We are making some adjustments to the program and will be back soon.<br>Thank you for your patience.</p>
-          <p class="pg-paused-sub">For questions, please contact <a href="mailto:paclic2026@gmail.com">paclic2026@gmail.com</a>.</p>
-        </div>
-
-        <div id="pgLive" hidden>
+        <div id="pgLive">
         <div class="pg-bar">
           <div class="pg-search">
             <svg viewBox="0 0 22 22" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><circle cx="10" cy="10" r="6.5"/><line x1="15" y1="15" x2="19.5" y2="19.5"/></svg>
@@ -334,10 +320,8 @@
   </footer>
 
   <script src="js/main.js"></script>
-  <!-- program paused: scripts switched off while the program is being updated
   <script src="js/program-data.js"></script>
   <script src="js/program.js"></script>
-  -->
   <script src="js/chat-widget.js"></script>
   <script data-goatcounter="https://paclic40.goatcounter.com/count" async src="//gc.zgo.at/count.js"></script>
 </body>
