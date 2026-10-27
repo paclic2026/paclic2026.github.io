@@ -1,5 +1,5 @@
 window.PACLIC_PROGRAM = {
- "updated": "October 22, 2026",
+ "updated": "October 27, 2026",
  "days": [
   {
    "id": 1,
@@ -94,7 +94,7 @@ window.PACLIC_PROGRAM = {
         {
          "id": "185",
          "title": "The Verbal Morphology of Maguindanaon–Laya: An Analysis of Morphological Affixation",
-         "authors": "Lizziewin Otero, Junzo Vito Hiratsuka, Joveth Jay Montaña, Jerson Catoto"
+         "authors": "Lizziewin Otero, Junzo Vito Hiratsuka, Joveth Jay Montaña, Jerson Catoto, Geoffrey Marfa"
         }
        ]
       },
@@ -723,7 +723,7 @@ window.PACLIC_PROGRAM = {
         {
          "id": "223",
          "title": "Structured and Natural Language Data in Continued Pre-Training: Towards Understanding Knowledge Representation and Accessibility in Language Models",
-         "authors": "Hia Yamaguchi"
+         "authors": "Hia Yamaguchi, Sousuke Hatta, Rikuto Sasaki, Kazuhiro Takeuchi"
         }
        ]
       }
