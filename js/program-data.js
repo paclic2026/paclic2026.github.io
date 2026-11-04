@@ -1,5 +1,5 @@
 window.PACLIC_PROGRAM = {
- "updated": "October 27, 2026",
+ "updated": "November 5, 2026",
  "days": [
   {
    "id": 1,
@@ -29,7 +29,9 @@ window.PACLIC_PROGRAM = {
      "title": "Keynote Speaker I",
      "room": "Main Auditorium",
      "speaker": "Wei Lu",
-     "affiliation": "College of Computing & Data Science, Nanyang Technological University, Singapore"
+     "affiliation": "College of Computing & Data Science, Nanyang Technological University, Singapore",
+     "talk": "Expansion and Contraction: What It Means to Reason in Language Models",
+     "abstract": "Today's language models reason by producing text, which makes a chain of thought a linguistic artifact as much as a computational one. Reasoning in language involves two movements: expansion, which generates and pushes forward, and contraction, which prunes what is wrong and pulls back what has drifted. Contraction in this sense is not the pruning an external search procedure performs over candidate paths; it is something the model has to carry out in the medium it reasons in — as language, in the middle of generation. Expansion on its own can still arrive at a correct answer; what it cannot do is arrive there reliably, or know that it has. My argument is that a model can be far stronger in one movement than in the other, and that some reasoning failures are failures of this balance rather than of knowledge or scale. Small models make the imbalance more visible. Our work shows that training a small model on long reasoning chains often costs it much of its original ability, and that adding more data does not reliably bring that ability back. A large model has the spare capacity to carry an unpruned chain and still land on the right answer; a small one cannot. I will offer an explanation for this, and use it to raise a question I don't think we have answered: whether the two movements are acquired in the same way, or whether contraction has to be learned separately, under conditions we are not currently providing.\n\nThe second movement leaves traces in language. Models hesitate, revise, hedge, and declare a step wrong — recognizable linguistic forms whose functions were described long before they turned up in reasoning traces. Whether a model's use of such a form carries the function it appears to carry is an open question. In practice the question has been sidestepped rather than answered, because the work has been delegated: a verifier decides which paths are wrong, a length budget decides when to stop. I will describe what happens when those decisions are handed back to the model: what it acquires, what it fails to acquire, and what conditions seem to make the difference between the two. If this picture is right, much of what we currently measure as reasoning ability is expansion assessed under borrowed supervision, and the question that belongs at the centre is the harder one: how a model comes to contract on its own."
     },
     {
      "kind": "break",
@@ -394,7 +396,9 @@ window.PACLIC_PROGRAM = {
      "title": "Keynote Speaker II",
      "room": "Main Auditorium",
      "speaker": "Marie-Catherine de Marneffe",
-     "affiliation": "UCLouvain, Belgium"
+     "affiliation": "UCLouvain, Belgium",
+     "talk": "Understanding label variation through explanations",
+     "abstract": "NLP researchers have increasingly acknowledged that humans often diverge in their interpretations of various NLP tasks, and that such variation should be captured if robust language understanding is to be achieved. In this talk, I will focus on analyzing label variation in the Natural Language Inference (NLI) task, in which, assuming the truth of a premise, one judges whether a hypothesis text is true, false, or undetermined. For instance, if one says: \"My friend often travels with a heavy suitcase\", can it be inferred that \"My friend often travels with a light suitcase\"? I will examine the sources of NLI label variation through explanations provided by humans and LLMs, arguing that, in the presence of variation, labels without explanations are not meaningful and that we need better measures to capture similarities of explanations."
     },
     {
      "kind": "break",
@@ -636,7 +640,9 @@ window.PACLIC_PROGRAM = {
      "title": "Keynote Speaker III",
      "room": "Main Auditorium",
      "speaker": "Kathleen Rastle",
-     "affiliation": "Royal Holloway, University of London, UK"
+     "affiliation": "Royal Holloway, University of London, UK",
+     "talk": "Learning Morphemes in the Noisy Landscape of Natural Text",
+     "abstract": "Most words across languages are formed by combining smaller meaningful units called morphemes. Morpheme knowledge provides a powerful heuristic for vocabulary growth and contributes to the efficiency of skilled reading. However, morphemes in many languages do not stand on their own, so their functions must be inferred from exposure to whole words. I will present findings from corpus linguistics, computational modelling, and behavioural research investigating how English affix morphemes are learned from large-scale text input. Results show that English affixes vary substantially in their frequency, in the ease with which they can be identified as combinatorial units, and in the consistency with which they signal meaning – and that these factors have important consequences for learning and processing. I will further show how the same approach can be applied to writing systems with very different morphologies including Chinese and Arabic. Overall, this work advances understanding of how linguistic knowledge is acquired in noisy, naturalistic environments over the extended timescale of reading acquisition."
     },
     {
      "kind": "sessions",
@@ -833,18 +839,20 @@ window.PACLIC_PROGRAM = {
      "title": "Keynote Speaker IV",
      "room": "Main Auditorium",
      "speaker": "Sanghoun Song",
-     "affiliation": "Korea University, South Korea"
+     "affiliation": "Korea University, South Korea",
+     "talk": "The stochastic parrot speaks only English",
+     "abstract": "Despite their remarkable performance, large language models (LLMs) face two primary criticisms. First, they function as \"stochastic parrots,\" generating plausible text through statistical prediction without genuine understanding. Second, their multilingual capabilities remain constrained by English-centric training. This talk connects these concerns through the lens of ambiguity. Because human language is inherently ambiguous, interpreting ambiguous expressions requires sensitivity to syntactic structure, semantic relations, discourse context, and language-specific conventions. Multilingual competence, furthermore, depends on accommodating how distinct languages encode meaning and guide interpretation. Using English as a baseline for comparison, this talk primarily focuses on Korean, while incorporating Japanese data for attachment ambiguity. It examines several key phenomena: attachment ambiguity, scope ambiguity, reflexive binding, and tautological expressions. Comparisons with human judgments reveal recurring mismatches between model behavior and native speaker intuition. Specifically, the evaluated models tend to favor English-like low attachment even in Korean and Japanese, in which speakers typically prefer high attachment in the examined constructions. They also struggle with the context-dependent interpretation of scope, binding, and tautology. These findings suggest that a fluent multilingual generation does not guarantee sensitivity to language-specific preferences. By linking the stochastic-parrot critique to the limitations of English-centric modeling, this talk highlights the critical need for linguistically informed evaluation and language-specific adaptation."
     },
     {
      "kind": "break",
      "start": "10:00",
-     "end": "10:20",
+     "end": "10:30",
      "title": "Coffee Break & Poster Setup",
      "room": "Lobby / B2 Registration Desk"
     },
     {
      "kind": "sessions",
-     "start": "10:20",
+     "start": "10:30",
      "end": "12:10",
      "title": "Parallel Sessions",
      "sessions": [

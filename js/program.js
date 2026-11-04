@@ -59,8 +59,8 @@
     d.slots.forEach(function (s, si) {
       if (s.kind === 'keynote') {
         s.kid = 'K' + (++kcount);
-        papers.push({ id: s.kid, title: 'Keynote: ' + s.speaker, authors: s.affiliation, type: 'keynote', day: d.id, slot: si,
-          start: s.start, end: s.end, room: s.room, session: s.title });
+        papers.push({ id: s.kid, title: 'Keynote: ' + s.speaker + (s.talk ? ' \u2013 ' + s.talk : ''), authors: s.affiliation, type: 'keynote', day: d.id, slot: si,
+          start: s.start, end: s.end, room: s.room, session: s.title, extra: s.abstract || '' });
       }
       (s.sessions || []).forEach(function (se) {
         se.papers.forEach(function (p) {
@@ -89,7 +89,7 @@
   papers.forEach(function (p, i) { p.idx = i; });   // position in the program = the order shown on the web
   var byId = {};
   papers.forEach(function (p) {
-    p.hay = norm([showId(p.id) ? p.id : '', p.title, p.authors, SHOW_BOARDS ? (p.board || '') : '', SHOW_SESSION_CODES ? (p.code || '') : ''].join(' | '));
+    p.hay = norm([showId(p.id) ? p.id : '', p.title, p.authors, p.extra || '', SHOW_BOARDS ? (p.board || '') : '', SHOW_SESSION_CODES ? (p.code || '') : ''].join(' | '));
     byId[p.id] = p;
   });
 
@@ -130,15 +130,27 @@
 
   /* ── rendering: pieces ─────────────────────────────────────── */
   function timeBlock(s) { return '<div class="pg-time">' + s.start + ' \u2013 ' + s.end + '</div>'; }
-  function showId(id) { return SHOW_BOARDS || !/^W-/.test(id); }
+  function showId(id) { return !/^K\d/.test(id) && (SHOW_BOARDS || !/^W-/.test(id)); }
   function pidChip(p, toks) { return showId(p.id) ? '<span class="pg-pid">' + (/^\d+$/.test(p.id) ? '#' : '') + highlight(p.id, toks) + '</span>' : ''; }
+
+  /* ── abstracts: opened in a pop-up panel (bottom sheet on phones) so the schedule never jumps ── */
+  var absById = {};
+  (function walk(o) {                                  // any paper/talk in the data that has an "abstract" field
+    if (Array.isArray(o)) { o.forEach(walk); return; }
+    if (o && typeof o === 'object') {
+      var aid = o.id || o.kid;
+      if (aid && o.abstract) absById[aid] = { title: o.talk || o.title, by: o.authors || (o.speaker + ', ' + o.affiliation), text: o.abstract };
+      Object.keys(o).forEach(function (k) { if (o[k] && typeof o[k] === 'object') walk(o[k]); });
+    }
+  })(DATA.days);
+  function absButton(id) { return absById[id] ? '<button type="button" class="pg-abs-btn" data-abs="' + esc(id) + '">Abstract</button>' : ''; }
 
   function paperLi(p, toks, opts) {
     opts = opts || {};
     var on = mineSet[p.id] ? ' on' : '';
     return '<li class="pg-paper" id="p-' + esc(p.id) + '">' +
       '<div class="pg-ptitle">' + pidChip(p, toks) + highlight(p.title, toks) + '</div>' +
-      '<div class="pg-pauth">' + (SHOW_BOARDS && p.board ? '<span class="pg-board">Board ' + highlight(p.board, toks) + '</span>' : '') + highlight(p.authors, toks) + '</div>' +
+      '<div class="pg-pauth">' + (SHOW_BOARDS && p.board ? '<span class="pg-board">Board ' + highlight(p.board, toks) + '</span>' : '') + highlight(p.authors, toks) + '</div>' + absButton(p.id) +
       '<button type="button" class="pg-star' + on + '" data-star="' + esc(p.id) + '" aria-label="' + (on ? 'Remove from my schedule' : 'Add to my schedule') + '" title="' + (on ? 'Remove from my schedule' : 'Add to my schedule') + '">' + (on ? '&#9733;' : '&#9734;') + '</button>' +
       '</li>';
   }
@@ -194,7 +206,8 @@
     if (s.kind === 'keynote') {
       return head.replace('id="' + id + '"', 'id="' + id + '"') + '<div class="pg-card" id="p-' + esc(s.kid) + '"><h3><span class="pg-tag">Keynote</span><a class="pg-link" href="speakers.html#' + spkAnchor(s.speaker) + '">' + esc(s.speaker) + '</a></h3>' +
         '<div class="pg-meta">' + esc(s.affiliation) + '</div>' +
-        '<div class="pg-meta"><em>Topic to be announced soon</em></div>' +
+        (s.talk ? '<div class="pg-talk">' + esc(s.talk) + '</div>' + absButton(s.kid)
+          : '<div class="pg-meta"><em>Topic to be announced soon</em></div>') +
         (s.room ? '<div class="pg-meta">' + esc(s.room) + '</div>' : '') + '</div>' + tail;
     }
     var label = { ceremony: 'Ceremony', social: 'Social' }[s.kind];
@@ -236,7 +249,7 @@
       '<div class="pg-ptitle">' + pidChip(p, toks) + highlight(p.title, toks) + '</div>' +
       '<div class="pg-pauth">' + highlight(p.authors, toks) + ' <span class="pg-tag" style="margin:0 0 0 6px;">' + typeLabel(p.type) + '</span></div>' +
       '<div class="pg-where">' + whereLine(p) + '</div>' +
-      '<button type="button" class="pg-go" data-go="' + esc(p.id) + '">Show in program</button>' +
+      '<button type="button" class="pg-go" data-go="' + esc(p.id) + '">Show in program</button>' + absButton(p.id) +
       '<button type="button" class="pg-star' + (mineSet[p.id] ? ' on' : '') + '" data-star="' + esc(p.id) + '" aria-label="Add to my schedule" title="Add to my schedule">' + (mineSet[p.id] ? '&#9733;' : '&#9734;') + '</button></div>';
   }
 
@@ -360,9 +373,36 @@
     }
   }
 
+  var absBox, absOpener;
+  function closeAbs() {
+    if (!absBox || absBox.hidden) return;
+    absBox.hidden = true; document.body.style.overflow = '';
+    if (absOpener && absOpener.focus) absOpener.focus();
+  }
+  function openAbs(id, opener) {
+    var a = absById[id]; if (!a) return;
+    if (!absBox) {
+      absBox = document.createElement('div'); absBox.className = 'pg-modal'; absBox.hidden = true;
+      absBox.innerHTML = '<div class="pg-modal-panel" role="dialog" aria-modal="true" aria-labelledby="pgModalTitle">' +
+        '<button type="button" class="pg-modal-x" aria-label="Close abstract">&times;</button>' +
+        '<div class="pg-modal-label">Abstract</div><h3 id="pgModalTitle"></h3><div class="pg-modal-by"></div><div class="pg-modal-body"></div></div>';
+      document.body.appendChild(absBox);
+      absBox.addEventListener('click', function (e) { if (e.target === absBox || e.target.closest('.pg-modal-x')) closeAbs(); });
+      document.addEventListener('keydown', function (e) { if (e.key === 'Escape') closeAbs(); });
+    }
+    absOpener = opener;
+    absBox.querySelector('#pgModalTitle').textContent = a.title;
+    absBox.querySelector('.pg-modal-by').textContent = a.by || '';
+    absBox.querySelector('.pg-modal-body').innerHTML = String(a.text).split(/\n\s*\n/).map(function (t) { return '<p>' + esc(t) + '</p>'; }).join('');
+    absBox.hidden = false; document.body.style.overflow = 'hidden';
+    absBox.querySelector('.pg-modal-panel').scrollTop = 0;
+    absBox.querySelector('.pg-modal-x').focus();
+  }
+
   document.addEventListener('click', function (e) {
     var t = e.target.closest('button');
     if (!t) return;
+    if (t.hasAttribute('data-abs')) { openAbs(t.getAttribute('data-abs'), t); return; }
     if (t.hasAttribute('data-star')) { toggleStar(t.getAttribute('data-star')); return; }
     if (t.hasAttribute('data-go')) { showInProgram(t.getAttribute('data-go')); return; }
     if (t.hasAttribute('data-day')) { state.day = +t.getAttribute('data-day'); render(); window.scrollTo({ top: 0 }); return; }
