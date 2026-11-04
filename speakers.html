@@ -34,6 +34,10 @@
       .spk-talk-label { font-size: .72rem; font-weight: 700; letter-spacing: .6px; text-transform: uppercase; color: var(--tw-red); margin-bottom: 6px; }
       .spk-talk-title { font-family: 'Source Serif 4', serif; font-size: 1.15rem; font-weight: 700; font-style: italic; color: var(--text); line-height: 1.4; }
       .spk-talk-when { font-size: .85rem; font-weight: 600; color: var(--text-mid); margin: 4px 0 10px; }
+      .spk-abs-btn { display: inline-block; padding: 6px 16px; border-radius: 16px; border: 1.5px solid var(--navy-light); font-size: .86rem; font-weight: 700; color: var(--navy-light); background: #fff; cursor: pointer; transition: all .2s; }
+      .spk-abs-btn:hover { background: var(--navy-light); color: #fff; }
+      .spk-abs-btn[hidden] { display: none; }
+      .spk-talk-abs { margin-top: 12px; }
       .spk-talk-abs p { font-size: .92rem; color: var(--text-mid); line-height: 1.7; margin: 0; }
       .spk-talk-abs p + p { margin-top: 8px; }
   </style>
@@ -165,6 +169,7 @@
                 <div class="spk-talk-label">Keynote Talk</div>
                 <div class="spk-talk-title">Understanding label variation through explanations</div>
                 <div class="spk-talk-when">Day 2, 09:00&ndash;10:00 &middot; Main Auditorium</div>
+                <button type="button" class="spk-abs-btn" hidden aria-expanded="false">Read abstract</button>
                 <div class="spk-talk-abs">
                   <p>NLP researchers have increasingly acknowledged that humans often diverge in their interpretations of various NLP tasks, and that such variation should be captured if robust language understanding is to be achieved. In this talk, I will focus on analyzing label variation in the Natural Language Inference (NLI) task, in which, assuming the truth of a premise, one judges whether a hypothesis text is true, false, or undetermined. For instance, if one says: "My friend often travels with a heavy suitcase", can it be inferred that "My friend often travels with a light suitcase"? I will examine the sources of NLI label variation through explanations provided by humans and LLMs, arguing that, in the presence of variation, labels without explanations are not meaningful and that we need better measures to capture similarities of explanations.</p>
                 </div>
@@ -189,6 +194,7 @@
                 <div class="spk-talk-label">Keynote Talk</div>
                 <div class="spk-talk-title">Expansion and Contraction: What It Means to Reason in Language Models</div>
                 <div class="spk-talk-when">Day 1, 09:00&ndash;10:00 &middot; Main Auditorium</div>
+                <button type="button" class="spk-abs-btn" hidden aria-expanded="false">Read abstract</button>
                 <div class="spk-talk-abs">
                   <p>Today's language models reason by producing text, which makes a chain of thought a linguistic artifact as much as a computational one. Reasoning in language involves two movements: expansion, which generates and pushes forward, and contraction, which prunes what is wrong and pulls back what has drifted. Contraction in this sense is not the pruning an external search procedure performs over candidate paths; it is something the model has to carry out in the medium it reasons in — as language, in the middle of generation. Expansion on its own can still arrive at a correct answer; what it cannot do is arrive there reliably, or know that it has. My argument is that a model can be far stronger in one movement than in the other, and that some reasoning failures are failures of this balance rather than of knowledge or scale. Small models make the imbalance more visible. Our work shows that training a small model on long reasoning chains often costs it much of its original ability, and that adding more data does not reliably bring that ability back. A large model has the spare capacity to carry an unpruned chain and still land on the right answer; a small one cannot. I will offer an explanation for this, and use it to raise a question I don't think we have answered: whether the two movements are acquired in the same way, or whether contraction has to be learned separately, under conditions we are not currently providing.</p>
                   <p>The second movement leaves traces in language. Models hesitate, revise, hedge, and declare a step wrong — recognizable linguistic forms whose functions were described long before they turned up in reasoning traces. Whether a model's use of such a form carries the function it appears to carry is an open question. In practice the question has been sidestepped rather than answered, because the work has been delegated: a verifier decides which paths are wrong, a length budget decides when to stop. I will describe what happens when those decisions are handed back to the model: what it acquires, what it fails to acquire, and what conditions seem to make the difference between the two. If this picture is right, much of what we currently measure as reasoning ability is expansion assessed under borrowed supervision, and the question that belongs at the centre is the harder one: how a model comes to contract on its own.</p>
@@ -214,6 +220,7 @@
                 <div class="spk-talk-label">Keynote Talk</div>
                 <div class="spk-talk-title">Learning Morphemes in the Noisy Landscape of Natural Text</div>
                 <div class="spk-talk-when">Day 2, 14:00&ndash;15:00 &middot; Main Auditorium</div>
+                <button type="button" class="spk-abs-btn" hidden aria-expanded="false">Read abstract</button>
                 <div class="spk-talk-abs">
                   <p>Most words across languages are formed by combining smaller meaningful units called morphemes. Morpheme knowledge provides a powerful heuristic for vocabulary growth and contributes to the efficiency of skilled reading. However, morphemes in many languages do not stand on their own, so their functions must be inferred from exposure to whole words. I will present findings from corpus linguistics, computational modelling, and behavioural research investigating how English affix morphemes are learned from large-scale text input. Results show that English affixes vary substantially in their frequency, in the ease with which they can be identified as combinatorial units, and in the consistency with which they signal meaning – and that these factors have important consequences for learning and processing. I will further show how the same approach can be applied to writing systems with very different morphologies including Chinese and Arabic. Overall, this work advances understanding of how linguistic knowledge is acquired in noisy, naturalistic environments over the extended timescale of reading acquisition.</p>
                 </div>
@@ -233,6 +240,15 @@
                 <p>Sanghoun Song is a Professor in the Department of Linguistics at Korea University and Director of the Research Institute for Language and Information. His research focuses on computational syntax and semantics, combining HPSG, corpus-based methods, and deep learning, with applications in domain-specific NLP and large language model evaluation.</p>
                 <p>He received his PhD in Linguistics from the University of Washington under the supervision of Emily M. Bender, where he was awarded the Top Scholar Award and Graduate School Dissertation Fellowship. He is the author of <em>Modeling Information Structure in a Cross-Linguistic Perspective</em> (Language Science Press, 2017), which develops an HPSG/MRS-based computational model for cross-linguistic information structure.</p>
                 <p>He previously served as Associate Dean of the College of Liberal Arts and Director of the Center for Digital Humanities at Korea University. He leads the Computational Semantics Lab (SongLab), advancing research at the intersection of linguistic theory and data-driven approaches.</p>
+              </div>
+              <div class="spk-talk">
+                <div class="spk-talk-label">Keynote Talk</div>
+                <div class="spk-talk-title">The stochastic parrot speaks only English</div>
+                <div class="spk-talk-when">Day 3, 09:00&ndash;10:00 &middot; Main Auditorium</div>
+                <button type="button" class="spk-abs-btn" hidden aria-expanded="false">Read abstract</button>
+                <div class="spk-talk-abs">
+                  <p>Despite their remarkable performance, large language models (LLMs) face two primary criticisms. First, they function as "stochastic parrots," generating plausible text through statistical prediction without genuine understanding. Second, their multilingual capabilities remain constrained by English-centric training. This talk connects these concerns through the lens of ambiguity. Because human language is inherently ambiguous, interpreting ambiguous expressions requires sensitivity to syntactic structure, semantic relations, discourse context, and language-specific conventions. Multilingual competence, furthermore, depends on accommodating how distinct languages encode meaning and guide interpretation. Using English as a baseline for comparison, this talk primarily focuses on Korean, while incorporating Japanese data for attachment ambiguity. It examines several key phenomena: attachment ambiguity, scope ambiguity, reflexive binding, and tautological expressions. Comparisons with human judgments reveal recurring mismatches between model behavior and native speaker intuition. Specifically, the evaluated models tend to favor English-like low attachment even in Korean and Japanese, in which speakers typically prefer high attachment in the examined constructions. They also struggle with the context-dependent interpretation of scope, binding, and tautology. These findings suggest that a fluent multilingual generation does not guarantee sensitivity to language-specific preferences. By linking the stochastic-parrot critique to the limitations of English-centric modeling, this talk highlights the critical need for linguistically informed evaluation and language-specific adaptation.</p>
+                </div>
               </div>
             </div>
           </div>
@@ -299,14 +315,6 @@
           <a href="https://paclic2023.github.io/" target="_blank" rel="noopener">PACLIC 37 (Hong Kong, 2023)</a>
         </p>
       </div>
-              <div class="spk-talk">
-                <div class="spk-talk-label">Keynote Talk</div>
-                <div class="spk-talk-title">The stochastic parrot speaks only English</div>
-                <div class="spk-talk-when">Day 3, 09:00&ndash;10:00 &middot; Main Auditorium</div>
-                <div class="spk-talk-abs">
-                  <p>Despite their remarkable performance, large language models (LLMs) face two primary criticisms. First, they function as "stochastic parrots," generating plausible text through statistical prediction without genuine understanding. Second, their multilingual capabilities remain constrained by English-centric training. This talk connects these concerns through the lens of ambiguity. Because human language is inherently ambiguous, interpreting ambiguous expressions requires sensitivity to syntactic structure, semantic relations, discourse context, and language-specific conventions. Multilingual competence, furthermore, depends on accommodating how distinct languages encode meaning and guide interpretation. Using English as a baseline for comparison, this talk primarily focuses on Korean, while incorporating Japanese data for attachment ambiguity. It examines several key phenomena: attachment ambiguity, scope ambiguity, reflexive binding, and tautological expressions. Comparisons with human judgments reveal recurring mismatches between model behavior and native speaker intuition. Specifically, the evaluated models tend to favor English-like low attachment even in Korean and Japanese, in which speakers typically prefer high attachment in the examined constructions. They also struggle with the context-dependent interpretation of scope, binding, and tautology. These findings suggest that a fluent multilingual generation does not guarantee sensitivity to language-specific preferences. By linking the stochastic-parrot critique to the limitations of English-centric modeling, this talk highlights the critical need for linguistically informed evaluation and language-specific adaptation.</p>
-                </div>
-              </div>
     </div>
     <div class="footer-bottom container">
       <span>© 2026 PACLIC 40 Organising Committee &nbsp;·&nbsp; Graduate Institute of Linguistics, National Taiwan University</span>
@@ -314,6 +322,21 @@
   </footer>
 
   <script src="js/main.js"></script>
+
+  <script>
+    // Keynote abstracts: collapsed by default (the page still shows them if JavaScript is off)
+    document.querySelectorAll('.spk-talk').forEach(function (box) {
+      var btn = box.querySelector('.spk-abs-btn'), abs = box.querySelector('.spk-talk-abs');
+      if (!btn || !abs) return;
+      abs.hidden = true; btn.hidden = false;
+      btn.addEventListener('click', function () {
+        var open = abs.hidden;
+        abs.hidden = !open;
+        btn.setAttribute('aria-expanded', open ? 'true' : 'false');
+        btn.textContent = open ? 'Hide abstract' : 'Read abstract';
+      });
+    });
+  </script>
   <script src="js/chat-widget.js"></script>
   <script data-goatcounter="https://paclic40.goatcounter.com/count" async src="//gc.zgo.at/count.js"></script>
 </body>
