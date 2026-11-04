@@ -51,6 +51,25 @@
     .pg-day:hover { border-color: var(--tw-red); color: var(--tw-red); }
     .pg-day .d1 { font-family: 'Source Serif 4', serif; font-weight: 700; font-size: 1.1rem; }
     .pg-day .d2 { font-size: .82rem; opacity: .85; }
+    .pg-talk { font-family: 'Source Serif 4', serif; font-size: 1.05rem; font-weight: 600; color: var(--text); font-style: italic; margin-top: 8px; line-height: 1.45; }
+    .pg-abs-btn { display: inline-block; margin-top: 8px; padding: 3px 12px; border-radius: 14px; border: 1.5px solid var(--navy-light); font-size: .8rem; font-weight: 700; color: var(--navy-light); background: #fff; }
+    .pg-abs-btn:hover { background: var(--navy-light); color: #fff; }
+    .pg-result .pg-abs-btn, .pg-paper .pg-abs-btn { margin-right: 10px; }
+    .pg-modal { position: fixed; inset: 0; z-index: 2000; background: rgba(10,16,40,.55); display: flex; align-items: center; justify-content: center; padding: 20px; }
+    .pg-modal[hidden] { display: none; }
+    .pg-modal-panel { position: relative; background: #fff; border-radius: 14px; width: 100%; max-width: 680px; max-height: 82vh; overflow-y: auto; -webkit-overflow-scrolling: touch; overscroll-behavior: contain; padding: 26px 28px 30px; box-shadow: 0 20px 60px rgba(0,0,0,.35); animation: pgPop .18s ease-out; }
+    .pg-modal-x { position: sticky; top: 0; float: right; margin: -8px -10px 0 8px; width: 38px; height: 38px; border-radius: 50%; font-size: 1.6rem; line-height: 1; color: var(--text-mid); background: #fff; }
+    .pg-modal-x:hover { background: var(--bg-alt); }
+    .pg-modal-label { font-size: .72rem; font-weight: 700; letter-spacing: .6px; text-transform: uppercase; color: var(--tw-red); margin-bottom: 6px; }
+    .pg-modal-panel h3 { font-family: 'Source Serif 4', serif; font-size: 1.2rem; line-height: 1.4; color: var(--text); margin: 0 0 6px; }
+    .pg-modal-by { font-size: .86rem; font-weight: 600; color: var(--text-mid); margin-bottom: 14px; }
+    .pg-modal-body p { font-size: .94rem; color: var(--text-mid); line-height: 1.75; margin: 0 0 10px; }
+    @keyframes pgPop { from { opacity: 0; transform: translateY(10px); } to { opacity: 1; transform: none; } }
+    @media (max-width: 700px) {
+      .pg-modal { align-items: flex-end; padding: 0; }
+      .pg-modal-panel { max-width: none; max-height: 88vh; border-radius: 18px 18px 0 0; padding: 22px 20px 34px; animation: pgSheet .22s ease-out; }
+      @keyframes pgSheet { from { transform: translateY(100%); } to { transform: none; } }
+    }
     .pg-day:disabled { opacity: .4; cursor: not-allowed; border-style: dashed; }
     .pg-day:disabled:hover { border-color: var(--border); color: var(--text-mid); }
     .pg-day.active { background: var(--navy-deep); border-color: var(--navy-deep); color: #fff; }
