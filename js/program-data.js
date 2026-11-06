@@ -133,7 +133,7 @@ window.PACLIC_PROGRAM = {
      "kind": "break",
      "start": "12:10",
      "end": "13:00",
-     "title": "Lunch Break",
+     "title": "Lunch Break & Poster Setup",
      "room": ""
     },
     {
@@ -500,7 +500,7 @@ window.PACLIC_PROGRAM = {
      "kind": "break",
      "start": "12:10",
      "end": "13:00",
-     "title": "Lunch Break",
+     "title": "Lunch Break & Poster Setup",
      "room": ""
     },
     {
@@ -923,7 +923,7 @@ window.PACLIC_PROGRAM = {
      "kind": "break",
      "start": "12:10",
      "end": "13:00",
-     "title": "Lunch Break",
+     "title": "Lunch Break & Poster Setup",
      "room": ""
     },
     {
