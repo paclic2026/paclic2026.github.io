@@ -107,7 +107,7 @@ Day 1 - Thursday December 10, 2026:
 - 09:00-10:00 Keynote: Wei Lu, talk "Expansion and Contraction: What It Means to Reason in Language Models" (Main Auditorium)
 - 10:00-10:30 Coffee Break (Lobby / B2 Registration Desk)
 - 10:30-12:10 Parallel sessions: Natural Language Processing (Main Auditorium); Morphosyntax & Language Documentation (Conference Room 1); Cognitive Modeling & Psycholinguistics (B113-2)
-- 12:10-13:00 Lunch Break & Poster Setup
+- 12:10-13:00 Lunch Break
 - 13:00-13:50 Poster Session 1: Linguistics, Cognition & Multilingual Studies (Main Corridor (大走廊), 20 posters)
 - 14:00-15:40 Parallel sessions: Psycholinguistics & Phonetics (Main Auditorium); Multilingual NLP & Evaluation (Conference Room 1); Sociolinguistics & Discourse (B113-2)
 - 15:40-16:30 Coffee Break & Mingle (Lobby / B2 Registration Desk)
@@ -115,9 +115,9 @@ Day 1 - Thursday December 10, 2026:
 Day 2 - Friday December 11, 2026:
 - 08:15-09:00 Registration
 - 09:00-10:00 Keynote: Marie-Catherine de Marneffe, talk "Understanding label variation through explanations" (Main Auditorium)
-- 10:00-10:30 Coffee Break & Poster Setup (Lobby / B2 Registration Desk)
+- 10:00-10:30 Coffee Break (Lobby / B2 Registration Desk)
 - 10:30-12:10 Parallel sessions: Pragmatics & Discourse Analysis (Main Auditorium); Corpus & Historical Linguistics (Conference Room 1); Theoretical Syntax & Typology (B113-2)
-- 12:10-13:00 Lunch Break & Poster Setup
+- 12:10-13:00 Lunch Break
 - 13:00-13:50 Poster Session 2: Language Resources, Translation & Applications (Main Corridor (大走廊), 20 posters)
 - 14:00-15:00 Keynote: Kathleen Rastle, talk "Learning Morphemes in the Noisy Landscape of Natural Text" (Main Auditorium)
 - 15:10-16:25 Parallel sessions: Language Resources & Social Computing (Main Auditorium); Dialectology & Regional Varieties (Conference Room 1); Second Language Acquisition (B113-2); Representation Learning & Language Models (B114)
@@ -126,9 +126,9 @@ Day 2 - Friday December 11, 2026:
 Day 3 - Saturday December 12, 2026:
 - 08:15-09:00 Registration
 - 09:00-10:00 Keynote: Sanghoun Song, talk "The stochastic parrot speaks only English" (Main Auditorium)
-- 10:00-10:30 Coffee Break & Poster Setup (Lobby / B2 Registration Desk)
+- 10:00-10:30 Coffee Break (Lobby / B2 Registration Desk)
 - 10:30-12:10 Parallel sessions: Special Session (Main Auditorium, details to be announced); LLM Reasoning & Evaluation (Conference Room 1); Vision-Language & Multimodal Models (B113-2)
-- 12:10-13:00 Lunch Break & Poster Setup
+- 12:10-13:00 Lunch Break
 - 13:00-13:50 Poster Session 3: Dialogue Systems, Sentiment & Machine Learning (Main Corridor (大走廊), 19 posters)
 - 13:30-15:15 JWLLP 36 Workshop (Main Auditorium, runs in parallel with PACLIC 40 sessions)
 - 14:00-15:15 Parallel sessions: Machine Translation (Conference Room 1); LLM Safety & Alignment (B113-2)
