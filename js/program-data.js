@@ -133,7 +133,7 @@ window.PACLIC_PROGRAM = {
      "kind": "break",
      "start": "12:10",
      "end": "13:00",
-     "title": "Lunch Break & Poster Setup",
+     "title": "Lunch Break",
      "room": ""
     },
     {
@@ -404,7 +404,7 @@ window.PACLIC_PROGRAM = {
      "kind": "break",
      "start": "10:00",
      "end": "10:30",
-     "title": "Coffee Break & Poster Setup",
+     "title": "Coffee Break",
      "room": "Lobby / B2 Registration Desk"
     },
     {
@@ -500,7 +500,7 @@ window.PACLIC_PROGRAM = {
      "kind": "break",
      "start": "12:10",
      "end": "13:00",
-     "title": "Lunch Break & Poster Setup",
+     "title": "Lunch Break",
      "room": ""
     },
     {
@@ -847,7 +847,7 @@ window.PACLIC_PROGRAM = {
      "kind": "break",
      "start": "10:00",
      "end": "10:30",
-     "title": "Coffee Break & Poster Setup",
+     "title": "Coffee Break",
      "room": "Lobby / B2 Registration Desk"
     },
     {
@@ -923,7 +923,7 @@ window.PACLIC_PROGRAM = {
      "kind": "break",
      "start": "12:10",
      "end": "13:00",
-     "title": "Lunch Break & Poster Setup",
+     "title": "Lunch Break",
      "room": ""
     },
     {
