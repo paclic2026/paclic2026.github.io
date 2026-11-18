@@ -1,5 +1,5 @@
 window.PACLIC_PROGRAM = {
- "updated": "November 5, 2026",
+ "updated": "November 18, 2026",
  "days": [
   {
    "id": 1,
@@ -233,12 +233,6 @@ window.PACLIC_PROGRAM = {
        "id": "277",
        "title": "Detecting Intertextual Links to Japanese Waka in Narrative Texts Using RAG",
        "authors": "Ryusei Kanauchi, Kanako Komiya"
-      },
-      {
-       "board": "P1-16",
-       "id": "280",
-       "title": "Adaptive Skip-Gram Embeddings for Morphosyntactic Tagging of Slavic Languages",
-       "authors": "Ondřej Herman, Ota Mikušek, Vlasta Ohlídalová"
       },
       {
        "board": "P1-17",
@@ -700,11 +694,6 @@ window.PACLIC_PROGRAM = {
        "room": "B113-2",
        "papers": [
         {
-         "id": "44",
-         "title": "What Drives Collocational Processing? The Interplay of Frequency, Congruency, and Proficiency in L2 Chinese",
-         "authors": "Xiaolong Lu, Yongde Dai"
-        },
-        {
          "id": "205",
          "title": "Information Density, Memory Demand, and Optional that in Learner English: An Exploratory Comparison of L2 Complement and Object Relative Clauses",
          "authors": "Yuichi Ono, Kasumi Takahashi, Reina Mogushi, Yuka Fujii, Shota Kato"
@@ -721,11 +710,6 @@ window.PACLIC_PROGRAM = {
        "title": "Representation Learning & Language Models",
        "room": "B114",
        "papers": [
-        {
-         "id": "142",
-         "title": "Robustness and Interpretability of Hybrid Quantum NLP Models",
-         "authors": "Saad Ahmed, Jay Lunia"
-        },
         {
          "id": "223",
          "title": "Structured and Natural Language Data in Continued Pre-Training: Towards Understanding Knowledge Representation and Accessibility in Language Models",
@@ -1135,11 +1119,6 @@ window.PACLIC_PROGRAM = {
          "id": "133",
          "title": "Human Disagreement, Language Model Consensus: Cultural Annotation in German and Luxembourgish Social Media",
          "authors": "Simon Münker, Alistair Plum, Achim Rettinger"
-        },
-        {
-         "id": "152",
-         "title": "LLMs are Vulnerable to Malicious Requests with Indistinguishable Intent",
-         "authors": "Wenzhuo Xu, Zonghao Ying, Deyue Zhang, Dongdong Yang, Xiangzheng Zhang, Quanchen Zou"
         }
        ]
       }
@@ -1207,11 +1186,6 @@ window.PACLIC_PROGRAM = {
        "title": "Information Retrieval & Applied NLP",
        "room": "B113-2",
        "papers": [
-        {
-         "id": "250",
-         "title": "LLM-Guided Heterogeneous Unmanned Vehicle Dispatch and Telemetry-Aware Replanning",
-         "authors": "Tran Nhan"
-        },
         {
          "id": "255",
          "title": "Optimizing Task Instructions with Soft Prompts for Prompt-Based Text Embedding Models",
