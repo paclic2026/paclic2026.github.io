@@ -127,7 +127,7 @@ Day 3 - Saturday December 12, 2026:
 - 08:15-09:00 Registration
 - 09:00-10:00 Keynote: Sanghoun Song, talk "The stochastic parrot speaks only English" (Main Auditorium)
 - 10:00-10:30 Coffee Break (Lobby / B2 Registration Desk)
-- 10:30-12:10 Parallel sessions: Special Session (Main Auditorium, details to be announced); LLM Reasoning & Evaluation (Conference Room 1); Vision-Language & Multimodal Models (B113-2)
+- 10:30-12:10 Parallel sessions: Special Session "From Words to Worlds: Celebrating the Scholarly Legacy of Professor Chu-Ren Huang" (Main Auditorium; a special session in honour of Professor Chu-Ren Huang, with research talks by former postdocs and academic partners, and tributes from students, colleagues and friends; for details see the workshop website: http://140.112.80.83:4012/); LLM Reasoning & Evaluation (Conference Room 1); Vision-Language & Multimodal Models (B113-2)
 - 12:10-13:00 Lunch Break & Poster Setup
 - 13:00-13:50 Poster Session 3: Dialogue Systems, Sentiment & Machine Learning (Main Corridor (大走廊), 19 posters)
 - 13:30-15:15 JWLLP 36 Workshop (Main Auditorium, runs in parallel with PACLIC 40 sessions)
