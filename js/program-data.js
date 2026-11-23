@@ -430,7 +430,7 @@ window.PACLIC_PROGRAM = {
         {
          "id": "275",
          "title": "The Discursive Construction of Self, Sentiment, and Suffering: A Discourse Analysis of Identity, Emotion, Relationships, Worldview, and Historical Consciousness in The Diary of Anne Frank",
-         "authors": "Angelica Esparrago"
+         "authors": "Angelica Esparrago, Jessica M. Alcantara, Bernard M. Barruga"
         }
        ]
       },
