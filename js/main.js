@@ -13,7 +13,7 @@
     conference: new Date('2026-12-10T09:00:00+08:00'), // 9 AM Taipei time (UTC+8)
   };
 
-  let activeCd = 'earlybird';
+  let activeCd = 'conference';  // Early Bird (Nov 20) has closed
   let cdTimer  = null;
   const CIRC   = 2 * Math.PI * 52; // stroke-dasharray for r=52
 
@@ -100,6 +100,24 @@
   }
 
   function initCdTabs() {
+    // Deadlines are all in Taipei time (UTC+8). Grey out any that have passed
+    // and start on the first one still ahead (falls back to the conference).
+    const now = Date.now();
+    els.cdTabs.forEach(tab => {
+      const when = DEADLINES[tab.dataset.cd];
+      if (when && when.getTime() <= now && tab.dataset.cd !== 'conference') {
+        tab.disabled = true;
+        tab.setAttribute('aria-disabled', 'true');
+        tab.classList.remove('active');
+      }
+    });
+    const first = [...els.cdTabs].find(t => !t.disabled);
+    if (first) {
+      els.cdTabs.forEach(t => t.classList.remove('active'));
+      first.classList.add('active');
+      activeCd = first.dataset.cd;
+      startCountdown();
+    }
     els.cdTabs.forEach(tab => {
       tab.addEventListener('click', () => {
         els.cdTabs.forEach(t => t.classList.remove('active'));
