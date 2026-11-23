@@ -1,5 +1,5 @@
 window.PACLIC_PROGRAM = {
- "updated": "November 18, 2026",
+ "updated": "November 24, 2026",
  "days": [
   {
    "id": 1,
@@ -842,10 +842,14 @@ window.PACLIC_PROGRAM = {
      "sessions": [
       {
        "code": "",
-       "title": "Special Session",
+       "title": "From Words to Worlds: Celebrating the Scholarly Legacy of Professor Chu-Ren Huang",
        "room": "Main Auditorium",
        "papers": [],
-       "note": "Details to be announced"
+       "note": "A special session in honour of Professor Chu-Ren Huang, with research talks by former postdocs and academic partners, and tributes from students, colleagues and friends.",
+       "link": {
+        "url": "http://140.112.80.83:4012/",
+        "label": "workshop website"
+       }
       },
       {
        "code": "6A",

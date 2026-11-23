@@ -161,7 +161,8 @@
     var list = se.papers;
     var body = list.length ? '<ul class="pg-papers">' + list.map(function (p) {
       return paperLi({ id: p.id, title: p.title, authors: p.authors }, toks);
-    }).join('') + '</ul>' : '<p class="pg-meta">' + esc(se.note || '') + '</p>';
+    }).join('') + '</ul>' : '<p class="pg-meta">' + esc(se.note || '') +
+      (se.link ? ' For details, visit the <a class="pg-link" href="' + esc(se.link.url) + '" target="_blank" rel="noopener">' + esc(se.link.label) + '</a>.' : '') + '</p>';
     return '<div class="pg-sess"><div class="pg-sess-head"><div class="pg-sess-top"><span class="pg-room">' + esc(se.room) + '</span>' +
 '</div>' +
       '<h4>' + (SHOW_SESSION_CODES && se.code ? esc(se.code) + ' &middot; ' : '') + esc(se.title) + '</h4></div>' + body + '</div>';
