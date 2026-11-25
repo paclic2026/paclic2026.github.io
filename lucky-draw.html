@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Taiwan Lucky Draw | PACLIC 40 — Taipei, Taiwan, December 10–12, 2026</title>
+  <meta name="description" content="Enter the Taiwan BIZ Fun Card lucky draw for PACLIC 40 participants and you could win NT$2,000 (approx. US$65) to enjoy Taiwan. Enter by December 9, 2026."/>
+  <meta property="og:type"        content="website"/>
+  <meta property="og:url"         content="https://paclic2026.github.io/lucky-draw.html"/>
+  <meta property="og:title"       content="Taiwan Lucky Draw | PACLIC 40"/>
+  <meta property="og:description" content="Enter the Taiwan BIZ Fun Card lucky draw for PACLIC 40 participants and you could win NT$2,000 (approx. US$65) to enjoy Taiwan. Enter by December 9, 2026."/>
+  <meta property="og:image"       content="https://paclic2026.github.io/images/taipei-hero.jpg"/>
+  <meta name="twitter:card"        content="summary_large_image"/>
+  <meta name="twitter:title"       content="Taiwan Lucky Draw | PACLIC 40"/>
+  <meta name="twitter:description" content="Enter the Taiwan BIZ Fun Card lucky draw for PACLIC 40 participants and you could win NT$2,000 (approx. US$65) to enjoy Taiwan. Enter by December 9, 2026."/>
+  <meta name="twitter:image"       content="https://paclic2026.github.io/images/taipei-hero.jpg"/>
+  <link rel="preconnect" href="https://fonts.googleapis.com"/>
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
+  <link href="https://fonts.googleapis.com/css2?family=Source+Serif+4:ital,opsz,wght@0,8..60,400;0,8..60,600;0,8..60,700;1,8..60,400&family=Source+Sans+3:wght@300;400;500;600;700&display=swap" rel="stylesheet"/>
+  <link rel="stylesheet" href="css/style.css"/>
+  <style>
+    /* ── Page typography ─────────────────────────────────────── */
+    #main .card p,
+    #main .card li { font-size: .95rem; color: var(--text-mid); line-height: 1.75; margin: 0; }
+    #main .card p + p { margin-top: 10px; }
+    #main .card p strong { color: var(--text); }
+    /* ── Fee table: two-line price cells (USD + NTD) ───────────── */
+    .fee-table td .ntd { display: block; font-family: 'Source Sans 3', sans-serif; font-size: .8rem; font-weight: 500; color: var(--text-mid); margin-top: 2px; }
+    .fee-table td .sub { display: block; font-size: .82rem; font-weight: 400; color: var(--text-mid); margin-top: 2px; }
+    .fee-table td.flat { color: var(--text); }
+    .fee-table th:not(:first-child) { width: 28%; white-space: nowrap; }
+    /* Early Bird column in gold instead of red */
+    .fee-table th.highlight-col { background: var(--tw-gold); }
+    .fee-table td.highlight-col { background: var(--tw-gold-pale); }
+    .fee-table .highlight-col.price { color: #A86F00; }
+
+    /* ── Deadlines ─────────────────────────────────────────────── */
+    .reg-dates { display: grid; grid-template-columns: repeat(3, 1fr); gap: 14px; }
+    .reg-date { padding: 18px; border-radius: 10px; background: var(--bg-alt); border-top: 3px solid var(--tw-gold); }
+    .reg-date .when { font-family: 'Source Serif 4', serif; font-size: 1.25rem; font-weight: 700; color: var(--text); }
+    .reg-date .what { font-size: .88rem; font-weight: 600; color: var(--text); margin-top: 4px; }
+    .reg-date .tz { font-size: .8rem; color: var(--text-mid); margin-top: 2px; }
+
+    /* ── Hero buttons: spaced side by side, stacked evenly on phones ── */
+    .reg-hero-btns { display: flex; flex-wrap: wrap; justify-content: center; gap: 14px; }
+    @media (max-width: 600px) {
+      .reg-hero-btns { flex-direction: column; align-items: center; gap: 14px; }
+      .reg-hero-btns .btn { width: 240px; justify-content: center; text-align: center; margin: 0; }
+    }
+
+    /* ── Call-to-action ────────────────────────────────────────── */
+        .ld-banner { display: block; margin-bottom: 24px; border-radius: 14px; overflow: hidden; box-shadow: 0 6px 24px rgba(0,0,0,.10); border: 1px solid var(--border); }
+    .ld-banner img { display: block; width: 100%; height: auto; transition: transform .3s; }
+    .ld-banner:hover img { transform: scale(1.015); }
+    .reg-cta { text-align: center; }
+    .reg-cta .btn { font-size: 1rem; padding: 14px 34px; }
+    .reg-more { font-size: .9rem; color: var(--text-mid); margin-top: 16px !important; }
+
+    @media (max-width: 700px) {
+      .reg-dates { grid-template-columns: 1fr; }
+      .fee-table th, .fee-table td { padding: 11px 10px; }
+    }
+  </style>
+</head>
+<body>
+
+  <button class="mobile-toggle" id="mobileToggle" aria-label="Toggle navigation">
+    <span></span><span></span><span></span>
+  </button>
+  <div class="sidebar-overlay" id="sidebarOverlay"></div>
+
+  <!-- ══════════════════════════════════════ SIDEBAR ══════════ -->
+  <aside class="sidebar" id="sidebar">
+    <div class="sidebar-inner">
+
+      <div class="sidebar-brand">
+        <div class="brand-emblem">
+          <img src="images/logo-seal.svg" class="plum-svg" alt="PACLIC 40 Seal"/>
+        </div>
+        <div class="brand-info">
+          <div class="brand-name">PACLIC 40</div>
+          <div class="brand-full">Pacific Asia Conference on<br/>Language, Information &amp;<br/>Computation</div>
+        </div>
+      </div>
+
+      <div class="sidebar-rule"></div>
+
+      <nav class="sidebar-nav">
+        <a href="index.html#home" class="nav-link">
+          <span class="nav-icon"><svg viewBox="0 0 22 22" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"><path d="M3 10L11 3l8 7v8a1 1 0 01-1 1H14v-5H8v5H4a1 1 0 01-1-1z"/></svg></span>
+          <span class="nav-text">Home</span>
+        </a>
+        <a href="program.html" class="nav-link">
+          <span class="nav-icon"><svg viewBox="0 0 22 22" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"><rect x="3" y="3" width="16" height="16" rx="2"/><line x1="3" y1="8" x2="19" y2="8"/><line x1="8" y1="3" x2="8" y2="8"/><line x1="14" y1="3" x2="14" y2="8"/><line x1="7" y1="13" x2="15" y2="13"/><line x1="7" y1="17" x2="12" y2="17"/></svg></span>
+          <span class="nav-text">Program</span>
+        </a>
+        <a href="speakers.html" class="nav-link">
+          <span class="nav-icon"><svg viewBox="0 0 22 22" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"><path d="M12 1a3 3 0 000 6M12 1a3 3 0 010 6"/><path d="M16 17v1a2 2 0 01-2 2H8a2 2 0 01-2-2v-1"/><path d="M12 7v10M9 11l3-4 3 4"/><rect x="10" y="17" width="4" height="3" rx="1"/></svg></span>
+          <span class="nav-text">Invited Speakers</span>
+        </a>
+        <a href="cfp.html" class="nav-link">
+          <span class="nav-icon"><svg viewBox="0 0 22 22" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"><path d="M14 2H6a2 2 0 00-2 2v16a2 2 0 002 2h10a2 2 0 002-2V8z"/><polyline points="14 2 14 8 20 8"/><line x1="16" y1="13" x2="8" y2="13"/><line x1="16" y1="17" x2="8" y2="17"/><line x1="10" y1="9" x2="8" y2="9"/></svg></span>
+          <span class="nav-text">Call for Papers</span>
+        </a>
+        <a href="workshop.html" class="nav-link">
+          <span class="nav-icon"><svg viewBox="0 0 22 22" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"><rect x="2" y="3" width="18" height="13" rx="2"/><line x1="7" y1="20" x2="15" y2="20"/><line x1="11" y1="16" x2="11" y2="20"/></svg></span>
+          <span class="nav-text">Workshop</span>
+        </a>
+        <a href="registration.html" class="nav-link">
+          <span class="nav-icon"><svg viewBox="0 0 22 22" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"><rect x="2" y="5" width="18" height="13" rx="2"/><line x1="2" y1="10" x2="20" y2="10"/><line x1="6" y1="15" x2="10" y2="15"/></svg></span>
+          <span class="nav-text">Registration</span>
+          <span class="nav-indicator"></span>
+        </a>
+        <a href="invitation.html" class="nav-link">
+          <span class="nav-icon"><svg viewBox="0 0 22 22" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"><path d="M4 4h14c1.1 0 2 .9 2 2v10c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="20 6 11 12 2 6"/></svg></span>
+          <span class="nav-text">Letter of Invitation</span>
+        </a>
+        <a href="venue.html" class="nav-link">
+          <span class="nav-icon"><svg viewBox="0 0 22 22" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"><path d="M11 2C7.7 2 5 4.7 5 8c0 5.25 6 12 6 12s6-6.75 6-12c0-3.3-2.7-6-6-6z"/><circle cx="11" cy="8" r="2.5"/></svg></span>
+          <span class="nav-text">Venue &amp; Travel</span>
+        </a>
+        <a href="lucky-draw.html" class="nav-link active">
+          <span class="nav-icon"><svg viewBox="0 0 22 22" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="8" width="16" height="4" rx="1"/><path d="M4 12v7a1 1 0 001 1h12a1 1 0 001-1v-7"/><line x1="11" y1="8" x2="11" y2="20"/><path d="M11 8C9 8 7 7 7 5.5S8.2 3 9.5 3C11 3 11 6 11 8z"/><path d="M11 8c2 0 4-1 4-2.5S13.8 3 12.5 3C11 3 11 6 11 8z"/></svg></span>
+          <span class="nav-text">Taiwan Lucky Draw</span>
+          <span class="nav-indicator"></span>
+        </a>
+        <a href="index.html#committee" class="nav-link">
+          <span class="nav-icon"><svg viewBox="0 0 22 22" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"><circle cx="9" cy="7" r="4"/><path d="M3 21v-2a4 4 0 014-4h4a4 4 0 014 4v2"/><circle cx="17" cy="8" r="2.5"/><path d="M21 21v-1.5a2.5 2.5 0 00-2.5-2.5"/></svg></span>
+          <span class="nav-text">Committee</span>
+        </a>
+        <a href="index.html#faq" class="nav-link">
+          <span class="nav-icon"><svg viewBox="0 0 22 22" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"><circle cx="11" cy="11" r="9"/><path d="M9 8.5a2 2 0 013.5 1.3c0 1.5-2.5 2-2.5 3"/><line x1="11" y1="16" x2="11.01" y2="16"/></svg></span>
+          <span class="nav-text">FAQ</span>
+        </a>
+      </nav>
+
+      <div class="sidebar-footer">
+        <div class="taiwan-map-wrap">
+          <svg class="taiwan-map" viewBox="0 0 100 174" xmlns="http://www.w3.org/2000/svg">
+            <path d="M 73,3 C 82,0 90,8 95,18 C 93,25 92,30 92,38 C 88,52 85,62 82,70 C 78,82 74,97 70,112 C 66,122 63,129 60,135 C 55,148 50,163 43,174 C 34,162 23,150 15,140 C 8,130 6,122 8,118 C 9,110 9,100 10,90 C 13,78 16,72 16,68 C 16,62 18,55 21,48 C 26,38 34,28 48,22 C 58,17 66,10 73,3 Z"
+              fill="rgba(254,0,0,0.07)" stroke="rgba(254,0,0,0.45)" stroke-width="2.5" stroke-linejoin="round" stroke-linecap="round"/>
+            <circle cx="74" cy="14" r="3.5" fill="#FE0000" stroke="white" stroke-width="1.5"/>
+            <text x="62" y="10" font-size="7" fill="rgba(254,0,0,0.75)" font-family="sans-serif" font-weight="600" text-anchor="end">Taipei</text>
+          </svg>
+        </div>
+        <div class="footer-pin">
+          <svg viewBox="0 0 16 16" fill="currentColor" width="13" height="13"><circle cx="8" cy="6.5" r="3" fill="rgba(196,30,58,0.9)"/><path d="M8 1a5.5 5.5 0 00-5.5 5.5C2.5 10.5 8 15 8 15s5.5-4.5 5.5-7.5A5.5 5.5 0 008 1z" fill="none" stroke="rgba(196,30,58,0.9)" stroke-width="1.5"/></svg>
+          <span>Taipei, Taiwan</span>
+        </div>
+        <div class="footer-dates">December 10–12, 2026</div>
+        <div class="footer-edition">40<sup>th</sup> Edition · Since 1987</div>
+        <div class="footer-email">
+          <a href="mailto:paclic2026@gmail.com">paclic2026@gmail.com</a>
+        </div>
+        <div class="ntu-host-wrap">
+          <img class="ntu-logo-img" src="https://www.ntu.edu.tw/images/icon-logo-header.svg" alt="NTU logo" onerror="this.style.display='none'"/>
+          <div class="ntu-host-text"><strong>Hosted by</strong>National Taiwan University (NTU)</div>
+        </div>
+      </div>
+    </div>
+  </aside>
+
+  <!-- ══════════════════════════════════ MAIN CONTENT ══════════ -->
+  <main id="main">
+
+    <!-- Hero -->
+    <div class="cfp-hero" style="text-align:center;padding:64px 40px 40px;border-bottom:2px solid var(--border);">
+      <div class="block-tag" style="display:inline-flex;margin-bottom:18px;">Taiwan BIZ Fun Card</div>
+      <h1 style="font-family:'Source Serif 4',serif;font-size:2.6rem;font-weight:700;color:var(--text);margin-bottom:12px;">Taiwan Lucky Draw</h1>
+      <p style="font-size:1.05rem;color:var(--text-mid);margin:0 auto 6px;line-height:1.7;font-weight:600;">Join PACLIC 40 and Enter to Win NT$2,000 to Enjoy Taiwan!</p>
+      <p style="font-size:.95rem;color:var(--text-mid);margin:0 auto 28px;line-height:1.7;">Entries close on <strong>December 9, 2026</strong></p>
+      <div class="reg-hero-btns">
+        <a href="https://mice.meettaiwan.com/meettaiwan/bizfuncard/en-US/EHB/EHB001/Publicity/abb25203-c468-4f50-b38c-754bb6699d3a" target="_blank" rel="noopener" class="btn btn-primary">Enter the Lucky Draw</a>
+        <a href="index.html" class="btn btn-outline">&larr; Back to Main Site</a>
+      </div>
+    </div>
+
+    <section style="padding:48px 0 64px;">
+      <div class="container" style="max-width:900px;">
+
+        <a href="https://mice.meettaiwan.com/meettaiwan/bizfuncard/en-US/EHB/EHB001/Publicity/abb25203-c468-4f50-b38c-754bb6699d3a" target="_blank" rel="noopener" class="ld-banner reveal" aria-label="Open the Taiwan BIZ Fun Card lucky draw page">
+          <img src="images/lucky-draw.jpg" width="1400" height="712" alt="Taiwan BIZ Fun lucky draw page for PACLIC 40, by MEET TAIWAN" loading="lazy"/>
+        </a>
+
+        <div class="card reveal">
+          <div class="card-head">
+            <svg viewBox="0 0 22 22" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" width="22" height="22"><rect x="3" y="8" width="16" height="4" rx="1"/><path d="M4 12v7a1 1 0 001 1h12a1 1 0 001-1v-7"/><line x1="11" y1="8" x2="11" y2="20"/><path d="M11 8C9 8 7 7 7 5.5S8.2 3 9.5 3C11 3 11 6 11 8z"/><path d="M11 8c2 0 4-1 4-2.5S13.8 3 12.5 3C11 3 11 6 11 8z"/></svg>
+            <h2 style="font-size:1.1rem;font-weight:700;">Win a Taiwan BIZ Fun Card</h2>
+          </div>
+          <p>Dear PACLIC 40 participants,</p>
+          <p>Thank you for joining PACLIC 40! We are excited to share a special opportunity for you to make the most of your stay in Taiwan.</p>
+          <p><strong>Make your experience in Taiwan even more rewarding!</strong> Join PACLIC 40 and take the opportunity to win a Taiwan BIZ Fun Card pre-loaded with <strong>NT$2,000 (approx. US$65)</strong>.</p>
+          <p>The card makes it easy to pay for transportation, shopping, dining, and more at participating merchants across Taiwan, so you can enjoy more of what Taiwan has to offer during your stay.</p>
+          <p>We look forward to welcoming you to PACLIC and hope you enjoy your time in Taiwan!</p>
+        </div>
+
+        <div class="card reveal reg-cta">
+          <div class="card-head" style="justify-content:center;">
+            <h2 style="font-size:1.1rem;font-weight:700;">Enter the Lucky Draw</h2>
+          </div>
+          <p>Check out the details and enter for your chance to win.</p>
+          <p><strong>Deadline to enter: December 9, 2026</strong></p>
+          <p style="margin-top:18px;"><a href="https://mice.meettaiwan.com/meettaiwan/bizfuncard/en-US/EHB/EHB001/Publicity/abb25203-c468-4f50-b38c-754bb6699d3a" target="_blank" rel="noopener" class="btn btn-primary">Enter the Lucky Draw &rarr;</a></p>
+        </div>
+
+        <div class="card reveal">
+          <div class="card-head">
+            <svg viewBox="0 0 22 22" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" width="22" height="22"><path d="M4 4h14c1.1 0 2 .9 2 2v10c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="20,6 11,13 2,6"/></svg>
+            <h2 style="font-size:1.1rem;font-weight:700;">Questions</h2>
+          </div>
+          <p>For questions about the Taiwan BIZ Fun Card, please contact:</p>
+          <p><strong>Yuan Chuang</strong><br/>MEET TAIWAN<br/><a href="mailto:yuan.chuang@taitra.org.tw" style="color:var(--link);text-decoration:underline;font-weight:600;">yuan.chuang@taitra.org.tw</a></p>
+        </div>
+
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ══════════════════ SHARE BAR ════════════════════════════ -->
+  <div class="share-bar">
+    <div class="share-bar-inner container">
+      <span class="share-label">Spread the word</span>
+      <div class="share-btns">
+        <a class="share-btn share-x" href="#"
+           onclick="window.open('https://twitter.com/intent/tweet?text=PACLIC+40+%E2%80%94+The+40th+Pacific+Asia+Conference+on+Language%2C+Information+and+Computation.+Taipei%2C+Taiwan%2C+Dec+10%E2%80%9312+2026.&url='+encodeURIComponent(location.href),'_blank');return false;" aria-label="Share on X">
+          <svg viewBox="0 0 22 22" fill="currentColor" width="17" height="17"><path d="M17.53 3H20.5L14.2 10.28 21.5 20h-5.9l-4.5-5.88L5.84 20H2.86l6.72-7.69L2.5 3h6.05l4.09 5.34L17.53 3zm-1 15.25h1.64L5.57 4.64H3.82l12.71 13.61z"/></svg>
+          Share on X
+        </a>
+        <a class="share-btn share-li" href="#"
+           onclick="window.open('https://www.linkedin.com/shareArticle?mini=true&url='+encodeURIComponent(location.href)+'&title=PACLIC+40+%E2%80%94+Taipei%2C+Taiwan%2C+December+10%E2%80%9312+2026','_blank');return false;" aria-label="Share on LinkedIn">
+          <svg viewBox="0 0 22 22" fill="currentColor" width="17" height="17"><path d="M16 8a6 6 0 016 6v7h-4v-7a2 2 0 00-2-2 2 2 0 00-2 2v7h-4v-7a6 6 0 016-6zM2 9h4v12H2z"/><circle cx="4" cy="4" r="2"/></svg>
+          LinkedIn
+        </a>
+        <a class="share-btn share-fb" href="#"
+           onclick="window.open('https://www.facebook.com/sharer/sharer.php?u='+encodeURIComponent(location.href),'_blank');return false;" aria-label="Share on Facebook">
+          <svg viewBox="0 0 22 22" fill="currentColor" width="17" height="17"><path d="M18 2h-3a5 5 0 00-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 011-1h3z"/></svg>
+          Facebook
+        </a>
+      </div>
+    </div>
+  </div>
+
+  <!-- ══════════════════ SITE FOOTER ══════════════════════════ -->
+  <footer class="site-footer">
+    <div class="footer-grid container">
+      <div class="footer-col">
+        <div class="footer-col-title">PACLIC 40</div>
+        <p>The 40th Pacific Asia Conference on Language, Information and Computation<br/>Taipei, Taiwan &nbsp;·&nbsp; December 10–12, 2026</p>
+      </div>
+      <div class="footer-col">
+        <div class="footer-col-title">Navigation</div>
+        <nav class="footer-nav-links">
+          <a href="index.html#home">Home</a>
+          <a href="program.html">Program</a>
+          <a href="speakers.html">Invited Speakers</a>
+          <a href="cfp.html">Call for Papers</a>
+          <a href="workshop.html">Workshop</a>
+          <a href="registration.html">Registration</a>
+          <a href="invitation.html">Letter of Invitation</a>
+          <a href="venue.html">Venue &amp; Travel</a>
+          <a href="index.html#committee">Committee</a>
+          <a href="index.html#faq">FAQ</a>
+        </nav>
+      </div>
+      <div class="footer-col">
+        <div class="footer-col-title">Previous Editions</div>
+        <p class="footer-prev-line">
+          <a href="https://vlsp.org.vn/paclic2025/" target="_blank" rel="noopener">PACLIC 39 (Hanoi, 2025)</a>
+          &nbsp;·&nbsp;
+          <a href="https://sites.google.com/view/paclic38" target="_blank" rel="noopener">PACLIC 38 (Tokyo, 2024)</a>
+          &nbsp;·&nbsp;
+          <a href="https://paclic2023.github.io/" target="_blank" rel="noopener">PACLIC 37 (Hong Kong, 2023)</a>
+        </p>
+      </div>
+    </div>
+    <div class="footer-bottom container">
+      <span>© 2026 PACLIC 40 Organising Committee &nbsp;·&nbsp; Graduate Institute of Linguistics, National Taiwan University</span>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+  <script src="js/chat-widget.js"></script>
+  <script data-goatcounter="https://paclic40.goatcounter.com/count" async src="//gc.zgo.at/count.js"></script>
+</body>
+</html>
