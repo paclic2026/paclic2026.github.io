@@ -1,5 +1,5 @@
 window.PACLIC_PROGRAM = {
- "updated": "November 24, 2026",
+ "updated": "November 25, 2026",
  "days": [
   {
    "id": 1,
@@ -302,11 +302,6 @@ window.PACLIC_PROGRAM = {
          "id": "100",
          "title": "Where Language-Specific Artifacts Go Missing: CJK Gaps across Papers, Datasets, and Models",
          "authors": "Dasol Choi, DongGeon Lee, Dokyoon Yoon, Youngsook Song"
-        },
-        {
-         "id": "130",
-         "title": "Quantifying the Code-Switching Penalty: A Stratified Benchmark of Toxicity Detection Across Pure English, Pure Tagalog, and Taglish",
-         "authors": "Rafael Subo Yap, Darryl Johnson Ty"
         },
         {
          "id": "136",
