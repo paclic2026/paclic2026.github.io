@@ -27,6 +27,18 @@
     .cfp-fine { font-size: .82rem !important; color: var(--text-light) !important; font-style: italic; }
     .cfp-intro { font-size: .95rem; color: var(--text-mid); line-height: 1.75; margin-bottom: 32px !important; }
 
+    /* ── Workshop keynote ──────────────────────────────────────── */
+    .wk-keynote-name { font-family: 'Source Serif 4', serif; font-size: 1.2rem; font-weight: 700; color: var(--text); }
+    .wk-keynote-aff { font-size: .9rem; color: var(--text-mid); margin-bottom: 14px; }
+    .wk-keynote-title { font-family: 'Source Serif 4', serif; font-size: 1.15rem; font-weight: 700; font-style: italic; color: var(--text); line-height: 1.4; }
+    .wk-keynote-when { font-size: .85rem; font-weight: 600; color: var(--text-mid); margin: 6px 0 12px; }
+    .wk-abs-btn { display: inline-block; padding: 6px 16px; border-radius: 16px; border: 1.5px solid var(--navy-light); font-size: .86rem; font-weight: 700; color: var(--navy-light); background: transparent; cursor: pointer; }
+    .wk-abs-btn:hover { background: var(--navy-light); color: #fff; }
+    .wk-abs-btn[hidden] { display: none; }
+    .wk-keynote-abs { margin-top: 14px; }
+    .wk-keynote-abs p { font-size: .94rem; color: var(--text-mid); line-height: 1.75; margin: 0; }
+    .wk-keynote-abs p + p { margin-top: 10px; }
+
     /* ── Important Dates table ─────────────────────────────────── */
     .cfp-dates-table { width: 100%; border-collapse: collapse; margin: 18px 0 8px; }
     .cfp-dates-table thead th { text-align: left; padding: 10px 14px; font-size: .72rem; font-weight: 700; text-transform: uppercase; letter-spacing: 1px; color: var(--text-light); border-bottom: 2px solid var(--border); }
@@ -246,6 +258,26 @@
         <p>We welcome submissions that bridge <strong>cognitive science, theoretical and computational linguistics, and large language model research</strong>.</p>
       </section>
 
+      <!-- Workshop keynote -->
+      <section class="wk-section reveal" id="keynote">
+        <div class="wk-section-head">
+          <svg viewBox="0 0 22 22" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" width="24" height="24"><rect x="8" y="2" width="6" height="11" rx="3"/><path d="M5 10a6 6 0 0012 0"/><line x1="11" y1="16" x2="11" y2="20"/><line x1="7" y1="20" x2="15" y2="20"/></svg>
+          <h2>Workshop Keynote</h2>
+        </div>
+        <div class="wk-keynote">
+          <div class="wk-keynote-name">Prof. Marco Marelli</div>
+          <div class="wk-keynote-aff">University of Milan-Bicocca, Italy</div>
+          <div class="wk-keynote-title">The world in words: training computational models on linguistic data, and what it tells us about grounded cognition</div>
+          <div class="wk-keynote-when">December 12, 2026, 13:35&ndash;14:30 &middot; Main Auditorium</div>
+          <button type="button" class="wk-abs-btn" hidden aria-expanded="false" aria-controls="wkAbstract">Read abstract</button>
+          <div class="wk-keynote-abs" id="wkAbstract">
+            <p>The relation between language, as a symbolic, abstract system realized within a speaker, and the external world, as a source of situated, embodied experience, has been a long matter of debate. Recent empirical work suggests that the inter-relation between the two might be deeper than previously thought, with language acting as a compressed version of the experienced world, and by this fulfilling the purpose of efficient communication. In support of this view, I will discuss a series of case studies employing language-trained computational models.</p>
+            <p>First, I will show how a model trained on simple lexical co-occurrences can reproduce perceptual distributions to the point of predicting visual processing in non-human primates, i.e. agents that are devoid of language. Indeed, activations in the ventral visual stream of macaques watching images are aligned with computational predictions about those images’ labels. Second, I will describe how language can induce visual information even for elements that by definition are not associated with perceptual experience, namely abstract words. This can be demonstrated by simple language-to-vision mapping models, whose predicted images align with human visual preferences about abstract concepts. Third, I will show how, differently from their more dated counterparts, frontier large language models largely align with human sensorimotor intuitions. Such an alignment is observed even for systems that are not provided multimodal information during training.</p>
+            <p>In conclusion, statistical processing of linguistic data can reproduce perceptual intuitions and processing at a level that challenges traditional characterizations of language as an abstract, disembodied system of symbols. Language and grounded experience emerge as deeply intertwined, establishing the former as a main vehicle of experience-by-proxy and speaking for an integrated view of cognition.</p>
+          </div>
+        </div>
+      </section>
+
       <!-- Important Dates -->
       <section class="wk-section reveal">
         <div class="wk-section-head">
@@ -443,6 +475,18 @@
         window.addEventListener('scroll', () => backTop.classList.toggle('visible', window.scrollY > 400), { passive: true });
         backTop.addEventListener('click', e => { e.preventDefault(); window.scrollTo({ top: 0, behavior: 'smooth' }); });
       }
+    })();
+  </script>
+  <script>
+    (function () {
+      var btn = document.querySelector('.wk-abs-btn'), abs = document.getElementById('wkAbstract');
+      if (!btn || !abs) return;
+      abs.hidden = true; btn.hidden = false;
+      btn.addEventListener('click', function () {
+        var open = abs.hidden; abs.hidden = !open;
+        btn.setAttribute('aria-expanded', open ? 'true' : 'false');
+        btn.textContent = open ? 'Hide abstract' : 'Read abstract';
+      });
     })();
   </script>
   <script src="js/chat-widget.js"></script>
