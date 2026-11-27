@@ -1,5 +1,5 @@
 window.PACLIC_PROGRAM = {
- "updated": "November 25, 2026",
+ "updated": "November 27, 2026",
  "days": [
   {
    "id": 1,
@@ -1050,7 +1050,12 @@ window.PACLIC_PROGRAM = {
        "start": "13:35",
        "end": "14:30",
        "title": "Keynote: Prof. Marco Marelli (University of Milan-Bicocca, Italy)",
-       "subtitle": "“The world in words: training computational models on linguistic data, and what it tells us about grounded cognition”"
+       "subtitle": "“The world in words: training computational models on linguistic data, and what it tells us about grounded cognition”",
+       "kid": "WK1",
+       "speaker": "Prof. Marco Marelli",
+       "affiliation": "University of Milan-Bicocca, Italy",
+       "talk": "The world in words: training computational models on linguistic data, and what it tells us about grounded cognition",
+       "abstract": "The relation between language, as a symbolic, abstract system realized within a speaker, and the external world, as a source of situated, embodied experience, has been a long matter of debate. Recent empirical work suggests that the inter-relation between the two might be deeper than previously thought, with language acting as a compressed version of the experienced world, and by this fulfilling the purpose of efficient communication. In support of this view, I will discuss a series of case studies employing language-trained computational models.\n\nFirst, I will show how a model trained on simple lexical co-occurrences can reproduce perceptual distributions to the point of predicting visual processing in non-human primates, i.e. agents that are devoid of language. Indeed, activations in the ventral visual stream of macaques watching images are aligned with computational predictions about those images’ labels. Second, I will describe how language can induce visual information even for elements that by definition are not associated with perceptual experience, namely abstract words. This can be demonstrated by simple language-to-vision mapping models, whose predicted images align with human visual preferences about abstract concepts. Third, I will show how, differently from their more dated counterparts, frontier large language models largely align with human sensorimotor intuitions. Such an alignment is observed even for systems that are not provided multimodal information during training.\n\nIn conclusion, statistical processing of linguistic data can reproduce perceptual intuitions and processing at a level that challenges traditional characterizations of language as an abstract, disembodied system of symbols. Language and grounded experience emerge as deeply intertwined, establishing the former as a main vehicle of experience-by-proxy and speaking for an integrated view of cognition."
       },
       {
        "start": "14:30",

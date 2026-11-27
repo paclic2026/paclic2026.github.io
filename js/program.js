@@ -197,7 +197,7 @@
         if (pt.papers) inner = '<ul class="pg-papers">' + pt.papers.map(function (p) { return paperLi(p, toks); }).join('') + '</ul>';
         if (pt.posters) inner = postersBlock(pt.posters, id + '-' + pt.start, toks);
         return '<div class="pg-part"><h5><small>' + pt.start + ' &ndash; ' + pt.end + '</small>' + esc(pt.title) + '</h5>' +
-          (pt.subtitle ? '<div class="pg-meta">' + esc(pt.subtitle) + '</div>' : '') + inner + '</div>';
+          (pt.subtitle ? '<div class="pg-meta">' + esc(pt.subtitle) + '</div>' : '') + (pt.abstract ? absButton(pt.kid) : '') + inner + '</div>';
       }).join('');
       return head + '<div class="pg-card"><h3><span class="pg-tag">Workshop</span><a class="pg-link" href="workshop.html">JWLLP 36 Workshop</a>' + esc(s.title.replace(/^JWLLP 36 Workshop/, '')) + '</h3>' +
         '<div class="pg-meta">' + esc(s.room) + ' &middot; runs in parallel with PACLIC 40 sessions</div>' + parts + '</div>' + tail;
